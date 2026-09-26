@@ -1,0 +1,756 @@
+{
+ "@id": "urn:portolan:nrr:sha256:61663baa8de84825c86b6b01a75f548a45c6b6d9e12837244a1b2a736615cbe2",
+ "aiUseDeclaration": {
+  "statement": "We used ChatGPT to help write and clean up code, and GitHub Copilot to help write and add comments to our code.",
+  "tools": [
+   {
+    "name": "ChatGPT",
+    "provider": "OpenAI",
+    "purpose": "writing and cleaning up analysis code"
+   },
+   {
+    "name": "GitHub Copilot",
+    "provider": "GitHub",
+    "purpose": "writing code comments"
+   }
+  ]
+ },
+ "applicabilityConditions": {
+  "analysis": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+  "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+  "animalsInStudy": 5,
+  "animalsPerTrial": 1,
+  "genotype": "wild type",
+  "imaging": "10 frames per second, 13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+  "instrument": "ultra-widefield microscope (UWFM), custom built",
+  "invasiveness": "through-skull, label-free; no craniotomy, no transgenic animals, no dye or virus injection",
+  "organism": "NCBITaxon:10090",
+  "preparation": "head-fixed with earbars in a stereotaxic frame (Kopf); heating pad; hair removed with Nair; eye ointment; 1 mL body-temperature sterile saline subcutaneous; 0.1 mL 1% lidocaine subcutaneous under the scalp; scalp removed; periosteum cleaned; thin layer of cyanoacrylate glue applied to the skull for optical clarity",
+  "readout": "flavoprotein autofluorescence, dF/F over a region of interest",
+  "sex": "female",
+  "species": "Mus musculus",
+  "statistics": "none reported; no significance testing, no power analysis, no detection limit stated anywhere in the pub",
+  "strain": "DBA/2J",
+  "strainIdentifier": "RRID:IMSR_JAX:000671"
+ },
+ "attemptType": "wet-lab",
+ "confidence": {
+  "basis": "two trials in one mouse, no detection limit, and a vehicle control that produced the same response as the treatment",
+  "level": "low"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:61663baa8de84825c86b6b01a75f548a45c6b6d9e12837244a1b2a736615cbe2",
+ "cost": {
+  "humanExperimenters": 2,
+  "note": "13 imaging trials across 5 mice. The pub reports the imaging system cost (approximately US$30,000 including the camera) as capital, not as the cost of this study; no per-study cost is given.",
+  "source": "Methods, Microscope and sensory stimulation hardware",
+  "wetLabRuns": 13
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "biology"
+ ],
+ "entities": [
+  {
+   "id": "NCBITaxon:10090",
+   "label": "Mus musculus",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "extra": {
+    "supplier": "The Jackson Laboratory"
+   },
+   "id": "RRID:IMSR_JAX:000671",
+   "label": "DBA/2J (wild type, female)",
+   "role": "experimental animal",
+   "scheme": "IMSR / RRID",
+   "type": "strain"
+  },
+  {
+   "id": "UBERON:0008933",
+   "label": "primary somatosensory cortex (S1)",
+   "role": "expected response region",
+   "scheme": "UBERON",
+   "type": "anatomicalStructure"
+  },
+  {
+   "id": "UBERON:0000956",
+   "label": "cerebral cortex",
+   "role": "imaged field",
+   "scheme": "UBERON",
+   "type": "anatomicalStructure"
+  },
+  {
+   "id": "GO:0050975",
+   "label": "sensory perception of touch",
+   "scheme": "GO",
+   "type": "process"
+  },
+  {
+   "id": "GO:0019233",
+   "label": "sensory perception of pain",
+   "scheme": "GO",
+   "type": "process"
+  },
+  {
+   "id": "GO:0034776",
+   "label": "response to histamine",
+   "scheme": "GO",
+   "type": "process"
+  },
+  {
+   "id": "CHMO:0000087",
+   "label": "flavoprotein autofluorescence widefield imaging",
+   "note": "no exact OBI term for label-free flavoprotein autofluorescence imaging; the nearest exact match is the CHMO fluorescence microscopy term",
+   "scheme": "CHMO",
+   "type": "assay"
+  },
+  {
+   "extra": {
+    "basedOn": "Couto et al. 2021 protocol (doi:10.1038/s41596-021-00527-z)",
+    "cost": "approximately US$30,000 including the camera",
+    "fieldOfView": "13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+    "frameRate": "10 frames per second",
+    "modifications": [
+     "ZL41 camera (Oxford Instruments Andor) in place of the pco.Edge 5.5 (Excelitas)",
+     "blue excitation only, rather than alternating blue/violet"
+    ]
+   },
+   "id": "instrument:uwfm-arcadia",
+   "label": "ultra-widefield microscope (UWFM), custom built",
+   "role": "imaging instrument",
+   "type": "instrument"
+  },
+  {
+   "id": "ror:052zd4v68",
+   "label": "Arcadia Science",
+   "type": "organization",
+   "url": "https://ror.org/052zd4v68"
+  },
+  {
+   "id": "organization:cradl",
+   "label": "Charles River Accelerator and Development Lab (CRADL), South San Francisco, CA",
+   "role": "IACUC of record for the animal work",
+   "type": "organization"
+  },
+  {
+   "extra": {
+    "version": "v1.0.1"
+   },
+   "id": "github:Arcadia-Science/2024-sensory-neuroimaging",
+   "label": "Arcadia-Science/2024-sensory-neuroimaging",
+   "type": "software",
+   "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+  },
+  {
+   "id": "pubchem:CID1548943",
+   "label": "capsaicin",
+   "role": "algogen (acute pain stimulus)",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID5818",
+   "label": "histamine dihydrochloride",
+   "role": "pruritogen (itch stimulus)",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID3763",
+   "label": "isoflurane",
+   "role": "anaesthetic",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID3676",
+   "label": "lidocaine",
+   "role": "local anaesthetic",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID702",
+   "label": "ethanol",
+   "role": "vehicle component",
+   "scheme": "PubChem",
+   "type": "compound"
+  }
+ ],
+ "findings": [
+  {
+   "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+   "conditions": {
+    "dose": "histamine dihydrochloride (Sigma-Aldrich PHR1357-500MG) at 27 mM in PBS, 50 uL (dose from file names); concentration previously shown effective at eliciting an itch behavioural response (ref 21)",
+    "imagingMinutes": 30,
+    "mouse": "mouse-A (inferred, see provenance notes)",
+    "route": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape",
+    "site": "left hindlimb"
+   },
+   "controls": {
+    "negative": {
+     "expected": "no widespread cortical activation",
+     "kind": "vehicle",
+     "label": "PBS alone",
+     "note": "the saline control produced widespread bilateral activation of a magnitude similar to histamine, so the control does not establish a clean baseline and the assay cannot separate the pruritogen from the injection itself",
+     "observed": "widespread bilateral autofluorescence above baseline",
+     "passed": false
+    },
+    "positive": {
+     "expected": "localized contralateral somatosensory response",
+     "kind": "internal-positive",
+     "label": "tactile response confirmed in the same session before injection",
+     "observed": "confirmed; the authors proceeded to chemical stimuli only after seeing it",
+     "passed": true,
+     "source": "Methods, Injection experiments: 'Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli.'"
+    }
+   },
+   "effect": {
+    "comparedTo": "paired saline injection in the same mouse (widespread bilateral autofluorescence above baseline)",
+    "direction": "none",
+    "metric": "whole-brain dF/F after injection versus paired saline trial",
+    "n": 1,
+    "note": "both saline and histamine produced widespread bilateral activation of similar magnitude",
+    "significant": "no statistical test reported",
+    "value": "widespread bilateral autofluorescence above baseline; magnitude similar to saline; not localized; inconsistent between trials"
+   },
+   "evidence": [
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+       "format": "zip of raw imaging frames",
+       "label": "histamine vehicle run, left hindlimb (4B)",
+       "note": "session 2024-02-29; 15 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-02-29/Zyla_15min_LHL_salineinj_withpushbutton_1",
+       "size": 17217061370,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+       "format": "zip of raw imaging frames",
+       "label": "histamine drug run, left hindlimb (4B)",
+       "note": "session 2024-02-29; 30 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-02-29/Zyla_30min_LHL_50uL27MMHistinj_withpushbutton_1",
+       "size": 17217061370,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+      }
+     ],
+     "label": "Figure 4B",
+     "locator": "Figure 4B",
+     "source": "10.57844/arcadia-b963-15ac",
+     "values": {
+      "drug": "widespread bilateral autofluorescence above baseline; magnitude similar to saline; not localized; inconsistent between trials",
+      "vehicle": "widespread bilateral autofluorescence above baseline"
+     }
+    }
+   ],
+   "failureModes": [
+    "no-differential-signal",
+    "irreproducible-across-trials"
+   ],
+   "id": "histamine-lhl",
+   "informativeness": "uninformative",
+   "informativenessReason": "negative control not clean; no sensitivity or power statement",
+   "outcomeClass": "inconclusive-controls-failed",
+   "preregistration": "none",
+   "question": "Does intradermal histamine in the left hindlimb produce cortical activity distinguishable from its paired saline injection?",
+   "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+   "replicates": {
+    "biological": 1,
+    "note": "one mouse; patterns inconsistent between trials"
+   },
+   "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+   "target": {
+    "identifier": "pubchem:CID5818",
+    "label": "histamine dihydrochloride",
+    "type": "compound"
+   }
+  },
+  {
+   "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+   "conditions": {
+    "dose": "histamine dihydrochloride (Sigma-Aldrich PHR1357-500MG) at 27 mM in PBS, 50 uL (dose from file names); concentration previously shown effective at eliciting an itch behavioural response (ref 21)",
+    "imagingMinutes": 30,
+    "mouse": "mouse-A (inferred, see provenance notes)",
+    "route": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape",
+    "site": "right hindlimb"
+   },
+   "controls": {
+    "negative": {
+     "expected": "no widespread cortical activation",
+     "kind": "vehicle",
+     "label": "PBS alone",
+     "note": "the saline control produced widespread bilateral activation of a magnitude similar to histamine, so the control does not establish a clean baseline and the assay cannot separate the pruritogen from the injection itself",
+     "observed": "widespread bilateral autofluorescence above baseline",
+     "passed": false
+    },
+    "positive": {
+     "expected": "localized contralateral somatosensory response",
+     "kind": "internal-positive",
+     "label": "tactile response confirmed in the same session before injection",
+     "observed": "confirmed; the authors proceeded to chemical stimuli only after seeing it",
+     "passed": true,
+     "source": "Methods, Injection experiments: 'Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli.'"
+    }
+   },
+   "effect": {
+    "comparedTo": "paired saline injection in the same mouse (widespread bilateral autofluorescence above baseline)",
+    "direction": "none",
+    "metric": "whole-brain dF/F after injection versus paired saline trial",
+    "n": 1,
+    "note": "both saline and histamine produced widespread bilateral activation of similar magnitude",
+    "significant": "no statistical test reported",
+    "value": "widespread bilateral autofluorescence above baseline; magnitude similar to saline; not localized; inconsistent between trials"
+   },
+   "evidence": [
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+       "format": "zip of raw imaging frames",
+       "label": "histamine vehicle run, right hindlimb (4C)",
+       "note": "session 2024-02-29; 15 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-02-29/Zyla_15min_RHL_salineinj_withpushbutton_1",
+       "size": 17217061370,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+       "format": "zip of raw imaging frames",
+       "label": "histamine drug run, right hindlimb (4C)",
+       "note": "session 2024-02-29; 30 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-02-29/Zyla_30min_RHL_50uL27MMHistinj_withpushbutton_1",
+       "size": 17217061370,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+      }
+     ],
+     "label": "Figure 4C",
+     "locator": "Figure 4C",
+     "source": "10.57844/arcadia-b963-15ac",
+     "values": {
+      "drug": "widespread bilateral autofluorescence above baseline; magnitude similar to saline; not localized; inconsistent between trials",
+      "vehicle": "widespread bilateral autofluorescence above baseline"
+     }
+    }
+   ],
+   "failureModes": [
+    "no-differential-signal",
+    "irreproducible-across-trials"
+   ],
+   "id": "histamine-rhl",
+   "informativeness": "uninformative",
+   "informativenessReason": "negative control not clean; no sensitivity or power statement",
+   "outcomeClass": "inconclusive-controls-failed",
+   "preregistration": "none",
+   "question": "Does intradermal histamine in the right hindlimb produce cortical activity distinguishable from its paired saline injection?",
+   "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+   "replicates": {
+    "biological": 1,
+    "note": "one mouse; patterns inconsistent between trials"
+   },
+   "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+   "target": {
+    "identifier": "pubchem:CID5818",
+    "label": "histamine dihydrochloride",
+    "type": "compound"
+   }
+  },
+  {
+   "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+   "conditions": {
+    "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+    "dose": "histamine dihydrochloride (Sigma-Aldrich PHR1357-500MG) at 27 mM in PBS, 50 uL (dose from file names); concentration previously shown effective at eliciting an itch behavioural response (ref 21)",
+    "route": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape"
+   },
+   "controls": {
+    "negative": {
+     "expected": "no widespread cortical activation",
+     "kind": "vehicle",
+     "label": "PBS alone",
+     "note": "the saline control produced widespread bilateral activation of a magnitude similar to histamine, so the control does not establish a clean baseline and the assay cannot separate the pruritogen from the injection itself",
+     "observed": "widespread bilateral autofluorescence above baseline",
+     "passed": false
+    },
+    "positive": {
+     "expected": "localized contralateral somatosensory response",
+     "kind": "internal-positive",
+     "label": "tactile response confirmed in the same session before injection",
+     "observed": "confirmed; the authors proceeded to chemical stimuli only after seeing it",
+     "passed": true,
+     "source": "Methods, Injection experiments: 'Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli.'"
+    }
+   },
+   "effect": {
+    "comparedTo": "paired saline injections in the same mouse",
+    "direction": "none",
+    "metric": "consistency and localisation of cortical activation across histamine trials",
+    "n": 2,
+    "note": "widespread bilateral autofluorescence above baseline, but activity patterns were inconsistent between trials, the magnitude of activation was similar to the saline control, and activation was not localized to a particular brain area",
+    "significant": "no statistical test reported",
+    "value": "no consistent or localized activation; magnitude similar to saline control"
+   },
+   "evidence": [
+    {
+     "label": "Results, Brain activity in response to capsaicin-induced pain and histamine-induced itch",
+     "locator": "Figure 4",
+     "quote": "the activity patterns were inconsistent between trials, the magnitude of the activation was similar to saline control, and the activation didn't seem to be localized to a particular brain area",
+     "source": "10.57844/arcadia-b963-15ac"
+    },
+    {
+     "label": "Icebox statement",
+     "quote": "Our original goal was to employ this technique to complement traditional mouse behavioral assays for itch. Using widefield autofluorescence microscopy, we observed no consistent brain activity in response to histamine-induced itch. We're therefore icing this concept for now.",
+     "source": "10.57844/arcadia-b963-15ac"
+    },
+    {
+     "label": "Authors' mechanistic hypothesis for the absence",
+     "locator": "Next steps",
+     "quote": "because fewer neurons in the cortex are responsive to itch than pain (ref 13), our current hypothesis is that there isn't enough autofluorescence signal from those few neurons to be detected above the noise",
+     "source": "10.57844/arcadia-b963-15ac"
+    }
+   ],
+   "failureModes": [
+    "no-differential-signal",
+    "irreproducible-across-trials",
+    "signal-below-noise"
+   ],
+   "id": "histamine-overall",
+   "informativeness": "uninformative",
+   "informativenessReason": "negative control not clean; no sensitivity or power statement",
+   "nearestPriorResult": "doi:10.5607/en22029",
+   "note": "we believe that a more sensitive imaging methodology or more sophisticated analysis will be necessary to determine whether itch-related brain activity was present",
+   "outcomeClass": "inconclusive-controls-failed",
+   "preregistration": "none",
+   "question": "Does histamine-induced itch produce cortical activity detectable by label-free flavoprotein autofluorescence imaging in anaesthetized mice?",
+   "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+   "relatedFindings": [
+    "arcadia-neuroimaging-histamine#histamine-lhl",
+    "arcadia-neuroimaging-histamine#histamine-rhl"
+   ],
+   "replicates": {
+    "biological": 1,
+    "note": "two limbs in one mouse; the authors describe the patterns as inconsistent between trials",
+    "technical": 2
+   },
+   "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+   "target": {
+    "identifier": "pubchem:CID5818",
+    "label": "histamine-induced itch, cortical response",
+    "type": "compound"
+   }
+  }
+ ],
+ "governance": {
+  "biosecurityTier": "none",
+  "complianceIds": [
+   "All animal work performed in accordance with the Institutional Animal Care and Use Committee of the Charles River Accelerator and Development Lab (CRADL, South San Francisco, CA). No protocol number is given in the pub."
+  ],
+  "humanSubjectData": "none"
+ },
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:61663baa8de84825c86b6b01a75f548a45c6b6d9e12837244a1b2a736615cbe2",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "invalidators": [
+  "a sensitive calcium indicator such as GCaMP resolving a histamine-specific signal",
+  "an injection-artifact control that separates needle and handling responses from the pruritogen response",
+  "the same experiment in non-anaesthetized animals"
+ ],
+ "isPartOf": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/052zd4v68",
+  "name": "Arcadia Science",
+  "type": "Organization"
+ },
+ "outcomeClass": "inconclusive-controls-failed",
+ "outcomeSummary": "Histamine and saline both produced widespread bilateral activation of similar magnitude, inconsistent between trials and not localized. The positive control passed; the negative control did not stay clean, so the experiment cannot say whether an itch signal exists.",
+ "pathType": "experiment",
+ "performers": [
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "investigation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "methodology",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ryan Lane",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Michael E. Reitman",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Michael E. Reitman",
+   "role": "investigation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Michael E. Reitman",
+   "role": "methodology",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "This is the record the study was selected for: the positive control passed and the negative control did not stay clean, which is the clause of the informativeness rule that no earlier record in the corpus had exercised.",
+  "Encoding judgement 1: the saline control is recorded as not passing. The pub does not use that language; it says the magnitude of histamine activation 'was similar to saline control'. Treating a vehicle that reproduces the treatment response as a control that did not stay clean is this ingest's reading, and it is what drives the outcome class.",
+  "Encoding judgement 2: the positive control is recorded as passing on the strength of the stated gate ('Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli'). The pub does not report a tactile confirmation for each individual injection session, so the per-session pass is inferred from the protocol rather than observed per trial.",
+  "The pub states no detection limit, power analysis or significance test, so the finding is uninformative on two counts, not one.",
+  "The authors' own hypothesis for the absence (too few itch-responsive cortical neurons to exceed noise) is recorded as evidence, not as a conclusion."
+ ],
+ "question": "Does intradermal histamine produce cortical autofluorescence activity distinguishable from a saline injection in anaesthetized mice?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+   "type": "isPartOf"
+  },
+  {
+   "note": "the tactile response gated entry to these trials",
+   "target": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+   "type": "wasDerivedFrom"
+  },
+  {
+   "note": "the same method and animals detected capsaicin-induced pain",
+   "target": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c",
+   "type": "comparedWith"
+  }
+ ],
+ "slug": "arcadia-neuroimaging-histamine",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.57844/arcadia-b963-15ac",
+   "label": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:19Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://thestacks.org/publications/result-sensory-neuroimaging"
+  },
+  {
+   "data": [
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+     "label": "pub-data-raw-2024-03-19.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 11040025011,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+     "label": "pub-data-raw-2024-02-21.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 1183912093,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:a288b18e317987b74f480e4421e001c6",
+     "label": "pub-data-raw-2024-03-06.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 20174619604,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-06.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+     "label": "pub-data-raw-2024-02-29.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 17217061370,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:85731a45bd9f9560eadb2467248050e7",
+     "label": "pub-data-processed.zip",
+     "repository": "Zenodo",
+     "role": "processed imaging data",
+     "size": 12149207940,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-processed.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+     "label": "pub-data-raw-2024-03-18.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 19125787557,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+    }
+   ],
+   "identifier": "doi:10.5281/zenodo.11585535",
+   "label": "Raw and processed autofluorescence neuroimaging data",
+   "license": "CC BY 4.0",
+   "note": "80.9 GB across six files; raw sessions are split by date",
+   "role": "data-deposit",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:21Z",
+    "integrity": "none",
+    "version": "dataset"
+   }
+  },
+  {
+   "identifier": "doi:10.5281/zenodo.12770054",
+   "label": "Arcadia-Science/2024-sensory-neuroimaging: v1.0.1",
+   "license": "CC BY 4.0",
+   "note": "version v1.0.1",
+   "role": "code-repository",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:22Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+  }
+ ],
+ "stages": [
+  {
+   "conditions": {
+    "control": "PBS alone",
+    "dose": "histamine dihydrochloride (Sigma-Aldrich PHR1357-500MG) at 27 mM in PBS, 50 uL (dose from file names); concentration previously shown effective at eliciting an itch behavioural response (ref 21)"
+   },
+   "instrument": [
+    "ultra-widefield microscope (UWFM), custom built"
+   ],
+   "label": "intradermal histamine and paired saline injection during imaging",
+   "note": "each histamine trial is paired with a saline trial in the same mouse and limb",
+   "performedBy": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "methodology",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ryan Lane",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "methodology",
+     "type": "person"
+    }
+   ],
+   "protocol": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape; image 5 min before injection; then 10 min for vehicle and 30 min for drug (main text); figure legends and file names say 15 min for vehicle; push-button pressed at injection to mark the approximate time in the DAQ trace",
+   "stage": "experiment"
+  },
+  {
+   "label": "imaging analysis pipeline",
+   "method": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+   "note": "for visualisation, pixel intensities in vehicle and drug trials were scaled to a shared min and max; dF/F was computed on non-adjusted baseline-subtracted data",
+   "performedBy": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "software",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ryan Lane",
+     "role": "software",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "software",
+     "type": "person"
+    }
+   ],
+   "software": [
+    {
+     "name": "Arcadia-Science/2024-sensory-neuroimaging",
+     "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging",
+     "version": "v1.0.1"
+    },
+    {
+     "identifier": "RRID:SCR_021142",
+     "name": "scikit-image"
+    }
+   ],
+   "stage": "analysis"
+  }
+ ],
+ "studyId": "arcadia-neuroimaging",
+ "successCriteria": "Cortical activation after histamine injection that is consistent between trials, localized, and larger than the paired saline injection.",
+ "title": "Histamine-induced itch produces no cortical signal separable from saline injection (iced for a technical gap)",
+ "version": "1",
+ "visibility": "public"
+}

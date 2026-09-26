@@ -1,0 +1,88 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.2/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.2"
+   },
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "Portolan NRR records: Label-free flavoprotein imaging of the mouse cortex as a behaviour-independent assay for touch, pain and itch (iced)",
+   "description": "Can label-free, through-skull flavoprotein autofluorescence imaging of the mouse cortex measure brain responses to touch, capsaicin-induced pain and histamine-induced itch, as an alternative to mouse behavioural assays?",
+   "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "datePublished": "2026-09-25",
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "isBasedOn": {
+    "@id": "https://doi.org/10.57844/arcadia-b963-15ac"
+   },
+   "hasPart": [
+    {
+     "@id": "crates/arcadia-neuroimaging-path/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-neuroimaging-tactile/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-neuroimaging-capsaicin/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-neuroimaging-histamine/ro-crate-metadata.json"
+    }
+   ],
+   "publisher": {
+    "@id": "#portolan"
+   }
+  },
+  {
+   "@id": "#portolan",
+   "@type": "Organization",
+   "name": "Portolan Software",
+   "url": "https://portolansoft.com/"
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-b963-15ac",
+   "@type": "ScholarlyArticle",
+   "name": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "crates/arcadia-neuroimaging-path/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Label-free flavoprotein imaging of the mouse cortex as a behaviour-independent assay for touch, pain and itch (iced)",
+   "identifier": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+   "nrr:outcomeClass": "partial"
+  },
+  {
+   "@id": "crates/arcadia-neuroimaging-tactile/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Vibrotactile stimulation produces localized contralateral somatosensory autofluorescence (assay validation)",
+   "identifier": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+   "nrr:outcomeClass": "positive"
+  },
+  {
+   "@id": "crates/arcadia-neuroimaging-capsaicin/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Intradermal capsaicin produces widespread oscillatory cortical activation absent from paired vehicle trials",
+   "identifier": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c",
+   "nrr:outcomeClass": "positive"
+  },
+  {
+   "@id": "crates/arcadia-neuroimaging-histamine/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Histamine-induced itch produces no cortical signal separable from saline injection (iced for a technical gap)",
+   "identifier": "urn:portolan:nrr:sha256:61663baa8de84825c86b6b01a75f548a45c6b6d9e12837244a1b2a736615cbe2",
+   "nrr:outcomeClass": "inconclusive-controls-failed"
+  }
+ ]
+}

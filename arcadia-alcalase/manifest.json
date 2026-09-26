@@ -4,7 +4,7 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "generatedBy": {
   "repository": "https://github.com/portolansoft/nrr",
-  "commit": "8edae7a72dcaf66ea35c59fcc5aaaeebcb793fea",
+  "commit": "8e741a45bffc733ddb38e071f3bb42602abe3a29",
   "script": "scripts/export_records.py"
  },
  "sourcePublication": {

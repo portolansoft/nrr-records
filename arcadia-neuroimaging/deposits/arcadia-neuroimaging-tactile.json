@@ -1,0 +1,1677 @@
+{
+ "arguments": {
+  "attachments": [],
+  "crate": {
+   "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+     "nrr": "https://portolansoft.com/schema/nrr/0.2#",
+     "prov": "http://www.w3.org/ns/prov#"
+    }
+   ],
+   "@graph": [
+    {
+     "@id": "ro-crate-metadata.json",
+     "@type": "CreativeWork",
+     "about": {
+      "@id": "./"
+     },
+     "conformsTo": [
+      {
+       "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      {
+       "@id": "https://portolansoft.com/profile/nrr/0.2"
+      }
+     ]
+    },
+    {
+     "@id": "./",
+     "@type": "Dataset",
+     "conformsTo": {
+      "@id": "https://portolansoft.com/profile/nrr/0.2"
+     },
+     "datePublished": "2026-09-25T00:00:00Z",
+     "description": "Can the ultra-widefield microscope reproduce known somatotopic cortical responses to tactile stimulation, and thereby qualify a session for chemical stimuli?",
+     "hasPart": [
+      {
+       "@id": "#attempt"
+      },
+      {
+       "@id": "#finding-tactile-rhl"
+      },
+      {
+       "@id": "#finding-tactile-lhl"
+      },
+      {
+       "@id": "#finding-tactile-rfl"
+      }
+     ],
+     "identifier": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+     "isPartOf": {
+      "@id": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a"
+     },
+     "isSupplementTo": [
+      {
+       "@id": "https://doi.org/10.57844/arcadia-b963-15ac"
+      }
+     ],
+     "keywords": [
+      "biology"
+     ],
+     "license": {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "mainEntity": {
+      "@id": "#attempt"
+     },
+     "mentions": [
+      {
+       "@id": "NCBITaxon:10090"
+      },
+      {
+       "@id": "RRID:IMSR_JAX:000671"
+      },
+      {
+       "@id": "UBERON:0008933"
+      },
+      {
+       "@id": "UBERON:0000956"
+      },
+      {
+       "@id": "GO:0050975"
+      },
+      {
+       "@id": "GO:0019233"
+      },
+      {
+       "@id": "GO:0034776"
+      },
+      {
+       "@id": "CHMO:0000087"
+      },
+      {
+       "@id": "instrument:uwfm-arcadia"
+      },
+      {
+       "@id": "ror:052zd4v68"
+      },
+      {
+       "@id": "organization:cradl"
+      },
+      {
+       "@id": "github:Arcadia-Science/2024-sensory-neuroimaging"
+      },
+      {
+       "@id": "pubchem:CID1548943"
+      },
+      {
+       "@id": "pubchem:CID5818"
+      },
+      {
+       "@id": "pubchem:CID3763"
+      },
+      {
+       "@id": "pubchem:CID3676"
+      },
+      {
+       "@id": "pubchem:CID702"
+      }
+     ],
+     "name": "Vibrotactile stimulation produces localized contralateral somatosensory autofluorescence (assay validation)",
+     "nrr:aiUseDeclaration": {
+      "statement": "We used ChatGPT to help write and clean up code, and GitHub Copilot to help write and add comments to our code.",
+      "tools": [
+       {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "purpose": "writing and cleaning up analysis code"
+       },
+       {
+        "name": "GitHub Copilot",
+        "provider": "GitHub",
+        "purpose": "writing code comments"
+       }
+      ]
+     },
+     "nrr:applicabilityConditions": {
+      "analysis": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+      "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+      "animalsInStudy": 5,
+      "animalsPerTrial": 1,
+      "genotype": "wild type",
+      "imaging": "10 frames per second, 13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+      "instrument": "ultra-widefield microscope (UWFM), custom built",
+      "invasiveness": "through-skull, label-free; no craniotomy, no transgenic animals, no dye or virus injection",
+      "organism": "NCBITaxon:10090",
+      "preparation": "head-fixed with earbars in a stereotaxic frame (Kopf); heating pad; hair removed with Nair; eye ointment; 1 mL body-temperature sterile saline subcutaneous; 0.1 mL 1% lidocaine subcutaneous under the scalp; scalp removed; periosteum cleaned; thin layer of cyanoacrylate glue applied to the skull for optical clarity",
+      "readout": "flavoprotein autofluorescence, dF/F over a region of interest",
+      "sex": "female",
+      "species": "Mus musculus",
+      "statistics": "none reported; no significance testing, no power analysis, no detection limit stated anywhere in the pub",
+      "strain": "DBA/2J",
+      "strainIdentifier": "RRID:IMSR_JAX:000671"
+     },
+     "nrr:confidence": {
+      "basis": "three trials, consistent with known anatomy and with published flavoprotein imaging, but each n = 1 and obtained after per-trial tuning",
+      "level": "medium"
+     },
+     "nrr:cost": {
+      "humanExperimenters": 2,
+      "note": "13 imaging trials across 5 mice. The pub reports the imaging system cost (approximately US$30,000 including the camera) as capital, not as the cost of this study; no per-study cost is given.",
+      "source": "Methods, Microscope and sensory stimulation hardware",
+      "wetLabRuns": 13
+     },
+     "nrr:governance": {
+      "biosecurityTier": "none",
+      "complianceIds": [
+       "All animal work performed in accordance with the Institutional Animal Care and Use Committee of the Charles River Accelerator and Development Lab (CRADL, South San Francisco, CA). No protocol number is given in the pub."
+      ],
+      "humanSubjectData": "none"
+     },
+     "nrr:isPartOf": [
+      {
+       "@id": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a"
+      }
+     ],
+     "nrr:kind": "attempt",
+     "nrr:outcomeClass": "positive",
+     "nrr:outcomeSummary": "Contralateral, somatotopically appropriate responses for right hindlimb, left hindlimb and right forelimb stimulation; a 1-3% increase in autofluorescence above baseline after averaging 50 stimulations.",
+     "nrr:pathType": "experiment",
+     "nrr:provenanceNotes": [
+      "The troubleshooting loop in this stage means the tactile signal was tuned into existence per session. This does not undermine the positive result, but it is why the tactile response is recorded as an internal positive control for later trials rather than as an independent one."
+     ],
+     "nrr:slug": "arcadia-neuroimaging-tactile",
+     "nrr:sourceLicense": "CC BY 4.0",
+     "nrr:studyId": "arcadia-neuroimaging",
+     "nrr:successCriteria": "A localized autofluorescence increase in the somatosensory area contralateral to the stimulated limb, at the anatomically expected position.",
+     "nrr:visibility": "public",
+     "prov:used": [
+      {
+       "@id": "https://doi.org/10.5281/zenodo.11585535"
+      },
+      {
+       "@id": "https://doi.org/10.5281/zenodo.12770054"
+      }
+     ],
+     "prov:wasAttributedTo": [
+      {
+       "@id": "#operator"
+      },
+      {
+       "@id": "#performer-ilya-kolb-formal-analysis"
+      },
+      {
+       "@id": "#performer-ilya-kolb-investigation"
+      },
+      {
+       "@id": "#performer-ilya-kolb-methodology"
+      },
+      {
+       "@id": "#performer-ryan-lane-formal-analysis"
+      },
+      {
+       "@id": "#performer-michael-e-reitman-formal-analysis"
+      },
+      {
+       "@id": "#performer-michael-e-reitman-investigation"
+      },
+      {
+       "@id": "#performer-michael-e-reitman-methodology"
+      }
+     ],
+     "version": "1"
+    },
+    {
+     "@id": "#operator",
+     "@type": "Organization",
+     "identifier": "https://ror.org/052zd4v68",
+     "name": "Arcadia Science"
+    },
+    {
+     "@id": "#performer-ilya-kolb-formal-analysis",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Ilya Kolb",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "formal-analysis",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-ilya-kolb-investigation",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Ilya Kolb",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "investigation",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-ilya-kolb-methodology",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Ilya Kolb",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "methodology",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-ryan-lane-formal-analysis",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Ryan Lane",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "formal-analysis",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-formal-analysis",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Michael E. Reitman",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "formal-analysis",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-investigation",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Michael E. Reitman",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "investigation",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-methodology",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Michael E. Reitman",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "methodology",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#finding-tactile-rhl",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does vibrating stimulation of the right hindlimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "nrr:blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+     "nrr:conditions": {
+      "imagingMinutes": 5,
+      "isofluranePercent": 1.25,
+      "mouse": "mouse-A (inferred, see provenance notes)",
+      "site": "right hindlimb",
+      "stimulus": "vibrating motor 2 s on / 4 s off x 50"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no localized somatosensory response",
+       "kind": "within-subject",
+       "label": "ipsilateral hemisphere and unstimulated periods of the same trial",
+       "note": "somatotopic specificity is the control: stimulating the opposite limb moved the response to the opposite hemisphere",
+       "observed": "response confined to the contralateral somatosensory area",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no designated positive control; the prior expectation of S1 activation comes from the literature (refs 19-20), which is not a control run in this experiment"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "pre-stimulus baseline in the same trial",
+      "direction": "increase",
+      "metric": "peak dF/F above pre-stimulus baseline, stimulus-triggered average over 50 stimulations",
+      "n": 1,
+      "note": "expected region left S1 hindlimb area; observed localized autofluorescence increase in left somatosensory area; the 1-3% range is reported for tactile trials as a whole and is consistent with previous flavoprotein imaging (refs 9-10)",
+      "significant": "no statistical test reported",
+      "unit": "%",
+      "value": "1-3%"
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.11585535",
+         "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+         "format": "zip of raw imaging frames",
+         "label": "tactile stimulus run, right hindlimb (2B)",
+         "note": "session 2024-02-29; 5 min at 10 fps",
+         "repository": "Zenodo",
+         "role": "raw instrument run",
+         "runId": "2024-02-29/Zyla_5min_RHLstim_2son4soff_1pt25pctISO_1",
+         "size": 17217061370,
+         "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+        }
+       ],
+       "label": "Figure 2B",
+       "locator": "Figure 2B",
+       "source": "10.57844/arcadia-b963-15ac",
+       "values": {
+        "stimulus": "localized autofluorescence increase in left somatosensory area"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:preregistration": "none",
+     "nrr:question": "Does vibrating stimulation of the right hindlimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "nrr:randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "one mouse per trial; 50 stimulation repeats averaged within the trial",
+      "technical": 50
+     },
+     "nrr:reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+     "nrr:target": {
+      "identifier": "GO:0050975",
+      "label": "right hindlimb vibrotactile stimulation",
+      "type": "process"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-tactile-lhl",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does vibrating stimulation of the left hindlimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "nrr:blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+     "nrr:conditions": {
+      "imagingMinutes": 5,
+      "isofluranePercent": 1.25,
+      "mouse": "mouse-A (inferred, see provenance notes)",
+      "site": "left hindlimb",
+      "stimulus": "vibrating motor 2 s on / 4 s off x 50"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no localized somatosensory response",
+       "kind": "within-subject",
+       "label": "ipsilateral hemisphere and unstimulated periods of the same trial",
+       "note": "somatotopic specificity is the control: stimulating the opposite limb moved the response to the opposite hemisphere",
+       "observed": "response confined to the contralateral somatosensory area",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no designated positive control; the prior expectation of S1 activation comes from the literature (refs 19-20), which is not a control run in this experiment"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "pre-stimulus baseline in the same trial",
+      "direction": "increase",
+      "metric": "peak dF/F above pre-stimulus baseline, stimulus-triggered average over 50 stimulations",
+      "n": 1,
+      "note": "expected region right S1 hindlimb area; observed localized autofluorescence increase in right somatosensory area; the 1-3% range is reported for tactile trials as a whole and is consistent with previous flavoprotein imaging (refs 9-10)",
+      "significant": "no statistical test reported",
+      "unit": "%",
+      "value": "1-3%"
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.11585535",
+         "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+         "format": "zip of raw imaging frames",
+         "label": "tactile stimulus run, left hindlimb (2C)",
+         "note": "session 2024-02-29; 5 min at 10 fps",
+         "repository": "Zenodo",
+         "role": "raw instrument run",
+         "runId": "2024-02-29/Zyla_5min_LHLstim_2son4soff_1pt25pctISO_2",
+         "size": 17217061370,
+         "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+        }
+       ],
+       "label": "Figure 2C",
+       "locator": "Figure 2C",
+       "source": "10.57844/arcadia-b963-15ac",
+       "values": {
+        "stimulus": "localized autofluorescence increase in right somatosensory area"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:preregistration": "none",
+     "nrr:question": "Does vibrating stimulation of the left hindlimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "nrr:randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "one mouse per trial; 50 stimulation repeats averaged within the trial",
+      "technical": 50
+     },
+     "nrr:reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+     "nrr:target": {
+      "identifier": "GO:0050975",
+      "label": "left hindlimb vibrotactile stimulation",
+      "type": "process"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-tactile-rfl",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does vibrating stimulation of the right forelimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "nrr:blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+     "nrr:conditions": {
+      "imagingMinutes": 5,
+      "isofluranePercent": 1.25,
+      "mouse": "mouse-B (inferred, see provenance notes)",
+      "site": "right forelimb",
+      "stimulus": "vibrating motor 2 s on / 4 s off x 50"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no localized somatosensory response",
+       "kind": "within-subject",
+       "label": "ipsilateral hemisphere and unstimulated periods of the same trial",
+       "note": "somatotopic specificity is the control: stimulating the opposite limb moved the response to the opposite hemisphere",
+       "observed": "response confined to the contralateral somatosensory area",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no designated positive control; the prior expectation of S1 activation comes from the literature (refs 19-20), which is not a control run in this experiment"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "pre-stimulus baseline in the same trial",
+      "direction": "increase",
+      "metric": "peak dF/F above pre-stimulus baseline, stimulus-triggered average over 50 stimulations",
+      "n": 1,
+      "note": "expected region left S1 forelimb area; observed localized autofluorescence increase in left somatosensory area slightly lateral to hindlimb area; the 1-3% range is reported for tactile trials as a whole and is consistent with previous flavoprotein imaging (refs 9-10)",
+      "significant": "no statistical test reported",
+      "unit": "%",
+      "value": "1-3%"
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.11585535",
+         "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+         "format": "zip of raw imaging frames",
+         "label": "tactile stimulus run, right forelimb (2D)",
+         "note": "session 2024-02-21; 5 min at 10 fps",
+         "repository": "Zenodo",
+         "role": "raw instrument run",
+         "runId": "2024-02-21/Zyla_5min_RFLstim_2son4soff_1pt25pctISO_deeper_2",
+         "size": 1183912093,
+         "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content"
+        }
+       ],
+       "label": "Figure 2D",
+       "locator": "Figure 2D",
+       "source": "10.57844/arcadia-b963-15ac",
+       "values": {
+        "stimulus": "localized autofluorescence increase in left somatosensory area slightly lateral to hindlimb area"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:preregistration": "none",
+     "nrr:question": "Does vibrating stimulation of the right forelimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "nrr:randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "one mouse per trial; 50 stimulation repeats averaged within the trial",
+      "technical": 50
+     },
+     "nrr:reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+     "nrr:target": {
+      "identifier": "GO:0050975",
+      "label": "right forelimb vibrotactile stimulation",
+      "type": "process"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#stage-1-experiment",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "vibrating tactile stimulation of a single limb",
+     "nrr:conditions": {
+      "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+      "expectation": "brain activity in S1 (primary somatosensory area), based on refs 19-20",
+      "stimulator": "vibrating motor (Amazon B07Q1ZV4MJ) taped to the paw, driven by a simple circuit on two AA batteries"
+     },
+     "nrr:instrument": [
+      "ultra-widefield microscope (UWFM), custom built"
+     ],
+     "nrr:note": "If we didn't detect a cortical response in S1, we performed the following troubleshooting steps and tried again ... In most cases, one or more of these steps resulted in a clear signal. Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli. A trial was therefore repeated with adjusted settings until a signal appeared, which means the tactile result is a tuned positive rather than a first-pass one.",
+     "nrr:performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "methodology",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ryan Lane",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "methodology",
+       "type": "person"
+      }
+     ],
+     "nrr:protocol": "50 vibrational pulses, 2 s on, 4 s off, imaged simultaneously at 10 fps",
+     "nrr:protocolAdaptations": [
+      "adjusted the focus depth",
+      "adjusted the positioning of the stimulator",
+      "reduced the isoflurane level by 0.25% (never below 1%)",
+      "placed the stimulator on a different limb"
+     ],
+     "nrr:stage": "experiment"
+    },
+    {
+     "@id": "#stage-2-analysis",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "imaging analysis pipeline",
+     "nrr:method": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+     "nrr:note": "for visualisation, pixel intensities in vehicle and drug trials were scaled to a shared min and max; dF/F was computed on non-adjusted baseline-subtracted data",
+     "nrr:performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "software",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ryan Lane",
+       "role": "software",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "software",
+       "type": "person"
+      }
+     ],
+     "nrr:software": [
+      {
+       "name": "Arcadia-Science/2024-sensory-neuroimaging",
+       "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging",
+       "version": "v1.0.1"
+      },
+      {
+       "identifier": "RRID:SCR_021142",
+       "name": "scikit-image"
+      }
+     ],
+     "nrr:stage": "analysis"
+    },
+    {
+     "@id": "#attempt",
+     "@type": [
+      "CreateAction",
+      "prov:Activity"
+     ],
+     "actionStatus": "CompletedActionStatus",
+     "agent": {
+      "@id": "#operator"
+     },
+     "description": "Can the ultra-widefield microscope reproduce known somatotopic cortical responses to tactile stimulation, and thereby qualify a session for chemical stimuli?",
+     "hasPart": [
+      {
+       "@id": "#stage-1-experiment"
+      },
+      {
+       "@id": "#stage-2-analysis"
+      }
+     ],
+     "instrument": [
+      {
+       "@id": "#performer-ilya-kolb-formal-analysis"
+      },
+      {
+       "@id": "#performer-ilya-kolb-investigation"
+      },
+      {
+       "@id": "#performer-ilya-kolb-methodology"
+      },
+      {
+       "@id": "#performer-ryan-lane-formal-analysis"
+      },
+      {
+       "@id": "#performer-michael-e-reitman-formal-analysis"
+      },
+      {
+       "@id": "#performer-michael-e-reitman-investigation"
+      },
+      {
+       "@id": "#performer-michael-e-reitman-methodology"
+      }
+     ],
+     "name": "Vibrotactile stimulation produces localized contralateral somatosensory autofluorescence (assay validation)",
+     "nrr:attemptType": "wet-lab",
+     "nrr:outcomeClass": "positive",
+     "object": [],
+     "result": [
+      {
+       "@id": "#finding-tactile-rhl"
+      },
+      {
+       "@id": "#finding-tactile-lhl"
+      },
+      {
+       "@id": "#finding-tactile-rfl"
+      }
+     ]
+    },
+    {
+     "@id": "https://doi.org/10.57844/arcadia-b963-15ac",
+     "@type": "ScholarlyArticle",
+     "name": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:role": "source-publication",
+     "nrr:statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T18:33:19Z",
+      "integrity": "none",
+      "version": "v1"
+     },
+     "nrr:url": "https://thestacks.org/publications/result-sensory-neuroimaging"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.11585535",
+     "@type": "Dataset",
+     "name": "Raw and processed autofluorescence neuroimaging data",
+     "nrr:data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+       "label": "pub-data-raw-2024-03-19.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 11040025011,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+       "label": "pub-data-raw-2024-02-21.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 1183912093,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:a288b18e317987b74f480e4421e001c6",
+       "label": "pub-data-raw-2024-03-06.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 20174619604,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-06.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+       "label": "pub-data-raw-2024-02-29.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 17217061370,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:85731a45bd9f9560eadb2467248050e7",
+       "label": "pub-data-processed.zip",
+       "repository": "Zenodo",
+       "role": "processed imaging data",
+       "size": 12149207940,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-processed.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+       "label": "pub-data-raw-2024-03-18.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 19125787557,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+      }
+     ],
+     "nrr:license": "CC BY 4.0",
+     "nrr:note": "80.9 GB across six files; raw sessions are split by date",
+     "nrr:role": "data-deposit",
+     "nrr:statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T18:33:21Z",
+      "integrity": "none",
+      "version": "dataset"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.12770054",
+     "@type": "SoftwareSourceCode",
+     "name": "Arcadia-Science/2024-sensory-neuroimaging: v1.0.1",
+     "nrr:license": "CC BY 4.0",
+     "nrr:note": "version v1.0.1",
+     "nrr:role": "code-repository",
+     "nrr:statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T18:33:22Z",
+      "integrity": "none",
+      "version": "v1"
+     },
+     "nrr:url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+    },
+    {
+     "@id": "NCBITaxon:10090",
+     "@type": "Taxon",
+     "name": "Mus musculus",
+     "nrr:entityType": "organism",
+     "nrr:scheme": "NCBI Taxonomy"
+    },
+    {
+     "@id": "RRID:IMSR_JAX:000671",
+     "@type": "Taxon",
+     "name": "DBA/2J (wild type, female)",
+     "nrr:entityType": "strain",
+     "nrr:extra": {
+      "supplier": "The Jackson Laboratory"
+     },
+     "nrr:role": "experimental animal",
+     "nrr:scheme": "IMSR / RRID"
+    },
+    {
+     "@id": "UBERON:0008933",
+     "@type": "Thing",
+     "name": "primary somatosensory cortex (S1)",
+     "nrr:entityType": "anatomicalStructure",
+     "nrr:role": "expected response region",
+     "nrr:scheme": "UBERON"
+    },
+    {
+     "@id": "UBERON:0000956",
+     "@type": "Thing",
+     "name": "cerebral cortex",
+     "nrr:entityType": "anatomicalStructure",
+     "nrr:role": "imaged field",
+     "nrr:scheme": "UBERON"
+    },
+    {
+     "@id": "GO:0050975",
+     "@type": "DefinedTerm",
+     "name": "sensory perception of touch",
+     "nrr:entityType": "process",
+     "nrr:scheme": "GO"
+    },
+    {
+     "@id": "GO:0019233",
+     "@type": "DefinedTerm",
+     "name": "sensory perception of pain",
+     "nrr:entityType": "process",
+     "nrr:scheme": "GO"
+    },
+    {
+     "@id": "GO:0034776",
+     "@type": "DefinedTerm",
+     "name": "response to histamine",
+     "nrr:entityType": "process",
+     "nrr:scheme": "GO"
+    },
+    {
+     "@id": "CHMO:0000087",
+     "@type": "DefinedTerm",
+     "name": "flavoprotein autofluorescence widefield imaging",
+     "nrr:entityType": "assay",
+     "nrr:scheme": "CHMO"
+    },
+    {
+     "@id": "instrument:uwfm-arcadia",
+     "@type": "Product",
+     "name": "ultra-widefield microscope (UWFM), custom built",
+     "nrr:entityType": "instrument",
+     "nrr:extra": {
+      "basedOn": "Couto et al. 2021 protocol (doi:10.1038/s41596-021-00527-z)",
+      "cost": "approximately US$30,000 including the camera",
+      "fieldOfView": "13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+      "frameRate": "10 frames per second",
+      "modifications": [
+       "ZL41 camera (Oxford Instruments Andor) in place of the pco.Edge 5.5 (Excelitas)",
+       "blue excitation only, rather than alternating blue/violet"
+      ]
+     },
+     "nrr:role": "imaging instrument"
+    },
+    {
+     "@id": "ror:052zd4v68",
+     "@type": "Organization",
+     "name": "Arcadia Science",
+     "nrr:entityType": "organization",
+     "nrr:url": "https://ror.org/052zd4v68"
+    },
+    {
+     "@id": "organization:cradl",
+     "@type": "Organization",
+     "name": "Charles River Accelerator and Development Lab (CRADL), South San Francisco, CA",
+     "nrr:entityType": "organization",
+     "nrr:role": "IACUC of record for the animal work"
+    },
+    {
+     "@id": "github:Arcadia-Science/2024-sensory-neuroimaging",
+     "@type": "SoftwareApplication",
+     "name": "Arcadia-Science/2024-sensory-neuroimaging",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "version": "v1.0.1"
+     },
+     "nrr:url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+    },
+    {
+     "@id": "pubchem:CID1548943",
+     "@type": "ChemicalSubstance",
+     "name": "capsaicin",
+     "nrr:entityType": "compound",
+     "nrr:role": "algogen (acute pain stimulus)",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID5818",
+     "@type": "ChemicalSubstance",
+     "name": "histamine dihydrochloride",
+     "nrr:entityType": "compound",
+     "nrr:role": "pruritogen (itch stimulus)",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID3763",
+     "@type": "ChemicalSubstance",
+     "name": "isoflurane",
+     "nrr:entityType": "compound",
+     "nrr:role": "anaesthetic",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID3676",
+     "@type": "ChemicalSubstance",
+     "name": "lidocaine",
+     "nrr:entityType": "compound",
+     "nrr:role": "local anaesthetic",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID702",
+     "@type": "ChemicalSubstance",
+     "name": "ethanol",
+     "nrr:entityType": "compound",
+     "nrr:role": "vehicle component",
+     "nrr:scheme": "PubChem"
+    }
+   ]
+  },
+  "idempotencyKey": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+  "profile": "https://portolansoft.com/profile/nrr/0.2",
+  "record": {
+   "@id": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+   "aiUseDeclaration": {
+    "statement": "We used ChatGPT to help write and clean up code, and GitHub Copilot to help write and add comments to our code.",
+    "tools": [
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "purpose": "writing and cleaning up analysis code"
+     },
+     {
+      "name": "GitHub Copilot",
+      "provider": "GitHub",
+      "purpose": "writing code comments"
+     }
+    ]
+   },
+   "applicabilityConditions": {
+    "analysis": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+    "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+    "animalsInStudy": 5,
+    "animalsPerTrial": 1,
+    "genotype": "wild type",
+    "imaging": "10 frames per second, 13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+    "instrument": "ultra-widefield microscope (UWFM), custom built",
+    "invasiveness": "through-skull, label-free; no craniotomy, no transgenic animals, no dye or virus injection",
+    "organism": "NCBITaxon:10090",
+    "preparation": "head-fixed with earbars in a stereotaxic frame (Kopf); heating pad; hair removed with Nair; eye ointment; 1 mL body-temperature sterile saline subcutaneous; 0.1 mL 1% lidocaine subcutaneous under the scalp; scalp removed; periosteum cleaned; thin layer of cyanoacrylate glue applied to the skull for optical clarity",
+    "readout": "flavoprotein autofluorescence, dF/F over a region of interest",
+    "sex": "female",
+    "species": "Mus musculus",
+    "statistics": "none reported; no significance testing, no power analysis, no detection limit stated anywhere in the pub",
+    "strain": "DBA/2J",
+    "strainIdentifier": "RRID:IMSR_JAX:000671"
+   },
+   "attemptType": "wet-lab",
+   "confidence": {
+    "basis": "three trials, consistent with known anatomy and with published flavoprotein imaging, but each n = 1 and obtained after per-trial tuning",
+    "level": "medium"
+   },
+   "contentAddress": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+   "cost": {
+    "humanExperimenters": 2,
+    "note": "13 imaging trials across 5 mice. The pub reports the imaging system cost (approximately US$30,000 including the camera) as capital, not as the cost of this study; no per-study cost is given.",
+    "source": "Methods, Microscope and sensory stimulation hardware",
+    "wetLabRuns": 13
+   },
+   "dateCreated": "2026-09-25T00:00:00Z",
+   "domainTags": [
+    "biology"
+   ],
+   "entities": [
+    {
+     "id": "NCBITaxon:10090",
+     "label": "Mus musculus",
+     "scheme": "NCBI Taxonomy",
+     "type": "organism"
+    },
+    {
+     "extra": {
+      "supplier": "The Jackson Laboratory"
+     },
+     "id": "RRID:IMSR_JAX:000671",
+     "label": "DBA/2J (wild type, female)",
+     "role": "experimental animal",
+     "scheme": "IMSR / RRID",
+     "type": "strain"
+    },
+    {
+     "id": "UBERON:0008933",
+     "label": "primary somatosensory cortex (S1)",
+     "role": "expected response region",
+     "scheme": "UBERON",
+     "type": "anatomicalStructure"
+    },
+    {
+     "id": "UBERON:0000956",
+     "label": "cerebral cortex",
+     "role": "imaged field",
+     "scheme": "UBERON",
+     "type": "anatomicalStructure"
+    },
+    {
+     "id": "GO:0050975",
+     "label": "sensory perception of touch",
+     "scheme": "GO",
+     "type": "process"
+    },
+    {
+     "id": "GO:0019233",
+     "label": "sensory perception of pain",
+     "scheme": "GO",
+     "type": "process"
+    },
+    {
+     "id": "GO:0034776",
+     "label": "response to histamine",
+     "scheme": "GO",
+     "type": "process"
+    },
+    {
+     "id": "CHMO:0000087",
+     "label": "flavoprotein autofluorescence widefield imaging",
+     "note": "no exact OBI term for label-free flavoprotein autofluorescence imaging; the nearest exact match is the CHMO fluorescence microscopy term",
+     "scheme": "CHMO",
+     "type": "assay"
+    },
+    {
+     "extra": {
+      "basedOn": "Couto et al. 2021 protocol (doi:10.1038/s41596-021-00527-z)",
+      "cost": "approximately US$30,000 including the camera",
+      "fieldOfView": "13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+      "frameRate": "10 frames per second",
+      "modifications": [
+       "ZL41 camera (Oxford Instruments Andor) in place of the pco.Edge 5.5 (Excelitas)",
+       "blue excitation only, rather than alternating blue/violet"
+      ]
+     },
+     "id": "instrument:uwfm-arcadia",
+     "label": "ultra-widefield microscope (UWFM), custom built",
+     "role": "imaging instrument",
+     "type": "instrument"
+    },
+    {
+     "id": "ror:052zd4v68",
+     "label": "Arcadia Science",
+     "type": "organization",
+     "url": "https://ror.org/052zd4v68"
+    },
+    {
+     "id": "organization:cradl",
+     "label": "Charles River Accelerator and Development Lab (CRADL), South San Francisco, CA",
+     "role": "IACUC of record for the animal work",
+     "type": "organization"
+    },
+    {
+     "extra": {
+      "version": "v1.0.1"
+     },
+     "id": "github:Arcadia-Science/2024-sensory-neuroimaging",
+     "label": "Arcadia-Science/2024-sensory-neuroimaging",
+     "type": "software",
+     "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+    },
+    {
+     "id": "pubchem:CID1548943",
+     "label": "capsaicin",
+     "role": "algogen (acute pain stimulus)",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID5818",
+     "label": "histamine dihydrochloride",
+     "role": "pruritogen (itch stimulus)",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID3763",
+     "label": "isoflurane",
+     "role": "anaesthetic",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID3676",
+     "label": "lidocaine",
+     "role": "local anaesthetic",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID702",
+     "label": "ethanol",
+     "role": "vehicle component",
+     "scheme": "PubChem",
+     "type": "compound"
+    }
+   ],
+   "findings": [
+    {
+     "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+     "conditions": {
+      "imagingMinutes": 5,
+      "isofluranePercent": 1.25,
+      "mouse": "mouse-A (inferred, see provenance notes)",
+      "site": "right hindlimb",
+      "stimulus": "vibrating motor 2 s on / 4 s off x 50"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no localized somatosensory response",
+       "kind": "within-subject",
+       "label": "ipsilateral hemisphere and unstimulated periods of the same trial",
+       "note": "somatotopic specificity is the control: stimulating the opposite limb moved the response to the opposite hemisphere",
+       "observed": "response confined to the contralateral somatosensory area",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no designated positive control; the prior expectation of S1 activation comes from the literature (refs 19-20), which is not a control run in this experiment"
+      }
+     },
+     "effect": {
+      "comparedTo": "pre-stimulus baseline in the same trial",
+      "direction": "increase",
+      "metric": "peak dF/F above pre-stimulus baseline, stimulus-triggered average over 50 stimulations",
+      "n": 1,
+      "note": "expected region left S1 hindlimb area; observed localized autofluorescence increase in left somatosensory area; the 1-3% range is reported for tactile trials as a whole and is consistent with previous flavoprotein imaging (refs 9-10)",
+      "significant": "no statistical test reported",
+      "unit": "%",
+      "value": "1-3%"
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.11585535",
+         "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+         "format": "zip of raw imaging frames",
+         "label": "tactile stimulus run, right hindlimb (2B)",
+         "note": "session 2024-02-29; 5 min at 10 fps",
+         "repository": "Zenodo",
+         "role": "raw instrument run",
+         "runId": "2024-02-29/Zyla_5min_RHLstim_2son4soff_1pt25pctISO_1",
+         "size": 17217061370,
+         "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+        }
+       ],
+       "label": "Figure 2B",
+       "locator": "Figure 2B",
+       "source": "10.57844/arcadia-b963-15ac",
+       "values": {
+        "stimulus": "localized autofluorescence increase in left somatosensory area"
+       }
+      }
+     ],
+     "id": "tactile-rhl",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "preregistration": "none",
+     "question": "Does vibrating stimulation of the right hindlimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+     "replicates": {
+      "biological": 1,
+      "note": "one mouse per trial; 50 stimulation repeats averaged within the trial",
+      "technical": 50
+     },
+     "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+     "target": {
+      "identifier": "GO:0050975",
+      "label": "right hindlimb vibrotactile stimulation",
+      "type": "process"
+     }
+    },
+    {
+     "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+     "conditions": {
+      "imagingMinutes": 5,
+      "isofluranePercent": 1.25,
+      "mouse": "mouse-A (inferred, see provenance notes)",
+      "site": "left hindlimb",
+      "stimulus": "vibrating motor 2 s on / 4 s off x 50"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no localized somatosensory response",
+       "kind": "within-subject",
+       "label": "ipsilateral hemisphere and unstimulated periods of the same trial",
+       "note": "somatotopic specificity is the control: stimulating the opposite limb moved the response to the opposite hemisphere",
+       "observed": "response confined to the contralateral somatosensory area",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no designated positive control; the prior expectation of S1 activation comes from the literature (refs 19-20), which is not a control run in this experiment"
+      }
+     },
+     "effect": {
+      "comparedTo": "pre-stimulus baseline in the same trial",
+      "direction": "increase",
+      "metric": "peak dF/F above pre-stimulus baseline, stimulus-triggered average over 50 stimulations",
+      "n": 1,
+      "note": "expected region right S1 hindlimb area; observed localized autofluorescence increase in right somatosensory area; the 1-3% range is reported for tactile trials as a whole and is consistent with previous flavoprotein imaging (refs 9-10)",
+      "significant": "no statistical test reported",
+      "unit": "%",
+      "value": "1-3%"
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.11585535",
+         "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+         "format": "zip of raw imaging frames",
+         "label": "tactile stimulus run, left hindlimb (2C)",
+         "note": "session 2024-02-29; 5 min at 10 fps",
+         "repository": "Zenodo",
+         "role": "raw instrument run",
+         "runId": "2024-02-29/Zyla_5min_LHLstim_2son4soff_1pt25pctISO_2",
+         "size": 17217061370,
+         "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+        }
+       ],
+       "label": "Figure 2C",
+       "locator": "Figure 2C",
+       "source": "10.57844/arcadia-b963-15ac",
+       "values": {
+        "stimulus": "localized autofluorescence increase in right somatosensory area"
+       }
+      }
+     ],
+     "id": "tactile-lhl",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "preregistration": "none",
+     "question": "Does vibrating stimulation of the left hindlimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+     "replicates": {
+      "biological": 1,
+      "note": "one mouse per trial; 50 stimulation repeats averaged within the trial",
+      "technical": 50
+     },
+     "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+     "target": {
+      "identifier": "GO:0050975",
+      "label": "left hindlimb vibrotactile stimulation",
+      "type": "process"
+     }
+    },
+    {
+     "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+     "conditions": {
+      "imagingMinutes": 5,
+      "isofluranePercent": 1.25,
+      "mouse": "mouse-B (inferred, see provenance notes)",
+      "site": "right forelimb",
+      "stimulus": "vibrating motor 2 s on / 4 s off x 50"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no localized somatosensory response",
+       "kind": "within-subject",
+       "label": "ipsilateral hemisphere and unstimulated periods of the same trial",
+       "note": "somatotopic specificity is the control: stimulating the opposite limb moved the response to the opposite hemisphere",
+       "observed": "response confined to the contralateral somatosensory area",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no designated positive control; the prior expectation of S1 activation comes from the literature (refs 19-20), which is not a control run in this experiment"
+      }
+     },
+     "effect": {
+      "comparedTo": "pre-stimulus baseline in the same trial",
+      "direction": "increase",
+      "metric": "peak dF/F above pre-stimulus baseline, stimulus-triggered average over 50 stimulations",
+      "n": 1,
+      "note": "expected region left S1 forelimb area; observed localized autofluorescence increase in left somatosensory area slightly lateral to hindlimb area; the 1-3% range is reported for tactile trials as a whole and is consistent with previous flavoprotein imaging (refs 9-10)",
+      "significant": "no statistical test reported",
+      "unit": "%",
+      "value": "1-3%"
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.11585535",
+         "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+         "format": "zip of raw imaging frames",
+         "label": "tactile stimulus run, right forelimb (2D)",
+         "note": "session 2024-02-21; 5 min at 10 fps",
+         "repository": "Zenodo",
+         "role": "raw instrument run",
+         "runId": "2024-02-21/Zyla_5min_RFLstim_2son4soff_1pt25pctISO_deeper_2",
+         "size": 1183912093,
+         "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content"
+        }
+       ],
+       "label": "Figure 2D",
+       "locator": "Figure 2D",
+       "source": "10.57844/arcadia-b963-15ac",
+       "values": {
+        "stimulus": "localized autofluorescence increase in left somatosensory area slightly lateral to hindlimb area"
+       }
+      }
+     ],
+     "id": "tactile-rfl",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "preregistration": "none",
+     "question": "Does vibrating stimulation of the right forelimb produce a localized autofluorescence increase in the expected contralateral somatosensory area?",
+     "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+     "replicates": {
+      "biological": 1,
+      "note": "one mouse per trial; 50 stimulation repeats averaged within the trial",
+      "technical": 50
+     },
+     "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+     "target": {
+      "identifier": "GO:0050975",
+      "label": "right forelimb vibrotactile stimulation",
+      "type": "process"
+     }
+    }
+   ],
+   "governance": {
+    "biosecurityTier": "none",
+    "complianceIds": [
+     "All animal work performed in accordance with the Institutional Animal Care and Use Committee of the Charles River Accelerator and Development Lab (CRADL, South San Francisco, CA). No protocol number is given in the pub."
+    ],
+    "humanSubjectData": "none"
+   },
+   "integrity": {
+    "contentAddress": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+    "duplicateOf": null,
+    "signature": null,
+    "signer": null,
+    "trustTier": "pilot-unsigned"
+   },
+   "isPartOf": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+   "kind": "attempt",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "operator": {
+    "identifier": "https://ror.org/052zd4v68",
+    "name": "Arcadia Science",
+    "type": "Organization"
+   },
+   "outcomeClass": "positive",
+   "outcomeSummary": "Contralateral, somatotopically appropriate responses for right hindlimb, left hindlimb and right forelimb stimulation; a 1-3% increase in autofluorescence above baseline after averaging 50 stimulations.",
+   "pathType": "experiment",
+   "performers": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "methodology",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ryan Lane",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "methodology",
+     "type": "person"
+    }
+   ],
+   "profile": "https://portolansoft.com/profile/nrr/0.2",
+   "provenanceNotes": [
+    "The troubleshooting loop in this stage means the tactile signal was tuned into existence per session. This does not undermine the positive result, but it is why the tactile response is recorded as an internal positive control for later trials rather than as an independent one."
+   ],
+   "question": "Can the ultra-widefield microscope reproduce known somatotopic cortical responses to tactile stimulation, and thereby qualify a session for chemical stimuli?",
+   "relations": [
+    {
+     "target": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+     "type": "isPartOf"
+    }
+   ],
+   "slug": "arcadia-neuroimaging-tactile",
+   "sourceLicense": "CC BY 4.0",
+   "sources": [
+    {
+     "identifier": "doi:10.57844/arcadia-b963-15ac",
+     "label": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "role": "source-publication",
+     "statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T18:33:19Z",
+      "integrity": "none",
+      "version": "v1"
+     },
+     "url": "https://thestacks.org/publications/result-sensory-neuroimaging"
+    },
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+       "label": "pub-data-raw-2024-03-19.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 11040025011,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+       "label": "pub-data-raw-2024-02-21.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 1183912093,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:a288b18e317987b74f480e4421e001c6",
+       "label": "pub-data-raw-2024-03-06.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 20174619604,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-06.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+       "label": "pub-data-raw-2024-02-29.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 17217061370,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:85731a45bd9f9560eadb2467248050e7",
+       "label": "pub-data-processed.zip",
+       "repository": "Zenodo",
+       "role": "processed imaging data",
+       "size": 12149207940,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-processed.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+       "label": "pub-data-raw-2024-03-18.zip",
+       "repository": "Zenodo",
+       "role": "raw imaging session",
+       "size": 19125787557,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+      }
+     ],
+     "identifier": "doi:10.5281/zenodo.11585535",
+     "label": "Raw and processed autofluorescence neuroimaging data",
+     "license": "CC BY 4.0",
+     "note": "80.9 GB across six files; raw sessions are split by date",
+     "role": "data-deposit",
+     "statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T18:33:21Z",
+      "integrity": "none",
+      "version": "dataset"
+     }
+    },
+    {
+     "identifier": "doi:10.5281/zenodo.12770054",
+     "label": "Arcadia-Science/2024-sensory-neuroimaging: v1.0.1",
+     "license": "CC BY 4.0",
+     "note": "version v1.0.1",
+     "role": "code-repository",
+     "statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T18:33:22Z",
+      "integrity": "none",
+      "version": "v1"
+     },
+     "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+    }
+   ],
+   "stages": [
+    {
+     "conditions": {
+      "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+      "expectation": "brain activity in S1 (primary somatosensory area), based on refs 19-20",
+      "stimulator": "vibrating motor (Amazon B07Q1ZV4MJ) taped to the paw, driven by a simple circuit on two AA batteries"
+     },
+     "instrument": [
+      "ultra-widefield microscope (UWFM), custom built"
+     ],
+     "label": "vibrating tactile stimulation of a single limb",
+     "note": "If we didn't detect a cortical response in S1, we performed the following troubleshooting steps and tried again ... In most cases, one or more of these steps resulted in a clear signal. Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli. A trial was therefore repeated with adjusted settings until a signal appeared, which means the tactile result is a tuned positive rather than a first-pass one.",
+     "performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "methodology",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ryan Lane",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "methodology",
+       "type": "person"
+      }
+     ],
+     "protocol": "50 vibrational pulses, 2 s on, 4 s off, imaged simultaneously at 10 fps",
+     "protocolAdaptations": [
+      "adjusted the focus depth",
+      "adjusted the positioning of the stimulator",
+      "reduced the isoflurane level by 0.25% (never below 1%)",
+      "placed the stimulator on a different limb"
+     ],
+     "stage": "experiment"
+    },
+    {
+     "label": "imaging analysis pipeline",
+     "method": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+     "note": "for visualisation, pixel intensities in vehicle and drug trials were scaled to a shared min and max; dF/F was computed on non-adjusted baseline-subtracted data",
+     "performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ilya Kolb",
+       "role": "software",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Ryan Lane",
+       "role": "software",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Michael E. Reitman",
+       "role": "software",
+       "type": "person"
+      }
+     ],
+     "software": [
+      {
+       "name": "Arcadia-Science/2024-sensory-neuroimaging",
+       "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging",
+       "version": "v1.0.1"
+      },
+      {
+       "identifier": "RRID:SCR_021142",
+       "name": "scikit-image"
+      }
+     ],
+     "stage": "analysis"
+    }
+   ],
+   "studyId": "arcadia-neuroimaging",
+   "successCriteria": "A localized autofluorescence increase in the somatosensory area contralateral to the stimulated limb, at the anatomically expected position.",
+   "title": "Vibrotactile stimulation produces localized contralateral somatosensory autofluorescence (assay validation)",
+   "version": "1",
+   "visibility": "public"
+  },
+  "visibility": "public"
+ },
+ "tool": "nrr_deposit"
+}

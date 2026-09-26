@@ -1,0 +1,1036 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+   "name": "Label-free flavoprotein imaging of the mouse cortex as a behaviour-independent assay for touch, pain and itch (iced)",
+   "description": "Can label-free, through-skull flavoprotein autofluorescence imaging of the mouse cortex measure brain responses to touch, capsaicin-induced pain and histamine-induced itch, as an alternative to mouse behavioural assays?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "path",
+   "nrr:studyId": "arcadia-neuroimaging",
+   "nrr:slug": "arcadia-neuroimaging-path",
+   "nrr:outcomeClass": "partial",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "A localized, reproducible cortical signal for each of the three stimuli, distinguishable from its vehicle or unstimulated control, in anaesthetized mice.",
+   "keywords": [
+    "biology"
+   ],
+   "hasPart": [
+    {
+     "@id": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:61663baa8de84825c86b6b01a75f548a45c6b6d9e12837244a1b2a736615cbe2"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-audrey-bell-visualization"
+    },
+    {
+     "@id": "#performer-adair-l-borges-supervision"
+    },
+    {
+     "@id": "#performer-keith-cheveralls-validation"
+    },
+    {
+     "@id": "#performer-seemay-chou-supervision"
+    },
+    {
+     "@id": "#performer-megan-l-hochstrasser-editing"
+    },
+    {
+     "@id": "#performer-ilya-kolb-formal-analysis"
+    },
+    {
+     "@id": "#performer-ilya-kolb-investigation"
+    },
+    {
+     "@id": "#performer-ilya-kolb-methodology"
+    },
+    {
+     "@id": "#performer-ilya-kolb-software"
+    },
+    {
+     "@id": "#performer-ilya-kolb-visualization"
+    },
+    {
+     "@id": "#performer-ilya-kolb-writing"
+    },
+    {
+     "@id": "#performer-ryan-lane-formal-analysis"
+    },
+    {
+     "@id": "#performer-ryan-lane-software"
+    },
+    {
+     "@id": "#performer-ryan-lane-writing"
+    },
+    {
+     "@id": "#performer-david-g-mets-supervision"
+    },
+    {
+     "@id": "#performer-kira-e-poskanzer-conceptualization"
+    },
+    {
+     "@id": "#performer-kira-e-poskanzer-critical-feedback"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-conceptualization"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-formal-analysis"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-investigation"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-methodology"
+    },
+    {
+     "@id": "#performer-michael-e-reitman-software"
+    },
+    {
+     "@id": "#performer-chatgpt-software"
+    },
+    {
+     "@id": "#performer-github-copilot-software"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "organism": "NCBITaxon:10090",
+    "species": "Mus musculus",
+    "strain": "DBA/2J",
+    "strainIdentifier": "RRID:IMSR_JAX:000671",
+    "genotype": "wild type",
+    "sex": "female",
+    "animalsInStudy": 5,
+    "animalsPerTrial": 1,
+    "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+    "preparation": "head-fixed with earbars in a stereotaxic frame (Kopf); heating pad; hair removed with Nair; eye ointment; 1 mL body-temperature sterile saline subcutaneous; 0.1 mL 1% lidocaine subcutaneous under the scalp; scalp removed; periosteum cleaned; thin layer of cyanoacrylate glue applied to the skull for optical clarity",
+    "invasiveness": "through-skull, label-free; no craniotomy, no transgenic animals, no dye or virus injection",
+    "instrument": "ultra-widefield microscope (UWFM), custom built",
+    "readout": "flavoprotein autofluorescence, dF/F over a region of interest",
+    "imaging": "10 frames per second, 13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+    "analysis": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+    "statistics": "none reported; no significance testing, no power analysis, no detection limit stated anywhere in the pub"
+   },
+   "nrr:invalidators": [
+    "a repeat of the itch experiment with a sensitive genetically encoded calcium indicator that resolves a histamine-specific signal",
+    "the same experiment in non-anaesthetized animals, since anaesthesia suppresses cortical activity",
+    "an injection-artifact control that separates needle and handling responses from the pruritogen response"
+   ],
+   "nrr:untriedBranches": [
+    {
+     "description": "Repeat the itch experiments with a sensitive genetically encoded calcium indicator such as GCaMP to increase signal, testing the hypothesis that too few itch-responsive neurons produce too little autofluorescence to detect above noise.",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Perform the experiments on non-anesthetized animals, because anesthesia is known to suppress cortical activity (ref 33).",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Repeat the capsaicin experiments to distinguish activity patterns inherent to the brain from those caused by experimental variability, and determine what injection location, dose and prior-injection factors contribute to the oscillations.",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Test analgesic drugs to see whether they alleviate pain-related sensory activity in the brain, as a check on drug-screening applicability.",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Perform this imaging on chronic mouse pain and itch models rather than the acute models used here.",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Imaging session 2024-03-06 is deposited on Zenodo (20.2 GB, the largest single raw session) but is not cited by any figure or result in the pub; no analysis of it is reported.",
+     "status": "data-deposited-not-analysed",
+     "source": "Zenodo file manifest compared against the session dates cited in the figure legends",
+     "dataAvailable": [
+      {
+       "label": "pub-data-raw-2024-03-06.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.11585535",
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-06.zip/content",
+       "checksum": "md5:a288b18e317987b74f480e4421e001c6",
+       "size": 20174619604,
+       "role": "raw imaging session, uncited"
+      }
+     ]
+    }
+   ],
+   "nrr:openQuestions": [
+    "Why did we see no reproducible activity in response to itch?",
+    "How could we improve the methodology to enable this measurement?"
+   ],
+   "nrr:abandonmentReasons": [
+    "technical-gap"
+   ],
+   "nrr:cost": {
+    "wetLabRuns": 13,
+    "humanExperimenters": 2,
+    "note": "13 imaging trials across 5 mice. The pub reports the imaging system cost (approximately US$30,000 including the camera) as capital, not as the cost of this study; no per-study cost is given.",
+    "source": "Methods, Microscope and sensory stimulation hardware"
+   },
+   "nrr:provenanceNotes": [
+    "Icebox statement: Our original goal was to employ this technique to complement traditional mouse behavioral assays for itch. Using widefield autofluorescence microscopy, we observed no consistent brain activity in response to histamine-induced itch. We're therefore icing this concept for now.",
+    "Mouse identity per trial is not given in the pub. Trials are grouped into animals here from the authors' 'same mouse as in B/C' statements and shared session dates; those groupings are inferred, not stated.",
+    "The pub says vehicle trials were imaged for 10 minutes, while the figure legends and the deposited file names say 15 minutes. The trial table follows the file names.",
+    "Figure 3D is described as the same mouse as Figure 3C, but its Data IDs carry an earlier session date (2024-03-18) than 3C (2024-03-19). Recorded as printed.",
+    "No statistical test, power analysis or detection limit appears anywhere in the pub; effect values are therefore qualitative or single-trial."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "We used ChatGPT to help write and clean up code, and GitHub Copilot to help write and add comments to our code.",
+    "tools": [
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "purpose": "writing and cleaning up analysis code"
+     },
+     {
+      "name": "GitHub Copilot",
+      "provider": "GitHub",
+      "purpose": "writing code comments"
+     }
+    ]
+   },
+   "nrr:confidence": {
+    "level": "low",
+    "basis": "one mouse per trial, five mice in total, no statistics, no detection limit and no blinding reported; the pub is framed as a demonstration rather than a powered study"
+   },
+   "nrr:outcomeSummary": "Touch produced localized contralateral somatosensory signals and capsaicin produced widespread oscillatory cortical activation absent in vehicle trials; histamine produced activation indistinguishable from saline and inconsistent between trials, so the itch application was iced.",
+   "nrr:hypothesis": "Determine whether in vivo flavoprotein autofluorescence imaging can measure brain responses to touch, capsaicin-induced pain and histamine-induced itch, as a behaviour-independent alternative to mouse behavioural assays.",
+   "nrr:nextSteps": [
+    "Repeat the itch experiments with a sensitive genetically encoded calcium indicator such as GCaMP to increase signal, testing the hypothesis that too few itch-responsive neurons produce too little autofluorescence to detect above noise.",
+    "Perform the experiments on non-anesthetized animals, because anesthesia is known to suppress cortical activity (ref 33).",
+    "Repeat the capsaicin experiments to distinguish activity patterns inherent to the brain from those caused by experimental variability, and determine what injection location, dose and prior-injection factors contribute to the oscillations.",
+    "Test analgesic drugs to see whether they alleviate pain-related sensory activity in the brain, as a check on drug-screening applicability.",
+    "Perform this imaging on chronic mouse pain and itch models rather than the acute models used here."
+   ],
+   "nrr:governance": {
+    "humanSubjectData": "none",
+    "biosecurityTier": "none",
+    "complianceIds": [
+     "All animal work performed in accordance with the Institutional Animal Care and Use Committee of the Charles River Accelerator and Development Lab (CRADL, South San Francisco, CA). No protocol number is given in the pub."
+    ]
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.57844/arcadia-b963-15ac"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "https://doi.org/10.5281/zenodo.11585535"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.12770054"
+    },
+    {
+     "@id": "https://doi.org/10.1113/jphysiol.2003.040709"
+    },
+    {
+     "@id": "https://doi.org/10.1152/jn.01275.2003"
+    },
+    {
+     "@id": "https://doi.org/10.5607/en22029"
+    },
+    {
+     "@id": "https://doi.org/10.1523/jneurosci.1445-21.2021"
+    },
+    {
+     "@id": "https://doi.org/10.1093/nsr/nwab218"
+    },
+    {
+     "@id": "https://doi.org/10.1038/s41596-021-00527-z"
+    },
+    {
+     "@id": "https://doi.org/10.1038/nature13186"
+    },
+    {
+     "@id": "https://doi.org/10.1038/s41598-021-88461-8"
+    },
+    {
+     "@id": "https://doi.org/10.1038/s41586-023-05828-9"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.neuron.2015.05.044"
+    },
+    {
+     "@id": "https://doi.org/10.1523/eneuro.0207-17.2017"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.pain.2010.08.025"
+    },
+    {
+     "@id": "https://doi.org/10.1002/jmri.1192"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "NCBITaxon:10090"
+    },
+    {
+     "@id": "RRID:IMSR_JAX:000671"
+    },
+    {
+     "@id": "UBERON:0008933"
+    },
+    {
+     "@id": "UBERON:0000956"
+    },
+    {
+     "@id": "GO:0050975"
+    },
+    {
+     "@id": "GO:0019233"
+    },
+    {
+     "@id": "GO:0034776"
+    },
+    {
+     "@id": "CHMO:0000087"
+    },
+    {
+     "@id": "instrument:uwfm-arcadia"
+    },
+    {
+     "@id": "ror:052zd4v68"
+    },
+    {
+     "@id": "organization:cradl"
+    },
+    {
+     "@id": "github:Arcadia-Science/2024-sensory-neuroimaging"
+    },
+    {
+     "@id": "pubchem:CID1548943"
+    },
+    {
+     "@id": "pubchem:CID5818"
+    },
+    {
+     "@id": "pubchem:CID3763"
+    },
+    {
+     "@id": "pubchem:CID3676"
+    },
+    {
+     "@id": "pubchem:CID702"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "identifier": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "#performer-audrey-bell-visualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Audrey Bell",
+   "nrr:type": "person",
+   "nrr:role": "visualization",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-adair-l-borges-supervision",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Adair L. Borges",
+   "nrr:type": "person",
+   "nrr:role": "supervision",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-keith-cheveralls-validation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Keith Cheveralls",
+   "nrr:type": "person",
+   "nrr:role": "validation",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-seemay-chou-supervision",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Seemay Chou",
+   "nrr:type": "person",
+   "nrr:role": "supervision",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-megan-l-hochstrasser-editing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Megan L. Hochstrasser",
+   "nrr:type": "person",
+   "nrr:role": "editing",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-formal-analysis",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "formal-analysis",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-investigation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "investigation",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-methodology",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "methodology",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-software",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "software",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-visualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "visualization",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ryan-lane-formal-analysis",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ryan Lane",
+   "nrr:type": "person",
+   "nrr:role": "formal-analysis",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ryan-lane-software",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ryan Lane",
+   "nrr:type": "person",
+   "nrr:role": "software",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ryan-lane-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ryan Lane",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-david-g-mets-supervision",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "David G. Mets",
+   "nrr:type": "person",
+   "nrr:role": "supervision",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-kira-e-poskanzer-conceptualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Kira E. Poskanzer",
+   "nrr:type": "person",
+   "nrr:role": "conceptualization",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-kira-e-poskanzer-critical-feedback",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Kira E. Poskanzer",
+   "nrr:type": "person",
+   "nrr:role": "critical-feedback",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-michael-e-reitman-conceptualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Michael E. Reitman",
+   "nrr:type": "person",
+   "nrr:role": "conceptualization",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-michael-e-reitman-formal-analysis",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Michael E. Reitman",
+   "nrr:type": "person",
+   "nrr:role": "formal-analysis",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-michael-e-reitman-investigation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Michael E. Reitman",
+   "nrr:type": "person",
+   "nrr:role": "investigation",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-michael-e-reitman-methodology",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Michael E. Reitman",
+   "nrr:type": "person",
+   "nrr:role": "methodology",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-michael-e-reitman-software",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Michael E. Reitman",
+   "nrr:type": "person",
+   "nrr:role": "software",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-chatgpt-software",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "ChatGPT",
+   "nrr:type": "llm",
+   "nrr:role": "software",
+   "nrr:provider": "OpenAI",
+   "nrr:note": "writing and cleaning up analysis code"
+  },
+  {
+   "@id": "#performer-github-copilot-software",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "GitHub Copilot",
+   "nrr:type": "llm",
+   "nrr:role": "software",
+   "nrr:provider": "GitHub",
+   "nrr:note": "writing code comments"
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-b963-15ac",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+   "nrr:url": "https://thestacks.org/publications/result-sensory-neuroimaging",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:19Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.11585535",
+   "@type": "Dataset",
+   "nrr:role": "data-deposit",
+   "name": "Raw and processed autofluorescence neuroimaging data",
+   "nrr:statusAtCheck": {
+    "version": "dataset",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:21Z"
+   },
+   "nrr:license": "CC BY 4.0",
+   "nrr:note": "80.9 GB across six files; raw sessions are split by date",
+   "nrr:data": [
+    {
+     "label": "pub-data-raw-2024-03-19.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.11585535",
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content",
+     "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+     "size": 11040025011,
+     "role": "raw imaging session"
+    },
+    {
+     "label": "pub-data-raw-2024-02-21.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.11585535",
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content",
+     "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+     "size": 1183912093,
+     "role": "raw imaging session"
+    },
+    {
+     "label": "pub-data-raw-2024-03-06.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.11585535",
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-06.zip/content",
+     "checksum": "md5:a288b18e317987b74f480e4421e001c6",
+     "size": 20174619604,
+     "role": "raw imaging session"
+    },
+    {
+     "label": "pub-data-raw-2024-02-29.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.11585535",
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content",
+     "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+     "size": 17217061370,
+     "role": "raw imaging session"
+    },
+    {
+     "label": "pub-data-processed.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.11585535",
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-processed.zip/content",
+     "checksum": "md5:85731a45bd9f9560eadb2467248050e7",
+     "size": 12149207940,
+     "role": "processed imaging data"
+    },
+    {
+     "label": "pub-data-raw-2024-03-18.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.11585535",
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content",
+     "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+     "size": 19125787557,
+     "role": "raw imaging session"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.12770054",
+   "@type": "SoftwareSourceCode",
+   "nrr:role": "code-repository",
+   "name": "Arcadia-Science/2024-sensory-neuroimaging: v1.0.1",
+   "nrr:url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:22Z"
+   },
+   "nrr:license": "CC BY 4.0",
+   "nrr:note": "version v1.0.1"
+  },
+  {
+   "@id": "https://doi.org/10.1113/jphysiol.2003.040709",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "flavoproteinImaging",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:24Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1152/jn.01275.2003",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "flavoproteinImaging",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:24Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.5607/en22029",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "itchFewerNeurons",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:25Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1523/jneurosci.1445-21.2021",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "itchInS1",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:25Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1093/nsr/nwab218",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "itchInS1",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:25Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/s41596-021-00527-z",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "uwfmProtocol",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:23Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/nature13186",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "brainAtlas",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:23Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/s41598-021-88461-8",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "anesthesiaSuppresses",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:26Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/s41586-023-05828-9",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "gcampAlternative",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:26Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.neuron.2015.05.044",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "histamineDoseSource",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:27Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1523/eneuro.0207-17.2017",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "transgenicAberrant",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:27Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.pain.2010.08.025",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "widespreadPainFmri",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:28Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1002/jmri.1192",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "widespreadPainFmri",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T18:33:28Z"
+   }
+  },
+  {
+   "@id": "NCBITaxon:10090",
+   "@type": "Taxon",
+   "name": "Mus musculus",
+   "nrr:entityType": "organism",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "RRID:IMSR_JAX:000671",
+   "@type": "Taxon",
+   "name": "DBA/2J (wild type, female)",
+   "nrr:entityType": "strain",
+   "nrr:role": "experimental animal",
+   "nrr:scheme": "IMSR / RRID",
+   "nrr:extra": {
+    "supplier": "The Jackson Laboratory"
+   }
+  },
+  {
+   "@id": "UBERON:0008933",
+   "@type": "Thing",
+   "name": "primary somatosensory cortex (S1)",
+   "nrr:entityType": "anatomicalStructure",
+   "nrr:role": "expected response region",
+   "nrr:scheme": "UBERON"
+  },
+  {
+   "@id": "UBERON:0000956",
+   "@type": "Thing",
+   "name": "cerebral cortex",
+   "nrr:entityType": "anatomicalStructure",
+   "nrr:role": "imaged field",
+   "nrr:scheme": "UBERON"
+  },
+  {
+   "@id": "GO:0050975",
+   "@type": "DefinedTerm",
+   "name": "sensory perception of touch",
+   "nrr:entityType": "process",
+   "nrr:scheme": "GO"
+  },
+  {
+   "@id": "GO:0019233",
+   "@type": "DefinedTerm",
+   "name": "sensory perception of pain",
+   "nrr:entityType": "process",
+   "nrr:scheme": "GO"
+  },
+  {
+   "@id": "GO:0034776",
+   "@type": "DefinedTerm",
+   "name": "response to histamine",
+   "nrr:entityType": "process",
+   "nrr:scheme": "GO"
+  },
+  {
+   "@id": "CHMO:0000087",
+   "@type": "DefinedTerm",
+   "name": "flavoprotein autofluorescence widefield imaging",
+   "nrr:entityType": "assay",
+   "nrr:scheme": "CHMO"
+  },
+  {
+   "@id": "instrument:uwfm-arcadia",
+   "@type": "Product",
+   "name": "ultra-widefield microscope (UWFM), custom built",
+   "nrr:entityType": "instrument",
+   "nrr:role": "imaging instrument",
+   "nrr:extra": {
+    "basedOn": "Couto et al. 2021 protocol (doi:10.1038/s41596-021-00527-z)",
+    "modifications": [
+     "ZL41 camera (Oxford Instruments Andor) in place of the pco.Edge 5.5 (Excelitas)",
+     "blue excitation only, rather than alternating blue/violet"
+    ],
+    "fieldOfView": "13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+    "frameRate": "10 frames per second",
+    "cost": "approximately US$30,000 including the camera"
+   }
+  },
+  {
+   "@id": "ror:052zd4v68",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "nrr:entityType": "organization",
+   "nrr:url": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "organization:cradl",
+   "@type": "Organization",
+   "name": "Charles River Accelerator and Development Lab (CRADL), South San Francisco, CA",
+   "nrr:entityType": "organization",
+   "nrr:role": "IACUC of record for the animal work"
+  },
+  {
+   "@id": "github:Arcadia-Science/2024-sensory-neuroimaging",
+   "@type": "SoftwareApplication",
+   "name": "Arcadia-Science/2024-sensory-neuroimaging",
+   "nrr:entityType": "software",
+   "nrr:url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging",
+   "nrr:extra": {
+    "version": "v1.0.1"
+   }
+  },
+  {
+   "@id": "pubchem:CID1548943",
+   "@type": "ChemicalSubstance",
+   "name": "capsaicin",
+   "nrr:entityType": "compound",
+   "nrr:role": "algogen (acute pain stimulus)",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID5818",
+   "@type": "ChemicalSubstance",
+   "name": "histamine dihydrochloride",
+   "nrr:entityType": "compound",
+   "nrr:role": "pruritogen (itch stimulus)",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID3763",
+   "@type": "ChemicalSubstance",
+   "name": "isoflurane",
+   "nrr:entityType": "compound",
+   "nrr:role": "anaesthetic",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID3676",
+   "@type": "ChemicalSubstance",
+   "name": "lidocaine",
+   "nrr:entityType": "compound",
+   "nrr:role": "local anaesthetic",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID702",
+   "@type": "ChemicalSubstance",
+   "name": "ethanol",
+   "nrr:entityType": "compound",
+   "nrr:role": "vehicle component",
+   "nrr:scheme": "PubChem"
+  }
+ ]
+}

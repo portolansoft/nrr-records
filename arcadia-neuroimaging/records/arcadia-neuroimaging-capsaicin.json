@@ -1,0 +1,749 @@
+{
+ "@id": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c",
+ "aiUseDeclaration": {
+  "statement": "We used ChatGPT to help write and clean up code, and GitHub Copilot to help write and add comments to our code.",
+  "tools": [
+   {
+    "name": "ChatGPT",
+    "provider": "OpenAI",
+    "purpose": "writing and cleaning up analysis code"
+   },
+   {
+    "name": "GitHub Copilot",
+    "provider": "GitHub",
+    "purpose": "writing code comments"
+   }
+  ]
+ },
+ "applicabilityConditions": {
+  "analysis": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+  "anesthesia": "3-4% isoflurane for induction; maintained at 1.25-1.5% during imaging (from trial file names); depth confirmed by loss of righting reflex, ~1 breath per second, no toe-pinch response",
+  "animalsInStudy": 5,
+  "animalsPerTrial": 1,
+  "genotype": "wild type",
+  "imaging": "10 frames per second, 13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+  "instrument": "ultra-widefield microscope (UWFM), custom built",
+  "invasiveness": "through-skull, label-free; no craniotomy, no transgenic animals, no dye or virus injection",
+  "organism": "NCBITaxon:10090",
+  "preparation": "head-fixed with earbars in a stereotaxic frame (Kopf); heating pad; hair removed with Nair; eye ointment; 1 mL body-temperature sterile saline subcutaneous; 0.1 mL 1% lidocaine subcutaneous under the scalp; scalp removed; periosteum cleaned; thin layer of cyanoacrylate glue applied to the skull for optical clarity",
+  "readout": "flavoprotein autofluorescence, dF/F over a region of interest",
+  "sex": "female",
+  "species": "Mus musculus",
+  "statistics": "none reported; no significance testing, no power analysis, no detection limit stated anywhere in the pub",
+  "strain": "DBA/2J",
+  "strainIdentifier": "RRID:IMSR_JAX:000671"
+ },
+ "attemptType": "wet-lab",
+ "confidence": {
+  "basis": "consistent across three injection sites with paired vehicle controls, but n = 1 per condition, no statistics, and an order effect the authors flag",
+  "level": "medium"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c",
+ "cost": {
+  "humanExperimenters": 2,
+  "note": "13 imaging trials across 5 mice. The pub reports the imaging system cost (approximately US$30,000 including the camera) as capital, not as the cost of this study; no per-study cost is given.",
+  "source": "Methods, Microscope and sensory stimulation hardware",
+  "wetLabRuns": 13
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "biology"
+ ],
+ "entities": [
+  {
+   "id": "NCBITaxon:10090",
+   "label": "Mus musculus",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "extra": {
+    "supplier": "The Jackson Laboratory"
+   },
+   "id": "RRID:IMSR_JAX:000671",
+   "label": "DBA/2J (wild type, female)",
+   "role": "experimental animal",
+   "scheme": "IMSR / RRID",
+   "type": "strain"
+  },
+  {
+   "id": "UBERON:0008933",
+   "label": "primary somatosensory cortex (S1)",
+   "role": "expected response region",
+   "scheme": "UBERON",
+   "type": "anatomicalStructure"
+  },
+  {
+   "id": "UBERON:0000956",
+   "label": "cerebral cortex",
+   "role": "imaged field",
+   "scheme": "UBERON",
+   "type": "anatomicalStructure"
+  },
+  {
+   "id": "GO:0050975",
+   "label": "sensory perception of touch",
+   "scheme": "GO",
+   "type": "process"
+  },
+  {
+   "id": "GO:0019233",
+   "label": "sensory perception of pain",
+   "scheme": "GO",
+   "type": "process"
+  },
+  {
+   "id": "GO:0034776",
+   "label": "response to histamine",
+   "scheme": "GO",
+   "type": "process"
+  },
+  {
+   "id": "CHMO:0000087",
+   "label": "flavoprotein autofluorescence widefield imaging",
+   "note": "no exact OBI term for label-free flavoprotein autofluorescence imaging; the nearest exact match is the CHMO fluorescence microscopy term",
+   "scheme": "CHMO",
+   "type": "assay"
+  },
+  {
+   "extra": {
+    "basedOn": "Couto et al. 2021 protocol (doi:10.1038/s41596-021-00527-z)",
+    "cost": "approximately US$30,000 including the camera",
+    "fieldOfView": "13.4 x 11.3 mm, 5 um/px with no binning; cropped to the brain and binned 4 x 4 for all trials",
+    "frameRate": "10 frames per second",
+    "modifications": [
+     "ZL41 camera (Oxford Instruments Andor) in place of the pco.Edge 5.5 (Excelitas)",
+     "blue excitation only, rather than alternating blue/violet"
+    ]
+   },
+   "id": "instrument:uwfm-arcadia",
+   "label": "ultra-widefield microscope (UWFM), custom built",
+   "role": "imaging instrument",
+   "type": "instrument"
+  },
+  {
+   "id": "ror:052zd4v68",
+   "label": "Arcadia Science",
+   "type": "organization",
+   "url": "https://ror.org/052zd4v68"
+  },
+  {
+   "id": "organization:cradl",
+   "label": "Charles River Accelerator and Development Lab (CRADL), South San Francisco, CA",
+   "role": "IACUC of record for the animal work",
+   "type": "organization"
+  },
+  {
+   "extra": {
+    "version": "v1.0.1"
+   },
+   "id": "github:Arcadia-Science/2024-sensory-neuroimaging",
+   "label": "Arcadia-Science/2024-sensory-neuroimaging",
+   "type": "software",
+   "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+  },
+  {
+   "id": "pubchem:CID1548943",
+   "label": "capsaicin",
+   "role": "algogen (acute pain stimulus)",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID5818",
+   "label": "histamine dihydrochloride",
+   "role": "pruritogen (itch stimulus)",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID3763",
+   "label": "isoflurane",
+   "role": "anaesthetic",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID3676",
+   "label": "lidocaine",
+   "role": "local anaesthetic",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID702",
+   "label": "ethanol",
+   "role": "vehicle component",
+   "scheme": "PubChem",
+   "type": "compound"
+  }
+ ],
+ "findings": [
+  {
+   "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+   "conditions": {
+    "dose": "40 ug capsaicin (Sigma-Aldrich M2028-50MG) dissolved in 10 uL of carrier solution",
+    "imagingMinutes": 30,
+    "isofluranePercent": 1.25,
+    "mouse": "mouse-C (inferred, see provenance notes)",
+    "route": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape",
+    "site": "left hindlimb"
+   },
+   "controls": {
+    "negative": {
+     "expected": "no widespread cortical activation",
+     "kind": "vehicle",
+     "label": "carrier solution alone",
+     "observed": "no widespread activation",
+     "passed": true
+    },
+    "positive": {
+     "expected": "localized contralateral somatosensory response",
+     "kind": "internal-positive",
+     "label": "tactile response confirmed in the same session before injection",
+     "observed": "confirmed; the authors proceeded to chemical stimuli only after seeing it",
+     "passed": true,
+     "source": "Methods, Injection experiments: 'Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli.'"
+    }
+   },
+   "effect": {
+    "comparedTo": "paired vehicle injection in the same mouse (no widespread activation)",
+    "direction": "increase",
+    "metric": "whole-brain dF/F after injection versus paired vehicle trial",
+    "n": 1,
+    "note": "activation is described qualitatively; the pub reports no effect size or test for injection trials",
+    "significant": "no statistical test reported",
+    "value": "widespread high-intensity oscillatory cortical activation for ~10 min"
+   },
+   "evidence": [
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+       "format": "zip of raw imaging frames",
+       "label": "capsaicin vehicle run, left hindlimb (3B)",
+       "note": "session 2024-03-18; 15 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-03-18/Zyla_15min_LHL_carrierinj_1pt25pctISO_1",
+       "size": 19125787557,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+       "format": "zip of raw imaging frames",
+       "label": "capsaicin drug run, left hindlimb (3B)",
+       "note": "session 2024-03-18; 30 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-03-18/Zyla_30min_LHL_capsacirinj_1pt25pctISO_1",
+       "size": 19125787557,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+      }
+     ],
+     "label": "Figure 3B",
+     "locator": "Figure 3B",
+     "source": "10.57844/arcadia-b963-15ac",
+     "values": {
+      "drug": "widespread high-intensity oscillatory cortical activation for ~10 min",
+      "vehicle": "no widespread activation"
+     }
+    }
+   ],
+   "id": "capsaicin-lhl",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "preregistration": "none",
+   "question": "Does intradermal capsaicin in the left hindlimb produce cortical activity distinguishable from its paired vehicle injection?",
+   "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+   "replicates": {
+    "biological": 1,
+    "note": "one mouse per condition; no repeat trials"
+   },
+   "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+   "target": {
+    "identifier": "pubchem:CID1548943",
+    "label": "capsaicin",
+    "type": "compound"
+   }
+  },
+  {
+   "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+   "conditions": {
+    "dose": "40 ug capsaicin (Sigma-Aldrich M2028-50MG) dissolved in 10 uL of carrier solution",
+    "imagingMinutes": 30,
+    "isofluranePercent": 1.5,
+    "mouse": "mouse-D (inferred, see provenance notes)",
+    "route": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape",
+    "site": "right hindlimb"
+   },
+   "controls": {
+    "negative": {
+     "expected": "no widespread cortical activation",
+     "kind": "vehicle",
+     "label": "carrier solution alone",
+     "observed": "no widespread activation",
+     "passed": true
+    },
+    "positive": {
+     "expected": "localized contralateral somatosensory response",
+     "kind": "internal-positive",
+     "label": "tactile response confirmed in the same session before injection",
+     "observed": "confirmed; the authors proceeded to chemical stimuli only after seeing it",
+     "passed": true,
+     "source": "Methods, Injection experiments: 'Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli.'"
+    }
+   },
+   "effect": {
+    "comparedTo": "paired vehicle injection in the same mouse (no widespread activation)",
+    "direction": "increase",
+    "metric": "whole-brain dF/F after injection versus paired vehicle trial",
+    "n": 1,
+    "note": "activation is described qualitatively; the pub reports no effect size or test for injection trials",
+    "significant": "no statistical test reported",
+    "value": "widespread oscillatory cortical activation less intense than the previously vehicle-injected limb"
+   },
+   "evidence": [
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+       "format": "zip of raw imaging frames",
+       "label": "capsaicin vehicle run, left hindlimb (3C)",
+       "note": "session 2024-03-19; 15 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-03-19/Zyla_15min_LHL_carrierinj_1pt5pctISO_1_1",
+       "size": 11040025011,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+       "format": "zip of raw imaging frames",
+       "label": "capsaicin drug run, right hindlimb (3C)",
+       "note": "session 2024-03-19; 30 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-03-19/Zyla_30min_RHL_40ugin10uL_1pt5pctISO_1_1",
+       "size": 11040025011,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content"
+      }
+     ],
+     "label": "Figure 3C",
+     "locator": "Figure 3C",
+     "source": "10.57844/arcadia-b963-15ac",
+     "values": {
+      "drug": "widespread oscillatory cortical activation less intense than the previously vehicle-injected limb",
+      "vehicle": "no widespread activation"
+     }
+    }
+   ],
+   "failureModes": [
+    "confounded"
+   ],
+   "id": "capsaicin-rhl",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "oscillatory activity was more intense for a hindlimb previously injected with vehicle than for a hindlimb that only received capsaicin, so injection order may contribute",
+   "outcomeClass": "positive",
+   "preregistration": "none",
+   "question": "Does intradermal capsaicin in the right hindlimb produce cortical activity distinguishable from its paired vehicle injection?",
+   "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+   "replicates": {
+    "biological": 1,
+    "note": "one mouse per condition; no repeat trials"
+   },
+   "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+   "target": {
+    "identifier": "pubchem:CID1548943",
+    "label": "capsaicin",
+    "type": "compound"
+   }
+  },
+  {
+   "blinding": "not stated; trials were acquired and analysed by the same team without a stated blinding step",
+   "conditions": {
+    "dose": "40 ug capsaicin (Sigma-Aldrich M2028-50MG) dissolved in 10 uL of carrier solution",
+    "imagingMinutes": 30,
+    "isofluranePercent": 1.25,
+    "mouse": "mouse-D (inferred, see provenance notes)",
+    "route": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape",
+    "site": "nape of the neck"
+   },
+   "controls": {
+    "negative": {
+     "expected": "no widespread cortical activation",
+     "kind": "vehicle",
+     "label": "carrier solution alone",
+     "observed": "no widespread activation",
+     "passed": true
+    },
+    "positive": {
+     "expected": "localized contralateral somatosensory response",
+     "kind": "internal-positive",
+     "label": "tactile response confirmed in the same session before injection",
+     "observed": "confirmed; the authors proceeded to chemical stimuli only after seeing it",
+     "passed": true,
+     "source": "Methods, Injection experiments: 'Once we observed a brain response to a tactile stimulus, we proceeded with chemical stimuli.'"
+    }
+   },
+   "effect": {
+    "comparedTo": "paired vehicle injection in the same mouse (no widespread activation)",
+    "direction": "increase",
+    "metric": "whole-brain dF/F after injection versus paired vehicle trial",
+    "n": 1,
+    "note": "activation is described qualitatively; the pub reports no effect size or test for injection trials",
+    "significant": "no statistical test reported",
+    "value": "brief oscillatory activation confined to the somatosensory area of one hemisphere"
+   },
+   "evidence": [
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+       "format": "zip of raw imaging frames",
+       "label": "capsaicin vehicle run, nape of neck (3D)",
+       "note": "session 2024-03-18; 15 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-03-18/Zyla_15min_nape_carrierinj_1pt25pctISO_1",
+       "size": 19125787557,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.11585535",
+       "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+       "format": "zip of raw imaging frames",
+       "label": "capsaicin drug run, nape of neck (3D)",
+       "note": "session 2024-03-18; 30 min at 10 fps",
+       "repository": "Zenodo",
+       "role": "raw instrument run",
+       "runId": "2024-03-18/Zyla_30min_nape_40ugin10uLcapsacininj_1pt25pctISO_1",
+       "size": 19125787557,
+       "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+      }
+     ],
+     "label": "Figure 3D",
+     "locator": "Figure 3D",
+     "source": "10.57844/arcadia-b963-15ac",
+     "values": {
+      "drug": "brief oscillatory activation confined to the somatosensory area of one hemisphere",
+      "vehicle": "no widespread activation"
+     }
+    }
+   ],
+   "id": "capsaicin-nape",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "Region of interest restricted to the responsive somatosensory area rather than the whole brain, in both vehicle and capsaicin trials.",
+   "outcomeClass": "positive",
+   "preregistration": "none",
+   "question": "Does intradermal capsaicin in the nape of the neck produce cortical activity distinguishable from its paired vehicle injection?",
+   "randomization": "not stated; one animal per trial, stimuli delivered in a fixed order within a session",
+   "replicates": {
+    "biological": 1,
+    "note": "one mouse per condition; no repeat trials"
+   },
+   "reportingGuideline": "none cited; ARRIVE 2.0 items including sample-size justification, randomization and blinding are not reported",
+   "target": {
+    "identifier": "pubchem:CID1548943",
+    "label": "capsaicin",
+    "type": "compound"
+   }
+  }
+ ],
+ "governance": {
+  "biosecurityTier": "none",
+  "complianceIds": [
+   "All animal work performed in accordance with the Institutional Animal Care and Use Committee of the Charles River Accelerator and Development Lab (CRADL, South San Francisco, CA). No protocol number is given in the pub."
+  ],
+  "humanSubjectData": "none"
+ },
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "isPartOf": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/052zd4v68",
+  "name": "Arcadia Science",
+  "type": "Organization"
+ },
+ "outcomeClass": "positive",
+ "outcomeSummary": "widespread, high-intensity cortical activation for ~10 minutes after injection, absent in vehicle trials; complex and oscillatory; nape injection produced briefer activity confined to the somatosensory area of one hemisphere",
+ "pathType": "experiment",
+ "performers": [
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "investigation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "methodology",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ryan Lane",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Michael E. Reitman",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Michael E. Reitman",
+   "role": "investigation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Michael E. Reitman",
+   "role": "methodology",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "Order confound flagged by the authors: oscillatory activity was more intense for a hindlimb previously injected with vehicle than for a hindlimb that only received capsaicin, so injection order may contribute",
+  "Effect values are the authors' qualitative descriptions; no numeric dF/F is tabulated for injection trials."
+ ],
+ "question": "Does capsaicin-induced acute pain produce cortical autofluorescence activity that the microscope can detect against a paired vehicle control?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+   "type": "isPartOf"
+  },
+  {
+   "note": "the tactile response gated entry to these trials",
+   "target": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+   "type": "wasDerivedFrom"
+  }
+ ],
+ "slug": "arcadia-neuroimaging-capsaicin",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.57844/arcadia-b963-15ac",
+   "label": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:19Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://thestacks.org/publications/result-sensory-neuroimaging"
+  },
+  {
+   "data": [
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:4c553070f8b3e0336643c3719e5e388d",
+     "label": "pub-data-raw-2024-03-19.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 11040025011,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-19.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:ddbd973092235c0100c0342cf5d96686",
+     "label": "pub-data-raw-2024-02-21.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 1183912093,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-21.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:a288b18e317987b74f480e4421e001c6",
+     "label": "pub-data-raw-2024-03-06.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 20174619604,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-06.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:f5d7d2b33f4e5fec75a4991ab3e9b94e",
+     "label": "pub-data-raw-2024-02-29.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 17217061370,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-02-29.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:85731a45bd9f9560eadb2467248050e7",
+     "label": "pub-data-processed.zip",
+     "repository": "Zenodo",
+     "role": "processed imaging data",
+     "size": 12149207940,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-processed.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.11585535",
+     "checksum": "md5:c22e7fcc97b5f11408f941b754971368",
+     "label": "pub-data-raw-2024-03-18.zip",
+     "repository": "Zenodo",
+     "role": "raw imaging session",
+     "size": 19125787557,
+     "url": "https://zenodo.org/api/records/11585535/files/pub-data-raw-2024-03-18.zip/content"
+    }
+   ],
+   "identifier": "doi:10.5281/zenodo.11585535",
+   "label": "Raw and processed autofluorescence neuroimaging data",
+   "license": "CC BY 4.0",
+   "note": "80.9 GB across six files; raw sessions are split by date",
+   "role": "data-deposit",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:21Z",
+    "integrity": "none",
+    "version": "dataset"
+   }
+  },
+  {
+   "identifier": "doi:10.5281/zenodo.12770054",
+   "label": "Arcadia-Science/2024-sensory-neuroimaging: v1.0.1",
+   "license": "CC BY 4.0",
+   "note": "version v1.0.1",
+   "role": "code-repository",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T18:33:22Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging"
+  }
+ ],
+ "stages": [
+  {
+   "conditions": {
+    "control": "carrier solution alone",
+    "dose": "40 ug capsaicin (Sigma-Aldrich M2028-50MG) dissolved in 10 uL of carrier solution",
+    "vehicle": "80% PBS, 10% Tween-80 (Thermo Scientific 278632500), 10% ethanol (v/v)"
+   },
+   "instrument": [
+    "ultra-widefield microscope (UWFM), custom built"
+   ],
+   "label": "intradermal capsaicin and paired vehicle injection during imaging",
+   "note": "each capsaicin trial is paired with a vehicle trial in the same mouse",
+   "performedBy": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "methodology",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ryan Lane",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "methodology",
+     "type": "person"
+    }
+   ],
+   "protocol": "intradermal, 1 cc insulin syringe inserted before the trial started, into forelimb, hindlimb or nape; image 5 min before injection; then 10 min for vehicle and 30 min for drug (main text); figure legends and file names say 15 min for vehicle; push-button pressed at injection to mark the approximate time in the DAQ trace",
+   "stage": "experiment"
+  },
+  {
+   "label": "imaging analysis pipeline",
+   "method": "temporal averaging: 2 frames for tactile trials, 8 frames for injection trials, to reduce noise; motion correction by SIFT-based registration; brain masking by flood fill (scikit-image flood); bleach correction: subtract the bottom 5% of pixels within the brain from each frame; baseline autofluorescence subtraction",
+   "note": "for visualisation, pixel intensities in vehicle and drug trials were scaled to a shared min and max; dF/F was computed on non-adjusted baseline-subtracted data",
+   "performedBy": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ilya Kolb",
+     "role": "software",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Ryan Lane",
+     "role": "software",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Michael E. Reitman",
+     "role": "software",
+     "type": "person"
+    }
+   ],
+   "software": [
+    {
+     "name": "Arcadia-Science/2024-sensory-neuroimaging",
+     "url": "https://github.com/Arcadia-Science/2024-sensory-neuroimaging",
+     "version": "v1.0.1"
+    },
+    {
+     "identifier": "RRID:SCR_021142",
+     "name": "scikit-image"
+    }
+   ],
+   "stage": "analysis"
+  }
+ ],
+ "studyId": "arcadia-neuroimaging",
+ "successCriteria": "Cortical activation after capsaicin injection that is clearly absent after the paired vehicle injection in the same mouse.",
+ "title": "Intradermal capsaicin produces widespread oscillatory cortical activation absent from paired vehicle trials",
+ "version": "1",
+ "visibility": "public"
+}

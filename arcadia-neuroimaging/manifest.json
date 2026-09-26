@@ -1,0 +1,49 @@
+{
+ "study": "arcadia-neuroimaging",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "8e741a45bffc733ddb38e071f3bb42602abe3a29",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.57844/arcadia-b963-15ac",
+  "label": "Label-free neuroimaging in mice captures sensory activity in response to tactile stimuli and acute pain",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "arcadia-neuroimaging-path",
+   "id": "urn:portolan:nrr:sha256:46d71cbf5c283e2a316d0693cd3be20fc0489f934c448be74a3067469a2d260a",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "partial",
+   "findings": 0
+  },
+  {
+   "slug": "arcadia-neuroimaging-tactile",
+   "id": "urn:portolan:nrr:sha256:e47680d049ce127b9e20a9497b6be757d420eda41995cd59aa0cbbba100ca612",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "positive",
+   "findings": 3
+  },
+  {
+   "slug": "arcadia-neuroimaging-capsaicin",
+   "id": "urn:portolan:nrr:sha256:811112431dbd2471b590cad79567f8c88a0562b5093cd6215c4280b1f0042a9c",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "positive",
+   "findings": 3
+  },
+  {
+   "slug": "arcadia-neuroimaging-histamine",
+   "id": "urn:portolan:nrr:sha256:61663baa8de84825c86b6b01a75f548a45c6b6d9e12837244a1b2a736615cbe2",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "inconclusive-controls-failed",
+   "findings": 3
+  }
+ ]
+}
