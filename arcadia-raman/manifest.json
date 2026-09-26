@@ -1,0 +1,49 @@
+{
+ "study": "arcadia-raman",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "0dd638f4532d75465d55a4be189c6f936cd20395",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.57844/arcadia-xdmk-yq0w",
+  "label": "Leave-one-batch-out cross-validation reveals strong batch effects in Raman spectroscopy of yeast cultures",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "arcadia-raman-path",
+   "id": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "partial",
+   "findings": 0
+  },
+  {
+   "slug": "arcadia-raman-species-classification",
+   "id": "urn:portolan:nrr:sha256:ece76d478101ba879250f89aba35dad03e501dd1d1e276c5390a00f13c75276f",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "positive",
+   "findings": 2
+  },
+  {
+   "slug": "arcadia-raman-batch-effect",
+   "id": "urn:portolan:nrr:sha256:068fecf19c9771346b33c22c50d149aaae70222aabb6d3ed09b5365739a22cbf",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "positive",
+   "findings": 2
+  },
+  {
+   "slug": "arcadia-raman-strain-classification",
+   "id": "urn:portolan:nrr:sha256:e9523175a7e4dbafe42357b5b408c55b42ecda6de12ba40077e0e51928d99615",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "inconclusive-controls-failed",
+   "findings": 4
+  }
+ ]
+}

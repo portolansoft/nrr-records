@@ -1,0 +1,944 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:068fecf19c9771346b33c22c50d149aaae70222aabb6d3ed09b5365739a22cbf",
+   "name": "An adversarial task shows plate identity is almost perfectly predictable, confirming a strong batch effect",
+   "description": "Do the Raman spectra carry a plate-level experimental batch effect strong enough for a classifier to exploit?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "attempt",
+   "nrr:studyId": "arcadia-raman",
+   "nrr:slug": "arcadia-raman-batch-effect",
+   "nrr:outcomeClass": "positive",
+   "nrr:visibility": "public",
+   "nrr:pathType": "computation",
+   "nrr:successCriteria": "A classifier trained to predict plate identity should perform at chance if no batch effect exists; performance above chance demonstrates one.",
+   "keywords": [
+    "biology"
+   ],
+   "hasPart": [
+    {
+     "@id": "#attempt"
+    },
+    {
+     "@id": "#finding-plate-loso"
+    },
+    {
+     "@id": "#finding-plate-loso-corrected"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-keith-cheveralls-formal-analysis"
+    },
+    {
+     "@id": "#performer-keith-cheveralls-software"
+    },
+    {
+     "@id": "#performer-ilya-kolb-methodology"
+    },
+    {
+     "@id": "#performer-claude-software"
+    },
+    {
+     "@id": "#performer-gemini-review"
+    },
+    {
+     "@id": "#performer-cursor-software"
+    },
+    {
+     "@id": "#performer-arcadia-pycolor-figure-generation"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "organisms": [
+     "NCBITaxon:4932",
+     "NCBITaxon:4896"
+    ],
+    "strains": [
+     "BY4741",
+     "YGL058w",
+     "YNL141w",
+     "SP286",
+     "ED666",
+     "SPAC18B11.07c",
+     "SPBC1198.02",
+     "SPBPB10D8.02c",
+     "SPBC530.12c"
+    ],
+    "strainDiversity": "three standard lab strains and six knockout strains within two species; the authors note the strains may be too genetically similar to produce detectable spectral differences",
+    "assay": "spontaneous Raman spectroscopy, 785 nm excitation, desiccated wet cell pellets on stainless steel",
+    "samplePreparation": "wet cell pellets spotted onto stainless steel plates stamped with a 96-well layout and desiccated at room temperature and pressure for approximately 3 h",
+    "spectraPerStrain": "24-33 (median 27)",
+    "spectraTotal": 248,
+    "replicates": "three end-to-end biological replicates, produced by repeating sample preparation and imaging in triplicate with separate cell cultures, physical plates and imaging dates",
+    "processing": "cosmic ray removal with the Whitaker-Hayes despiking algorithm, default parameters; background subtraction using a single consensus dark spectrum averaged across all three plates, deliberately not one per plate, to avoid injecting additional batch effects; quality control removing spectra whose mean background-subtracted intensity fell below an empirically determined threshold of 1,000 intensity units; Savitzky-Golay smoothing, then autofluorescence baseline subtraction with ModPoly, polynomial order five; cropping to the fingerprint region 300-1,800 cm-1 and area-under-the-curve normalization; outlier removal within each well by elbow detection on each spectrum's deviation from the group median",
+    "models": "random forest with 300 trees, and a support vector machine with an RBF kernel and C = 100; class weighting balanced; scikit-learn implementations; hyperparameters chosen empirically",
+    "metric": "multiclass Matthews correlation coefficient (MCC), bounded in [-1, +1], where +1 is perfect prediction, 0 is random guessing and negative values indicate systemic misclassification; computed per fold and reported as the median across folds",
+    "note": "conclusions are specific to this sample-preparation protocol; desiccation is inherently variable and likely contributes to the plate-level batch effect"
+   },
+   "nrr:cost": {
+    "note": "75 spectra acquired per strain across three plates, 248 retained after quality control; no monetary or compute cost is reported",
+    "source": "The approach, Experimental design"
+   },
+   "nrr:provenanceNotes": [
+    "This attempt supplies the negative control used by the strain attempt. The authors recommend adversarial prediction of meaningless labels as general practice."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0 (pub); MIT (code and data archive)",
+   "nrr:aiUseDeclaration": {
+    "statement": "We used Claude (Opus 4, 4.5, and 4.6) to help write, clean up, comment, and review our code, and we selectively incorporated its feedback. We also used Claude to suggest wording ideas and then chose which small phrases or sentence structure ideas to use, rearrange text to fit the structure of one of our pub templates, expand on summary text that we provided, and help clarify and streamline text that we wrote. Additionally, we chatted with Claude throughout the project to support ideation and analysis. We used Gemini (2.5 Pro) to review the publication to catch typos and discrepancies, and Cursor for tab completion while editing code.",
+    "tools": [
+     {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "version": "Opus 4, 4.5, 4.6",
+      "purpose": "writing, cleaning, commenting and reviewing code; wording; and ideation and analysis discussion throughout the project"
+     },
+     {
+      "name": "Gemini",
+      "provider": "Google",
+      "version": "2.5 Pro",
+      "purpose": "reviewing the publication for typos and discrepancies"
+     },
+     {
+      "name": "Cursor",
+      "provider": "Anysphere",
+      "purpose": "tab completion while editing code"
+     },
+     {
+      "name": "arcadia-pycolor",
+      "provider": "Arcadia Science",
+      "version": "0.6.4",
+      "purpose": "figure generation before manual adjustment"
+     }
+    ]
+   },
+   "nrr:confidence": {
+    "level": "high",
+    "basis": "plates are end-to-end replicates, so any predictability is by construction a batch effect; the result reverses cleanly after correction"
+   },
+   "nrr:outcomeSummary": "median MCC 1.0 (range 0.50-1.0); plate identity is very reliably predictable After correction: median MCC 0.10 (range -0.49-0.64); the plate-level batch effect has been removed",
+   "isPartOf": {
+    "@id": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be"
+   },
+   "mainEntity": {
+    "@id": "#attempt"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.57844/arcadia-xdmk-yq0w"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "https://doi.org/10.5281/zenodo.19226627"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "NCBITaxon:4932"
+    },
+    {
+     "@id": "NCBITaxon:4896"
+    },
+    {
+     "@id": "ror:052zd4v68"
+    },
+    {
+     "@id": "instrument:wasatch-wp-785x"
+    },
+    {
+     "@id": "assay:spontaneous-raman-spectroscopy"
+    },
+    {
+     "@id": "strain:BY4741"
+    },
+    {
+     "@id": "strain:YGL058w"
+    },
+    {
+     "@id": "strain:YNL141w"
+    },
+    {
+     "@id": "strain:SP286"
+    },
+    {
+     "@id": "strain:ED666"
+    },
+    {
+     "@id": "strain:SPAC18B11.07c"
+    },
+    {
+     "@id": "strain:SPBC1198.02"
+    },
+    {
+     "@id": "strain:SPBPB10D8.02c"
+    },
+    {
+     "@id": "strain:SPBC530.12c"
+    },
+    {
+     "@id": "HGNC:12472"
+    },
+    {
+     "@id": "HGNC:186"
+    },
+    {
+     "@id": "software:ramanspy"
+    },
+    {
+     "@id": "RRID:SCR_002577"
+    },
+    {
+     "@id": "software:Pycro-Manager"
+    },
+    {
+     "@id": "software:ComBat"
+    },
+    {
+     "@id": "RRID:SCR_008394"
+    }
+   ],
+   "nrr:isPartOf": [
+    {
+     "@id": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be"
+    }
+   ],
+   "nrr:comparedWith": [
+    {
+     "@id": "urn:portolan:nrr:sha256:ece76d478101ba879250f89aba35dad03e501dd1d1e276c5390a00f13c75276f"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "identifier": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "#performer-keith-cheveralls-formal-analysis",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Keith Cheveralls",
+   "nrr:type": "person",
+   "nrr:role": "formal-analysis",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-keith-cheveralls-software",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Keith Cheveralls",
+   "nrr:type": "person",
+   "nrr:role": "software",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-ilya-kolb-methodology",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Ilya Kolb",
+   "nrr:type": "person",
+   "nrr:role": "methodology",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-claude-software",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "Claude",
+   "nrr:type": "llm",
+   "nrr:role": "software",
+   "nrr:provider": "Anthropic",
+   "nrr:version": "Opus 4, 4.5, 4.6",
+   "nrr:note": "writing, cleaning, commenting and reviewing code; wording; and ideation and analysis discussion throughout the project"
+  },
+  {
+   "@id": "#performer-gemini-review",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "Gemini",
+   "nrr:type": "llm",
+   "nrr:role": "review",
+   "nrr:provider": "Google",
+   "nrr:version": "2.5 Pro",
+   "nrr:note": "reviewing the publication for typos and discrepancies"
+  },
+  {
+   "@id": "#performer-cursor-software",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "Cursor",
+   "nrr:type": "llm",
+   "nrr:role": "software",
+   "nrr:provider": "Anysphere",
+   "nrr:note": "tab completion while editing code"
+  },
+  {
+   "@id": "#performer-arcadia-pycolor-figure-generation",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "arcadia-pycolor",
+   "nrr:type": "llm",
+   "nrr:role": "figure-generation",
+   "nrr:provider": "Arcadia Science",
+   "nrr:version": "0.6.4",
+   "nrr:note": "figure generation before manual adjustment"
+  },
+  {
+   "@id": "#finding-plate-loso",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Can plate identity be predicted from the spectra, given that the three plates are end-to-end replicates with no true biological difference?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Can plate identity be predicted from the spectra, given that the three plates are end-to-end replicates with no true biological difference?",
+   "nrr:target": {
+    "label": "plate identity, a biologically meaningless label",
+    "type": "other"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "multiclass Matthews correlation coefficient (MCC), bounded in [-1, +1], where +1 is perfect prediction, 0 is random guessing and negative values indicate systemic misclassification; computed per fold and reported as the median across folds",
+    "value": 1.0,
+    "comparedTo": "chance, which is MCC 0 for this metric; perfect prediction is MCC 1",
+    "n": 3,
+    "test": "median across cross-validation folds",
+    "direction": "not-applicable",
+    "range": [
+     0.5,
+     1.0
+    ],
+    "note": "a high value here is a bad outcome for the experiment: it means the spectra carry a confound the model can exploit"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "known-positive-task",
+     "label": "species classification on the same spectra",
+     "expected": "recoverable biological signal",
+     "observed": "MCC 0.97",
+     "passed": true
+    },
+    "negative": {
+     "kind": "none",
+     "note": "this task is itself the negative control for the other tasks in the study"
+    }
+   },
+   "nrr:conditions": {
+    "task": "predict plate identity",
+    "crossValidation": "leave-one-strain-out",
+    "dataset": "uncorrected",
+    "model": "random-forest",
+    "spectra": 248,
+    "plates": 3,
+    "batchCorrection": "none"
+   },
+   "nrr:replicates": {
+    "biological": 3,
+    "note": "leave-one-strain-out cross-validation, inverting the prediction and cross-validation dimensions"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results: Adversarial prediction of plate identity confirms a plate-level batch effect; Figure 4A",
+     "source": "10.57844/arcadia-xdmk-yq0w",
+     "locator": "Figure 4A",
+     "values": {
+      "mccMedian": 1.0,
+      "mccRange": [
+       0.5,
+       1.0
+      ],
+      "task": "plate",
+      "crossValidation": "leave-one-strain-out",
+      "dataset": "uncorrected"
+     },
+     "data": [
+      {
+       "label": "Arcadia-Science/raman-batch-effects-yeast-v1.0.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.19226627",
+       "url": "https://zenodo.org/api/records/19226627/files/Arcadia-Science/raman-batch-effects-yeast-v1.0.zip/content",
+       "checksum": "md5:a3dac53d0465ca331e9bb44d1d0d60fd",
+       "size": 19740530,
+       "role": "code and processed spectra archive"
+      }
+     ]
+    }
+   ],
+   "nrr:note": "plates correspond to end-to-end replicates of the same protocol, so there should be no true biological difference between them; if plate identity is predictable, the spectra carry a strong batch effect the model can exploit",
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#finding-plate-loso-corrected",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Can plate identity be predicted from the spectra after batch correction, given that the three plates are end-to-end replicates with no true biological difference?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Can plate identity be predicted from the spectra after batch correction, given that the three plates are end-to-end replicates with no true biological difference?",
+   "nrr:target": {
+    "label": "plate identity, a biologically meaningless label",
+    "type": "other"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "multiclass Matthews correlation coefficient (MCC), bounded in [-1, +1], where +1 is perfect prediction, 0 is random guessing and negative values indicate systemic misclassification; computed per fold and reported as the median across folds",
+    "value": 0.1,
+    "comparedTo": "chance, which is MCC 0 for this metric; perfect prediction is MCC 1",
+    "n": 3,
+    "test": "median across cross-validation folds",
+    "direction": "not-applicable",
+    "range": [
+     -0.49,
+     0.64
+    ],
+    "note": "after correction the adversarial classifier performs near chance, confirming the plate-level effect was removed"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "known-positive-task",
+     "label": "species classification on the same spectra",
+     "expected": "recoverable biological signal",
+     "observed": "MCC 0.97",
+     "passed": true
+    },
+    "negative": {
+     "kind": "none",
+     "note": "this task is itself the negative control for the other tasks in the study"
+    }
+   },
+   "nrr:conditions": {
+    "task": "predict plate identity",
+    "crossValidation": "leave-one-strain-out",
+    "dataset": "lmm-corrected",
+    "model": "random-forest",
+    "spectra": 248,
+    "plates": 3,
+    "batchCorrection": "a linear mixed model fitted per wavenumber with plate identity as a random effect, followed by normalizing residuals by their within-batch standard deviations"
+   },
+   "nrr:replicates": {
+    "biological": 3,
+    "note": "leave-one-strain-out cross-validation, inverting the prediction and cross-validation dimensions"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results: Batch correction removed plate-level batch effects; Figure 4B",
+     "source": "10.57844/arcadia-xdmk-yq0w",
+     "locator": "Figure 4B",
+     "values": {
+      "mccMedian": 0.1,
+      "mccRange": [
+       -0.49,
+       0.64
+      ],
+      "task": "plate",
+      "crossValidation": "leave-one-strain-out",
+      "dataset": "lmm-corrected"
+     },
+     "data": [
+      {
+       "label": "Arcadia-Science/raman-batch-effects-yeast-v1.0.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.19226627",
+       "url": "https://zenodo.org/api/records/19226627/files/Arcadia-Science/raman-batch-effects-yeast-v1.0.zip/content",
+       "checksum": "md5:a3dac53d0465ca331e9bb44d1d0d60fd",
+       "size": 19740530,
+       "role": "code and processed spectra archive"
+      }
+     ]
+    }
+   ],
+   "nrr:note": "plates correspond to end-to-end replicates of the same protocol, so there should be no true biological difference between them; if plate identity is predictable, the spectra carry a strong batch effect the model can exploit",
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#stage-1-computation",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "spectral processing pipeline",
+   "nrr:stage": "computation",
+   "nrr:performedBy": [
+    {
+     "name": "Keith Cheveralls",
+     "type": "person",
+     "role": "formal-analysis",
+     "affiliation": "Arcadia Science"
+    },
+    {
+     "name": "Keith Cheveralls",
+     "type": "person",
+     "role": "software",
+     "affiliation": "Arcadia Science"
+    },
+    {
+     "name": "Ilya Kolb",
+     "type": "person",
+     "role": "methodology",
+     "affiliation": "Arcadia Science"
+    }
+   ],
+   "nrr:method": "cosmic ray removal with the Whitaker-Hayes despiking algorithm, default parameters; background subtraction using a single consensus dark spectrum averaged across all three plates, deliberately not one per plate, to avoid injecting additional batch effects; quality control removing spectra whose mean background-subtracted intensity fell below an empirically determined threshold of 1,000 intensity units; Savitzky-Golay smoothing, then autofluorescence baseline subtraction with ModPoly, polynomial order five; cropping to the fingerprint region 300-1,800 cm-1 and area-under-the-curve normalization; outlier removal within each well by elbow detection on each spectrum's deviation from the group median",
+   "nrr:software": [
+    {
+     "name": "ramanspy"
+    },
+    {
+     "name": "Python",
+     "identifier": "RRID:SCR_008394"
+    }
+   ],
+   "nrr:inputs": [
+    {
+     "label": "raw spectra, 5 x 5 grid per well on three plates",
+     "note": "5 x 5 grid of positions per well on each of the three replicate plates"
+    }
+   ],
+   "nrr:note": "the consensus background spectrum is averaged across all three plates deliberately, to avoid injecting per-plate differences as additional batch effects"
+  },
+  {
+   "@id": "#stage-2-analysis",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "adversarial plate-identity classification",
+   "nrr:stage": "analysis",
+   "nrr:performedBy": [
+    {
+     "name": "Keith Cheveralls",
+     "type": "person",
+     "role": "formal-analysis",
+     "affiliation": "Arcadia Science"
+    },
+    {
+     "name": "Keith Cheveralls",
+     "type": "person",
+     "role": "software",
+     "affiliation": "Arcadia Science"
+    },
+    {
+     "name": "Ilya Kolb",
+     "type": "person",
+     "role": "methodology",
+     "affiliation": "Arcadia Science"
+    }
+   ],
+   "nrr:method": "leave-one-strain-out cross-validation, used for the adversarial task of predicting plate identity",
+   "nrr:software": [
+    {
+     "name": "scikit-learn",
+     "identifier": "RRID:SCR_002577"
+    }
+   ],
+   "nrr:parameters": {
+    "models": "random forest with 300 trees, and a support vector machine with an RBF kernel and C = 100; class weighting balanced; scikit-learn implementations; hyperparameters chosen empirically",
+    "metric": "multiclass Matthews correlation coefficient (MCC), bounded in [-1, +1], where +1 is perfect prediction, 0 is random guessing and negative values indicate systemic misclassification; computed per fold and reported as the median across folds"
+   },
+   "nrr:outputs": [
+    {
+     "label": "Arcadia-Science/raman-batch-effects-yeast-v1.0.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.19226627",
+     "url": "https://zenodo.org/api/records/19226627/files/Arcadia-Science/raman-batch-effects-yeast-v1.0.zip/content",
+     "checksum": "md5:a3dac53d0465ca331e9bb44d1d0d60fd",
+     "size": 19740530,
+     "role": "code and processed spectra archive"
+    }
+   ]
+  },
+  {
+   "@id": "#stage-3-computation",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "batch correction",
+   "nrr:stage": "computation",
+   "nrr:performedBy": [
+    {
+     "name": "Keith Cheveralls",
+     "type": "person",
+     "role": "formal-analysis",
+     "affiliation": "Arcadia Science"
+    },
+    {
+     "name": "Keith Cheveralls",
+     "type": "person",
+     "role": "software",
+     "affiliation": "Arcadia Science"
+    },
+    {
+     "name": "Ilya Kolb",
+     "type": "person",
+     "role": "methodology",
+     "affiliation": "Arcadia Science"
+    }
+   ],
+   "nrr:method": "a linear mixed model fitted per wavenumber with plate identity as a random effect, followed by normalizing residuals by their within-batch standard deviations. Alternative: ComBat with plate identity as the batch variable and no fixed effects",
+   "nrr:note": "because all strains were present on all plates, strain identity did not need to be included as a fixed effect in either model assumes batches are sufficiently large and that plate identity is not confounded with strain identity"
+  },
+  {
+   "@id": "#attempt",
+   "@type": [
+    "AssessAction",
+    "prov:Activity"
+   ],
+   "name": "An adversarial task shows plate identity is almost perfectly predictable, confirming a strong batch effect",
+   "description": "Do the Raman spectra carry a plate-level experimental batch effect strong enough for a classifier to exploit?",
+   "actionStatus": "CompletedActionStatus",
+   "nrr:attemptType": "computational",
+   "nrr:outcomeClass": "positive",
+   "agent": {
+    "@id": "#operator"
+   },
+   "instrument": [
+    {
+     "@id": "#performer-keith-cheveralls-formal-analysis"
+    },
+    {
+     "@id": "#performer-keith-cheveralls-software"
+    },
+    {
+     "@id": "#performer-ilya-kolb-methodology"
+    },
+    {
+     "@id": "#performer-claude-software"
+    },
+    {
+     "@id": "#performer-gemini-review"
+    },
+    {
+     "@id": "#performer-cursor-software"
+    },
+    {
+     "@id": "#performer-arcadia-pycolor-figure-generation"
+    }
+   ],
+   "object": [],
+   "result": [
+    {
+     "@id": "#finding-plate-loso"
+    },
+    {
+     "@id": "#finding-plate-loso-corrected"
+    }
+   ],
+   "hasPart": [
+    {
+     "@id": "#stage-1-computation"
+    },
+    {
+     "@id": "#stage-2-analysis"
+    },
+    {
+     "@id": "#stage-3-computation"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-xdmk-yq0w",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Leave-one-batch-out cross-validation reveals strong batch effects in Raman spectroscopy of yeast cultures",
+   "nrr:url": "https://thestacks.org/publications/negative-data-raman-batch-effects-yeast",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T19:00:13Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.19226627",
+   "@type": "SoftwareSourceCode",
+   "nrr:role": "code-repository",
+   "name": "Arcadia-Science/raman-batch-effects-yeast: v1.0",
+   "nrr:url": "https://github.com/Arcadia-Science/raman-batch-effects-yeast",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T19:00:15Z"
+   },
+   "nrr:license": "MIT",
+   "nrr:note": "version v1.0; The pub is CC BY 4.0 but the deposited code and data archive carries the MIT licence; the two differ within one study.",
+   "nrr:data": [
+    {
+     "label": "Arcadia-Science/raman-batch-effects-yeast-v1.0.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.19226627",
+     "url": "https://zenodo.org/api/records/19226627/files/Arcadia-Science/raman-batch-effects-yeast-v1.0.zip/content",
+     "checksum": "md5:a3dac53d0465ca331e9bb44d1d0d60fd",
+     "size": 19740530,
+     "role": "code and processed spectra archive"
+    }
+   ]
+  },
+  {
+   "@id": "NCBITaxon:4932",
+   "@type": "Taxon",
+   "name": "Saccharomyces cerevisiae",
+   "nrr:entityType": "organism",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "NCBITaxon:4896",
+   "@type": "Taxon",
+   "name": "Schizosaccharomyces pombe",
+   "nrr:entityType": "organism",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "ror:052zd4v68",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "nrr:entityType": "organization",
+   "nrr:url": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "instrument:wasatch-wp-785x",
+   "@type": "Product",
+   "name": "probe-based Raman spectrometer with 785 nm excitation (Wasatch Photonics WP-785X-F13-R-IL) integrated with a motorized XY stage",
+   "nrr:entityType": "instrument",
+   "nrr:role": "Raman spectrometer",
+   "nrr:extra": {
+    "laserPower": "93 mW measured at the sample plane",
+    "integrationTime": "five seconds, 10 averages per position"
+   }
+  },
+  {
+   "@id": "assay:spontaneous-raman-spectroscopy",
+   "@type": "DefinedTerm",
+   "name": "spontaneous Raman spectroscopy of desiccated cell pellets, 785 nm excitation",
+   "nrr:entityType": "assay"
+  },
+  {
+   "@id": "strain:BY4741",
+   "@type": "Taxon",
+   "name": "S. cerevisiae BY4741",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "ATCC",
+   "nrr:extra": {
+    "description": "Standard haploid lab strain",
+    "taxon": "NCBITaxon:4932"
+   }
+  },
+  {
+   "@id": "strain:YGL058w",
+   "@type": "Taxon",
+   "name": "S. cerevisiae YGL058w (rad6 delta)",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "EUROSCARF",
+   "nrr:extra": {
+    "genotype": "rad6 delta",
+    "description": "Null mutant of rad6, an ortholog of human UBE2A (a ubiquitin-conjugating enzyme)",
+    "taxon": "NCBITaxon:4932",
+    "humanOrtholog": "UBE2A"
+   }
+  },
+  {
+   "@id": "strain:YNL141w",
+   "@type": "Taxon",
+   "name": "S. cerevisiae YNL141w (aah1 delta)",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "EUROSCARF",
+   "nrr:extra": {
+    "genotype": "aah1 delta",
+    "description": "Null mutant of aah1, an ortholog of human ADA (an adenosine deaminase)",
+    "taxon": "NCBITaxon:4932",
+    "humanOrtholog": "ADA"
+   }
+  },
+  {
+   "@id": "strain:SP286",
+   "@type": "Taxon",
+   "name": "S. pombe SP286",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "Bioneer",
+   "nrr:extra": {
+    "description": "Standard diploid lab strain",
+    "taxon": "NCBITaxon:4896"
+   }
+  },
+  {
+   "@id": "strain:ED666",
+   "@type": "Taxon",
+   "name": "S. pombe ED666",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "Bioneer",
+   "nrr:extra": {
+    "description": "Standard haploid lab strain",
+    "taxon": "NCBITaxon:4896"
+   }
+  },
+  {
+   "@id": "strain:SPAC18B11.07c",
+   "@type": "Taxon",
+   "name": "S. pombe SPAC18B11.07c (rhp6 delta)",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "Bioneer",
+   "nrr:extra": {
+    "genotype": "rhp6 delta",
+    "description": "Null mutant of rhp6 an ortholog of human UBE2A",
+    "taxon": "NCBITaxon:4896",
+    "humanOrtholog": "UBE2A"
+   }
+  },
+  {
+   "@id": "strain:SPBC1198.02",
+   "@type": "Taxon",
+   "name": "S. pombe SPBC1198.02 (dea2 delta/+)",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "Bioneer",
+   "nrr:extra": {
+    "genotype": "dea2 delta/+",
+    "description": "Heterozygous null mutant of dea2 an ortholog of human ADA; homozygous lethal",
+    "taxon": "NCBITaxon:4896",
+    "humanOrtholog": "ADA"
+   }
+  },
+  {
+   "@id": "strain:SPBPB10D8.02c",
+   "@type": "Taxon",
+   "name": "S. pombe SPBPB10D8.02c (asg delta)",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "Bioneer",
+   "nrr:extra": {
+    "genotype": "asg delta",
+    "description": "Null mutant of asg, an ortholog of human ARSG (a lysosomal sulfatase)",
+    "taxon": "NCBITaxon:4896",
+    "humanOrtholog": "ARSG"
+   }
+  },
+  {
+   "@id": "strain:SPBC530.12c",
+   "@type": "Taxon",
+   "name": "S. pombe SPBC530.12c (pdf1 delta/+)",
+   "nrr:entityType": "strain",
+   "nrr:role": "classification target",
+   "nrr:scheme": "Bioneer",
+   "nrr:extra": {
+    "genotype": "pdf1 delta/+",
+    "description": "Heterozygous null mutant of pdf1, an ortholog of human PPT1 (a lysosomal hydrolase); homozygous lethal",
+    "taxon": "NCBITaxon:4896",
+    "humanOrtholog": "PPT1"
+   }
+  },
+  {
+   "@id": "HGNC:12472",
+   "@type": "Gene",
+   "name": "UBE2A (human ortholog of a mutated yeast gene in this panel)",
+   "nrr:entityType": "gene",
+   "nrr:scheme": "HGNC"
+  },
+  {
+   "@id": "HGNC:186",
+   "@type": "Gene",
+   "name": "ADA (human ortholog of a mutated yeast gene in this panel)",
+   "nrr:entityType": "gene",
+   "nrr:scheme": "HGNC"
+  },
+  {
+   "@id": "software:ramanspy",
+   "@type": "SoftwareApplication",
+   "name": "ramanspy",
+   "nrr:entityType": "software",
+   "nrr:role": "spectral processing"
+  },
+  {
+   "@id": "RRID:SCR_002577",
+   "@type": "SoftwareApplication",
+   "name": "scikit-learn",
+   "nrr:entityType": "software",
+   "nrr:role": "classification and metrics"
+  },
+  {
+   "@id": "software:Pycro-Manager",
+   "@type": "SoftwareApplication",
+   "name": "Pycro-Manager",
+   "nrr:entityType": "software",
+   "nrr:role": "instrument control"
+  },
+  {
+   "@id": "software:ComBat",
+   "@type": "SoftwareApplication",
+   "name": "ComBat",
+   "nrr:entityType": "software",
+   "nrr:role": "batch correction"
+  },
+  {
+   "@id": "RRID:SCR_008394",
+   "@type": "SoftwareApplication",
+   "name": "Python",
+   "nrr:entityType": "software",
+   "nrr:role": "analysis language"
+  }
+ ]
+}

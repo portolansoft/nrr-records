@@ -1,0 +1,88 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.2/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.2"
+   },
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "Portolan NRR records: Can Raman spectra distinguish yeast strains and species, and do batch effects confound the answer?",
+   "description": "Can spontaneous Raman spectra be used to classify yeast strain and species identity, and to what extent do experimental batch effects confound such predictions?",
+   "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "datePublished": "2026-09-25",
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "isBasedOn": {
+    "@id": "https://doi.org/10.57844/arcadia-xdmk-yq0w"
+   },
+   "hasPart": [
+    {
+     "@id": "crates/arcadia-raman-path/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-raman-species-classification/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-raman-batch-effect/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-raman-strain-classification/ro-crate-metadata.json"
+    }
+   ],
+   "publisher": {
+    "@id": "#portolan"
+   }
+  },
+  {
+   "@id": "#portolan",
+   "@type": "Organization",
+   "name": "Portolan Software",
+   "url": "https://portolansoft.com/"
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-xdmk-yq0w",
+   "@type": "ScholarlyArticle",
+   "name": "Leave-one-batch-out cross-validation reveals strong batch effects in Raman spectroscopy of yeast cultures",
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "crates/arcadia-raman-path/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Can Raman spectra distinguish yeast strains and species, and do batch effects confound the answer?",
+   "identifier": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be",
+   "nrr:outcomeClass": "partial"
+  },
+  {
+   "@id": "crates/arcadia-raman-species-classification/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Species identity is recoverable from Raman spectra and survives holding out whole replicates",
+   "identifier": "urn:portolan:nrr:sha256:ece76d478101ba879250f89aba35dad03e501dd1d1e276c5390a00f13c75276f",
+   "nrr:outcomeClass": "positive"
+  },
+  {
+   "@id": "crates/arcadia-raman-batch-effect/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "An adversarial task shows plate identity is almost perfectly predictable, confirming a strong batch effect",
+   "identifier": "urn:portolan:nrr:sha256:068fecf19c9771346b33c22c50d149aaae70222aabb6d3ed09b5365739a22cbf",
+   "nrr:outcomeClass": "positive"
+  },
+  {
+   "@id": "crates/arcadia-raman-strain-classification/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Strain identity appears predictable from Raman spectra until whole replicates are held out, and then it is not",
+   "identifier": "urn:portolan:nrr:sha256:e9523175a7e4dbafe42357b5b408c55b42ecda6de12ba40077e0e51928d99615",
+   "nrr:outcomeClass": "inconclusive-controls-failed"
+  }
+ ]
+}

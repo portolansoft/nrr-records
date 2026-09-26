@@ -1,0 +1,540 @@
+{
+ "@id": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be",
+ "aiUseDeclaration": {
+  "statement": "We used Claude (Opus 4, 4.5, and 4.6) to help write, clean up, comment, and review our code, and we selectively incorporated its feedback. We also used Claude to suggest wording ideas and then chose which small phrases or sentence structure ideas to use, rearrange text to fit the structure of one of our pub templates, expand on summary text that we provided, and help clarify and streamline text that we wrote. Additionally, we chatted with Claude throughout the project to support ideation and analysis. We used Gemini (2.5 Pro) to review the publication to catch typos and discrepancies, and Cursor for tab completion while editing code.",
+  "tools": [
+   {
+    "name": "Claude",
+    "provider": "Anthropic",
+    "purpose": "writing, cleaning, commenting and reviewing code; wording; and ideation and analysis discussion throughout the project",
+    "version": "Opus 4, 4.5, 4.6"
+   },
+   {
+    "name": "Gemini",
+    "provider": "Google",
+    "purpose": "reviewing the publication for typos and discrepancies",
+    "version": "2.5 Pro"
+   },
+   {
+    "name": "Cursor",
+    "provider": "Anysphere",
+    "purpose": "tab completion while editing code"
+   },
+   {
+    "name": "arcadia-pycolor",
+    "provider": "Arcadia Science",
+    "purpose": "figure generation before manual adjustment",
+    "version": "0.6.4"
+   }
+  ]
+ },
+ "applicabilityConditions": {
+  "assay": "spontaneous Raman spectroscopy, 785 nm excitation, desiccated wet cell pellets on stainless steel",
+  "metric": "multiclass Matthews correlation coefficient (MCC), bounded in [-1, +1], where +1 is perfect prediction, 0 is random guessing and negative values indicate systemic misclassification; computed per fold and reported as the median across folds",
+  "models": "random forest with 300 trees, and a support vector machine with an RBF kernel and C = 100; class weighting balanced; scikit-learn implementations; hyperparameters chosen empirically",
+  "note": "conclusions are specific to this sample-preparation protocol; desiccation is inherently variable and likely contributes to the plate-level batch effect",
+  "organisms": [
+   "NCBITaxon:4932",
+   "NCBITaxon:4896"
+  ],
+  "processing": "cosmic ray removal with the Whitaker-Hayes despiking algorithm, default parameters; background subtraction using a single consensus dark spectrum averaged across all three plates, deliberately not one per plate, to avoid injecting additional batch effects; quality control removing spectra whose mean background-subtracted intensity fell below an empirically determined threshold of 1,000 intensity units; Savitzky-Golay smoothing, then autofluorescence baseline subtraction with ModPoly, polynomial order five; cropping to the fingerprint region 300-1,800 cm-1 and area-under-the-curve normalization; outlier removal within each well by elbow detection on each spectrum's deviation from the group median",
+  "replicates": "three end-to-end biological replicates, produced by repeating sample preparation and imaging in triplicate with separate cell cultures, physical plates and imaging dates",
+  "samplePreparation": "wet cell pellets spotted onto stainless steel plates stamped with a 96-well layout and desiccated at room temperature and pressure for approximately 3 h",
+  "spectraPerStrain": "24-33 (median 27)",
+  "spectraTotal": 248,
+  "strainDiversity": "three standard lab strains and six knockout strains within two species; the authors note the strains may be too genetically similar to produce detectable spectral differences",
+  "strains": [
+   "BY4741",
+   "YGL058w",
+   "YNL141w",
+   "SP286",
+   "ED666",
+   "SPAC18B11.07c",
+   "SPBC1198.02",
+   "SPBPB10D8.02c",
+   "SPBC530.12c"
+  ]
+ },
+ "confidence": {
+  "basis": "the batch effect is demonstrated directly by an adversarial task and is robust to classifier and batch-correction method; the strain negative rests on 248 spectra across nine closely related strains and is explicitly flagged by the authors as possibly not generalising",
+  "level": "medium"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be",
+ "cost": {
+  "note": "75 spectra acquired per strain across three plates, 248 retained after quality control; no monetary or compute cost is reported",
+  "source": "The approach, Experimental design"
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "biology"
+ ],
+ "entities": [
+  {
+   "id": "NCBITaxon:4932",
+   "label": "Saccharomyces cerevisiae",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "NCBITaxon:4896",
+   "label": "Schizosaccharomyces pombe",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "ror:052zd4v68",
+   "label": "Arcadia Science",
+   "type": "organization",
+   "url": "https://ror.org/052zd4v68"
+  },
+  {
+   "extra": {
+    "integrationTime": "five seconds, 10 averages per position",
+    "laserPower": "93 mW measured at the sample plane"
+   },
+   "id": "instrument:wasatch-wp-785x",
+   "label": "probe-based Raman spectrometer with 785 nm excitation (Wasatch Photonics WP-785X-F13-R-IL) integrated with a motorized XY stage",
+   "role": "Raman spectrometer",
+   "type": "instrument"
+  },
+  {
+   "id": "assay:spontaneous-raman-spectroscopy",
+   "label": "spontaneous Raman spectroscopy of desiccated cell pellets, 785 nm excitation",
+   "note": "no exact ontology term was resolved for spontaneous Raman spectroscopy of biological samples",
+   "type": "assay"
+  },
+  {
+   "extra": {
+    "description": "Standard haploid lab strain",
+    "taxon": "NCBITaxon:4932"
+   },
+   "id": "strain:BY4741",
+   "label": "S. cerevisiae BY4741",
+   "role": "classification target",
+   "scheme": "ATCC",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Null mutant of rad6, an ortholog of human UBE2A (a ubiquitin-conjugating enzyme)",
+    "genotype": "rad6 delta",
+    "humanOrtholog": "UBE2A",
+    "taxon": "NCBITaxon:4932"
+   },
+   "id": "strain:YGL058w",
+   "label": "S. cerevisiae YGL058w (rad6 delta)",
+   "role": "classification target",
+   "scheme": "EUROSCARF",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Null mutant of aah1, an ortholog of human ADA (an adenosine deaminase)",
+    "genotype": "aah1 delta",
+    "humanOrtholog": "ADA",
+    "taxon": "NCBITaxon:4932"
+   },
+   "id": "strain:YNL141w",
+   "label": "S. cerevisiae YNL141w (aah1 delta)",
+   "role": "classification target",
+   "scheme": "EUROSCARF",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Standard diploid lab strain",
+    "taxon": "NCBITaxon:4896"
+   },
+   "id": "strain:SP286",
+   "label": "S. pombe SP286",
+   "role": "classification target",
+   "scheme": "Bioneer",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Standard haploid lab strain",
+    "taxon": "NCBITaxon:4896"
+   },
+   "id": "strain:ED666",
+   "label": "S. pombe ED666",
+   "role": "classification target",
+   "scheme": "Bioneer",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Null mutant of rhp6 an ortholog of human UBE2A",
+    "genotype": "rhp6 delta",
+    "humanOrtholog": "UBE2A",
+    "taxon": "NCBITaxon:4896"
+   },
+   "id": "strain:SPAC18B11.07c",
+   "label": "S. pombe SPAC18B11.07c (rhp6 delta)",
+   "role": "classification target",
+   "scheme": "Bioneer",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Heterozygous null mutant of dea2 an ortholog of human ADA; homozygous lethal",
+    "genotype": "dea2 delta/+",
+    "humanOrtholog": "ADA",
+    "taxon": "NCBITaxon:4896"
+   },
+   "id": "strain:SPBC1198.02",
+   "label": "S. pombe SPBC1198.02 (dea2 delta/+)",
+   "role": "classification target",
+   "scheme": "Bioneer",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Null mutant of asg, an ortholog of human ARSG (a lysosomal sulfatase)",
+    "genotype": "asg delta",
+    "humanOrtholog": "ARSG",
+    "taxon": "NCBITaxon:4896"
+   },
+   "id": "strain:SPBPB10D8.02c",
+   "label": "S. pombe SPBPB10D8.02c (asg delta)",
+   "role": "classification target",
+   "scheme": "Bioneer",
+   "type": "strain"
+  },
+  {
+   "extra": {
+    "description": "Heterozygous null mutant of pdf1, an ortholog of human PPT1 (a lysosomal hydrolase); homozygous lethal",
+    "genotype": "pdf1 delta/+",
+    "humanOrtholog": "PPT1",
+    "taxon": "NCBITaxon:4896"
+   },
+   "id": "strain:SPBC530.12c",
+   "label": "S. pombe SPBC530.12c (pdf1 delta/+)",
+   "role": "classification target",
+   "scheme": "Bioneer",
+   "type": "strain"
+  },
+  {
+   "id": "HGNC:12472",
+   "label": "UBE2A (human ortholog of a mutated yeast gene in this panel)",
+   "scheme": "HGNC",
+   "type": "gene"
+  },
+  {
+   "id": "HGNC:186",
+   "label": "ADA (human ortholog of a mutated yeast gene in this panel)",
+   "scheme": "HGNC",
+   "type": "gene"
+  },
+  {
+   "id": "software:ramanspy",
+   "label": "ramanspy",
+   "role": "spectral processing",
+   "type": "software"
+  },
+  {
+   "id": "RRID:SCR_002577",
+   "label": "scikit-learn",
+   "role": "classification and metrics",
+   "type": "software"
+  },
+  {
+   "id": "software:Pycro-Manager",
+   "label": "Pycro-Manager",
+   "role": "instrument control",
+   "type": "software"
+  },
+  {
+   "id": "software:ComBat",
+   "label": "ComBat",
+   "role": "batch correction",
+   "type": "software"
+  },
+  {
+   "id": "RRID:SCR_008394",
+   "label": "Python",
+   "role": "analysis language",
+   "type": "software"
+  }
+ ],
+ "governance": {
+  "biosecurityTier": "none",
+  "humanSubjectData": "none"
+ },
+ "hasPart": [
+  "urn:portolan:nrr:sha256:ece76d478101ba879250f89aba35dad03e501dd1d1e276c5390a00f13c75276f",
+  "urn:portolan:nrr:sha256:068fecf19c9771346b33c22c50d149aaae70222aabb6d3ed09b5365739a22cbf",
+  "urn:portolan:nrr:sha256:e9523175a7e4dbafe42357b5b408c55b42ecda6de12ba40077e0e51928d99615"
+ ],
+ "hypothesis": "Evaluate whether spontaneous Raman spectra can distinguish strains and species of yeast, and determine the extent to which batch effects from experimental variation confound such predictions.",
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:2baa78a8343b17f31feefe4a44274ea2356526ec54f5cfc11d0cd820307508be",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "invalidators": [
+  "a strain panel with greater genetic diversity in which strain identity survives leave-one-replicate-out cross-validation",
+  "a sample-preparation protocol whose adversarial plate-prediction control is clean without correction",
+  "a batch-correction scheme applied within each training fold, which would make the corrected estimates valid for unseen plates"
+ ],
+ "kind": "path",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "nextSteps": [
+  "Incorporate at least three end-to-end replicates from the outset.",
+  "Include leave-one-replicate-out cross-validation in analysis workflows.",
+  "Include adversarial prediction tasks in which a model is trained to predict biologically meaningless variables such as replicate or plate identifiers."
+ ],
+ "openQuestions": [
+  "How much of the residual strain-level signal loss is stochastic sample-level batch effect and how much is genuine absence of strain-specific Raman signatures?"
+ ],
+ "operator": {
+  "identifier": "https://ror.org/052zd4v68",
+  "name": "Arcadia Science",
+  "type": "Organization"
+ },
+ "outcomeClass": "partial",
+ "outcomeSummary": "Species identity is recoverable from the spectra (median MCC 0.97 under leave-one-plate-out cross-validation). Strain identity is not: it appears recoverable under standard cross-validation (0.79) but collapses when whole plates are held out (0.32), and an adversarial classifier predicts plate identity almost perfectly, showing that batch effects dominate.",
+ "pathType": "mixed",
+ "performers": [
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Audrey Bell",
+   "role": "visualization",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ben Braverman",
+   "role": "resources",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Keith Cheveralls",
+   "role": "conceptualization",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Keith Cheveralls",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Keith Cheveralls",
+   "role": "software",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Keith Cheveralls",
+   "role": "visualization",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Keith Cheveralls",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Evan Kiefl",
+   "role": "validation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "methodology",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Ilya Kolb",
+   "role": "resources",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "David G. Mets",
+   "role": "supervision",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Sunanda Sharma",
+   "role": "critical-feedback",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Emily C.P. Weiss",
+   "role": "resources",
+   "type": "person"
+  },
+  {
+   "name": "Claude",
+   "note": "writing, cleaning, commenting and reviewing code; wording; and ideation and analysis discussion throughout the project",
+   "provider": "Anthropic",
+   "role": "software",
+   "type": "llm",
+   "version": "Opus 4, 4.5, 4.6"
+  },
+  {
+   "name": "Gemini",
+   "note": "reviewing the publication for typos and discrepancies",
+   "provider": "Google",
+   "role": "review",
+   "type": "llm",
+   "version": "2.5 Pro"
+  },
+  {
+   "name": "Cursor",
+   "note": "tab completion while editing code",
+   "provider": "Anysphere",
+   "role": "software",
+   "type": "llm"
+  },
+  {
+   "name": "arcadia-pycolor",
+   "note": "figure generation before manual adjustment",
+   "provider": "Arcadia Science",
+   "role": "figure-generation",
+   "type": "llm",
+   "version": "0.6.4"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "Tagged 'No longer actively updating' rather than 'Iced'. There is no Icebox statement and no stated abandonment reason, so no abandonment reason is recorded.",
+  "The pub is CC BY 4.0 but the deposited code and data archive carries the MIT licence; the two differ within one study.",
+  "Self-declared analysis limitation carried on the corrected findings: The batch correction introduces an implicit train-test leakage, as it applies batch correction once to the full dataset rather than to each training fold separately. For leave-one-plate-out cross-validation this effect is severe, as the batch-effect dimension and the cross-validation dimension are identical. The batch-corrected leave-one-plate-out estimates are not valid estimates of generalization to fully unseen plates.",
+  "Only random-forest numbers are given numerically in the text. Figure 8 reports every combination of model and batch-correction method, and the authors state the medians were not meaningfully different; those combinations are recorded as a robustness finding rather than as separate measured values.",
+  "This is the only study in the corpus whose AI-use statement includes participation in ideation and analysis, not only in code and prose."
+ ],
+ "question": "Can spontaneous Raman spectra be used to classify yeast strain and species identity, and to what extent do experimental batch effects confound such predictions?",
+ "slug": "arcadia-raman-path",
+ "sourceLicense": "CC BY 4.0 (pub); MIT (code and data archive)",
+ "sources": [
+  {
+   "identifier": "doi:10.57844/arcadia-xdmk-yq0w",
+   "label": "Leave-one-batch-out cross-validation reveals strong batch effects in Raman spectroscopy of yeast cultures",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T19:00:13Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://thestacks.org/publications/negative-data-raman-batch-effects-yeast"
+  },
+  {
+   "data": [
+    {
+     "accession": "10.5281/zenodo.19226627",
+     "checksum": "md5:a3dac53d0465ca331e9bb44d1d0d60fd",
+     "label": "Arcadia-Science/raman-batch-effects-yeast-v1.0.zip",
+     "repository": "Zenodo",
+     "role": "code and processed spectra archive",
+     "size": 19740530,
+     "url": "https://zenodo.org/api/records/19226627/files/Arcadia-Science/raman-batch-effects-yeast-v1.0.zip/content"
+    }
+   ],
+   "identifier": "doi:10.5281/zenodo.19226627",
+   "label": "Arcadia-Science/raman-batch-effects-yeast: v1.0",
+   "license": "MIT",
+   "note": "version v1.0; The pub is CC BY 4.0 but the deposited code and data archive carries the MIT licence; the two differ within one study.",
+   "role": "code-repository",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T19:00:15Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://github.com/Arcadia-Science/raman-batch-effects-yeast"
+  },
+  {
+   "identifier": "doi:10.1038/s41467-019-12898-9",
+   "label": "strainDiscrimination",
+   "role": "prior-art",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T19:00:16Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.1038/s41467-019-12898-9",
+   "label": "singleCellRamanToRna",
+   "role": "prior-art",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T19:00:16Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.57844/arcadia-f4fe-ep62",
+   "label": "same Raman programme: detects chemical perturbation of protein structure",
+   "role": "reference",
+   "statusAtCheck": {
+    "assertedBy": "not-checked",
+    "checkedAt": "2026-09-25T00:00:00Z",
+    "integrity": "unknown",
+    "version": "unknown"
+   },
+   "url": "https://thestacks.org/publications/result-raman-protein-analysis"
+  },
+  {
+   "identifier": "doi:10.57844/arcadia-2mmy-8h28",
+   "label": "same Raman programme, iced: Raman for natural therapeutic discovery, stopped partly because spectra quality from therapeutic fractions was insufficient",
+   "role": "reference",
+   "statusAtCheck": {
+    "assertedBy": "not-checked",
+    "checkedAt": "2026-09-25T00:00:00Z",
+    "integrity": "unknown",
+    "version": "unknown"
+   },
+   "url": "https://thestacks.org/publications/idea-raman-therapeutic-discovery"
+  }
+ ],
+ "studyId": "arcadia-raman",
+ "successCriteria": "Classification accuracy above chance under a cross-validation scheme that holds out whole experimental replicates, with an adversarial control showing that the model is not reading batch identity.",
+ "title": "Can Raman spectra distinguish yeast strains and species, and do batch effects confound the answer?",
+ "untriedBranches": [
+  {
+   "description": "Incorporate at least three end-to-end replicates from the outset.",
+   "source": "Conclusions and recommendations",
+   "status": "proposed-by-authors"
+  },
+  {
+   "description": "Include leave-one-replicate-out cross-validation in analysis workflows.",
+   "source": "Conclusions and recommendations",
+   "status": "proposed-by-authors"
+  },
+  {
+   "description": "Include adversarial prediction tasks in which a model is trained to predict biologically meaningless variables such as replicate or plate identifiers.",
+   "source": "Conclusions and recommendations",
+   "status": "proposed-by-authors"
+  },
+  {
+   "description": "Repeat the strain task on a panel with greater genetic diversity; the authors state the negative result may not generalise to more divergent strains.",
+   "source": "Limitations and caveats",
+   "status": "proposed-by-authors"
+  },
+  {
+   "description": "Repeat with a sample-preparation protocol that avoids desiccation, which the authors identify as a likely source of the plate-level batch effect.",
+   "source": "Limitations and caveats",
+   "status": "proposed-by-authors"
+  }
+ ],
+ "version": "1",
+ "visibility": "public"
+}
