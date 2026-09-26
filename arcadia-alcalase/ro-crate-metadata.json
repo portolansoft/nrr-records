@@ -1,0 +1,118 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.2/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.2"
+   },
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "Portolan NRR records: Alcalase pretreatment for CRISPR-Cas9 HDR knock-in in cell-walled Chlamydomonas reinhardtii (iced project)",
+   "description": "Can Alcalase, an off-the-shelf serine endopeptidase, replace in-house autolysin to permeabilise the C. reinhardtii cell wall for Cas9 RNP plus HDR-donor electroporation and yield targeted knock-ins?",
+   "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "datePublished": "2026-09-25",
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "isBasedOn": {
+    "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz"
+   },
+   "hasPart": [
+    {
+     "@id": "crates/arcadia-alcalase-path/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-alcalase-wall-permeability/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-alcalase-viability/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-alcalase-transformation/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-alcalase-hdr-knockin/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-alcalase-visual-screen/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/arcadia-alcalase-culture-format/ro-crate-metadata.json"
+    }
+   ],
+   "publisher": {
+    "@id": "#portolan"
+   }
+  },
+  {
+   "@id": "#portolan",
+   "@type": "Organization",
+   "name": "Portolan Software",
+   "url": "https://portolansoft.com/"
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz",
+   "@type": "ScholarlyArticle",
+   "name": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-path/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Alcalase pretreatment for CRISPR-Cas9 HDR knock-in in cell-walled Chlamydomonas reinhardtii (iced project)",
+   "identifier": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+   "nrr:outcomeClass": "abandoned"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-wall-permeability/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Alcalase increases C. reinhardtii cell-wall permeability (OD-based leakage assay)",
+   "identifier": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+   "nrr:outcomeClass": "positive"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-viability/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Alcalase pretreatment (1:10, 1 h) cuts CC-124 viability at least ten-fold independent of electroporation",
+   "identifier": "urn:portolan:nrr:sha256:cf780fa14af27606472b4fa7f69673a14d2e9aed9f79d93e6ea7856047116a06",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-transformation/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Alcalase-treated CC-124 cells yield near-background NAT-resistant colonies after Cas9 RNP + donor electroporation; GeneArt-treated cells yield hundreds",
+   "identifier": "urn:portolan:nrr:sha256:e7e859a07618a7847a6a3af5e24376903d523e9e740941ca82a4781388d31eb4",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-hdr-knockin/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "No on-target HDR insertion or indels detected at three loci among 191 NAT-resistant colonies (0/40 sequenced), under either pretreatment",
+   "identifier": "urn:portolan:nrr:sha256:74faad4a842f2cf41f55e1b61e24450b69284644d832028c375f8d55896c4129",
+   "nrr:outcomeClass": "inconclusive-no-positive-control"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-visual-screen/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Colony colour cannot serve as a visual screen for TLA knockouts under NAT selection",
+   "identifier": "urn:portolan:nrr:sha256:a14145821f072328b309e05d3105cfe334e48ad55bae87b774cdd81d91be43b3",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/arcadia-alcalase-culture-format/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Flask- versus plate-grown starting cultures: no conclusion for knock-in; Alcalase survivors from flask tolerated electroporation better",
+   "identifier": "urn:portolan:nrr:sha256:ebbd7dca3336251042736e94b9d000e425d8d536e691cabe210b32609d049f2d",
+   "nrr:outcomeClass": "inconclusive"
+  }
+ ]
+}

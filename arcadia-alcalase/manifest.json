@@ -1,0 +1,73 @@
+{
+ "study": "arcadia-alcalase",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "8edae7a72dcaf66ea35c59fcc5aaaeebcb793fea",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.57844/arcadia-pdu7-q2zz",
+  "label": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "arcadia-alcalase-path",
+   "id": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "abandoned",
+   "findings": 0
+  },
+  {
+   "slug": "arcadia-alcalase-wall-permeability",
+   "id": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "positive",
+   "findings": 4
+  },
+  {
+   "slug": "arcadia-alcalase-viability",
+   "id": "urn:portolan:nrr:sha256:cf780fa14af27606472b4fa7f69673a14d2e9aed9f79d93e6ea7856047116a06",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 2
+  },
+  {
+   "slug": "arcadia-alcalase-transformation",
+   "id": "urn:portolan:nrr:sha256:e7e859a07618a7847a6a3af5e24376903d523e9e740941ca82a4781388d31eb4",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 2
+  },
+  {
+   "slug": "arcadia-alcalase-hdr-knockin",
+   "id": "urn:portolan:nrr:sha256:74faad4a842f2cf41f55e1b61e24450b69284644d832028c375f8d55896c4129",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "inconclusive-no-positive-control",
+   "findings": 1
+  },
+  {
+   "slug": "arcadia-alcalase-visual-screen",
+   "id": "urn:portolan:nrr:sha256:a14145821f072328b309e05d3105cfe334e48ad55bae87b774cdd81d91be43b3",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 1
+  },
+  {
+   "slug": "arcadia-alcalase-culture-format",
+   "id": "urn:portolan:nrr:sha256:ebbd7dca3336251042736e94b9d000e425d8d536e691cabe210b32609d049f2d",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "inconclusive",
+   "findings": 1
+  }
+ ]
+}

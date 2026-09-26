@@ -1,0 +1,662 @@
+{
+ "@id": "urn:portolan:nrr:sha256:74faad4a842f2cf41f55e1b61e24450b69284644d832028c375f8d55896c4129",
+ "aiUseDeclaration": {
+  "statement": "We used Claude (Opus 4.8, Opus 5) to suggest wording ideas, copy-edit draft text to match Arcadia's style, clarify and streamline text, and generate figure mockups. We used ChatGPT (GPT-5.6 Luna) to suggest wording ideas and to clarify and streamline text. We also used ChatGPT (GPT-5.6 Sol) to identify reproducibility/clarity issues in our draft, and we corrected the issues it found. Additionally, Gemini (Gemini 3.6 Flash) suggested papers on relevant science, we did further reading, and we cited some of this literature. We reviewed all AI-assisted content and take responsibility for its accuracy and integrity.",
+  "tools": [
+   {
+    "name": "Claude",
+    "provider": "Anthropic",
+    "purpose": "wording, copy-editing, clarification, figure mockups",
+    "version": "Opus 4.8, Opus 5"
+   },
+   {
+    "name": "ChatGPT",
+    "provider": "OpenAI",
+    "purpose": "wording, clarification",
+    "version": "GPT-5.6 Luna"
+   },
+   {
+    "name": "ChatGPT",
+    "provider": "OpenAI",
+    "purpose": "reproducibility and clarity review of the draft",
+    "version": "GPT-5.6 Sol"
+   },
+   {
+    "name": "Gemini",
+    "provider": "Google",
+    "purpose": "literature suggestions",
+    "version": "Gemini 3.6 Flash"
+   },
+   {
+    "name": "arcadia-pycolor",
+    "provider": "Arcadia Science",
+    "purpose": "figure generation",
+    "version": "0.8.0"
+   }
+  ]
+ },
+ "applicabilityConditions": {
+  "alcalase": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose",
+  "cargo": "Alt-R S. pyogenes Cas9 V3 (IDT 1081058) with annealed Alt-R crRNA:tracrRNA (IDT 1072533), 5 uM each, 4 uL RNP per reaction; linear 1,589 bp HDR donor: HSP70A-RBCS2::RBCS2i1::NAT::RBCS2-T flanked by 50 bp homology arms, released by SapI (NEB R0569S), gel-purified (Zymo D4001), 1 ug per transformation; synthesised by Twist Bioscience in pTwist Amp High Copy",
+  "cellWall": "intact (cell-walled strain)",
+  "comparator": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)",
+  "cultureFormats": [
+   "flask (liquid TAP, mid-log)",
+   "plate (TAP agar lawn)"
+  ],
+  "dates": {
+   "genotyping": "2026-05-06",
+   "transformation": "2026-04-22"
+  },
+  "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+  "loci": [
+   "Cre04.g231026",
+   "Cre11.g479750",
+   "Cre10.g462200",
+   "Cre10.g462200"
+  ],
+  "organism": "NCBITaxon:3055",
+  "replicates": "n = 1 per condition; one experimenter; one batch of each key reagent",
+  "selection": "TAP agar + 7.5 ug/mL nourseothricin (NAT); controls plated on TAP after 100x dilution; 5-7 days in grow tent",
+  "strain": "CC-124",
+  "synchronization": "14 h light / 10 h dark for four days before transformation; Fluval Plant 4.0 LED Nano lamps, 11,000 lux at culture surface"
+ },
+ "attemptType": "wet-lab",
+ "confidence": {
+  "basis": "clean genotyping of 191 colonies, but no positive control for editing; authors call it a practical caution, not an evaluation of any component",
+  "level": "medium"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:74faad4a842f2cf41f55e1b61e24450b69284644d832028c375f8d55896c4129",
+ "cost": {
+  "humanExperimenters": 1,
+  "note": "single unreplicated experiment; USD not reported",
+  "source": "Figure 1 legend: workflow spans ~18 days from culture synchronization to genotyping",
+  "wallClockDays": 18,
+  "wetLabRuns": 1
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "biology"
+ ],
+ "entities": [
+  {
+   "id": "NCBITaxon:3055",
+   "label": "Chlamydomonas reinhardtii",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "chlamycollection:CC-124",
+   "label": "CC-124 wild type",
+   "role": "host strain",
+   "scheme": "Chlamydomonas Resource Center",
+   "type": "strain"
+  },
+  {
+   "id": "ror:052zd4v68",
+   "label": "Arcadia Science",
+   "type": "organization",
+   "url": "https://ror.org/052zd4v68"
+  },
+  {
+   "extra": {
+    "azimuth": "0.74",
+    "guide": "CpSRP43_KO_g01",
+    "pam": "GGG",
+    "protospacer": "ACTAGGTACTCGACGCGCGG"
+   },
+   "id": "phytozome:Cre04.g231026",
+   "label": "CpSRP43 (TLA3)",
+   "role": "CRISPR target",
+   "scheme": "Phytozome C. reinhardtii v5.6",
+   "type": "locus"
+  },
+  {
+   "extra": {
+    "azimuth": "0.73",
+    "guide": "CpSRP54_KO_g01",
+    "pam": "AGG",
+    "protospacer": "AGGGCGCATACTGACCACGA"
+   },
+   "id": "phytozome:Cre11.g479750",
+   "label": "CpSRP54 (TLA4)",
+   "role": "CRISPR target",
+   "scheme": "Phytozome C. reinhardtii v5.6",
+   "type": "locus"
+  },
+  {
+   "extra": {
+    "azimuth": "0.668",
+    "guide": "SRTA_KO_g01",
+    "pam": "CGG",
+    "protospacer": "AAAGGGCGTCAAGGAGCTAG"
+   },
+   "id": "phytozome:Cre10.g462200",
+   "label": "SRTA (SRTA)",
+   "role": "CRISPR target",
+   "scheme": "Phytozome C. reinhardtii v5.6",
+   "type": "locus"
+  },
+  {
+   "extra": {
+    "azimuth": "0.612",
+    "guide": "SRTA_KO_g02",
+    "pam": "CGG",
+    "protospacer": "AAGCCGAAGAAAAACCTTGG"
+   },
+   "id": "phytozome:Cre10.g462200",
+   "label": "SRTA (SRTA)",
+   "role": "CRISPR target",
+   "scheme": "Phytozome C. reinhardtii v5.6",
+   "type": "locus"
+  },
+  {
+   "extra": {
+    "vendor": "Sigma-Aldrich"
+   },
+   "id": "catalog:Sigma-Aldrich:126741",
+   "label": "Alcalase",
+   "role": "cell wall protease (serine endopeptidase",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "Thermo Fisher Scientific"
+   },
+   "id": "catalog:Thermo Fisher Scientific:A24229",
+   "label": "GeneArt MAX Efficiency Transformation Reagent for Algae",
+   "role": "comparator transformation reagent",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "IDT"
+   },
+   "id": "catalog:IDT:1081058",
+   "label": "Alt-R S. pyogenes Cas9 V3",
+   "role": "nuclease",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "IDT"
+   },
+   "id": "catalog:IDT:1072533",
+   "label": "Alt-R tracrRNA",
+   "role": "guide component",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "NEB"
+   },
+   "id": "catalog:NEB:R0569S",
+   "label": "SapI",
+   "role": "donor linearisation",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "Zymo"
+   },
+   "id": "catalog:Zymo:D4001",
+   "label": "Zymoclean Gel DNA Recovery Kit",
+   "role": "donor purification",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "Takara Bio"
+   },
+   "id": "catalog:Takara Bio:R052A",
+   "label": "PrimeSTAR GXL Premix Fast Dye Plus",
+   "role": "colony PCR",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "Invitrogen"
+   },
+   "id": "catalog:Invitrogen:G700802",
+   "label": "E-Gel 2% agarose",
+   "role": "gel",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "VWR"
+   },
+   "id": "catalog:VWR:89047-210",
+   "label": "4 mm electroporation cuvettes",
+   "role": "electroporation",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "Fluval"
+   },
+   "id": "catalog:Fluval:16875",
+   "label": "Fluval Plant 4.0 LED Nano",
+   "role": "culture lighting",
+   "type": "reagent"
+  },
+  {
+   "extra": {
+    "vendor": "VWR"
+   },
+   "id": "catalog:VWR:734-2602",
+   "label": "cell scraper 25 cm",
+   "role": "harvest",
+   "type": "reagent"
+  },
+  {
+   "extra": {},
+   "id": "reagent:nourseothricin",
+   "label": "nourseothricin",
+   "role": "selection antibiotic 7.5 ug/mL",
+   "type": "reagent"
+  },
+  {
+   "id": "pubchem:CID71720685",
+   "label": "nourseothricin (NAT)",
+   "role": "selection antibiotic",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "extra": {
+    "version": "2026.0.2"
+   },
+   "id": "RRID:SCR_010519",
+   "label": "Geneious Prime",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "version": "2.16.0/1.54p"
+   },
+   "id": "RRID:SCR_002285",
+   "label": "Fiji",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "version": "0.8.0"
+   },
+   "id": "software:arcadia-pycolor",
+   "label": "arcadia-pycolor",
+   "type": "software"
+  }
+ ],
+ "findings": [
+  {
+   "conditions": {
+    "donor": "1,589 bp linear NAT cassette",
+    "genotyping": "1 uL of 96-deep-well culture as template; PrimeSTAR GXL Premix Fast (Takara R052A); expected ~0.5 kb wild type, ~2 kb HDR insert; 2% E-Gel (Invitrogen G700802) or 1% agarose",
+    "guides": [
+     "CpSRP43_KO_g01",
+     "CpSRP54_KO_g01",
+     "SRTA_KO_g01",
+     "SRTA_KO_g02"
+    ],
+    "homologyArms": "50 bp",
+    "sequencing": "unpurified PCR products from 40 colonies (10 per guide) sequenced by Angstrom Innovation (Oxford Nanopore); compared with C. reinhardtii v5.6 in Geneious Prime v2026.0.2"
+   },
+   "controls": {
+    "negative": {
+     "kind": "background",
+     "label": "no RNP, no donor",
+     "observed": "0-4 NAT-resistant colonies",
+     "passed": true
+    },
+    "positive": {
+     "kind": "none",
+     "note": "no guide/donor/selection combination previously shown to edit in this delivery system; authors list restoring such a control as a next step"
+    }
+   },
+   "effect": {
+    "comparedTo": "wild-type ~0.5 kb amplicon",
+    "direction": "none",
+    "metric": "colonies with ~2 kb HDR amplicon or sequence-confirmed edit",
+    "n": 191,
+    "note": "172/191 wild-type-size amplicons, rest no band; 0/40 edits by Nanopore amplicon sequencing (10 per guide)",
+    "value": 0
+   },
+   "evidence": [
+    {
+     "label": "Table 5",
+     "locator": "Table 5",
+     "source": "10.57844/arcadia-pdu7-q2zz",
+     "values": {
+      "large": {
+       "pcrPositive": 75,
+       "screened": 79,
+       "sequenced": 9
+      },
+      "medium": {
+       "pcrPositive": 61,
+       "screened": 67,
+       "sequenced": 14
+      },
+      "small": {
+       "pcrPositive": 36,
+       "screened": 45,
+       "sequenced": 17
+      },
+      "total": {
+       "pcrPositive": 172,
+       "screened": 191,
+       "sequenced": 40
+      }
+     }
+    },
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:8bfbbd1cf5ad00401f45454491d6dc40",
+       "label": "HDR donor plasmid maps.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 19353,
+       "url": "https://zenodo.org/api/records/22238548/files/HDR%20donor%20plasmid%20maps.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:897feb0b177819b196e98b28f74c5bc6",
+       "label": "amplicon sequencing results.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 212751,
+       "url": "https://zenodo.org/api/records/22238548/files/amplicon%20sequencing%20results.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:c503740077193008cf04bbc911297089",
+       "label": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 46162,
+       "url": "https://zenodo.org/api/records/22238548/files/Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:b00d1d9780a5748449e8e8e1f31d325d",
+       "label": "colony PCR gel images.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 5353618,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20PCR%20gel%20images.zip/content"
+      }
+     ],
+     "derivedBy": "portolan-ingest",
+     "label": "Per-colony index (Zenodo)",
+     "locator": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+     "method": "row counts over the index CSV",
+     "source": "10.5281/zenodo.22238548",
+     "values": {
+      "byGuide": {
+       "": 62,
+       "No Donor": 12,
+       "No Donor-Flask": 8,
+       "No Donor-Plate": 6,
+       "SRTA_g01": 78,
+       "SRTA_g02": 85,
+       "TLA3_g01": 67,
+       "TLA4_g01": 68
+      },
+      "byTreatment": {
+       "": 62,
+       "Alcalase": 57,
+       "GA Max Efficiency": 257,
+       "GeneArt": 10
+      },
+      "editsDetected": 0,
+      "pcrBandYes": 176,
+      "rows": 386,
+      "sequenced": 40
+     }
+    }
+   ],
+   "failureModes": [
+    "low-editing-efficiency"
+   ],
+   "id": "hdr-ontarget",
+   "informativeness": "uninformative",
+   "informativenessReason": "no positive control",
+   "note": "donor DNA was delivered and integrated in cells that gained antibiotic resistance, but most likely off-target by NHEJ rather than on-target by HDR",
+   "outcomeClass": "inconclusive-no-positive-control",
+   "question": "Among NAT-resistant colonies from either pretreatment, did Cas9 RNP plus a 50 bp-homology-arm linear donor produce on-target HDR insertion or indels at CpSRP43, CpSRP54 or SRTA exon 1?",
+   "replicates": {
+    "biological": 1,
+    "note": "201 colonies picked, 10 excluded for evaporation"
+   },
+   "sensitivity": "0 of 40 sequenced colonies edited: an on-target rate above 7.5% among NAT-resistant colonies would have been detected with 95% probability (rule of three, derived by portolan-ingest); PCR screen of 191 colonies bounds the ~2 kb insert rate below 1.6%",
+   "target": {
+    "label": "on-target HDR knock-in at Cre04.g231026 / Cre11.g479750 / Cre10.g462200",
+    "type": "process"
+   }
+  }
+ ],
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:74faad4a842f2cf41f55e1b61e24450b69284644d832028c375f8d55896c4129",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "invalidators": [
+  "a positive editing control (validated guide, donor and selection)",
+  "a donor-only, no-RNP control",
+  "co-targeting an endogenous selectable marker to enrich edited cells"
+ ],
+ "isPartOf": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/052zd4v68",
+  "name": "Arcadia Science",
+  "type": "Organization"
+ },
+ "outcomeClass": "inconclusive-no-positive-control",
+ "outcomeSummary": "0 of 191 colonies by PCR and 0 of 40 by sequencing showed on-target editing; delivery failure cannot be separated from editing or repair failure.",
+ "pathType": "experiment",
+ "performers": [
+  {
+   "affiliation": "Arcadia Science",
+   "identifier": "https://orcid.org/0000-0003-4005-7151",
+   "name": "Daniel Caddell",
+   "role": "experimental-design",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "identifier": "https://orcid.org/0000-0003-4005-7151",
+   "name": "Daniel Caddell",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "identifier": "https://orcid.org/0000-0003-4005-7151",
+   "name": "Daniel Caddell",
+   "role": "investigation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Raymond Futia",
+   "role": "experimental-design",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Raymond Futia",
+   "role": "investigation",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "question": "Does Cas9 RNP plus a 50 bp-arm linear donor produce on-target knock-in in cell-walled CC-124 after Alcalase or GeneArt pretreatment?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+   "type": "isPartOf"
+  }
+ ],
+ "slug": "arcadia-alcalase-hdr-knockin",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.57844/arcadia-pdu7-q2zz",
+   "label": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:26Z",
+    "integrity": "none",
+    "version": "v1"
+   },
+   "url": "https://thestacks.org/publications/informative-failure-alcalase-crispr-chlamydomonas"
+  },
+  {
+   "data": [
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:d715b61c1c345c8fe35c5d07eb7b02cb",
+     "label": "colony selection.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 379267934,
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20selection.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:79d46a1054b9c2bf3f80e94daf774054",
+     "label": "colony selection GIMP.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 625334645,
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20selection%20GIMP.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:8bfbbd1cf5ad00401f45454491d6dc40",
+     "label": "HDR donor plasmid maps.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 19353,
+     "url": "https://zenodo.org/api/records/22238548/files/HDR%20donor%20plasmid%20maps.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:897feb0b177819b196e98b28f74c5bc6",
+     "label": "amplicon sequencing results.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 212751,
+     "url": "https://zenodo.org/api/records/22238548/files/amplicon%20sequencing%20results.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:c503740077193008cf04bbc911297089",
+     "label": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 46162,
+     "url": "https://zenodo.org/api/records/22238548/files/Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:b00d1d9780a5748449e8e8e1f31d325d",
+     "label": "colony PCR gel images.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 5353618,
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20PCR%20gel%20images.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:52c68656f3c2923f11601ab901238530",
+     "label": "colony counting FIJI.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 170020010,
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:6be7ff9f8a826481f73754210e2b11a3",
+     "label": "deepwell plates.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 13099022,
+     "url": "https://zenodo.org/api/records/22238548/files/deepwell%20plates.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+     "label": "colony counting.zip",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 194406925,
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content"
+    },
+    {
+     "accession": "10.5281/zenodo.22238548",
+     "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+     "label": "wall_permeability_data.csv",
+     "repository": "Zenodo",
+     "role": "raw-data",
+     "size": 464,
+     "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content"
+    }
+   ],
+   "identifier": "doi:10.5281/zenodo.22238548",
+   "label": "Data accompanying: Evaluation of Alcalase pretreatment for CRISPR-HDR in Chlamydomonas reinhardtii",
+   "license": "CC BY 4.0",
+   "role": "data-deposit",
+   "statusAtCheck": {
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:24Z",
+    "integrity": "none",
+    "version": "dataset"
+   }
+  }
+ ],
+ "stages": [
+  {
+   "label": "colony PCR and amplicon sequencing",
+   "method": "1 uL of 96-deep-well culture as template; PrimeSTAR GXL Premix Fast (Takara R052A); expected ~0.5 kb wild type, ~2 kb HDR insert; 2% E-Gel (Invitrogen G700802) or 1% agarose",
+   "performedBy": [
+    {
+     "affiliation": "Arcadia Science",
+     "identifier": "https://orcid.org/0000-0003-4005-7151",
+     "name": "Daniel Caddell",
+     "role": "conceptualization",
+     "type": "person"
+    },
+    {
+     "name": "Angstrom Innovation",
+     "note": "Oxford Nanopore amplicon sequencing",
+     "role": "sequencing-service",
+     "type": "service"
+    }
+   ],
+   "software": [
+    {
+     "identifier": "RRID:SCR_010519",
+     "name": "Geneious Prime",
+     "version": "2026.0.2"
+    }
+   ],
+   "stage": "genotyping"
+  }
+ ],
+ "studyId": "arcadia-alcalase",
+ "successCriteria": "A ~2 kb amplicon or a sequence-confirmed edit at the target locus in at least one NAT-resistant colony.",
+ "title": "No on-target HDR insertion or indels detected at three loci among 191 NAT-resistant colonies (0/40 sequenced), under either pretreatment",
+ "version": "1",
+ "visibility": "public"
+}

@@ -1,0 +1,1762 @@
+{
+ "arguments": {
+  "attachments": [],
+  "crate": {
+   "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+     "nrr": "https://portolansoft.com/schema/nrr/0.2#",
+     "prov": "http://www.w3.org/ns/prov#"
+    }
+   ],
+   "@graph": [
+    {
+     "@id": "ro-crate-metadata.json",
+     "@type": "CreativeWork",
+     "about": {
+      "@id": "./"
+     },
+     "conformsTo": [
+      {
+       "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      {
+       "@id": "https://portolansoft.com/profile/nrr/0.2"
+      }
+     ]
+    },
+    {
+     "@id": "./",
+     "@type": "Dataset",
+     "conformsTo": {
+      "@id": "https://portolansoft.com/profile/nrr/0.2"
+     },
+     "datePublished": "2026-09-25T00:00:00Z",
+     "description": "Does a 1 h Alcalase (1:10) treatment permeabilise the cell wall of synchronised CC-124 cells more than GeneArt washing or no enzyme?",
+     "hasPart": [
+      {
+       "@id": "#attempt"
+      },
+      {
+       "@id": "#finding-leak-alcalase-flask"
+      },
+      {
+       "@id": "#finding-leak-geneart-flask"
+      },
+      {
+       "@id": "#finding-leak-alcalase-plate"
+      },
+      {
+       "@id": "#finding-leak-geneart-plate"
+      }
+     ],
+     "identifier": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+     "isPartOf": {
+      "@id": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22"
+     },
+     "isSupplementTo": [
+      {
+       "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "keywords": [
+      "biology"
+     ],
+     "license": {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "mainEntity": {
+      "@id": "#attempt"
+     },
+     "mentions": [
+      {
+       "@id": "NCBITaxon:3055"
+      },
+      {
+       "@id": "chlamycollection:CC-124"
+      },
+      {
+       "@id": "ror:052zd4v68"
+      },
+      {
+       "@id": "phytozome:Cre04.g231026"
+      },
+      {
+       "@id": "phytozome:Cre11.g479750"
+      },
+      {
+       "@id": "phytozome:Cre10.g462200"
+      },
+      {
+       "@id": "phytozome:Cre10.g462200"
+      },
+      {
+       "@id": "catalog:Sigma-Aldrich:126741"
+      },
+      {
+       "@id": "catalog:Thermo Fisher Scientific:A24229"
+      },
+      {
+       "@id": "catalog:IDT:1081058"
+      },
+      {
+       "@id": "catalog:IDT:1072533"
+      },
+      {
+       "@id": "catalog:NEB:R0569S"
+      },
+      {
+       "@id": "catalog:Zymo:D4001"
+      },
+      {
+       "@id": "catalog:Takara Bio:R052A"
+      },
+      {
+       "@id": "catalog:Invitrogen:G700802"
+      },
+      {
+       "@id": "catalog:VWR:89047-210"
+      },
+      {
+       "@id": "catalog:Fluval:16875"
+      },
+      {
+       "@id": "catalog:VWR:734-2602"
+      },
+      {
+       "@id": "reagent:nourseothricin"
+      },
+      {
+       "@id": "pubchem:CID71720685"
+      },
+      {
+       "@id": "RRID:SCR_010519"
+      },
+      {
+       "@id": "RRID:SCR_002285"
+      },
+      {
+       "@id": "software:arcadia-pycolor"
+      }
+     ],
+     "name": "Alcalase increases C. reinhardtii cell-wall permeability (OD-based leakage assay)",
+     "nrr:aiUseDeclaration": {
+      "statement": "We used Claude (Opus 4.8, Opus 5) to suggest wording ideas, copy-edit draft text to match Arcadia's style, clarify and streamline text, and generate figure mockups. We used ChatGPT (GPT-5.6 Luna) to suggest wording ideas and to clarify and streamline text. We also used ChatGPT (GPT-5.6 Sol) to identify reproducibility/clarity issues in our draft, and we corrected the issues it found. Additionally, Gemini (Gemini 3.6 Flash) suggested papers on relevant science, we did further reading, and we cited some of this literature. We reviewed all AI-assisted content and take responsibility for its accuracy and integrity.",
+      "tools": [
+       {
+        "name": "Claude",
+        "provider": "Anthropic",
+        "purpose": "wording, copy-editing, clarification, figure mockups",
+        "version": "Opus 4.8, Opus 5"
+       },
+       {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "purpose": "wording, clarification",
+        "version": "GPT-5.6 Luna"
+       },
+       {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "purpose": "reproducibility and clarity review of the draft",
+        "version": "GPT-5.6 Sol"
+       },
+       {
+        "name": "Gemini",
+        "provider": "Google",
+        "purpose": "literature suggestions",
+        "version": "Gemini 3.6 Flash"
+       },
+       {
+        "name": "arcadia-pycolor",
+        "provider": "Arcadia Science",
+        "purpose": "figure generation",
+        "version": "0.8.0"
+       }
+      ]
+     },
+     "nrr:applicabilityConditions": {
+      "alcalase": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose",
+      "cargo": "Alt-R S. pyogenes Cas9 V3 (IDT 1081058) with annealed Alt-R crRNA:tracrRNA (IDT 1072533), 5 uM each, 4 uL RNP per reaction; linear 1,589 bp HDR donor: HSP70A-RBCS2::RBCS2i1::NAT::RBCS2-T flanked by 50 bp homology arms, released by SapI (NEB R0569S), gel-purified (Zymo D4001), 1 ug per transformation; synthesised by Twist Bioscience in pTwist Amp High Copy",
+      "cellWall": "intact (cell-walled strain)",
+      "comparator": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)",
+      "cultureFormats": [
+       "flask (liquid TAP, mid-log)",
+       "plate (TAP agar lawn)"
+      ],
+      "dates": {
+       "genotyping": "2026-05-06",
+       "transformation": "2026-04-22"
+      },
+      "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+      "loci": [
+       "Cre04.g231026",
+       "Cre11.g479750",
+       "Cre10.g462200",
+       "Cre10.g462200"
+      ],
+      "organism": "NCBITaxon:3055",
+      "replicates": "n = 1 per condition; one experimenter; one batch of each key reagent",
+      "selection": "TAP agar + 7.5 ug/mL nourseothricin (NAT); controls plated on TAP after 100x dilution; 5-7 days in grow tent",
+      "strain": "CC-124",
+      "synchronization": "14 h light / 10 h dark for four days before transformation; Fluval Plant 4.0 LED Nano lamps, 11,000 lux at culture surface"
+     },
+     "nrr:confidence": {
+      "basis": "single measurement per condition",
+      "level": "low"
+     },
+     "nrr:cost": {
+      "humanExperimenters": 1,
+      "note": "single unreplicated experiment; USD not reported",
+      "source": "Figure 1 legend: workflow spans ~18 days from culture synchronization to genotyping",
+      "wallClockDays": 18,
+      "wetLabRuns": 1
+     },
+     "nrr:isPartOf": [
+      {
+       "@id": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22"
+      }
+     ],
+     "nrr:kind": "attempt",
+     "nrr:outcomeClass": "positive",
+     "nrr:outcomeSummary": "Alcalase 22-23% leakage vs GeneArt 11% vs no enzyme 6-7% (n = 1 each).",
+     "nrr:pathType": "experiment",
+     "nrr:slug": "arcadia-alcalase-wall-permeability",
+     "nrr:sourceLicense": "CC BY 4.0",
+     "nrr:studyId": "arcadia-alcalase",
+     "nrr:successCriteria": "Pigment leakage after Triton X-100 clearly above the no-enzyme control.",
+     "nrr:visibility": "public",
+     "prov:used": [
+      {
+       "@id": "https://doi.org/10.5281/zenodo.22238548"
+      }
+     ],
+     "prov:wasAttributedTo": [
+      {
+       "@id": "#operator"
+      },
+      {
+       "@id": "#performer-daniel-caddell-experimental-design"
+      },
+      {
+       "@id": "#performer-daniel-caddell-formal-analysis"
+      },
+      {
+       "@id": "#performer-daniel-caddell-investigation"
+      },
+      {
+       "@id": "#performer-raymond-futia-experimental-design"
+      },
+      {
+       "@id": "#performer-raymond-futia-investigation"
+      }
+     ],
+     "version": "1"
+    },
+    {
+     "@id": "#operator",
+     "@type": "Organization",
+     "identifier": "https://ror.org/052zd4v68",
+     "name": "Arcadia Science"
+    },
+    {
+     "@id": "#performer-daniel-caddell-experimental-design",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Daniel Caddell",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:identifier": "https://orcid.org/0000-0003-4005-7151",
+     "nrr:role": "experimental-design",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-daniel-caddell-formal-analysis",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Daniel Caddell",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:identifier": "https://orcid.org/0000-0003-4005-7151",
+     "nrr:role": "formal-analysis",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-daniel-caddell-investigation",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Daniel Caddell",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:identifier": "https://orcid.org/0000-0003-4005-7151",
+     "nrr:role": "investigation",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-raymond-futia-experimental-design",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Raymond Futia",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "experimental-design",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-raymond-futia-investigation",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Raymond Futia",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "investigation",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#finding-leak-alcalase-flask",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does Alcalase treatment permeabilise the cell wall of flask-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:conditions": {
+      "culture": "flask",
+      "treatment": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "M-N no-enzyme control 5.61%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 23.36
+     },
+     "nrr:evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 23.36,
+        "od1": 1.07,
+        "od2": 0.25
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does Alcalase treatment permeabilise the cell wall of flask-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "nrr:target": {
+      "label": "Alcalase pretreatment (flask culture)",
+      "type": "reagent"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-leak-geneart-flask",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does GeneArt treatment permeabilise the cell wall of flask-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:conditions": {
+      "culture": "flask",
+      "treatment": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "M-N no-enzyme control 5.61%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 11.21
+     },
+     "nrr:evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 11.21,
+        "od1": 1.07,
+        "od2": 0.12
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "partial",
+     "nrr:question": "Does GeneArt treatment permeabilise the cell wall of flask-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "nrr:target": {
+      "label": "GeneArt pretreatment (flask culture)",
+      "type": "reagent"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-leak-alcalase-plate",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does Alcalase treatment permeabilise the cell wall of plate-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:conditions": {
+      "culture": "plate",
+      "treatment": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "M-N no-enzyme control 6.9%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 21.84
+     },
+     "nrr:evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 21.84,
+        "od1": 1.74,
+        "od2": 0.38
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does Alcalase treatment permeabilise the cell wall of plate-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "nrr:target": {
+      "label": "Alcalase pretreatment (plate culture)",
+      "type": "reagent"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-leak-geneart-plate",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does GeneArt treatment permeabilise the cell wall of plate-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:conditions": {
+      "culture": "plate",
+      "treatment": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "M-N no-enzyme control 6.9%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 10.92
+     },
+     "nrr:evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 10.92,
+        "od1": 1.74,
+        "od2": 0.19
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "partial",
+     "nrr:question": "Does GeneArt treatment permeabilise the cell wall of plate-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "nrr:replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "nrr:target": {
+      "label": "GeneArt pretreatment (plate culture)",
+      "type": "reagent"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#stage-1-experiment",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "cell wall leakage assay",
+     "nrr:instrument": [
+      "NanoDrop OneC spectrophotometer"
+     ],
+     "nrr:method": "OD662 before (OD1) and after 50% TAP / 50% 0.1% Triton X-100 vortex (OD2); leakage = OD2/OD1 x 100% (Hwang et al. 2018)",
+     "nrr:outputs": [
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+       "label": "wall_permeability_data.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 464,
+       "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content"
+      }
+     ],
+     "nrr:performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "identifier": "https://orcid.org/0000-0003-4005-7151",
+       "name": "Daniel Caddell",
+       "role": "conceptualization",
+       "type": "person"
+      }
+     ],
+     "nrr:stage": "experiment"
+    },
+    {
+     "@id": "#attempt",
+     "@type": [
+      "CreateAction",
+      "prov:Activity"
+     ],
+     "actionStatus": "CompletedActionStatus",
+     "agent": {
+      "@id": "#operator"
+     },
+     "description": "Does a 1 h Alcalase (1:10) treatment permeabilise the cell wall of synchronised CC-124 cells more than GeneArt washing or no enzyme?",
+     "hasPart": [
+      {
+       "@id": "#stage-1-experiment"
+      }
+     ],
+     "instrument": [
+      {
+       "@id": "#performer-daniel-caddell-experimental-design"
+      },
+      {
+       "@id": "#performer-daniel-caddell-formal-analysis"
+      },
+      {
+       "@id": "#performer-daniel-caddell-investigation"
+      },
+      {
+       "@id": "#performer-raymond-futia-experimental-design"
+      },
+      {
+       "@id": "#performer-raymond-futia-investigation"
+      }
+     ],
+     "name": "Alcalase increases C. reinhardtii cell-wall permeability (OD-based leakage assay)",
+     "nrr:attemptType": "wet-lab",
+     "nrr:outcomeClass": "positive",
+     "object": [],
+     "result": [
+      {
+       "@id": "#finding-leak-alcalase-flask"
+      },
+      {
+       "@id": "#finding-leak-geneart-flask"
+      },
+      {
+       "@id": "#finding-leak-alcalase-plate"
+      },
+      {
+       "@id": "#finding-leak-geneart-plate"
+      }
+     ]
+    },
+    {
+     "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz",
+     "@type": "ScholarlyArticle",
+     "name": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:role": "source-publication",
+     "nrr:statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T01:53:26Z",
+      "integrity": "none",
+      "version": "v1"
+     },
+     "nrr:url": "https://thestacks.org/publications/informative-failure-alcalase-crispr-chlamydomonas"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.22238548",
+     "@type": "Dataset",
+     "name": "Data accompanying: Evaluation of Alcalase pretreatment for CRISPR-HDR in Chlamydomonas reinhardtii",
+     "nrr:data": [
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:d715b61c1c345c8fe35c5d07eb7b02cb",
+       "label": "colony selection.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 379267934,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20selection.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:79d46a1054b9c2bf3f80e94daf774054",
+       "label": "colony selection GIMP.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 625334645,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20selection%20GIMP.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:8bfbbd1cf5ad00401f45454491d6dc40",
+       "label": "HDR donor plasmid maps.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 19353,
+       "url": "https://zenodo.org/api/records/22238548/files/HDR%20donor%20plasmid%20maps.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:897feb0b177819b196e98b28f74c5bc6",
+       "label": "amplicon sequencing results.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 212751,
+       "url": "https://zenodo.org/api/records/22238548/files/amplicon%20sequencing%20results.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:c503740077193008cf04bbc911297089",
+       "label": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 46162,
+       "url": "https://zenodo.org/api/records/22238548/files/Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:b00d1d9780a5748449e8e8e1f31d325d",
+       "label": "colony PCR gel images.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 5353618,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20PCR%20gel%20images.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:52c68656f3c2923f11601ab901238530",
+       "label": "colony counting FIJI.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 170020010,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:6be7ff9f8a826481f73754210e2b11a3",
+       "label": "deepwell plates.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 13099022,
+       "url": "https://zenodo.org/api/records/22238548/files/deepwell%20plates.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+       "label": "colony counting.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 194406925,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+       "label": "wall_permeability_data.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 464,
+       "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content"
+      }
+     ],
+     "nrr:license": "CC BY 4.0",
+     "nrr:role": "data-deposit",
+     "nrr:statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T01:53:24Z",
+      "integrity": "none",
+      "version": "dataset"
+     }
+    },
+    {
+     "@id": "NCBITaxon:3055",
+     "@type": "Taxon",
+     "name": "Chlamydomonas reinhardtii",
+     "nrr:entityType": "organism",
+     "nrr:scheme": "NCBI Taxonomy"
+    },
+    {
+     "@id": "chlamycollection:CC-124",
+     "@type": "Taxon",
+     "name": "CC-124 wild type",
+     "nrr:entityType": "strain",
+     "nrr:role": "host strain",
+     "nrr:scheme": "Chlamydomonas Resource Center"
+    },
+    {
+     "@id": "ror:052zd4v68",
+     "@type": "Organization",
+     "name": "Arcadia Science",
+     "nrr:entityType": "organization",
+     "nrr:url": "https://ror.org/052zd4v68"
+    },
+    {
+     "@id": "phytozome:Cre04.g231026",
+     "@type": "Gene",
+     "name": "CpSRP43 (TLA3)",
+     "nrr:entityType": "locus",
+     "nrr:extra": {
+      "azimuth": "0.74",
+      "guide": "CpSRP43_KO_g01",
+      "pam": "GGG",
+      "protospacer": "ACTAGGTACTCGACGCGCGG"
+     },
+     "nrr:role": "CRISPR target",
+     "nrr:scheme": "Phytozome C. reinhardtii v5.6"
+    },
+    {
+     "@id": "phytozome:Cre11.g479750",
+     "@type": "Gene",
+     "name": "CpSRP54 (TLA4)",
+     "nrr:entityType": "locus",
+     "nrr:extra": {
+      "azimuth": "0.73",
+      "guide": "CpSRP54_KO_g01",
+      "pam": "AGG",
+      "protospacer": "AGGGCGCATACTGACCACGA"
+     },
+     "nrr:role": "CRISPR target",
+     "nrr:scheme": "Phytozome C. reinhardtii v5.6"
+    },
+    {
+     "@id": "phytozome:Cre10.g462200",
+     "@type": "Gene",
+     "name": "SRTA (SRTA)",
+     "nrr:entityType": "locus",
+     "nrr:extra": {
+      "azimuth": "0.668",
+      "guide": "SRTA_KO_g01",
+      "pam": "CGG",
+      "protospacer": "AAAGGGCGTCAAGGAGCTAG"
+     },
+     "nrr:role": "CRISPR target",
+     "nrr:scheme": "Phytozome C. reinhardtii v5.6"
+    },
+    {
+     "@id": "catalog:Sigma-Aldrich:126741",
+     "@type": "Product",
+     "name": "Alcalase",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "Sigma-Aldrich"
+     },
+     "nrr:role": "cell wall protease (serine endopeptidase"
+    },
+    {
+     "@id": "catalog:Thermo Fisher Scientific:A24229",
+     "@type": "Product",
+     "name": "GeneArt MAX Efficiency Transformation Reagent for Algae",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "Thermo Fisher Scientific"
+     },
+     "nrr:role": "comparator transformation reagent"
+    },
+    {
+     "@id": "catalog:IDT:1081058",
+     "@type": "Product",
+     "name": "Alt-R S. pyogenes Cas9 V3",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "IDT"
+     },
+     "nrr:role": "nuclease"
+    },
+    {
+     "@id": "catalog:IDT:1072533",
+     "@type": "Product",
+     "name": "Alt-R tracrRNA",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "IDT"
+     },
+     "nrr:role": "guide component"
+    },
+    {
+     "@id": "catalog:NEB:R0569S",
+     "@type": "Product",
+     "name": "SapI",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "NEB"
+     },
+     "nrr:role": "donor linearisation"
+    },
+    {
+     "@id": "catalog:Zymo:D4001",
+     "@type": "Product",
+     "name": "Zymoclean Gel DNA Recovery Kit",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "Zymo"
+     },
+     "nrr:role": "donor purification"
+    },
+    {
+     "@id": "catalog:Takara Bio:R052A",
+     "@type": "Product",
+     "name": "PrimeSTAR GXL Premix Fast Dye Plus",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "Takara Bio"
+     },
+     "nrr:role": "colony PCR"
+    },
+    {
+     "@id": "catalog:Invitrogen:G700802",
+     "@type": "Product",
+     "name": "E-Gel 2% agarose",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "Invitrogen"
+     },
+     "nrr:role": "gel"
+    },
+    {
+     "@id": "catalog:VWR:89047-210",
+     "@type": "Product",
+     "name": "4 mm electroporation cuvettes",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "VWR"
+     },
+     "nrr:role": "electroporation"
+    },
+    {
+     "@id": "catalog:Fluval:16875",
+     "@type": "Product",
+     "name": "Fluval Plant 4.0 LED Nano",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "Fluval"
+     },
+     "nrr:role": "culture lighting"
+    },
+    {
+     "@id": "catalog:VWR:734-2602",
+     "@type": "Product",
+     "name": "cell scraper 25 cm",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {
+      "vendor": "VWR"
+     },
+     "nrr:role": "harvest"
+    },
+    {
+     "@id": "reagent:nourseothricin",
+     "@type": "Product",
+     "name": "nourseothricin",
+     "nrr:entityType": "reagent",
+     "nrr:extra": {},
+     "nrr:role": "selection antibiotic 7.5 ug/mL"
+    },
+    {
+     "@id": "pubchem:CID71720685",
+     "@type": "ChemicalSubstance",
+     "name": "nourseothricin (NAT)",
+     "nrr:entityType": "compound",
+     "nrr:role": "selection antibiotic",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "RRID:SCR_010519",
+     "@type": "SoftwareApplication",
+     "name": "Geneious Prime",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "version": "2026.0.2"
+     }
+    },
+    {
+     "@id": "RRID:SCR_002285",
+     "@type": "SoftwareApplication",
+     "name": "Fiji",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "version": "2.16.0/1.54p"
+     }
+    },
+    {
+     "@id": "software:arcadia-pycolor",
+     "@type": "SoftwareApplication",
+     "name": "arcadia-pycolor",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "version": "0.8.0"
+     }
+    }
+   ]
+  },
+  "idempotencyKey": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+  "profile": "https://portolansoft.com/profile/nrr/0.2",
+  "record": {
+   "@id": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+   "aiUseDeclaration": {
+    "statement": "We used Claude (Opus 4.8, Opus 5) to suggest wording ideas, copy-edit draft text to match Arcadia's style, clarify and streamline text, and generate figure mockups. We used ChatGPT (GPT-5.6 Luna) to suggest wording ideas and to clarify and streamline text. We also used ChatGPT (GPT-5.6 Sol) to identify reproducibility/clarity issues in our draft, and we corrected the issues it found. Additionally, Gemini (Gemini 3.6 Flash) suggested papers on relevant science, we did further reading, and we cited some of this literature. We reviewed all AI-assisted content and take responsibility for its accuracy and integrity.",
+    "tools": [
+     {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "purpose": "wording, copy-editing, clarification, figure mockups",
+      "version": "Opus 4.8, Opus 5"
+     },
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "purpose": "wording, clarification",
+      "version": "GPT-5.6 Luna"
+     },
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "purpose": "reproducibility and clarity review of the draft",
+      "version": "GPT-5.6 Sol"
+     },
+     {
+      "name": "Gemini",
+      "provider": "Google",
+      "purpose": "literature suggestions",
+      "version": "Gemini 3.6 Flash"
+     },
+     {
+      "name": "arcadia-pycolor",
+      "provider": "Arcadia Science",
+      "purpose": "figure generation",
+      "version": "0.8.0"
+     }
+    ]
+   },
+   "applicabilityConditions": {
+    "alcalase": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose",
+    "cargo": "Alt-R S. pyogenes Cas9 V3 (IDT 1081058) with annealed Alt-R crRNA:tracrRNA (IDT 1072533), 5 uM each, 4 uL RNP per reaction; linear 1,589 bp HDR donor: HSP70A-RBCS2::RBCS2i1::NAT::RBCS2-T flanked by 50 bp homology arms, released by SapI (NEB R0569S), gel-purified (Zymo D4001), 1 ug per transformation; synthesised by Twist Bioscience in pTwist Amp High Copy",
+    "cellWall": "intact (cell-walled strain)",
+    "comparator": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)",
+    "cultureFormats": [
+     "flask (liquid TAP, mid-log)",
+     "plate (TAP agar lawn)"
+    ],
+    "dates": {
+     "genotyping": "2026-05-06",
+     "transformation": "2026-04-22"
+    },
+    "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+    "loci": [
+     "Cre04.g231026",
+     "Cre11.g479750",
+     "Cre10.g462200",
+     "Cre10.g462200"
+    ],
+    "organism": "NCBITaxon:3055",
+    "replicates": "n = 1 per condition; one experimenter; one batch of each key reagent",
+    "selection": "TAP agar + 7.5 ug/mL nourseothricin (NAT); controls plated on TAP after 100x dilution; 5-7 days in grow tent",
+    "strain": "CC-124",
+    "synchronization": "14 h light / 10 h dark for four days before transformation; Fluval Plant 4.0 LED Nano lamps, 11,000 lux at culture surface"
+   },
+   "attemptType": "wet-lab",
+   "confidence": {
+    "basis": "single measurement per condition",
+    "level": "low"
+   },
+   "contentAddress": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+   "cost": {
+    "humanExperimenters": 1,
+    "note": "single unreplicated experiment; USD not reported",
+    "source": "Figure 1 legend: workflow spans ~18 days from culture synchronization to genotyping",
+    "wallClockDays": 18,
+    "wetLabRuns": 1
+   },
+   "dateCreated": "2026-09-25T00:00:00Z",
+   "domainTags": [
+    "biology"
+   ],
+   "entities": [
+    {
+     "id": "NCBITaxon:3055",
+     "label": "Chlamydomonas reinhardtii",
+     "scheme": "NCBI Taxonomy",
+     "type": "organism"
+    },
+    {
+     "id": "chlamycollection:CC-124",
+     "label": "CC-124 wild type",
+     "role": "host strain",
+     "scheme": "Chlamydomonas Resource Center",
+     "type": "strain"
+    },
+    {
+     "id": "ror:052zd4v68",
+     "label": "Arcadia Science",
+     "type": "organization",
+     "url": "https://ror.org/052zd4v68"
+    },
+    {
+     "extra": {
+      "azimuth": "0.74",
+      "guide": "CpSRP43_KO_g01",
+      "pam": "GGG",
+      "protospacer": "ACTAGGTACTCGACGCGCGG"
+     },
+     "id": "phytozome:Cre04.g231026",
+     "label": "CpSRP43 (TLA3)",
+     "role": "CRISPR target",
+     "scheme": "Phytozome C. reinhardtii v5.6",
+     "type": "locus"
+    },
+    {
+     "extra": {
+      "azimuth": "0.73",
+      "guide": "CpSRP54_KO_g01",
+      "pam": "AGG",
+      "protospacer": "AGGGCGCATACTGACCACGA"
+     },
+     "id": "phytozome:Cre11.g479750",
+     "label": "CpSRP54 (TLA4)",
+     "role": "CRISPR target",
+     "scheme": "Phytozome C. reinhardtii v5.6",
+     "type": "locus"
+    },
+    {
+     "extra": {
+      "azimuth": "0.668",
+      "guide": "SRTA_KO_g01",
+      "pam": "CGG",
+      "protospacer": "AAAGGGCGTCAAGGAGCTAG"
+     },
+     "id": "phytozome:Cre10.g462200",
+     "label": "SRTA (SRTA)",
+     "role": "CRISPR target",
+     "scheme": "Phytozome C. reinhardtii v5.6",
+     "type": "locus"
+    },
+    {
+     "extra": {
+      "azimuth": "0.612",
+      "guide": "SRTA_KO_g02",
+      "pam": "CGG",
+      "protospacer": "AAGCCGAAGAAAAACCTTGG"
+     },
+     "id": "phytozome:Cre10.g462200",
+     "label": "SRTA (SRTA)",
+     "role": "CRISPR target",
+     "scheme": "Phytozome C. reinhardtii v5.6",
+     "type": "locus"
+    },
+    {
+     "extra": {
+      "vendor": "Sigma-Aldrich"
+     },
+     "id": "catalog:Sigma-Aldrich:126741",
+     "label": "Alcalase",
+     "role": "cell wall protease (serine endopeptidase",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "Thermo Fisher Scientific"
+     },
+     "id": "catalog:Thermo Fisher Scientific:A24229",
+     "label": "GeneArt MAX Efficiency Transformation Reagent for Algae",
+     "role": "comparator transformation reagent",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "IDT"
+     },
+     "id": "catalog:IDT:1081058",
+     "label": "Alt-R S. pyogenes Cas9 V3",
+     "role": "nuclease",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "IDT"
+     },
+     "id": "catalog:IDT:1072533",
+     "label": "Alt-R tracrRNA",
+     "role": "guide component",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "NEB"
+     },
+     "id": "catalog:NEB:R0569S",
+     "label": "SapI",
+     "role": "donor linearisation",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "Zymo"
+     },
+     "id": "catalog:Zymo:D4001",
+     "label": "Zymoclean Gel DNA Recovery Kit",
+     "role": "donor purification",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "Takara Bio"
+     },
+     "id": "catalog:Takara Bio:R052A",
+     "label": "PrimeSTAR GXL Premix Fast Dye Plus",
+     "role": "colony PCR",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "Invitrogen"
+     },
+     "id": "catalog:Invitrogen:G700802",
+     "label": "E-Gel 2% agarose",
+     "role": "gel",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "VWR"
+     },
+     "id": "catalog:VWR:89047-210",
+     "label": "4 mm electroporation cuvettes",
+     "role": "electroporation",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "Fluval"
+     },
+     "id": "catalog:Fluval:16875",
+     "label": "Fluval Plant 4.0 LED Nano",
+     "role": "culture lighting",
+     "type": "reagent"
+    },
+    {
+     "extra": {
+      "vendor": "VWR"
+     },
+     "id": "catalog:VWR:734-2602",
+     "label": "cell scraper 25 cm",
+     "role": "harvest",
+     "type": "reagent"
+    },
+    {
+     "extra": {},
+     "id": "reagent:nourseothricin",
+     "label": "nourseothricin",
+     "role": "selection antibiotic 7.5 ug/mL",
+     "type": "reagent"
+    },
+    {
+     "id": "pubchem:CID71720685",
+     "label": "nourseothricin (NAT)",
+     "role": "selection antibiotic",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "extra": {
+      "version": "2026.0.2"
+     },
+     "id": "RRID:SCR_010519",
+     "label": "Geneious Prime",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "version": "2.16.0/1.54p"
+     },
+     "id": "RRID:SCR_002285",
+     "label": "Fiji",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "version": "0.8.0"
+     },
+     "id": "software:arcadia-pycolor",
+     "label": "arcadia-pycolor",
+     "type": "software"
+    }
+   ],
+   "findings": [
+    {
+     "conditions": {
+      "culture": "flask",
+      "treatment": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose"
+     },
+     "controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "effect": {
+      "comparedTo": "M-N no-enzyme control 5.61%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 23.36
+     },
+     "evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 23.36,
+        "od1": 1.07,
+        "od2": 0.25
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "id": "leak-alcalase-flask",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "question": "Does Alcalase treatment permeabilise the cell wall of flask-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "target": {
+      "label": "Alcalase pretreatment (flask culture)",
+      "type": "reagent"
+     }
+    },
+    {
+     "conditions": {
+      "culture": "flask",
+      "treatment": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)"
+     },
+     "controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "effect": {
+      "comparedTo": "M-N no-enzyme control 5.61%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 11.21
+     },
+     "evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 11.21,
+        "od1": 1.07,
+        "od2": 0.12
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "id": "leak-geneart-flask",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "partial",
+     "question": "Does GeneArt treatment permeabilise the cell wall of flask-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "target": {
+      "label": "GeneArt pretreatment (flask culture)",
+      "type": "reagent"
+     }
+    },
+    {
+     "conditions": {
+      "culture": "plate",
+      "treatment": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose"
+     },
+     "controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "effect": {
+      "comparedTo": "M-N no-enzyme control 6.9%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 21.84
+     },
+     "evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 21.84,
+        "od1": 1.74,
+        "od2": 0.38
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "id": "leak-alcalase-plate",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "question": "Does Alcalase treatment permeabilise the cell wall of plate-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "target": {
+      "label": "Alcalase pretreatment (plate culture)",
+      "type": "reagent"
+     }
+    },
+    {
+     "conditions": {
+      "culture": "plate",
+      "treatment": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)"
+     },
+     "controls": {
+      "negative": {
+       "kind": "no-treatment",
+       "label": "M-N medium, no enzyme (same wash procedure)",
+       "observed": "6-7% pigment leakage",
+       "passed": true,
+       "source": "Table (wall_permeability_data.csv); Figure 3"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no reference wall-less strain was run"
+      }
+     },
+     "effect": {
+      "comparedTo": "M-N no-enzyme control 6.9%",
+      "direction": "increase",
+      "metric": "OD662 released after Triton X-100 / OD662 before, percent",
+      "n": 1,
+      "note": "n = 1 (same culture used for transformations)",
+      "unit": "%",
+      "value": 10.92
+     },
+     "evidence": [
+      {
+       "label": "wall_permeability_data.csv (Zenodo)",
+       "locator": "wall_permeability_data.csv",
+       "source": "10.5281/zenodo.22238548",
+       "values": {
+        "efficiencyPercent": 10.92,
+        "od1": 1.74,
+        "od2": 0.19
+       }
+      },
+      {
+       "label": "Results, 'Alcalase reduced viability and NAT resistance'",
+       "locator": "Figure 3",
+       "quote": "Pigmentation release was approximately 22% for Alcalase, 11% for GeneArt washing, and 6% for the M−N control",
+       "source": "10.57844/arcadia-pdu7-q2zz"
+      }
+     ],
+     "id": "leak-geneart-plate",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "partial",
+     "question": "Does GeneArt treatment permeabilise the cell wall of plate-grown CC-124 cells (detergent-induced pigment leakage)?",
+     "replicates": {
+      "biological": 1,
+      "note": "single measurement per condition"
+     },
+     "target": {
+      "label": "GeneArt pretreatment (plate culture)",
+      "type": "reagent"
+     }
+    }
+   ],
+   "integrity": {
+    "contentAddress": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79",
+    "duplicateOf": null,
+    "signature": null,
+    "signer": null,
+    "trustTier": "pilot-unsigned"
+   },
+   "isPartOf": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+   "kind": "attempt",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "operator": {
+    "identifier": "https://ror.org/052zd4v68",
+    "name": "Arcadia Science",
+    "type": "Organization"
+   },
+   "outcomeClass": "positive",
+   "outcomeSummary": "Alcalase 22-23% leakage vs GeneArt 11% vs no enzyme 6-7% (n = 1 each).",
+   "pathType": "experiment",
+   "performers": [
+    {
+     "affiliation": "Arcadia Science",
+     "identifier": "https://orcid.org/0000-0003-4005-7151",
+     "name": "Daniel Caddell",
+     "role": "experimental-design",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "identifier": "https://orcid.org/0000-0003-4005-7151",
+     "name": "Daniel Caddell",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "identifier": "https://orcid.org/0000-0003-4005-7151",
+     "name": "Daniel Caddell",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Raymond Futia",
+     "role": "experimental-design",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Raymond Futia",
+     "role": "investigation",
+     "type": "person"
+    }
+   ],
+   "profile": "https://portolansoft.com/profile/nrr/0.2",
+   "question": "Does a 1 h Alcalase (1:10) treatment permeabilise the cell wall of synchronised CC-124 cells more than GeneArt washing or no enzyme?",
+   "relations": [
+    {
+     "target": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+     "type": "isPartOf"
+    }
+   ],
+   "slug": "arcadia-alcalase-wall-permeability",
+   "sourceLicense": "CC BY 4.0",
+   "sources": [
+    {
+     "identifier": "doi:10.57844/arcadia-pdu7-q2zz",
+     "label": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "role": "source-publication",
+     "statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T01:53:26Z",
+      "integrity": "none",
+      "version": "v1"
+     },
+     "url": "https://thestacks.org/publications/informative-failure-alcalase-crispr-chlamydomonas"
+    },
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:d715b61c1c345c8fe35c5d07eb7b02cb",
+       "label": "colony selection.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 379267934,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20selection.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:79d46a1054b9c2bf3f80e94daf774054",
+       "label": "colony selection GIMP.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 625334645,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20selection%20GIMP.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:8bfbbd1cf5ad00401f45454491d6dc40",
+       "label": "HDR donor plasmid maps.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 19353,
+       "url": "https://zenodo.org/api/records/22238548/files/HDR%20donor%20plasmid%20maps.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:897feb0b177819b196e98b28f74c5bc6",
+       "label": "amplicon sequencing results.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 212751,
+       "url": "https://zenodo.org/api/records/22238548/files/amplicon%20sequencing%20results.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:c503740077193008cf04bbc911297089",
+       "label": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 46162,
+       "url": "https://zenodo.org/api/records/22238548/files/Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:b00d1d9780a5748449e8e8e1f31d325d",
+       "label": "colony PCR gel images.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 5353618,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20PCR%20gel%20images.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:52c68656f3c2923f11601ab901238530",
+       "label": "colony counting FIJI.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 170020010,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:6be7ff9f8a826481f73754210e2b11a3",
+       "label": "deepwell plates.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 13099022,
+       "url": "https://zenodo.org/api/records/22238548/files/deepwell%20plates.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+       "label": "colony counting.zip",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 194406925,
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content"
+      },
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+       "label": "wall_permeability_data.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 464,
+       "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content"
+      }
+     ],
+     "identifier": "doi:10.5281/zenodo.22238548",
+     "label": "Data accompanying: Evaluation of Alcalase pretreatment for CRISPR-HDR in Chlamydomonas reinhardtii",
+     "license": "CC BY 4.0",
+     "role": "data-deposit",
+     "statusAtCheck": {
+      "assertedBy": "datacite",
+      "checkedAt": "2026-09-26T01:53:24Z",
+      "integrity": "none",
+      "version": "dataset"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "instrument": [
+      "NanoDrop OneC spectrophotometer"
+     ],
+     "label": "cell wall leakage assay",
+     "method": "OD662 before (OD1) and after 50% TAP / 50% 0.1% Triton X-100 vortex (OD2); leakage = OD2/OD1 x 100% (Hwang et al. 2018)",
+     "outputs": [
+      {
+       "accession": "10.5281/zenodo.22238548",
+       "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+       "label": "wall_permeability_data.csv",
+       "repository": "Zenodo",
+       "role": "raw-data",
+       "size": 464,
+       "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content"
+      }
+     ],
+     "performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "identifier": "https://orcid.org/0000-0003-4005-7151",
+       "name": "Daniel Caddell",
+       "role": "conceptualization",
+       "type": "person"
+      }
+     ],
+     "stage": "experiment"
+    }
+   ],
+   "studyId": "arcadia-alcalase",
+   "successCriteria": "Pigment leakage after Triton X-100 clearly above the no-enzyme control.",
+   "title": "Alcalase increases C. reinhardtii cell-wall permeability (OD-based leakage assay)",
+   "version": "1",
+   "visibility": "public"
+  },
+  "visibility": "public"
+ },
+ "tool": "nrr_deposit"
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: If you reuse these records, cite the original study and dataset named in each record's sources, and this repository.
+title: "Portolan NRR records: published Negative-Results Records (v0.2 profile)"
+authors:
+  - name: Portolan Software
+    email: contact@portolansoft.com
+version: 0.2.0
+date-released: 2026-09-26
+repository-code: https://github.com/portolansoft/nrr-records
+license: CC-BY-4.0

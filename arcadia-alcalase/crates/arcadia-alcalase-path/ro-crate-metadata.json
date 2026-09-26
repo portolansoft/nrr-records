@@ -1,0 +1,1288 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22",
+   "name": "Alcalase pretreatment for CRISPR-Cas9 HDR knock-in in cell-walled Chlamydomonas reinhardtii (iced project)",
+   "description": "Can Alcalase, an off-the-shelf serine endopeptidase, replace in-house autolysin to permeabilise the C. reinhardtii cell wall for Cas9 RNP plus HDR-donor electroporation and yield targeted knock-ins?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "path",
+   "nrr:studyId": "arcadia-alcalase",
+   "nrr:slug": "arcadia-alcalase-path",
+   "nrr:outcomeClass": "abandoned",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "NAT-resistant colonies well above the no-donor background after Alcalase pretreatment, and on-target HDR insertion (~2 kb amplicon or sequence-confirmed edit) detectable among them at a rate usable for high-throughput screens.",
+   "keywords": [
+    "biology"
+   ],
+   "hasPart": [
+    {
+     "@id": "urn:portolan:nrr:sha256:1d5c74050776811f9a2905ab5b8b2ba1c465a110b42586b3650cd0073a685c79"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:cf780fa14af27606472b4fa7f69673a14d2e9aed9f79d93e6ea7856047116a06"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:e7e859a07618a7847a6a3af5e24376903d523e9e740941ca82a4781388d31eb4"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:74faad4a842f2cf41f55e1b61e24450b69284644d832028c375f8d55896c4129"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:a14145821f072328b309e05d3105cfe334e48ad55bae87b774cdd81d91be43b3"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:ebbd7dca3336251042736e94b9d000e425d8d536e691cabe210b32609d049f2d"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-audrey-bell-visualization"
+    },
+    {
+     "@id": "#performer-daniel-caddell-conceptualization"
+    },
+    {
+     "@id": "#performer-daniel-caddell-experimental-design"
+    },
+    {
+     "@id": "#performer-daniel-caddell-formal-analysis"
+    },
+    {
+     "@id": "#performer-daniel-caddell-investigation"
+    },
+    {
+     "@id": "#performer-daniel-caddell-visualization"
+    },
+    {
+     "@id": "#performer-daniel-caddell-writing"
+    },
+    {
+     "@id": "#performer-raymond-futia-conceptualization"
+    },
+    {
+     "@id": "#performer-raymond-futia-editing"
+    },
+    {
+     "@id": "#performer-raymond-futia-experimental-design"
+    },
+    {
+     "@id": "#performer-raymond-futia-investigation"
+    },
+    {
+     "@id": "#performer-raymond-futia-supervision"
+    },
+    {
+     "@id": "#performer-megan-l-hochstrasser-editing"
+    },
+    {
+     "@id": "#performer-james-kraemer-editing"
+    },
+    {
+     "@id": "#performer-james-kraemer-supervision"
+    },
+    {
+     "@id": "#performer-cameron-dale-macquarrie-critical-feedback"
+    },
+    {
+     "@id": "#performer-cameron-dale-macquarrie-resources"
+    },
+    {
+     "@id": "#performer-claude-copy-editing"
+    },
+    {
+     "@id": "#performer-chatgpt-copy-editing"
+    },
+    {
+     "@id": "#performer-chatgpt-review"
+    },
+    {
+     "@id": "#performer-gemini-literature-search"
+    },
+    {
+     "@id": "#performer-arcadia-pycolor-figure-generation"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "organism": "NCBITaxon:3055",
+    "strain": "CC-124",
+    "cellWall": "intact (cell-walled strain)",
+    "synchronization": "14 h light / 10 h dark for four days before transformation; Fluval Plant 4.0 LED Nano lamps, 11,000 lux at culture surface",
+    "cultureFormats": [
+     "flask (liquid TAP, mid-log)",
+     "plate (TAP agar lawn)"
+    ],
+    "alcalase": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose",
+    "comparator": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)",
+    "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+    "cargo": "Alt-R S. pyogenes Cas9 V3 (IDT 1081058) with annealed Alt-R crRNA:tracrRNA (IDT 1072533), 5 uM each, 4 uL RNP per reaction; linear 1,589 bp HDR donor: HSP70A-RBCS2::RBCS2i1::NAT::RBCS2-T flanked by 50 bp homology arms, released by SapI (NEB R0569S), gel-purified (Zymo D4001), 1 ug per transformation; synthesised by Twist Bioscience in pTwist Amp High Copy",
+    "selection": "TAP agar + 7.5 ug/mL nourseothricin (NAT); controls plated on TAP after 100x dilution; 5-7 days in grow tent",
+    "loci": [
+     "Cre04.g231026",
+     "Cre11.g479750",
+     "Cre10.g462200",
+     "Cre10.g462200"
+    ],
+    "replicates": "n = 1 per condition; one experimenter; one batch of each key reagent",
+    "dates": {
+     "transformation": "2026-04-22",
+     "genotyping": "2026-05-06"
+    }
+   },
+   "nrr:invalidators": [
+    "a milder Alcalase regime (lower dose, shorter time, osmotic support) that preserves viability",
+    "a positive editing control showing the guides, donor and selection work in a known-working delivery system",
+    "replication with independent reagent batches and experimenters"
+   ],
+   "nrr:untriedBranches": [
+    {
+     "description": "Develop a robust, CRISPR-compatible cell wall digestion method: improve autolysin (Shetty et al. 2025: mating at 28 C rather than 18 C) or gentler Alcalase (Walker et al. 2026, diatoms: osmotic support during and after digestion; titrate the enzyme dose down).",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Separate delivery failures from editing failures: restore a visual screen to confirm the guides, donor and selection work; include a donor-only, no-RNP control to estimate off-target NHEJ.",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    },
+    {
+     "description": "Optimize on-target editing: co-target an endogenous selectable marker (Akella et al. 2021; Ross et al. 2024); tune RNP and donor concentrations and ratio (Kim et al. 2020 reached ~37% knock-in).",
+     "status": "proposed-by-authors",
+     "source": "Next steps"
+    }
+   ],
+   "nrr:openQuestions": [
+    "Has anyone gotten Alcalase pretreatment to work in C. reinhardtii? If so, what digestion time, concentration, and recovery conditions did you use?",
+    "If you've gotten autolysin preparations working consistently, which factors mattered most?",
+    "If we try making targeted knock-ins again, what 'need-to-haves' do you think we missed?"
+   ],
+   "nrr:abandonmentReasons": [
+    "technical-gap",
+    "strategic-misalignment"
+   ],
+   "nrr:cost": {
+    "wallClockDays": 18,
+    "humanExperimenters": 1,
+    "wetLabRuns": 1,
+    "note": "single unreplicated experiment; USD not reported",
+    "source": "Figure 1 legend: workflow spans ~18 days from culture synchronization to genotyping"
+   },
+   "nrr:provenanceNotes": [
+    "Encoded from the published text, tables and the Zenodo CSVs; imaging and gel raw files are pointed to, not parsed.",
+    "Icebox statement: We've paused targeted integration work in C. reinhardtii after this attempt because optimizing this approach would likely require additional time and resources, and our research priorities have shifted.",
+    "Authors' caveat: This was a single, unreplicated experiment performed by one experimenter using one batch of each key reagent, so our conclusions are limited to the conditions described here and shouldn't be read as an evaluation of any individual component of the workflow."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "We used Claude (Opus 4.8, Opus 5) to suggest wording ideas, copy-edit draft text to match Arcadia's style, clarify and streamline text, and generate figure mockups. We used ChatGPT (GPT-5.6 Luna) to suggest wording ideas and to clarify and streamline text. We also used ChatGPT (GPT-5.6 Sol) to identify reproducibility/clarity issues in our draft, and we corrected the issues it found. Additionally, Gemini (Gemini 3.6 Flash) suggested papers on relevant science, we did further reading, and we cited some of this literature. We reviewed all AI-assisted content and take responsibility for its accuracy and integrity.",
+    "tools": [
+     {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "version": "Opus 4.8, Opus 5",
+      "purpose": "wording, copy-editing, clarification, figure mockups"
+     },
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "version": "GPT-5.6 Luna",
+      "purpose": "wording, clarification"
+     },
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "version": "GPT-5.6 Sol",
+      "purpose": "reproducibility and clarity review of the draft"
+     },
+     {
+      "name": "Gemini",
+      "provider": "Google",
+      "version": "Gemini 3.6 Flash",
+      "purpose": "literature suggestions"
+     },
+     {
+      "name": "arcadia-pycolor",
+      "provider": "Arcadia Science",
+      "version": "0.8.0",
+      "purpose": "figure generation"
+     }
+    ]
+   },
+   "nrr:confidence": {
+    "level": "medium",
+    "basis": "one attempt, one reagent batch, one experimenter; authors state Alcalase is not ruled out under gentler conditions"
+   },
+   "nrr:outcomeSummary": "Alcalase digested walls but killed most cells before electroporation, gave near-background NAT resistance, and neither reagent yielded any on-target editing among 191 colonies screened; the project was iced (#TechnicalGap, #StrategicMisalignment).",
+   "nrr:hypothesis": "Establish a robust, high-throughput-compatible CRISPR-Cas9 knock-in (HDR) system in cell-walled C. reinhardtii as a prerequisite for modular landing pads (Bigge et al. 2026, doi:10.57844/arcadia-61hk-a7gd); test Alcalase as an off-the-shelf substitute for autolysin.",
+   "nrr:nextSteps": [
+    "Develop a robust, CRISPR-compatible cell wall digestion method: improve autolysin (Shetty et al. 2025: mating at 28 C rather than 18 C) or gentler Alcalase (Walker et al. 2026, diatoms: osmotic support during and after digestion; titrate the enzyme dose down).",
+    "Separate delivery failures from editing failures: restore a visual screen to confirm the guides, donor and selection work; include a donor-only, no-RNP control to estimate off-target NHEJ.",
+    "Optimize on-target editing: co-target an endogenous selectable marker (Akella et al. 2021; Ross et al. 2024); tune RNP and donor concentrations and ratio (Kim et al. 2020 reached ~37% knock-in)."
+   ],
+   "nrr:governance": {
+    "humanSubjectData": "none",
+    "biosecurityTier": "none (model alga, no select agents)"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "https://doi.org/10.5281/zenodo.22238548"
+    },
+    {
+     "@id": "https://doi.org/10.57844/arcadia-61hk-a7gd"
+    },
+    {
+     "@id": "https://doi.org/10.1093/g3journal/jkab114"
+    },
+    {
+     "@id": "https://doi.org/10.1111/tpj.70140"
+    },
+    {
+     "@id": "https://doi.org/10.57844/arcadia-35f0-3e16"
+    },
+    {
+     "@id": "https://doi.org/10.1371/journal.pone.0232594"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.crmeth.2023.100562"
+    },
+    {
+     "@id": "https://doi.org/10.21769/bioprotoc.4705"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.algal.2024.103435"
+    },
+    {
+     "@id": "https://doi.org/10.1159/000495183"
+    },
+    {
+     "@id": "https://doi.org/10.1007/s00253-022-11790-9"
+    },
+    {
+     "@id": "https://doi.org/10.1007/s11033-020-05922-5"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.mex.2025.103416"
+    },
+    {
+     "@id": "https://doi.org/10.1104/pp.112.206672"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.bbabio.2016.10.007"
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.tibtech.2025.04.019"
+    },
+    {
+     "@id": "https://doi.org/10.1038/nbt.3437"
+    },
+    {
+     "@id": "https://doi.org/10.1038/nbt.2647"
+    },
+    {
+     "@id": "https://doi.org/10.1038/nmeth.2019"
+    },
+    {
+     "@id": "https://doi.org/10.1101/2025.08.21.671244"
+    },
+    {
+     "@id": "https://doi.org/10.1038/s41467-026-68562-6"
+    },
+    {
+     "@id": "https://doi.org/10.1093/plphys/kiab418"
+    },
+    {
+     "@id": "https://doi.org/10.1093/plphys/kiae427"
+    },
+    {
+     "@id": "https://doi.org/10.3389/fpls.2020.00306"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "NCBITaxon:3055"
+    },
+    {
+     "@id": "chlamycollection:CC-124"
+    },
+    {
+     "@id": "ror:052zd4v68"
+    },
+    {
+     "@id": "phytozome:Cre04.g231026"
+    },
+    {
+     "@id": "phytozome:Cre11.g479750"
+    },
+    {
+     "@id": "phytozome:Cre10.g462200"
+    },
+    {
+     "@id": "phytozome:Cre10.g462200"
+    },
+    {
+     "@id": "catalog:Sigma-Aldrich:126741"
+    },
+    {
+     "@id": "catalog:Thermo Fisher Scientific:A24229"
+    },
+    {
+     "@id": "catalog:IDT:1081058"
+    },
+    {
+     "@id": "catalog:IDT:1072533"
+    },
+    {
+     "@id": "catalog:NEB:R0569S"
+    },
+    {
+     "@id": "catalog:Zymo:D4001"
+    },
+    {
+     "@id": "catalog:Takara Bio:R052A"
+    },
+    {
+     "@id": "catalog:Invitrogen:G700802"
+    },
+    {
+     "@id": "catalog:VWR:89047-210"
+    },
+    {
+     "@id": "catalog:Fluval:16875"
+    },
+    {
+     "@id": "catalog:VWR:734-2602"
+    },
+    {
+     "@id": "reagent:nourseothricin"
+    },
+    {
+     "@id": "pubchem:CID71720685"
+    },
+    {
+     "@id": "RRID:SCR_010519"
+    },
+    {
+     "@id": "RRID:SCR_002285"
+    },
+    {
+     "@id": "software:arcadia-pycolor"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "identifier": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "#performer-audrey-bell-visualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Audrey Bell",
+   "nrr:type": "person",
+   "nrr:role": "visualization",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-daniel-caddell-conceptualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "conceptualization",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-experimental-design",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "experimental-design",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-formal-analysis",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "formal-analysis",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-investigation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "investigation",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-visualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "visualization",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-raymond-futia-conceptualization",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "conceptualization",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-raymond-futia-editing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "editing",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-raymond-futia-experimental-design",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "experimental-design",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-raymond-futia-investigation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "investigation",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-raymond-futia-supervision",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "supervision",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-megan-l-hochstrasser-editing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Megan L. Hochstrasser",
+   "nrr:type": "person",
+   "nrr:role": "editing",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-james-kraemer-editing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "James Kraemer",
+   "nrr:type": "person",
+   "nrr:role": "editing",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-james-kraemer-supervision",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "James Kraemer",
+   "nrr:type": "person",
+   "nrr:role": "supervision",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-cameron-dale-macquarrie-critical-feedback",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Cameron Dale MacQuarrie",
+   "nrr:type": "person",
+   "nrr:role": "critical-feedback",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-cameron-dale-macquarrie-resources",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Cameron Dale MacQuarrie",
+   "nrr:type": "person",
+   "nrr:role": "resources",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-claude-copy-editing",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "Claude",
+   "nrr:type": "llm",
+   "nrr:role": "copy-editing",
+   "nrr:provider": "Anthropic",
+   "nrr:version": "Opus 4.8, Opus 5",
+   "nrr:note": "wording, copy-editing, clarification, figure mockups"
+  },
+  {
+   "@id": "#performer-chatgpt-copy-editing",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "ChatGPT",
+   "nrr:type": "llm",
+   "nrr:role": "copy-editing",
+   "nrr:provider": "OpenAI",
+   "nrr:version": "GPT-5.6 Luna",
+   "nrr:note": "wording, clarification"
+  },
+  {
+   "@id": "#performer-chatgpt-review",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "ChatGPT",
+   "nrr:type": "llm",
+   "nrr:role": "review",
+   "nrr:provider": "OpenAI",
+   "nrr:version": "GPT-5.6 Sol",
+   "nrr:note": "reproducibility and clarity review of the draft"
+  },
+  {
+   "@id": "#performer-gemini-literature-search",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "Gemini",
+   "nrr:type": "llm",
+   "nrr:role": "literature-search",
+   "nrr:provider": "Google",
+   "nrr:version": "Gemini 3.6 Flash",
+   "nrr:note": "literature suggestions"
+  },
+  {
+   "@id": "#performer-arcadia-pycolor-figure-generation",
+   "@type": [
+    "SoftwareApplication",
+    "prov:SoftwareAgent"
+   ],
+   "name": "arcadia-pycolor",
+   "nrr:type": "llm",
+   "nrr:role": "figure-generation",
+   "nrr:provider": "Arcadia Science",
+   "nrr:version": "0.8.0",
+   "nrr:note": "figure generation"
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+   "nrr:url": "https://thestacks.org/publications/informative-failure-alcalase-crispr-chlamydomonas",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:26Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22238548",
+   "@type": "Dataset",
+   "nrr:role": "data-deposit",
+   "name": "Data accompanying: Evaluation of Alcalase pretreatment for CRISPR-HDR in Chlamydomonas reinhardtii",
+   "nrr:statusAtCheck": {
+    "version": "dataset",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:24Z"
+   },
+   "nrr:license": "CC BY 4.0",
+   "nrr:data": [
+    {
+     "label": "colony selection.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20selection.zip/content",
+     "checksum": "md5:d715b61c1c345c8fe35c5d07eb7b02cb",
+     "size": 379267934,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony selection GIMP.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20selection%20GIMP.zip/content",
+     "checksum": "md5:79d46a1054b9c2bf3f80e94daf774054",
+     "size": 625334645,
+     "role": "raw-data"
+    },
+    {
+     "label": "HDR donor plasmid maps.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/HDR%20donor%20plasmid%20maps.zip/content",
+     "checksum": "md5:8bfbbd1cf5ad00401f45454491d6dc40",
+     "size": 19353,
+     "role": "raw-data"
+    },
+    {
+     "label": "amplicon sequencing results.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/amplicon%20sequencing%20results.zip/content",
+     "checksum": "md5:897feb0b177819b196e98b28f74c5bc6",
+     "size": 212751,
+     "role": "raw-data"
+    },
+    {
+     "label": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv/content",
+     "checksum": "md5:c503740077193008cf04bbc911297089",
+     "size": 46162,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony PCR gel images.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20PCR%20gel%20images.zip/content",
+     "checksum": "md5:b00d1d9780a5748449e8e8e1f31d325d",
+     "size": 5353618,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony counting FIJI.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content",
+     "checksum": "md5:52c68656f3c2923f11601ab901238530",
+     "size": 170020010,
+     "role": "raw-data"
+    },
+    {
+     "label": "deepwell plates.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/deepwell%20plates.zip/content",
+     "checksum": "md5:6be7ff9f8a826481f73754210e2b11a3",
+     "size": 13099022,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony counting.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content",
+     "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+     "size": 194406925,
+     "role": "raw-data"
+    },
+    {
+     "label": "wall_permeability_data.csv",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content",
+     "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+     "size": 464,
+     "role": "raw-data"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-61hk-a7gd",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Bigge et al. 2026, Modular CRISPR landing pads for Chlamydomonas reinhardtii",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:25Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1093/g3journal/jkab114",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Sizova et al. 2021, Chlamydomonas POLQ is necessary for CRISPR/Cas9-mediated gene targeting",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:01Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1111/tpj.70140",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Nievergelt 2025, Genome editing in the green alga Chlamydomonas",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:04Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-35f0-3e16",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Avasthi et al. 2023, Phenotypic differences between interfertile Chlamydomonas species",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:25Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1371/journal.pone.0232594",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Picariello et al. 2020, TIM targeted insertional mutagenesis",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:10Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.crmeth.2023.100562",
+   "@type": "HowTo",
+   "nrr:role": "protocol",
+   "name": "Nievergelt et al. 2023, Efficient precision editing of endogenous Chlamydomonas reinhardtii genes with CRISPR-Cas",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:47Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.21769/bioprotoc.4705",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Findinier 2023, Autolysin production from Chlamydomonas reinhardtii",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:10Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.algal.2024.103435",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Kim et al. 2024, heritable deletions in APT of Chlorella sorokiniana using CRISPR/Cas9 (Alcalase)",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:46Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1159/000495183",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Hwang et al. 2018, A simple method for removal of the Chlamydomonas reinhardtii cell wall using Alcalase",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:06Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1007/s00253-022-11790-9",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Sproles et al. 2022, improved high-throughput screening of Chlamydomonas transformants",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:45Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1007/s11033-020-05922-5",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Dhokane et al. 2020, CRISPR based targeted genome editing of Chlamydomonas reinhardtii using Cas9-gRNA RNP",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:45Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.mex.2025.103416",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "De Silvio et al. 2025, quick-to-implement CRISPR-Cas9 protocol for Chlamydomonas",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:49Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1104/pp.112.206672",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Kirst et al. 2012, TLA3-CpSRP43 deletion truncates antenna",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:03Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.bbabio.2016.10.007",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Jeong et al. 2017, loss of CpSRP54 truncates antenna",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:47Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/j.tibtech.2025.04.019",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Einhaus et al. 2025, genome editing of epigenetic transgene silencing (SRTA)",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:51Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/nbt.3437",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Doench et al. 2016, optimized sgRNA design (Azimuth)",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:54Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/nbt.2647",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Hsu et al. 2013, DNA targeting specificity of Cas9",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:54Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/nmeth.2019",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Schindelin et al. 2012, Fiji",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:55Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1101/2025.08.21.671244",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Shetty et al. 2025, multi-omics of temperature responses in Chlamydomonas (preprint)",
+   "nrr:statusAtCheck": {
+    "version": "preprint",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:02Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1038/s41467-026-68562-6",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Walker et al. 2026, Breaking the cell wall for efficient DNA delivery to diatoms",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:52:56Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1093/plphys/kiab418",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Akella et al. 2021, co-targeting strategy for precise editing in Chlamydomonas",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:02Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1093/plphys/kiae427",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Ross et al. 2024, cyclical marker system for oligonucleotide-directed editing",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:02Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.3389/fpls.2020.00306",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Kim et al. 2020, site-specific knock-out and on-site overexpression via CRISPR-Cas9 knock-in",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-09-26T01:53:12Z"
+   }
+  },
+  {
+   "@id": "NCBITaxon:3055",
+   "@type": "Taxon",
+   "name": "Chlamydomonas reinhardtii",
+   "nrr:entityType": "organism",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "chlamycollection:CC-124",
+   "@type": "Taxon",
+   "name": "CC-124 wild type",
+   "nrr:entityType": "strain",
+   "nrr:role": "host strain",
+   "nrr:scheme": "Chlamydomonas Resource Center"
+  },
+  {
+   "@id": "ror:052zd4v68",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "nrr:entityType": "organization",
+   "nrr:url": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "phytozome:Cre04.g231026",
+   "@type": "Gene",
+   "name": "CpSRP43 (TLA3)",
+   "nrr:entityType": "locus",
+   "nrr:role": "CRISPR target",
+   "nrr:scheme": "Phytozome C. reinhardtii v5.6",
+   "nrr:extra": {
+    "guide": "CpSRP43_KO_g01",
+    "protospacer": "ACTAGGTACTCGACGCGCGG",
+    "pam": "GGG",
+    "azimuth": "0.74"
+   }
+  },
+  {
+   "@id": "phytozome:Cre11.g479750",
+   "@type": "Gene",
+   "name": "CpSRP54 (TLA4)",
+   "nrr:entityType": "locus",
+   "nrr:role": "CRISPR target",
+   "nrr:scheme": "Phytozome C. reinhardtii v5.6",
+   "nrr:extra": {
+    "guide": "CpSRP54_KO_g01",
+    "protospacer": "AGGGCGCATACTGACCACGA",
+    "pam": "AGG",
+    "azimuth": "0.73"
+   }
+  },
+  {
+   "@id": "phytozome:Cre10.g462200",
+   "@type": "Gene",
+   "name": "SRTA (SRTA)",
+   "nrr:entityType": "locus",
+   "nrr:role": "CRISPR target",
+   "nrr:scheme": "Phytozome C. reinhardtii v5.6",
+   "nrr:extra": {
+    "guide": "SRTA_KO_g01",
+    "protospacer": "AAAGGGCGTCAAGGAGCTAG",
+    "pam": "CGG",
+    "azimuth": "0.668"
+   }
+  },
+  {
+   "@id": "catalog:Sigma-Aldrich:126741",
+   "@type": "Product",
+   "name": "Alcalase",
+   "nrr:entityType": "reagent",
+   "nrr:role": "cell wall protease (serine endopeptidase",
+   "nrr:extra": {
+    "vendor": "Sigma-Aldrich"
+   }
+  },
+  {
+   "@id": "catalog:Thermo Fisher Scientific:A24229",
+   "@type": "Product",
+   "name": "GeneArt MAX Efficiency Transformation Reagent for Algae",
+   "nrr:entityType": "reagent",
+   "nrr:role": "comparator transformation reagent",
+   "nrr:extra": {
+    "vendor": "Thermo Fisher Scientific"
+   }
+  },
+  {
+   "@id": "catalog:IDT:1081058",
+   "@type": "Product",
+   "name": "Alt-R S. pyogenes Cas9 V3",
+   "nrr:entityType": "reagent",
+   "nrr:role": "nuclease",
+   "nrr:extra": {
+    "vendor": "IDT"
+   }
+  },
+  {
+   "@id": "catalog:IDT:1072533",
+   "@type": "Product",
+   "name": "Alt-R tracrRNA",
+   "nrr:entityType": "reagent",
+   "nrr:role": "guide component",
+   "nrr:extra": {
+    "vendor": "IDT"
+   }
+  },
+  {
+   "@id": "catalog:NEB:R0569S",
+   "@type": "Product",
+   "name": "SapI",
+   "nrr:entityType": "reagent",
+   "nrr:role": "donor linearisation",
+   "nrr:extra": {
+    "vendor": "NEB"
+   }
+  },
+  {
+   "@id": "catalog:Zymo:D4001",
+   "@type": "Product",
+   "name": "Zymoclean Gel DNA Recovery Kit",
+   "nrr:entityType": "reagent",
+   "nrr:role": "donor purification",
+   "nrr:extra": {
+    "vendor": "Zymo"
+   }
+  },
+  {
+   "@id": "catalog:Takara Bio:R052A",
+   "@type": "Product",
+   "name": "PrimeSTAR GXL Premix Fast Dye Plus",
+   "nrr:entityType": "reagent",
+   "nrr:role": "colony PCR",
+   "nrr:extra": {
+    "vendor": "Takara Bio"
+   }
+  },
+  {
+   "@id": "catalog:Invitrogen:G700802",
+   "@type": "Product",
+   "name": "E-Gel 2% agarose",
+   "nrr:entityType": "reagent",
+   "nrr:role": "gel",
+   "nrr:extra": {
+    "vendor": "Invitrogen"
+   }
+  },
+  {
+   "@id": "catalog:VWR:89047-210",
+   "@type": "Product",
+   "name": "4 mm electroporation cuvettes",
+   "nrr:entityType": "reagent",
+   "nrr:role": "electroporation",
+   "nrr:extra": {
+    "vendor": "VWR"
+   }
+  },
+  {
+   "@id": "catalog:Fluval:16875",
+   "@type": "Product",
+   "name": "Fluval Plant 4.0 LED Nano",
+   "nrr:entityType": "reagent",
+   "nrr:role": "culture lighting",
+   "nrr:extra": {
+    "vendor": "Fluval"
+   }
+  },
+  {
+   "@id": "catalog:VWR:734-2602",
+   "@type": "Product",
+   "name": "cell scraper 25 cm",
+   "nrr:entityType": "reagent",
+   "nrr:role": "harvest",
+   "nrr:extra": {
+    "vendor": "VWR"
+   }
+  },
+  {
+   "@id": "reagent:nourseothricin",
+   "@type": "Product",
+   "name": "nourseothricin",
+   "nrr:entityType": "reagent",
+   "nrr:role": "selection antibiotic 7.5 ug/mL",
+   "nrr:extra": {}
+  },
+  {
+   "@id": "pubchem:CID71720685",
+   "@type": "ChemicalSubstance",
+   "name": "nourseothricin (NAT)",
+   "nrr:entityType": "compound",
+   "nrr:role": "selection antibiotic",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "RRID:SCR_010519",
+   "@type": "SoftwareApplication",
+   "name": "Geneious Prime",
+   "nrr:entityType": "software",
+   "nrr:extra": {
+    "version": "2026.0.2"
+   }
+  },
+  {
+   "@id": "RRID:SCR_002285",
+   "@type": "SoftwareApplication",
+   "name": "Fiji",
+   "nrr:entityType": "software",
+   "nrr:extra": {
+    "version": "2.16.0/1.54p"
+   }
+  },
+  {
+   "@id": "software:arcadia-pycolor",
+   "@type": "SoftwareApplication",
+   "name": "arcadia-pycolor",
+   "nrr:entityType": "software",
+   "nrr:extra": {
+    "version": "0.8.0"
+   }
+  }
+ ]
+}

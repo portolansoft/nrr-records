@@ -1,0 +1,961 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:e7e859a07618a7847a6a3af5e24376903d523e9e740941ca82a4781388d31eb4",
+   "name": "Alcalase-treated CC-124 cells yield near-background NAT-resistant colonies after Cas9 RNP + donor electroporation; GeneArt-treated cells yield hundreds",
+   "description": "Can Alcalase pretreatment deliver Cas9 RNP and a linear NAT donor into cell-walled CC-124 at a frequency that yields NAT-resistant colonies?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "attempt",
+   "nrr:studyId": "arcadia-alcalase",
+   "nrr:slug": "arcadia-alcalase-transformation",
+   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "NAT-resistant colony counts well above the no-donor background in most guide x culture conditions.",
+   "keywords": [
+    "biology"
+   ],
+   "hasPart": [
+    {
+     "@id": "#attempt"
+    },
+    {
+     "@id": "#finding-natr-alcalase"
+    },
+    {
+     "@id": "#finding-natr-geneart"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-daniel-caddell-experimental-design"
+    },
+    {
+     "@id": "#performer-daniel-caddell-formal-analysis"
+    },
+    {
+     "@id": "#performer-daniel-caddell-investigation"
+    },
+    {
+     "@id": "#performer-raymond-futia-experimental-design"
+    },
+    {
+     "@id": "#performer-raymond-futia-investigation"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "organism": "NCBITaxon:3055",
+    "strain": "CC-124",
+    "cellWall": "intact (cell-walled strain)",
+    "synchronization": "14 h light / 10 h dark for four days before transformation; Fluval Plant 4.0 LED Nano lamps, 11,000 lux at culture surface",
+    "cultureFormats": [
+     "flask (liquid TAP, mid-log)",
+     "plate (TAP agar lawn)"
+    ],
+    "alcalase": "1:10 dilution of Alcalase (Sigma-Aldrich 126741) in TAP, 10 mL per pellet, 1 h in LED grow tent (~7,000 lux, ambient temperature, no shaking); washed twice with TAP + 40 mM sucrose",
+    "comparator": "washed twice in 10 mL undiluted GeneArt MAX Efficiency Transformation Reagent for Algae (Thermo Fisher A24229)",
+    "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+    "cargo": "Alt-R S. pyogenes Cas9 V3 (IDT 1081058) with annealed Alt-R crRNA:tracrRNA (IDT 1072533), 5 uM each, 4 uL RNP per reaction; linear 1,589 bp HDR donor: HSP70A-RBCS2::RBCS2i1::NAT::RBCS2-T flanked by 50 bp homology arms, released by SapI (NEB R0569S), gel-purified (Zymo D4001), 1 ug per transformation; synthesised by Twist Bioscience in pTwist Amp High Copy",
+    "selection": "TAP agar + 7.5 ug/mL nourseothricin (NAT); controls plated on TAP after 100x dilution; 5-7 days in grow tent",
+    "loci": [
+     "Cre04.g231026",
+     "Cre11.g479750",
+     "Cre10.g462200",
+     "Cre10.g462200"
+    ],
+    "replicates": "n = 1 per condition; one experimenter; one batch of each key reagent",
+    "dates": {
+     "transformation": "2026-04-22",
+     "genotyping": "2026-05-06"
+    }
+   },
+   "nrr:invalidators": [
+    "a donor-only, no-RNP control to quantify random integration",
+    "Alcalase conditions that preserve viability (see viability record)"
+   ],
+   "nrr:cost": {
+    "wallClockDays": 18,
+    "humanExperimenters": 1,
+    "wetLabRuns": 1,
+    "note": "single unreplicated experiment; USD not reported",
+    "source": "Figure 1 legend: workflow spans ~18 days from culture synchronization to genotyping"
+   },
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "We used Claude (Opus 4.8, Opus 5) to suggest wording ideas, copy-edit draft text to match Arcadia's style, clarify and streamline text, and generate figure mockups. We used ChatGPT (GPT-5.6 Luna) to suggest wording ideas and to clarify and streamline text. We also used ChatGPT (GPT-5.6 Sol) to identify reproducibility/clarity issues in our draft, and we corrected the issues it found. Additionally, Gemini (Gemini 3.6 Flash) suggested papers on relevant science, we did further reading, and we cited some of this literature. We reviewed all AI-assisted content and take responsibility for its accuracy and integrity.",
+    "tools": [
+     {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "version": "Opus 4.8, Opus 5",
+      "purpose": "wording, copy-editing, clarification, figure mockups"
+     },
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "version": "GPT-5.6 Luna",
+      "purpose": "wording, clarification"
+     },
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "version": "GPT-5.6 Sol",
+      "purpose": "reproducibility and clarity review of the draft"
+     },
+     {
+      "name": "Gemini",
+      "provider": "Google",
+      "version": "Gemini 3.6 Flash",
+      "purpose": "literature suggestions"
+     },
+     {
+      "name": "arcadia-pycolor",
+      "provider": "Arcadia Science",
+      "version": "0.8.0",
+      "purpose": "figure generation"
+     }
+    ]
+   },
+   "nrr:confidence": {
+    "level": "medium",
+    "basis": "consistent across 8 conditions and both culture formats, but n = 1 each"
+   },
+   "nrr:outcomeSummary": "0-16 CFU per plate on TAP + NAT; 6 of 8 treatments indistinguishable from the matched no-donor control; GeneArt 121-1,094",
+   "isPartOf": {
+    "@id": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22"
+   },
+   "mainEntity": {
+    "@id": "#attempt"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "https://doi.org/10.5281/zenodo.22238548"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "NCBITaxon:3055"
+    },
+    {
+     "@id": "chlamycollection:CC-124"
+    },
+    {
+     "@id": "ror:052zd4v68"
+    },
+    {
+     "@id": "phytozome:Cre04.g231026"
+    },
+    {
+     "@id": "phytozome:Cre11.g479750"
+    },
+    {
+     "@id": "phytozome:Cre10.g462200"
+    },
+    {
+     "@id": "phytozome:Cre10.g462200"
+    },
+    {
+     "@id": "catalog:Sigma-Aldrich:126741"
+    },
+    {
+     "@id": "catalog:Thermo Fisher Scientific:A24229"
+    },
+    {
+     "@id": "catalog:IDT:1081058"
+    },
+    {
+     "@id": "catalog:IDT:1072533"
+    },
+    {
+     "@id": "catalog:NEB:R0569S"
+    },
+    {
+     "@id": "catalog:Zymo:D4001"
+    },
+    {
+     "@id": "catalog:Takara Bio:R052A"
+    },
+    {
+     "@id": "catalog:Invitrogen:G700802"
+    },
+    {
+     "@id": "catalog:VWR:89047-210"
+    },
+    {
+     "@id": "catalog:Fluval:16875"
+    },
+    {
+     "@id": "catalog:VWR:734-2602"
+    },
+    {
+     "@id": "reagent:nourseothricin"
+    },
+    {
+     "@id": "pubchem:CID71720685"
+    },
+    {
+     "@id": "RRID:SCR_010519"
+    },
+    {
+     "@id": "RRID:SCR_002285"
+    },
+    {
+     "@id": "software:arcadia-pycolor"
+    }
+   ],
+   "nrr:isPartOf": [
+    {
+     "@id": "urn:portolan:nrr:sha256:e829e4ef7d8bdeb099c9a020f5495efd163f17e7e49382dd827a137c31036b22"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    {
+     "@id": "urn:portolan:nrr:sha256:cf780fa14af27606472b4fa7f69673a14d2e9aed9f79d93e6ea7856047116a06"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "identifier": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "#performer-daniel-caddell-experimental-design",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "experimental-design",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-formal-analysis",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "formal-analysis",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-daniel-caddell-investigation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Daniel Caddell",
+   "nrr:type": "person",
+   "nrr:role": "investigation",
+   "nrr:affiliation": "Arcadia Science",
+   "nrr:identifier": "https://orcid.org/0000-0003-4005-7151"
+  },
+  {
+   "@id": "#performer-raymond-futia-experimental-design",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "experimental-design",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#performer-raymond-futia-investigation",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Raymond Futia",
+   "nrr:type": "person",
+   "nrr:role": "investigation",
+   "nrr:affiliation": "Arcadia Science"
+  },
+  {
+   "@id": "#finding-natr-alcalase",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does electroporation of Cas9 RNP plus linear NAT HDR donor into Alcalase-treated CC-124 cells yield NAT-resistant colonies above the no-donor background?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does electroporation of Cas9 RNP plus linear NAT HDR donor into Alcalase-treated CC-124 cells yield NAT-resistant colonies above the no-donor background?",
+   "nrr:target": {
+    "label": "Alcalase pretreatment + electroporation (RNP + NAT donor)",
+    "type": "reagent"
+   },
+   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:informativeness": "informative",
+   "nrr:failureModes": [
+    "transformation-failed",
+    "toxicity"
+   ],
+   "nrr:effect": {
+    "metric": "NAT-resistant colonies per plate (TAP + 7.5 ug/mL NAT), 8 guide x culture conditions",
+    "value": "0-16",
+    "n": 8,
+    "direction": "none",
+    "comparedTo": "no-RNP/no-donor background [4, 3] (flask, plate)",
+    "perReplicate": [
+     0,
+     4,
+     0,
+     4,
+     15,
+     4,
+     16,
+     5
+    ],
+    "note": "2 of 8 conditions above twice the background"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "internal-positive",
+     "label": "GeneArt-treated cells, same RNP and donor",
+     "expected": "many NAT-resistant colonies",
+     "observed": "121-1,094 per plate",
+     "passed": true
+    },
+    "negative": {
+     "kind": "background",
+     "label": "no RNP, no donor, electroporated, plated on TAP + NAT",
+     "observed": "4 and 3 colonies",
+     "passed": true,
+     "note": "selection escape rare"
+    }
+   },
+   "nrr:sensitivity": "background of 0-4 colonies per plate; a delivery efficiency giving >= 10 NAT-resistant colonies above background would have been detected",
+   "nrr:replicates": {
+    "biological": 1,
+    "note": "one plate per guide x culture condition"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Table 4 (TAP + NAT plates)",
+     "source": "10.57844/arcadia-pdu7-q2zz",
+     "locator": "Table 4; Figure 5",
+     "values": {
+      "perGuide": {
+       "CpSRP43_KO_g01": {
+        "flask": 0,
+        "plate": 4
+       },
+       "CpSRP54_KO_g01": {
+        "flask": 0,
+        "plate": 4
+       },
+       "SRTA_KO_g01": {
+        "flask": 15,
+        "plate": 4
+       },
+       "SRTA_KO_g02": {
+        "flask": 16,
+        "plate": 5
+       }
+      },
+      "background": [
+       4,
+       3
+      ]
+     },
+     "data": [
+      {
+       "label": "colony counting FIJI.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.22238548",
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content",
+       "checksum": "md5:52c68656f3c2923f11601ab901238530",
+       "size": 170020010,
+       "role": "raw-data"
+      },
+      {
+       "label": "colony counting.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.22238548",
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content",
+       "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+       "size": 194406925,
+       "role": "raw-data"
+      }
+     ]
+    }
+   ],
+   "nrr:conditions": {
+    "pretreatment": "Alcalase",
+    "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+    "cargo": "4 uL RNP (5 uM) + 1 ug linear donor"
+   },
+   "nrr:note": "consistent with less efficient donor DNA delivery or integration under the Alcalase condition; NAT resistance likely reflects random donor integration",
+   "nrr:informativenessReason": "internal positive arm passed; negative control clean; sensitivity or power stated"
+  },
+  {
+   "@id": "#finding-natr-geneart",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does electroporation of Cas9 RNP plus linear NAT HDR donor into GeneArt-treated CC-124 cells yield NAT-resistant colonies above the no-donor background?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does electroporation of Cas9 RNP plus linear NAT HDR donor into GeneArt-treated CC-124 cells yield NAT-resistant colonies above the no-donor background?",
+   "nrr:target": {
+    "label": "GeneArt pretreatment + electroporation (RNP + NAT donor)",
+    "type": "reagent"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:failureModes": [],
+   "nrr:effect": {
+    "metric": "NAT-resistant colonies per plate (TAP + 7.5 ug/mL NAT), 8 guide x culture conditions",
+    "value": "121-1094",
+    "n": 8,
+    "direction": "increase",
+    "comparedTo": "no-RNP/no-donor background [0, 0] (flask, plate)",
+    "perReplicate": [
+     174,
+     860,
+     168,
+     1094,
+     121,
+     711,
+     236,
+     996
+    ],
+    "note": "8 of 8 conditions above twice the background"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no independently validated transformation positive control; GeneArt is the reference arm"
+    },
+    "negative": {
+     "kind": "background",
+     "label": "no RNP, no donor, electroporated, plated on TAP + NAT",
+     "observed": "0 and 0 colonies",
+     "passed": true,
+     "note": "selection escape rare"
+    }
+   },
+   "nrr:sensitivity": "background of 0-4 colonies per plate; a delivery efficiency giving >= 10 NAT-resistant colonies above background would have been detected",
+   "nrr:replicates": {
+    "biological": 1,
+    "note": "one plate per guide x culture condition"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Table 4 (TAP + NAT plates)",
+     "source": "10.57844/arcadia-pdu7-q2zz",
+     "locator": "Table 4; Figure 5",
+     "values": {
+      "perGuide": {
+       "CpSRP43_KO_g01": {
+        "flask": 174,
+        "plate": 860
+       },
+       "CpSRP54_KO_g01": {
+        "flask": 168,
+        "plate": 1094
+       },
+       "SRTA_KO_g01": {
+        "flask": 121,
+        "plate": 711
+       },
+       "SRTA_KO_g02": {
+        "flask": 236,
+        "plate": 996
+       }
+      },
+      "background": [
+       0,
+       0
+      ]
+     },
+     "data": [
+      {
+       "label": "colony counting FIJI.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.22238548",
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content",
+       "checksum": "md5:52c68656f3c2923f11601ab901238530",
+       "size": 170020010,
+       "role": "raw-data"
+      },
+      {
+       "label": "colony counting.zip",
+       "repository": "Zenodo",
+       "accession": "10.5281/zenodo.22238548",
+       "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content",
+       "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+       "size": 194406925,
+       "role": "raw-data"
+      }
+     ]
+    }
+   ],
+   "nrr:conditions": {
+    "pretreatment": "GeneArt",
+    "delivery": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm",
+    "cargo": "4 uL RNP (5 uM) + 1 ug linear donor"
+   },
+   "nrr:note": "NAT resistance most likely reflects random (NHEJ) donor integration; no on-target events found (see hdr-knockin)",
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#stage-1-experiment",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "RNP + donor electroporation and NAT selection",
+   "nrr:stage": "experiment",
+   "nrr:performedBy": [
+    {
+     "name": "Daniel Caddell",
+     "type": "person",
+     "role": "conceptualization",
+     "affiliation": "Arcadia Science",
+     "identifier": "https://orcid.org/0000-0003-4005-7151"
+    }
+   ],
+   "nrr:method": "Gene Pulser Xcell (Bio-Rad), 4 mm cuvettes (VWR 89047-210), 500 V, 50 uF, 800 Ohm; 250 uL cells; recovery overnight in TAP + 40 mM sucrose, dark, 150 rpm; TAP agar + 7.5 ug/mL nourseothricin (NAT); controls plated on TAP after 100x dilution; 5-7 days in grow tent",
+   "nrr:instrument": [
+    "Gene Pulser Xcell electroporator (Bio-Rad)"
+   ],
+   "nrr:conditions": {
+    "rnp": "Alt-R S. pyogenes Cas9 V3 (IDT 1081058) with annealed Alt-R crRNA:tracrRNA (IDT 1072533), 5 uM each, 4 uL RNP per reaction",
+    "donor": "linear 1,589 bp HDR donor: HSP70A-RBCS2::RBCS2i1::NAT::RBCS2-T flanked by 50 bp homology arms, released by SapI (NEB R0569S), gel-purified (Zymo D4001), 1 ug per transformation; synthesised by Twist Bioscience in pTwist Amp High Copy"
+   }
+  },
+  {
+   "@id": "#attempt",
+   "@type": [
+    "CreateAction",
+    "prov:Activity"
+   ],
+   "name": "Alcalase-treated CC-124 cells yield near-background NAT-resistant colonies after Cas9 RNP + donor electroporation; GeneArt-treated cells yield hundreds",
+   "description": "Can Alcalase pretreatment deliver Cas9 RNP and a linear NAT donor into cell-walled CC-124 at a frequency that yields NAT-resistant colonies?",
+   "actionStatus": "FailedActionStatus",
+   "nrr:attemptType": "wet-lab",
+   "nrr:outcomeClass": "negative-not-achievable",
+   "agent": {
+    "@id": "#operator"
+   },
+   "instrument": [
+    {
+     "@id": "#performer-daniel-caddell-experimental-design"
+    },
+    {
+     "@id": "#performer-daniel-caddell-formal-analysis"
+    },
+    {
+     "@id": "#performer-daniel-caddell-investigation"
+    },
+    {
+     "@id": "#performer-raymond-futia-experimental-design"
+    },
+    {
+     "@id": "#performer-raymond-futia-investigation"
+    }
+   ],
+   "object": [],
+   "result": [
+    {
+     "@id": "#finding-natr-alcalase"
+    },
+    {
+     "@id": "#finding-natr-geneart"
+    }
+   ],
+   "hasPart": [
+    {
+     "@id": "#stage-1-experiment"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.57844/arcadia-pdu7-q2zz",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in",
+   "nrr:url": "https://thestacks.org/publications/informative-failure-alcalase-crispr-chlamydomonas",
+   "nrr:statusAtCheck": {
+    "version": "v1",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:26Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22238548",
+   "@type": "Dataset",
+   "nrr:role": "data-deposit",
+   "name": "Data accompanying: Evaluation of Alcalase pretreatment for CRISPR-HDR in Chlamydomonas reinhardtii",
+   "nrr:statusAtCheck": {
+    "version": "dataset",
+    "integrity": "none",
+    "assertedBy": "datacite",
+    "checkedAt": "2026-09-26T01:53:24Z"
+   },
+   "nrr:license": "CC BY 4.0",
+   "nrr:data": [
+    {
+     "label": "colony selection.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20selection.zip/content",
+     "checksum": "md5:d715b61c1c345c8fe35c5d07eb7b02cb",
+     "size": 379267934,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony selection GIMP.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20selection%20GIMP.zip/content",
+     "checksum": "md5:79d46a1054b9c2bf3f80e94daf774054",
+     "size": 625334645,
+     "role": "raw-data"
+    },
+    {
+     "label": "HDR donor plasmid maps.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/HDR%20donor%20plasmid%20maps.zip/content",
+     "checksum": "md5:8bfbbd1cf5ad00401f45454491d6dc40",
+     "size": 19353,
+     "role": "raw-data"
+    },
+    {
+     "label": "amplicon sequencing results.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/amplicon%20sequencing%20results.zip/content",
+     "checksum": "md5:897feb0b177819b196e98b28f74c5bc6",
+     "size": 212751,
+     "role": "raw-data"
+    },
+    {
+     "label": "Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/Chlamydomonas_CRISPR-HDR_plate_colony_image_index.csv/content",
+     "checksum": "md5:c503740077193008cf04bbc911297089",
+     "size": 46162,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony PCR gel images.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20PCR%20gel%20images.zip/content",
+     "checksum": "md5:b00d1d9780a5748449e8e8e1f31d325d",
+     "size": 5353618,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony counting FIJI.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20counting%20FIJI.zip/content",
+     "checksum": "md5:52c68656f3c2923f11601ab901238530",
+     "size": 170020010,
+     "role": "raw-data"
+    },
+    {
+     "label": "deepwell plates.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/deepwell%20plates.zip/content",
+     "checksum": "md5:6be7ff9f8a826481f73754210e2b11a3",
+     "size": 13099022,
+     "role": "raw-data"
+    },
+    {
+     "label": "colony counting.zip",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/colony%20counting.zip/content",
+     "checksum": "md5:04ba9fa924fac094a303a7f6d897c052",
+     "size": 194406925,
+     "role": "raw-data"
+    },
+    {
+     "label": "wall_permeability_data.csv",
+     "repository": "Zenodo",
+     "accession": "10.5281/zenodo.22238548",
+     "url": "https://zenodo.org/api/records/22238548/files/wall_permeability_data.csv/content",
+     "checksum": "md5:aeb2affeed3c52ec047af53089df06bf",
+     "size": 464,
+     "role": "raw-data"
+    }
+   ]
+  },
+  {
+   "@id": "NCBITaxon:3055",
+   "@type": "Taxon",
+   "name": "Chlamydomonas reinhardtii",
+   "nrr:entityType": "organism",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "chlamycollection:CC-124",
+   "@type": "Taxon",
+   "name": "CC-124 wild type",
+   "nrr:entityType": "strain",
+   "nrr:role": "host strain",
+   "nrr:scheme": "Chlamydomonas Resource Center"
+  },
+  {
+   "@id": "ror:052zd4v68",
+   "@type": "Organization",
+   "name": "Arcadia Science",
+   "nrr:entityType": "organization",
+   "nrr:url": "https://ror.org/052zd4v68"
+  },
+  {
+   "@id": "phytozome:Cre04.g231026",
+   "@type": "Gene",
+   "name": "CpSRP43 (TLA3)",
+   "nrr:entityType": "locus",
+   "nrr:role": "CRISPR target",
+   "nrr:scheme": "Phytozome C. reinhardtii v5.6",
+   "nrr:extra": {
+    "guide": "CpSRP43_KO_g01",
+    "protospacer": "ACTAGGTACTCGACGCGCGG",
+    "pam": "GGG",
+    "azimuth": "0.74"
+   }
+  },
+  {
+   "@id": "phytozome:Cre11.g479750",
+   "@type": "Gene",
+   "name": "CpSRP54 (TLA4)",
+   "nrr:entityType": "locus",
+   "nrr:role": "CRISPR target",
+   "nrr:scheme": "Phytozome C. reinhardtii v5.6",
+   "nrr:extra": {
+    "guide": "CpSRP54_KO_g01",
+    "protospacer": "AGGGCGCATACTGACCACGA",
+    "pam": "AGG",
+    "azimuth": "0.73"
+   }
+  },
+  {
+   "@id": "phytozome:Cre10.g462200",
+   "@type": "Gene",
+   "name": "SRTA (SRTA)",
+   "nrr:entityType": "locus",
+   "nrr:role": "CRISPR target",
+   "nrr:scheme": "Phytozome C. reinhardtii v5.6",
+   "nrr:extra": {
+    "guide": "SRTA_KO_g01",
+    "protospacer": "AAAGGGCGTCAAGGAGCTAG",
+    "pam": "CGG",
+    "azimuth": "0.668"
+   }
+  },
+  {
+   "@id": "catalog:Sigma-Aldrich:126741",
+   "@type": "Product",
+   "name": "Alcalase",
+   "nrr:entityType": "reagent",
+   "nrr:role": "cell wall protease (serine endopeptidase",
+   "nrr:extra": {
+    "vendor": "Sigma-Aldrich"
+   }
+  },
+  {
+   "@id": "catalog:Thermo Fisher Scientific:A24229",
+   "@type": "Product",
+   "name": "GeneArt MAX Efficiency Transformation Reagent for Algae",
+   "nrr:entityType": "reagent",
+   "nrr:role": "comparator transformation reagent",
+   "nrr:extra": {
+    "vendor": "Thermo Fisher Scientific"
+   }
+  },
+  {
+   "@id": "catalog:IDT:1081058",
+   "@type": "Product",
+   "name": "Alt-R S. pyogenes Cas9 V3",
+   "nrr:entityType": "reagent",
+   "nrr:role": "nuclease",
+   "nrr:extra": {
+    "vendor": "IDT"
+   }
+  },
+  {
+   "@id": "catalog:IDT:1072533",
+   "@type": "Product",
+   "name": "Alt-R tracrRNA",
+   "nrr:entityType": "reagent",
+   "nrr:role": "guide component",
+   "nrr:extra": {
+    "vendor": "IDT"
+   }
+  },
+  {
+   "@id": "catalog:NEB:R0569S",
+   "@type": "Product",
+   "name": "SapI",
+   "nrr:entityType": "reagent",
+   "nrr:role": "donor linearisation",
+   "nrr:extra": {
+    "vendor": "NEB"
+   }
+  },
+  {
+   "@id": "catalog:Zymo:D4001",
+   "@type": "Product",
+   "name": "Zymoclean Gel DNA Recovery Kit",
+   "nrr:entityType": "reagent",
+   "nrr:role": "donor purification",
+   "nrr:extra": {
+    "vendor": "Zymo"
+   }
+  },
+  {
+   "@id": "catalog:Takara Bio:R052A",
+   "@type": "Product",
+   "name": "PrimeSTAR GXL Premix Fast Dye Plus",
+   "nrr:entityType": "reagent",
+   "nrr:role": "colony PCR",
+   "nrr:extra": {
+    "vendor": "Takara Bio"
+   }
+  },
+  {
+   "@id": "catalog:Invitrogen:G700802",
+   "@type": "Product",
+   "name": "E-Gel 2% agarose",
+   "nrr:entityType": "reagent",
+   "nrr:role": "gel",
+   "nrr:extra": {
+    "vendor": "Invitrogen"
+   }
+  },
+  {
+   "@id": "catalog:VWR:89047-210",
+   "@type": "Product",
+   "name": "4 mm electroporation cuvettes",
+   "nrr:entityType": "reagent",
+   "nrr:role": "electroporation",
+   "nrr:extra": {
+    "vendor": "VWR"
+   }
+  },
+  {
+   "@id": "catalog:Fluval:16875",
+   "@type": "Product",
+   "name": "Fluval Plant 4.0 LED Nano",
+   "nrr:entityType": "reagent",
+   "nrr:role": "culture lighting",
+   "nrr:extra": {
+    "vendor": "Fluval"
+   }
+  },
+  {
+   "@id": "catalog:VWR:734-2602",
+   "@type": "Product",
+   "name": "cell scraper 25 cm",
+   "nrr:entityType": "reagent",
+   "nrr:role": "harvest",
+   "nrr:extra": {
+    "vendor": "VWR"
+   }
+  },
+  {
+   "@id": "reagent:nourseothricin",
+   "@type": "Product",
+   "name": "nourseothricin",
+   "nrr:entityType": "reagent",
+   "nrr:role": "selection antibiotic 7.5 ug/mL",
+   "nrr:extra": {}
+  },
+  {
+   "@id": "pubchem:CID71720685",
+   "@type": "ChemicalSubstance",
+   "name": "nourseothricin (NAT)",
+   "nrr:entityType": "compound",
+   "nrr:role": "selection antibiotic",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "RRID:SCR_010519",
+   "@type": "SoftwareApplication",
+   "name": "Geneious Prime",
+   "nrr:entityType": "software",
+   "nrr:extra": {
+    "version": "2026.0.2"
+   }
+  },
+  {
+   "@id": "RRID:SCR_002285",
+   "@type": "SoftwareApplication",
+   "name": "Fiji",
+   "nrr:entityType": "software",
+   "nrr:extra": {
+    "version": "2.16.0/1.54p"
+   }
+  },
+  {
+   "@id": "software:arcadia-pycolor",
+   "@type": "SoftwareApplication",
+   "name": "arcadia-pycolor",
+   "nrr:entityType": "software",
+   "nrr:extra": {
+    "version": "0.8.0"
+   }
+  }
+ ]
+}
