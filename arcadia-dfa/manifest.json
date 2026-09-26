@@ -1,0 +1,49 @@
+{
+ "study": "arcadia-dfa",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "377169aa6d27bbe5411bb7b5d81b582527781dcb",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.57844/arcadia-9768-f6c5",
+  "label": "A structurally divergent actin conserved in fungi has no association with specific traits",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "arcadia-dfa-path",
+   "id": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "partial",
+   "findings": 0
+  },
+  {
+   "slug": "arcadia-dfa-cluster-expansion",
+   "id": "urn:portolan:nrr:sha256:fc66c5bb6c069f20da31e7c333175c18f3f5c21ce2dd90dc1bbe133e30c6aefd",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "positive",
+   "findings": 3
+  },
+  {
+   "slug": "arcadia-dfa-distribution",
+   "id": "urn:portolan:nrr:sha256:501b6d388dfa35a240e964ea40482b8f724952c090a697fb4bd35c281edf9c90",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "positive",
+   "findings": 1
+  },
+  {
+   "slug": "arcadia-dfa-trait-association",
+   "id": "urn:portolan:nrr:sha256:c50f1b0896f675f7bdba819d1e653f56160f0a9185cb7bfced11ca7895e43425",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "inconclusive-no-positive-control",
+   "findings": 7
+  }
+ ]
+}

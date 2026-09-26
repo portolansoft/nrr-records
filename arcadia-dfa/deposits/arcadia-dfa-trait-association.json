@@ -1,0 +1,2787 @@
+{
+ "arguments": {
+  "attachments": [],
+  "crate": {
+   "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+     "nrr": "https://portolansoft.com/schema/nrr/0.2#",
+     "prov": "http://www.w3.org/ns/prov#"
+    }
+   ],
+   "@graph": [
+    {
+     "@id": "ro-crate-metadata.json",
+     "@type": "CreativeWork",
+     "about": {
+      "@id": "./"
+     },
+     "conformsTo": [
+      {
+       "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      {
+       "@id": "https://portolansoft.com/profile/nrr/0.2"
+      }
+     ]
+    },
+    {
+     "@id": "./",
+     "@type": "Dataset",
+     "conformsTo": {
+      "@id": "https://portolansoft.com/profile/nrr/0.2"
+     },
+     "datePublished": "2026-09-25T00:00:00Z",
+     "description": "Does any curated species-level fungal trait predict the presence or absence of the divergent fungal actin, which would suggest a function for it?",
+     "hasPart": [
+      {
+       "@id": "#attempt"
+      },
+      {
+       "@id": "#finding-trait-growth-form"
+      },
+      {
+       "@id": "#finding-trait-trophic-mode"
+      },
+      {
+       "@id": "#finding-trait-ascus-dehiscence"
+      },
+      {
+       "@id": "#finding-trait-auxin-responsive-promoter"
+      },
+      {
+       "@id": "#finding-trait-spore-length"
+      },
+      {
+       "@id": "#finding-trait-spore-width"
+      },
+      {
+       "@id": "#finding-trait-overall"
+      }
+     ],
+     "identifier": "urn:portolan:nrr:sha256:c50f1b0896f675f7bdba819d1e653f56160f0a9185cb7bfced11ca7895e43425",
+     "isPartOf": {
+      "@id": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071"
+     },
+     "isSupplementTo": [
+      {
+       "@id": "https://doi.org/10.57844/arcadia-9768-f6c5"
+      }
+     ],
+     "keywords": [
+      "biology"
+     ],
+     "license": {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "mainEntity": {
+      "@id": "#attempt"
+     },
+     "mentions": [
+      {
+       "@id": "NCBITaxon:4751"
+      },
+      {
+       "@id": "uniprot:P60709"
+      },
+      {
+       "@id": "protein-family:divergent-fungal-actin"
+      },
+      {
+       "@id": "ror:052zd4v68"
+      },
+      {
+       "@id": "uniprot:A0A401L4A6"
+      },
+      {
+       "@id": "uniprot:A0A0C9N219"
+      },
+      {
+       "@id": "uniprot:A0A2N1JBK3"
+      },
+      {
+       "@id": "uniprot:A0A5B0SCN5"
+      },
+      {
+       "@id": "uniprot:A0A226D8X1"
+      },
+      {
+       "@id": "uniprot:A0A7J6TT41"
+      },
+      {
+       "@id": "trait:growth-form"
+      },
+      {
+       "@id": "trait:trophic-mode"
+      },
+      {
+       "@id": "trait:ascus-dehiscence"
+      },
+      {
+       "@id": "trait:auxin-responsive-promoter"
+      },
+      {
+       "@id": "trait:spore-length"
+      },
+      {
+       "@id": "trait:spore-width"
+      },
+      {
+       "@id": "software:ProteinCartography"
+      },
+      {
+       "@id": "software:MMseqs2"
+      },
+      {
+       "@id": "software:Foldseek"
+      },
+      {
+       "@id": "software:BLAST+"
+      },
+      {
+       "@id": "software:corHMM"
+      },
+      {
+       "@id": "software:phyr"
+      },
+      {
+       "@id": "database:fun-fun"
+      },
+      {
+       "@id": "database:funguild"
+      },
+      {
+       "@id": "database:timetree"
+      },
+      {
+       "@id": "database:alphafold-protein-structure-database"
+      },
+      {
+       "@id": "database:uniprotkb"
+      },
+      {
+       "@id": "database:ncbi-taxonomy"
+      }
+     ],
+     "name": "None of six curated fungal traits predicts the presence of a divergent fungal actin",
+     "nrr:aiUseDeclaration": {
+      "statement": "We used ChatGPT to help write some code.",
+      "tools": [
+       {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "purpose": "writing some analysis code"
+       }
+      ]
+     },
+     "nrr:applicabilityConditions": {
+      "absenceDefinition": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt the criteria are liberal and likely produce false negatives, especially for species with far more than 6,000 proteins, so DFA prevalence across the fungal tree is probably underestimated",
+      "note": "conclusions are bounded by which traits had usable public data, not by which traits are biologically plausible",
+      "phylogeny": "TimeTree database web interface; the resulting tree represented 85 fungal orders",
+      "proteinFamily": "structurally divergent fungal actins, defined as ProteinCartography clusters LC04, LC11 and LC14",
+      "speciesAnalysed": 102,
+      "speciesWithDfa": 346,
+      "speciesWithoutDfa": 507,
+      "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+      "taxonomicScope": "Fungi (NCBITaxon:4751)",
+      "traitSource": "Fun Fun: aggregates species-level ecological, cellular and biochemical trait information from multiple studies, including FUNGuild classifications of ecological function and trophic mode",
+      "traitsTested": [
+       "growth form",
+       "trophic mode",
+       "ascus dehiscence",
+       "auxin-responsive promoter",
+       "spore length",
+       "spore width"
+      ],
+      "unitOfObservation": "species, not independent observations; phylogenetic non-independence is modelled explicitly",
+      "workingSetSpecies": 853
+     },
+     "nrr:confidence": {
+      "basis": "an average of 34 species per trait, traits chosen for data availability, no positive control on the method, and an absence criterion expected to produce false negatives",
+      "level": "low"
+     },
+     "nrr:cost": {
+      "note": "computational study; 853 species in the working set, 102 analysed; no monetary or compute cost is reported",
+      "source": "The approach"
+     },
+     "nrr:invalidators": [
+      "a trait panel chosen for biological relevance with usable coverage",
+      "a positive control demonstrating the pipeline recovers a known protein-trait association at comparable sample sizes",
+      "a DFA-absence call based on genome assemblies rather than a UniProt protein-count threshold"
+     ],
+     "nrr:isPartOf": [
+      {
+       "@id": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071"
+      }
+     ],
+     "nrr:kind": "attempt",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:outcomeSummary": "for all four discrete traits the independent-evolution model was more likely; neither continuous trait explained DFA presence or absence; no correlation was detected between DFA presence and any trait investigated",
+     "nrr:pathType": "computation",
+     "nrr:provenanceNotes": [
+      "Each trait is recorded as its own finding and the aggregate claim as a seventh, so a naive count of negatives for this study would be seven rather than one.",
+      "Every per-trait finding is uninformative for the same reason, so the class negative-no-association never survives into the record even though it is the pub's own framing.",
+      "no multiple-comparison correction is reported across the six traits; the discrete tests are AIC model selection rather than null-hypothesis tests, and the two continuous tests report uncorrected p-values",
+      "Sample sizes per trait range from 10 to 71 species: growth form 24, trophic mode 63, ascus dehiscence 13, auxin-responsive promoter 71, spore length 10, spore width 10."
+     ],
+     "nrr:slug": "arcadia-dfa-trait-association",
+     "nrr:sourceLicense": "CC BY 4.0",
+     "nrr:studyId": "arcadia-dfa",
+     "nrr:successCriteria": "A trait whose evolutionary history is better explained by a model correlated with divergent actin presence, or a continuous trait with a slope significantly different from zero.",
+     "nrr:visibility": "public",
+     "prov:used": [
+      {
+       "@id": "https://doi.org/10.5281/zenodo.10211653"
+      },
+      {
+       "@id": "https://doi.org/10.5281/zenodo.10779267"
+      }
+     ],
+     "prov:wasAttributedTo": [
+      {
+       "@id": "#operator"
+      },
+      {
+       "@id": "#performer-manon-morin-data-curation"
+      },
+      {
+       "@id": "#performer-manon-morin-formal-analysis"
+      },
+      {
+       "@id": "#performer-manon-morin-investigation"
+      },
+      {
+       "@id": "#performer-manon-morin-methodology"
+      },
+      {
+       "@id": "#performer-austin-h-patton-formal-analysis"
+      },
+      {
+       "@id": "#performer-austin-h-patton-methodology"
+      }
+     ],
+     "prov:wasDerivedFrom": [
+      {
+       "@id": "urn:portolan:nrr:sha256:501b6d388dfa35a240e964ea40482b8f724952c090a697fb4bd35c281edf9c90"
+      },
+      {
+       "@id": "urn:portolan:nrr:sha256:fc66c5bb6c069f20da31e7c333175c18f3f5c21ce2dd90dc1bbe133e30c6aefd"
+      }
+     ],
+     "version": "1"
+    },
+    {
+     "@id": "#operator",
+     "@type": "Organization",
+     "identifier": "https://ror.org/052zd4v68",
+     "name": "Arcadia Science"
+    },
+    {
+     "@id": "#performer-manon-morin-data-curation",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Manon Morin",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "data-curation",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-manon-morin-formal-analysis",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Manon Morin",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "formal-analysis",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-manon-morin-investigation",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Manon Morin",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "investigation",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-manon-morin-methodology",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Manon Morin",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "methodology",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-austin-h-patton-formal-analysis",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Austin H. Patton",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "formal-analysis",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-austin-h-patton-methodology",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Austin H. Patton",
+     "nrr:affiliation": "Arcadia Science",
+     "nrr:role": "methodology",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#finding-trait-growth-form",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does growth form predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:conditions": {
+      "categories": "3 (agaricoid/microfungus/yeast)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "best correlated-evolution model, AIC 86.65; the independent model wins by 17.31",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 24,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 69.34
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 69.34,
+        "best_model": "independent",
+        "categories": "3 (agaricoid/microfungus/yeast)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 86.65,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 24,
+        "source": "Table 2",
+        "trait": "growth form"
+       }
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "Independent evolution of DFA and trait is more likely",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does growth form predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:replicates": {
+      "biological": 24,
+      "note": "24 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "nrr:statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "nrr:target": {
+      "identifier": "trait:growth-form",
+      "label": "growth form",
+      "type": "phenotype"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-trait-trophic-mode",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does trophic mode predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:conditions": {
+      "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "best correlated-evolution model, AIC 224.42; the independent model wins by 12.63",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 63,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 211.79
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 211.79,
+        "best_model": "independent",
+        "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 224.42,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 63,
+        "source": "Table 2",
+        "trait": "trophic mode"
+       }
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "Independent evolution of DFA and trait is more likely",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does trophic mode predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:replicates": {
+      "biological": 63,
+      "note": "63 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "nrr:statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "nrr:target": {
+      "identifier": "trait:trophic-mode",
+      "label": "trophic mode",
+      "type": "phenotype"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-trait-ascus-dehiscence",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does ascus dehiscence predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:conditions": {
+      "categories": "2 (deliquescent/poricidal)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "best correlated-evolution model, AIC 37.49; the independent model wins by 7.43",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 13,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 30.06
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 30.06,
+        "best_model": "independent",
+        "categories": "2 (deliquescent/poricidal)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 37.49,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 13,
+        "source": "Table 2",
+        "trait": "ascus dehiscence"
+       }
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "Independent evolution of DFA and trait is more likely",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does ascus dehiscence predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:replicates": {
+      "biological": 13,
+      "note": "13 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "nrr:statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "nrr:target": {
+      "identifier": "trait:ascus-dehiscence",
+      "label": "ascus dehiscence",
+      "type": "phenotype"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-trait-auxin-responsive-promoter",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does auxin-responsive promoter predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:conditions": {
+      "categories": "2 (present/absent)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "best correlated-evolution model, AIC 149.33; the independent model wins by 4.45",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 71,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 144.88
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 144.88,
+        "best_model": "independent",
+        "categories": "2 (present/absent)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 149.33,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 71,
+        "source": "Table 2",
+        "trait": "auxin-responsive promoter"
+       }
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "Independent evolution of DFA and trait is more likely",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does auxin-responsive promoter predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:replicates": {
+      "biological": 71,
+      "note": "71 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "nrr:statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "nrr:target": {
+      "identifier": "trait:auxin-responsive-promoter",
+      "label": "auxin-responsive promoter",
+      "type": "phenotype"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-trait-spore-length",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does spore length predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:conditions": {
+      "categories": "continuous",
+      "dataType": "continuous",
+      "recoding": "none",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "a slope of zero, meaning the trait does not change the probability of divergent actin presence",
+      "direction": "none",
+      "metric": "slope of the trait on divergent actin presence, phylogeny-corrected logistic regression",
+      "n": 10,
+      "note": "intercept p-value 0.41; no multiple-comparison correction is reported across traits",
+      "pValue": 0.64,
+      "significant": false,
+      "test": "phylogeny-corrected generalized linear mixed model, pglmm_compare",
+      "value": 0.64
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 3",
+       "locator": "Table 3",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_model": "not-significant",
+        "conclusion": "Slope not significantly different from zero",
+        "data_type": "continuous",
+        "model_class": "pglmm",
+        "n_species": 10,
+        "p_value_intercept": 0.41,
+        "p_value_slope": 0.64,
+        "source": "Table 3",
+        "trait": "spore length"
+       }
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "Slope not significantly different from zero",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does spore length predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:replicates": {
+      "biological": 10,
+      "note": "10 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "nrr:statistics": "phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+     "nrr:target": {
+      "identifier": "trait:spore-length",
+      "label": "spore length",
+      "type": "phenotype"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-trait-spore-width",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does spore width predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:conditions": {
+      "categories": "continuous",
+      "dataType": "continuous",
+      "recoding": "none",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "a slope of zero, meaning the trait does not change the probability of divergent actin presence",
+      "direction": "none",
+      "metric": "slope of the trait on divergent actin presence, phylogeny-corrected logistic regression",
+      "n": 10,
+      "note": "intercept p-value 0.35; no multiple-comparison correction is reported across traits",
+      "pValue": 0.71,
+      "significant": false,
+      "test": "phylogeny-corrected generalized linear mixed model, pglmm_compare",
+      "value": 0.71
+     },
+     "nrr:evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 3",
+       "locator": "Table 3",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_model": "not-significant",
+        "conclusion": "Slope not significantly different from zero",
+        "data_type": "continuous",
+        "model_class": "pglmm",
+        "n_species": 10,
+        "p_value_intercept": 0.35,
+        "p_value_slope": 0.71,
+        "source": "Table 3",
+        "trait": "spore width"
+       }
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "Slope not significantly different from zero",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does spore width predict the presence or absence of a divergent fungal actin across species?",
+     "nrr:replicates": {
+      "biological": 10,
+      "note": "10 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "nrr:statistics": "phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+     "nrr:target": {
+      "identifier": "trait:spore-width",
+      "label": "spore width",
+      "type": "phenotype"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-trait-overall",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does any of the six curated fungal traits predict the presence or absence of a divergent fungal actin?",
+     "nrr:conditions": {
+      "absenceDefinition": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt",
+      "speciesAnalysed": 102,
+      "traits": [
+       "growth form",
+       "trophic mode",
+       "ascus dehiscence",
+       "auxin-responsive promoter",
+       "spore length",
+       "spore width"
+      ]
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permutation or shuffled-label control was run"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "none; the pub does not test the trait-mapping method against a protein family with a known trait association, so it cannot separate 'DFA has no trait association' from 'this method cannot detect trait associations at these sample sizes'"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "six traits tested: four discrete by AIC model selection, two continuous by phylogeny-corrected regression",
+      "direction": "none",
+      "metric": "traits showing a correlated evolutionary trajectory with divergent actin presence",
+      "n": 6,
+      "note": "for all four discrete traits the independent-evolution model was more likely; neither continuous trait explained DFA presence or absence; no correlation was detected between DFA presence and any trait investigated",
+      "significant": false,
+      "value": 0
+     },
+     "nrr:evidence": [
+      {
+       "label": "The results: None of the six tested fungal traits correlate with DFA status",
+       "locator": "Tables 2 and 3",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "ascus dehiscence": {
+         "aic": 30.06,
+         "bestModel": "independent",
+         "n": 13
+        },
+        "auxin-responsive promoter": {
+         "aic": 144.88,
+         "bestModel": "independent",
+         "n": 71
+        },
+        "growth form": {
+         "aic": 69.34,
+         "bestModel": "independent",
+         "n": 24
+        },
+        "spore length": {
+         "bestModel": "not-significant",
+         "n": 10,
+         "pValue": 0.64
+        },
+        "spore width": {
+         "bestModel": "not-significant",
+         "n": 10,
+         "pValue": 0.71
+        },
+        "trophic mode": {
+         "aic": 211.79,
+         "bestModel": "independent",
+         "n": 63
+        }
+       }
+      },
+      {
+       "label": "Limitations",
+       "locator": "Limitations",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "stated": [
+         "Only six traits were investigated, and they may not include the traits biologically relevant to DFAs; the restricted scope follows directly from limited availability and quality of trait data.",
+         "The trait data were not collected with this study's goals in mind and are therefore likely limited in relevance to DFAs.",
+         "Trait-data scarcity significantly reduced statistical power: starting from 36,253 fungi with at least one protein structure in UniProt, reliable trait information was available for an average of 34 fungi per trait.",
+         "The ability to link a phenotype to DFA presence is limited by the ability to determine DFA absence, which depends on genome sequence quality and coverage; errors in DFA status reduce the ability to identify significant associations."
+        ]
+       }
+      },
+      {
+       "label": "Key takeaways",
+       "quote": "No correlation was found between any of the tested traits and DFAs, so the function of this variant remains unknown.",
+       "source": "10.57844/arcadia-9768-f6c5"
+      }
+     ],
+     "nrr:failureModes": [
+      "insufficient-data"
+     ],
+     "nrr:informativeness": "uninformative",
+     "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "nrr:note": "The authors attribute the null to trait coverage and to errors in calling divergent actin absent. The record adds that no positive control on the method was run, so the null cannot be separated from a method that would not have detected an association at these sample sizes.",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "nrr:question": "Does any of the six curated fungal traits predict the presence or absence of a divergent fungal actin?",
+     "nrr:relatedFindings": [
+      "arcadia-dfa-trait-association#trait-growth-form",
+      "arcadia-dfa-trait-association#trait-trophic-mode",
+      "arcadia-dfa-trait-association#trait-ascus-dehiscence",
+      "arcadia-dfa-trait-association#trait-auxin-responsive-promoter",
+      "arcadia-dfa-trait-association#trait-spore-length",
+      "arcadia-dfa-trait-association#trait-spore-width"
+     ],
+     "nrr:replicates": {
+      "biological": 102,
+      "note": "102 species in total, an average of 34 species per trait out of 36,253 fungi with at least one structure in UniProt"
+     },
+     "nrr:statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation no multiple-comparison correction is reported across the six traits; the discrete tests are AIC model selection rather than null-hypothesis tests, and the two continuous tests report uncorrected p-values",
+     "nrr:target": {
+      "identifier": "protein-family:divergent-fungal-actin",
+      "label": "divergent fungal actin function, inferred from trait association",
+      "type": "protein"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#stage-1-computation",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "working-set definition and trait curation",
+     "nrr:method": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt. chosen to maximise overlap between species with trait information and species with known DFA status, and to include biological features for which actin is relevant. 13 species whose DFA status varied across strains were removed after BLASTp and tBLASTn checks proved uninterpretable, possibly from undersampling or noisy assemblies. 28 further species removed for absence from TimeTree.",
+     "nrr:note": "category levels were redefined after seeing the data, to keep at least four species per level",
+     "nrr:parameters": {
+      "finalSet": 102,
+      "thresholdSensitivityCheck": "varying the threshold from 6,000 to 25,000 proteins did not greatly change the ratio of species with to without a DFA (40:60 at 10,000; 44:56 at 20,000; 42:58 at 25,000)",
+      "withAnyTrait": 143
+     },
+     "nrr:performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "data-curation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "methodology",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "methodology",
+       "type": "person"
+      }
+     ],
+     "nrr:protocolAdaptations": [
+      "varying the threshold from 6,000 to 25,000 proteins did not greatly change the ratio of species with to without a DFA (40:60 at 10,000; 44:56 at 20,000; 42:58 at 25,000)",
+      "categorical trait levels were redefined to maximise the number of categories containing four or more species, because categories with fewer than four species would not support the model",
+      "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed",
+      "trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each",
+      "ascus dehiscence: fissitunicate and rostrate removed",
+      "auxin-responsive promoter: promoter count transformed into a binary present/absent variable"
+     ],
+     "nrr:sourcesSearched": [
+      {
+       "coverage": "fungal trait data",
+       "kind": "reference database",
+       "name": "Fun Fun",
+       "url": "https://doi.org/10.1111/brv.12570"
+      },
+      {
+       "coverage": "ecological guild and trophic mode classification",
+       "kind": "reference database",
+       "name": "FUNGuild",
+       "url": "https://doi.org/10.1016/j.funeco.2015.06.006"
+      },
+      {
+       "coverage": "fungal order phylogeny and divergence times",
+       "kind": "reference database",
+       "name": "TimeTree",
+       "url": "https://timetree.org"
+      },
+      {
+       "coverage": "predicted structures",
+       "kind": "reference database",
+       "name": "AlphaFold Protein Structure Database",
+       "url": "https://doi.org/10.1093/nar/gkab1061"
+      },
+      {
+       "coverage": "protein sequences",
+       "kind": "reference database",
+       "name": "UniProtKB",
+       "url": "https://www.uniprot.org"
+      },
+      {
+       "coverage": "taxonomic classification",
+       "kind": "reference database",
+       "name": "NCBI Taxonomy",
+       "url": "https://www.ncbi.nlm.nih.gov/taxonomy"
+      }
+     ],
+     "nrr:stage": "computation"
+    },
+    {
+     "@id": "#stage-2-analysis",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "evolutionary model selection and phylogeny-corrected regression",
+     "nrr:method": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins two model classes fitted per trait, a discrete-time Markov model assuming one rate of change regardless of state, and a hidden Markov model allowing two rates per observed trait status; four fits per trait in total phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+     "nrr:note": "no multiple-comparison correction is reported across the six traits; the discrete tests are AIC model selection rather than null-hypothesis tests, and the two continuous tests report uncorrected p-values",
+     "nrr:outputs": [
+      {
+       "accession": "10.5281/zenodo.10779267",
+       "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+       "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+       "repository": "Zenodo",
+       "role": "analysis code, divergent actin lists, species and trait tables",
+       "size": 2952432,
+       "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+      }
+     ],
+     "nrr:performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "data-curation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "methodology",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "methodology",
+       "type": "person"
+      }
+     ],
+     "nrr:software": [
+      {
+       "name": "corHMM",
+       "version": "2.8"
+      },
+      {
+       "name": "phyr",
+       "version": "1.1.2"
+      }
+     ],
+     "nrr:stage": "analysis"
+    },
+    {
+     "@id": "#attempt",
+     "@type": [
+      "AssessAction",
+      "prov:Activity"
+     ],
+     "actionStatus": "FailedActionStatus",
+     "agent": {
+      "@id": "#operator"
+     },
+     "description": "Does any curated species-level fungal trait predict the presence or absence of the divergent fungal actin, which would suggest a function for it?",
+     "hasPart": [
+      {
+       "@id": "#stage-1-computation"
+      },
+      {
+       "@id": "#stage-2-analysis"
+      }
+     ],
+     "instrument": [
+      {
+       "@id": "#performer-manon-morin-data-curation"
+      },
+      {
+       "@id": "#performer-manon-morin-formal-analysis"
+      },
+      {
+       "@id": "#performer-manon-morin-investigation"
+      },
+      {
+       "@id": "#performer-manon-morin-methodology"
+      },
+      {
+       "@id": "#performer-austin-h-patton-formal-analysis"
+      },
+      {
+       "@id": "#performer-austin-h-patton-methodology"
+      }
+     ],
+     "name": "None of six curated fungal traits predicts the presence of a divergent fungal actin",
+     "nrr:attemptType": "computational",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
+     "object": [],
+     "result": [
+      {
+       "@id": "#finding-trait-growth-form"
+      },
+      {
+       "@id": "#finding-trait-trophic-mode"
+      },
+      {
+       "@id": "#finding-trait-ascus-dehiscence"
+      },
+      {
+       "@id": "#finding-trait-auxin-responsive-promoter"
+      },
+      {
+       "@id": "#finding-trait-spore-length"
+      },
+      {
+       "@id": "#finding-trait-spore-width"
+      },
+      {
+       "@id": "#finding-trait-overall"
+      }
+     ]
+    },
+    {
+     "@id": "https://doi.org/10.57844/arcadia-9768-f6c5",
+     "@type": "ScholarlyArticle",
+     "name": "A structurally divergent actin conserved in fungi has no association with specific traits",
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:role": "source-publication",
+     "nrr:statusAtCheck": {
+      "assertedBy": "not-checked",
+      "checkedAt": "2026-09-25T00:00:00Z",
+      "integrity": "unknown",
+      "version": "unknown"
+     },
+     "nrr:url": "https://thestacks.org/publications/negative-data-divergent-fungal-actins"
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.10211653",
+     "@type": "Dataset",
+     "name": "Fungal Divergent Actin: Trait mapping and function hypothesis",
+     "nrr:data": [
+      {
+       "accession": "10.5281/zenodo.10211653",
+       "checksum": "md5:d18392820bfa28495c8bec09b5877452",
+       "label": "Fungi_prot_uniprot.csv",
+       "repository": "Zenodo",
+       "role": "ProteinCartography inputs and outputs",
+       "size": 773426464,
+       "url": "https://zenodo.org/api/records/10211653/files/Fungi_prot_uniprot.csv/content"
+      },
+      {
+       "accession": "10.5281/zenodo.10211653",
+       "checksum": "md5:a32746bf5472f0399497c3ce32ec53f2",
+       "label": "fungal_divergent_actins_PC.zip",
+       "repository": "Zenodo",
+       "role": "ProteinCartography inputs and outputs",
+       "size": 858771097,
+       "url": "https://zenodo.org/api/records/10211653/files/fungal_divergent_actins_PC.zip/content"
+      }
+     ],
+     "nrr:license": "CC BY 4.0",
+     "nrr:role": "data-deposit",
+     "nrr:statusAtCheck": {
+      "assertedBy": "not-checked",
+      "checkedAt": "2026-09-25T00:00:00Z",
+      "integrity": "unknown",
+      "version": "unknown"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.5281/zenodo.10779267",
+     "@type": "SoftwareSourceCode",
+     "name": "Arcadia-Science/Fungal-Secondary-Actin-Pilot: Version 1.0",
+     "nrr:data": [
+      {
+       "accession": "10.5281/zenodo.10779267",
+       "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+       "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+       "repository": "Zenodo",
+       "role": "analysis code, divergent actin lists, species and trait tables",
+       "size": 2952432,
+       "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+      }
+     ],
+     "nrr:license": "CC BY 4.0",
+     "nrr:role": "code-repository",
+     "nrr:statusAtCheck": {
+      "assertedBy": "not-checked",
+      "checkedAt": "2026-09-25T00:00:00Z",
+      "integrity": "unknown",
+      "version": "unknown"
+     },
+     "nrr:url": "https://github.com/Arcadia-Science/Fungal-Secondary-Actin-Pilot"
+    },
+    {
+     "@id": "NCBITaxon:4751",
+     "@type": "Taxon",
+     "name": "Fungi (kingdom)",
+     "nrr:entityType": "organism",
+     "nrr:role": "taxonomic scope",
+     "nrr:scheme": "NCBI Taxonomy"
+    },
+    {
+     "@id": "uniprot:P60709",
+     "@type": "Protein",
+     "name": "human cytoplasmic beta-actin (ACTB)",
+     "nrr:entityType": "protein",
+     "nrr:role": "seed protein for the original ProteinCartography run",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "protein-family:divergent-fungal-actin",
+     "@type": "Protein",
+     "name": "divergent fungal actin (DFA)",
+     "nrr:entityType": "protein",
+     "nrr:role": "the protein family whose function is in question"
+    },
+    {
+     "@id": "ror:052zd4v68",
+     "@type": "Organization",
+     "name": "Arcadia Science",
+     "nrr:entityType": "organization",
+     "nrr:url": "https://ror.org/052zd4v68"
+    },
+    {
+     "@id": "uniprot:A0A401L4A6",
+     "@type": "Protein",
+     "name": "divergent fungal actin representative A0A401L4A6",
+     "nrr:entityType": "protein",
+     "nrr:role": "ProteinCartography search input",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "uniprot:A0A0C9N219",
+     "@type": "Protein",
+     "name": "divergent fungal actin representative A0A0C9N219",
+     "nrr:entityType": "protein",
+     "nrr:role": "ProteinCartography search input",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "uniprot:A0A2N1JBK3",
+     "@type": "Protein",
+     "name": "divergent fungal actin representative A0A2N1JBK3",
+     "nrr:entityType": "protein",
+     "nrr:role": "ProteinCartography search input",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "uniprot:A0A5B0SCN5",
+     "@type": "Protein",
+     "name": "divergent fungal actin representative A0A5B0SCN5",
+     "nrr:entityType": "protein",
+     "nrr:role": "ProteinCartography search input",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "uniprot:A0A226D8X1",
+     "@type": "Protein",
+     "name": "divergent fungal actin representative A0A226D8X1",
+     "nrr:entityType": "protein",
+     "nrr:role": "ProteinCartography search input",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "uniprot:A0A7J6TT41",
+     "@type": "Protein",
+     "name": "divergent fungal actin representative A0A7J6TT41",
+     "nrr:entityType": "protein",
+     "nrr:role": "ProteinCartography search input",
+     "nrr:scheme": "UniProt"
+    },
+    {
+     "@id": "trait:growth-form",
+     "@type": "Thing",
+     "name": "growth form",
+     "nrr:entityType": "phenotype",
+     "nrr:extra": {
+      "categories": "3 (agaricoid/microfungus/yeast)",
+      "dataType": "discrete",
+      "speciesWithData": 24
+     },
+     "nrr:role": "candidate predictor of DFA presence",
+     "nrr:scheme": "Fun Fun"
+    },
+    {
+     "@id": "trait:trophic-mode",
+     "@type": "Thing",
+     "name": "trophic mode",
+     "nrr:entityType": "phenotype",
+     "nrr:extra": {
+      "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+      "dataType": "discrete",
+      "speciesWithData": 63
+     },
+     "nrr:role": "candidate predictor of DFA presence",
+     "nrr:scheme": "Fun Fun"
+    },
+    {
+     "@id": "trait:ascus-dehiscence",
+     "@type": "Thing",
+     "name": "ascus dehiscence",
+     "nrr:entityType": "phenotype",
+     "nrr:extra": {
+      "categories": "2 (deliquescent/poricidal)",
+      "dataType": "discrete",
+      "speciesWithData": 13
+     },
+     "nrr:role": "candidate predictor of DFA presence",
+     "nrr:scheme": "Fun Fun"
+    },
+    {
+     "@id": "trait:auxin-responsive-promoter",
+     "@type": "Thing",
+     "name": "auxin-responsive promoter",
+     "nrr:entityType": "phenotype",
+     "nrr:extra": {
+      "categories": "2 (present/absent)",
+      "dataType": "discrete",
+      "speciesWithData": 71
+     },
+     "nrr:role": "candidate predictor of DFA presence",
+     "nrr:scheme": "Fun Fun"
+    },
+    {
+     "@id": "trait:spore-length",
+     "@type": "Thing",
+     "name": "spore length",
+     "nrr:entityType": "phenotype",
+     "nrr:extra": {
+      "dataType": "continuous",
+      "speciesWithData": 10
+     },
+     "nrr:role": "candidate predictor of DFA presence",
+     "nrr:scheme": "Fun Fun"
+    },
+    {
+     "@id": "trait:spore-width",
+     "@type": "Thing",
+     "name": "spore width",
+     "nrr:entityType": "phenotype",
+     "nrr:extra": {
+      "dataType": "continuous",
+      "speciesWithData": 10
+     },
+     "nrr:role": "candidate predictor of DFA presence",
+     "nrr:scheme": "Fun Fun"
+    },
+    {
+     "@id": "software:ProteinCartography",
+     "@type": "SoftwareApplication",
+     "name": "ProteinCartography",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "doi": "10.57844/arcadia-a5a6-1068",
+      "version": "v0.4.0-alpha"
+     },
+     "nrr:role": "structure-based protein clustering"
+    },
+    {
+     "@id": "software:MMseqs2",
+     "@type": "SoftwareApplication",
+     "name": "MMseqs2",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "doi": "10.1038/nbt.3988",
+      "version": "14.7e284"
+     },
+     "nrr:role": "sequence clustering of the original cluster"
+    },
+    {
+     "@id": "software:Foldseek",
+     "@type": "SoftwareApplication",
+     "name": "Foldseek",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "doi": "10.1101/2022.02.07.479398"
+     },
+     "nrr:role": "structure search within ProteinCartography"
+    },
+    {
+     "@id": "software:BLAST+",
+     "@type": "SoftwareApplication",
+     "name": "BLAST+",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "doi": "10.1186/1471-2105-10-421"
+     },
+     "nrr:role": "sequence search and genomic verification"
+    },
+    {
+     "@id": "software:corHMM",
+     "@type": "SoftwareApplication",
+     "name": "corHMM",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "doi": "10.1093/sysbio/syt034",
+      "version": "2.8"
+     },
+     "nrr:role": "discrete-trait evolutionary model fitting"
+    },
+    {
+     "@id": "software:phyr",
+     "@type": "SoftwareApplication",
+     "name": "phyr",
+     "nrr:entityType": "software",
+     "nrr:extra": {
+      "doi": "10.1111/2041-210x.13471",
+      "version": "1.1.2"
+     },
+     "nrr:role": "phylogeny-corrected generalized linear mixed models"
+    },
+    {
+     "@id": "database:fun-fun",
+     "@type": "Dataset",
+     "name": "Fun Fun",
+     "nrr:entityType": "dataset",
+     "nrr:extra": {
+      "doi": "10.1111/brv.12570"
+     },
+     "nrr:role": "fungal trait data"
+    },
+    {
+     "@id": "database:funguild",
+     "@type": "Dataset",
+     "name": "FUNGuild",
+     "nrr:entityType": "dataset",
+     "nrr:extra": {
+      "doi": "10.1016/j.funeco.2015.06.006"
+     },
+     "nrr:role": "ecological guild and trophic mode classification"
+    },
+    {
+     "@id": "database:timetree",
+     "@type": "Dataset",
+     "name": "TimeTree",
+     "nrr:entityType": "dataset",
+     "nrr:extra": {
+      "doi": "10.1093/molbev/msac174"
+     },
+     "nrr:role": "fungal order phylogeny and divergence times",
+     "nrr:url": "https://timetree.org"
+    },
+    {
+     "@id": "database:alphafold-protein-structure-database",
+     "@type": "Dataset",
+     "name": "AlphaFold Protein Structure Database",
+     "nrr:entityType": "dataset",
+     "nrr:extra": {
+      "doi": "10.1093/nar/gkab1061"
+     },
+     "nrr:role": "predicted structures"
+    },
+    {
+     "@id": "database:uniprotkb",
+     "@type": "Dataset",
+     "name": "UniProtKB",
+     "nrr:entityType": "dataset",
+     "nrr:role": "protein sequences",
+     "nrr:url": "https://www.uniprot.org"
+    },
+    {
+     "@id": "database:ncbi-taxonomy",
+     "@type": "Dataset",
+     "name": "NCBI Taxonomy",
+     "nrr:entityType": "dataset",
+     "nrr:role": "taxonomic classification",
+     "nrr:url": "https://www.ncbi.nlm.nih.gov/taxonomy"
+    }
+   ]
+  },
+  "idempotencyKey": "urn:portolan:nrr:sha256:c50f1b0896f675f7bdba819d1e653f56160f0a9185cb7bfced11ca7895e43425",
+  "profile": "https://portolansoft.com/profile/nrr/0.2",
+  "record": {
+   "@id": "urn:portolan:nrr:sha256:c50f1b0896f675f7bdba819d1e653f56160f0a9185cb7bfced11ca7895e43425",
+   "aiUseDeclaration": {
+    "statement": "We used ChatGPT to help write some code.",
+    "tools": [
+     {
+      "name": "ChatGPT",
+      "provider": "OpenAI",
+      "purpose": "writing some analysis code"
+     }
+    ]
+   },
+   "applicabilityConditions": {
+    "absenceDefinition": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt the criteria are liberal and likely produce false negatives, especially for species with far more than 6,000 proteins, so DFA prevalence across the fungal tree is probably underestimated",
+    "note": "conclusions are bounded by which traits had usable public data, not by which traits are biologically plausible",
+    "phylogeny": "TimeTree database web interface; the resulting tree represented 85 fungal orders",
+    "proteinFamily": "structurally divergent fungal actins, defined as ProteinCartography clusters LC04, LC11 and LC14",
+    "speciesAnalysed": 102,
+    "speciesWithDfa": 346,
+    "speciesWithoutDfa": 507,
+    "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+    "taxonomicScope": "Fungi (NCBITaxon:4751)",
+    "traitSource": "Fun Fun: aggregates species-level ecological, cellular and biochemical trait information from multiple studies, including FUNGuild classifications of ecological function and trophic mode",
+    "traitsTested": [
+     "growth form",
+     "trophic mode",
+     "ascus dehiscence",
+     "auxin-responsive promoter",
+     "spore length",
+     "spore width"
+    ],
+    "unitOfObservation": "species, not independent observations; phylogenetic non-independence is modelled explicitly",
+    "workingSetSpecies": 853
+   },
+   "attemptType": "computational",
+   "confidence": {
+    "basis": "an average of 34 species per trait, traits chosen for data availability, no positive control on the method, and an absence criterion expected to produce false negatives",
+    "level": "low"
+   },
+   "contentAddress": "urn:portolan:nrr:sha256:c50f1b0896f675f7bdba819d1e653f56160f0a9185cb7bfced11ca7895e43425",
+   "cost": {
+    "note": "computational study; 853 species in the working set, 102 analysed; no monetary or compute cost is reported",
+    "source": "The approach"
+   },
+   "dateCreated": "2026-09-25T00:00:00Z",
+   "domainTags": [
+    "biology"
+   ],
+   "entities": [
+    {
+     "id": "NCBITaxon:4751",
+     "label": "Fungi (kingdom)",
+     "role": "taxonomic scope",
+     "scheme": "NCBI Taxonomy",
+     "type": "organism"
+    },
+    {
+     "id": "uniprot:P60709",
+     "label": "human cytoplasmic beta-actin (ACTB)",
+     "role": "seed protein for the original ProteinCartography run",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "id": "protein-family:divergent-fungal-actin",
+     "label": "divergent fungal actin (DFA)",
+     "note": "A cluster of about 290 proteins, overwhelmingly fungal, annotated as Actin-2 or actin-like, structurally distinct from canonical cytoskeletal actin and found in species that also carry a canonical actin. ATP-binding residues are conserved; residues required for polymerization are not well conserved.",
+     "role": "the protein family whose function is in question",
+     "type": "protein"
+    },
+    {
+     "id": "ror:052zd4v68",
+     "label": "Arcadia Science",
+     "type": "organization",
+     "url": "https://ror.org/052zd4v68"
+    },
+    {
+     "id": "uniprot:A0A401L4A6",
+     "label": "divergent fungal actin representative A0A401L4A6",
+     "role": "ProteinCartography search input",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "id": "uniprot:A0A0C9N219",
+     "label": "divergent fungal actin representative A0A0C9N219",
+     "role": "ProteinCartography search input",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "id": "uniprot:A0A2N1JBK3",
+     "label": "divergent fungal actin representative A0A2N1JBK3",
+     "role": "ProteinCartography search input",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "id": "uniprot:A0A5B0SCN5",
+     "label": "divergent fungal actin representative A0A5B0SCN5",
+     "role": "ProteinCartography search input",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "id": "uniprot:A0A226D8X1",
+     "label": "divergent fungal actin representative A0A226D8X1",
+     "role": "ProteinCartography search input",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "id": "uniprot:A0A7J6TT41",
+     "label": "divergent fungal actin representative A0A7J6TT41",
+     "role": "ProteinCartography search input",
+     "scheme": "UniProt",
+     "type": "protein"
+    },
+    {
+     "extra": {
+      "categories": "3 (agaricoid/microfungus/yeast)",
+      "dataType": "discrete",
+      "speciesWithData": 24
+     },
+     "id": "trait:growth-form",
+     "label": "growth form",
+     "role": "candidate predictor of DFA presence",
+     "scheme": "Fun Fun",
+     "type": "phenotype"
+    },
+    {
+     "extra": {
+      "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+      "dataType": "discrete",
+      "speciesWithData": 63
+     },
+     "id": "trait:trophic-mode",
+     "label": "trophic mode",
+     "role": "candidate predictor of DFA presence",
+     "scheme": "Fun Fun",
+     "type": "phenotype"
+    },
+    {
+     "extra": {
+      "categories": "2 (deliquescent/poricidal)",
+      "dataType": "discrete",
+      "speciesWithData": 13
+     },
+     "id": "trait:ascus-dehiscence",
+     "label": "ascus dehiscence",
+     "role": "candidate predictor of DFA presence",
+     "scheme": "Fun Fun",
+     "type": "phenotype"
+    },
+    {
+     "extra": {
+      "categories": "2 (present/absent)",
+      "dataType": "discrete",
+      "speciesWithData": 71
+     },
+     "id": "trait:auxin-responsive-promoter",
+     "label": "auxin-responsive promoter",
+     "role": "candidate predictor of DFA presence",
+     "scheme": "Fun Fun",
+     "type": "phenotype"
+    },
+    {
+     "extra": {
+      "dataType": "continuous",
+      "speciesWithData": 10
+     },
+     "id": "trait:spore-length",
+     "label": "spore length",
+     "role": "candidate predictor of DFA presence",
+     "scheme": "Fun Fun",
+     "type": "phenotype"
+    },
+    {
+     "extra": {
+      "dataType": "continuous",
+      "speciesWithData": 10
+     },
+     "id": "trait:spore-width",
+     "label": "spore width",
+     "role": "candidate predictor of DFA presence",
+     "scheme": "Fun Fun",
+     "type": "phenotype"
+    },
+    {
+     "extra": {
+      "doi": "10.57844/arcadia-a5a6-1068",
+      "version": "v0.4.0-alpha"
+     },
+     "id": "software:ProteinCartography",
+     "label": "ProteinCartography",
+     "role": "structure-based protein clustering",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "doi": "10.1038/nbt.3988",
+      "version": "14.7e284"
+     },
+     "id": "software:MMseqs2",
+     "label": "MMseqs2",
+     "role": "sequence clustering of the original cluster",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "doi": "10.1101/2022.02.07.479398"
+     },
+     "id": "software:Foldseek",
+     "label": "Foldseek",
+     "role": "structure search within ProteinCartography",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "doi": "10.1186/1471-2105-10-421"
+     },
+     "id": "software:BLAST+",
+     "label": "BLAST+",
+     "role": "sequence search and genomic verification",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "doi": "10.1093/sysbio/syt034",
+      "version": "2.8"
+     },
+     "id": "software:corHMM",
+     "label": "corHMM",
+     "role": "discrete-trait evolutionary model fitting",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "doi": "10.1111/2041-210x.13471",
+      "version": "1.1.2"
+     },
+     "id": "software:phyr",
+     "label": "phyr",
+     "role": "phylogeny-corrected generalized linear mixed models",
+     "type": "software"
+    },
+    {
+     "extra": {
+      "doi": "10.1111/brv.12570"
+     },
+     "id": "database:fun-fun",
+     "label": "Fun Fun",
+     "role": "fungal trait data",
+     "type": "dataset"
+    },
+    {
+     "extra": {
+      "doi": "10.1016/j.funeco.2015.06.006"
+     },
+     "id": "database:funguild",
+     "label": "FUNGuild",
+     "role": "ecological guild and trophic mode classification",
+     "type": "dataset"
+    },
+    {
+     "extra": {
+      "doi": "10.1093/molbev/msac174"
+     },
+     "id": "database:timetree",
+     "label": "TimeTree",
+     "role": "fungal order phylogeny and divergence times",
+     "type": "dataset",
+     "url": "https://timetree.org"
+    },
+    {
+     "extra": {
+      "doi": "10.1093/nar/gkab1061"
+     },
+     "id": "database:alphafold-protein-structure-database",
+     "label": "AlphaFold Protein Structure Database",
+     "role": "predicted structures",
+     "type": "dataset"
+    },
+    {
+     "id": "database:uniprotkb",
+     "label": "UniProtKB",
+     "role": "protein sequences",
+     "type": "dataset",
+     "url": "https://www.uniprot.org"
+    },
+    {
+     "id": "database:ncbi-taxonomy",
+     "label": "NCBI Taxonomy",
+     "role": "taxonomic classification",
+     "type": "dataset",
+     "url": "https://www.ncbi.nlm.nih.gov/taxonomy"
+    }
+   ],
+   "findings": [
+    {
+     "conditions": {
+      "categories": "3 (agaricoid/microfungus/yeast)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "effect": {
+      "comparedTo": "best correlated-evolution model, AIC 86.65; the independent model wins by 17.31",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 24,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 69.34
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 69.34,
+        "best_model": "independent",
+        "categories": "3 (agaricoid/microfungus/yeast)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 86.65,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 24,
+        "source": "Table 2",
+        "trait": "growth form"
+       }
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-growth-form",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "Independent evolution of DFA and trait is more likely",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does growth form predict the presence or absence of a divergent fungal actin across species?",
+     "replicates": {
+      "biological": 24,
+      "note": "24 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "target": {
+      "identifier": "trait:growth-form",
+      "label": "growth form",
+      "type": "phenotype"
+     }
+    },
+    {
+     "conditions": {
+      "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "effect": {
+      "comparedTo": "best correlated-evolution model, AIC 224.42; the independent model wins by 12.63",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 63,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 211.79
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 211.79,
+        "best_model": "independent",
+        "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 224.42,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 63,
+        "source": "Table 2",
+        "trait": "trophic mode"
+       }
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-trophic-mode",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "Independent evolution of DFA and trait is more likely",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does trophic mode predict the presence or absence of a divergent fungal actin across species?",
+     "replicates": {
+      "biological": 63,
+      "note": "63 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "target": {
+      "identifier": "trait:trophic-mode",
+      "label": "trophic mode",
+      "type": "phenotype"
+     }
+    },
+    {
+     "conditions": {
+      "categories": "2 (deliquescent/poricidal)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "effect": {
+      "comparedTo": "best correlated-evolution model, AIC 37.49; the independent model wins by 7.43",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 13,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 30.06
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 30.06,
+        "best_model": "independent",
+        "categories": "2 (deliquescent/poricidal)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 37.49,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 13,
+        "source": "Table 2",
+        "trait": "ascus dehiscence"
+       }
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-ascus-dehiscence",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "Independent evolution of DFA and trait is more likely",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does ascus dehiscence predict the presence or absence of a divergent fungal actin across species?",
+     "replicates": {
+      "biological": 13,
+      "note": "13 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "target": {
+      "identifier": "trait:ascus-dehiscence",
+      "label": "ascus dehiscence",
+      "type": "phenotype"
+     }
+    },
+    {
+     "conditions": {
+      "categories": "2 (present/absent)",
+      "dataType": "discrete",
+      "recoding": "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed; trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each; ascus dehiscence: fissitunicate and rostrate removed; auxin-responsive promoter: promoter count transformed into a binary present/absent variable",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "effect": {
+      "comparedTo": "best correlated-evolution model, AIC 149.33; the independent model wins by 4.45",
+      "direction": "none",
+      "metric": "Akaike information criterion of the best independent-evolution model",
+      "n": 71,
+      "note": "a lower AIC is a better fit, so the independent model being lowest means the trait and the protein show no shared evolutionary trajectory",
+      "significant": false,
+      "test": "model selection by Akaike information criterion across four fitted models, two discrete-time Markov and two hidden Markov",
+      "value": 144.88
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 2",
+       "locator": "Table 2",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_aic": 144.88,
+        "best_model": "independent",
+        "categories": "2 (present/absent)",
+        "conclusion": "Independent evolution of DFA and trait is more likely",
+        "correlated_aic": 149.33,
+        "data_type": "discrete",
+        "model_class": "DTMM+HMM",
+        "n_species": 71,
+        "source": "Table 2",
+        "trait": "auxin-responsive promoter"
+       }
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-auxin-responsive-promoter",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "Independent evolution of DFA and trait is more likely",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does auxin-responsive promoter predict the presence or absence of a divergent fungal actin across species?",
+     "replicates": {
+      "biological": 71,
+      "note": "71 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins",
+     "target": {
+      "identifier": "trait:auxin-responsive-promoter",
+      "label": "auxin-responsive promoter",
+      "type": "phenotype"
+     }
+    },
+    {
+     "conditions": {
+      "categories": "continuous",
+      "dataType": "continuous",
+      "recoding": "none",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "effect": {
+      "comparedTo": "a slope of zero, meaning the trait does not change the probability of divergent actin presence",
+      "direction": "none",
+      "metric": "slope of the trait on divergent actin presence, phylogeny-corrected logistic regression",
+      "n": 10,
+      "note": "intercept p-value 0.41; no multiple-comparison correction is reported across traits",
+      "pValue": 0.64,
+      "significant": false,
+      "test": "phylogeny-corrected generalized linear mixed model, pglmm_compare",
+      "value": 0.64
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 3",
+       "locator": "Table 3",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_model": "not-significant",
+        "conclusion": "Slope not significantly different from zero",
+        "data_type": "continuous",
+        "model_class": "pglmm",
+        "n_species": 10,
+        "p_value_intercept": 0.41,
+        "p_value_slope": 0.64,
+        "source": "Table 3",
+        "trait": "spore length"
+       }
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-spore-length",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "Slope not significantly different from zero",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does spore length predict the presence or absence of a divergent fungal actin across species?",
+     "replicates": {
+      "biological": 10,
+      "note": "10 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "statistics": "phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+     "target": {
+      "identifier": "trait:spore-length",
+      "label": "spore length",
+      "type": "phenotype"
+     }
+    },
+    {
+     "conditions": {
+      "categories": "continuous",
+      "dataType": "continuous",
+      "recoding": "none",
+      "speciesAnalysed": 102,
+      "traitSource": "Fun Fun"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permuted or shuffled trait assignment was tested"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "no protein family with a known association to this trait was run through the same pipeline, so a null result cannot be separated from a method unable to detect an association at this sample size"
+      }
+     },
+     "effect": {
+      "comparedTo": "a slope of zero, meaning the trait does not change the probability of divergent actin presence",
+      "direction": "none",
+      "metric": "slope of the trait on divergent actin presence, phylogeny-corrected logistic regression",
+      "n": 10,
+      "note": "intercept p-value 0.35; no multiple-comparison correction is reported across traits",
+      "pValue": 0.71,
+      "significant": false,
+      "test": "phylogeny-corrected generalized linear mixed model, pglmm_compare",
+      "value": 0.71
+     },
+     "evidence": [
+      {
+       "data": [
+        {
+         "accession": "10.5281/zenodo.10779267",
+         "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+         "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+         "repository": "Zenodo",
+         "role": "analysis code, divergent actin lists, species and trait tables",
+         "size": 2952432,
+         "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+        }
+       ],
+       "label": "Table 3",
+       "locator": "Table 3",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "best_model": "not-significant",
+        "conclusion": "Slope not significantly different from zero",
+        "data_type": "continuous",
+        "model_class": "pglmm",
+        "n_species": 10,
+        "p_value_intercept": 0.35,
+        "p_value_slope": 0.71,
+        "source": "Table 3",
+        "trait": "spore width"
+       }
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-spore-width",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "Slope not significantly different from zero",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does spore width predict the presence or absence of a divergent fungal actin across species?",
+     "replicates": {
+      "biological": 10,
+      "note": "10 species with usable data for this trait; species are not independent observations and phylogeny is modelled explicitly"
+     },
+     "statistics": "phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+     "target": {
+      "identifier": "trait:spore-width",
+      "label": "spore width",
+      "type": "phenotype"
+     }
+    },
+    {
+     "conditions": {
+      "absenceDefinition": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt",
+      "speciesAnalysed": 102,
+      "traits": [
+       "growth form",
+       "trophic mode",
+       "ascus dehiscence",
+       "auxin-responsive promoter",
+       "spore length",
+       "spore width"
+      ]
+     },
+     "controls": {
+      "negative": {
+       "kind": "none",
+       "note": "no permutation or shuffled-label control was run"
+      },
+      "positive": {
+       "kind": "none",
+       "note": "none; the pub does not test the trait-mapping method against a protein family with a known trait association, so it cannot separate 'DFA has no trait association' from 'this method cannot detect trait associations at these sample sizes'"
+      }
+     },
+     "effect": {
+      "comparedTo": "six traits tested: four discrete by AIC model selection, two continuous by phylogeny-corrected regression",
+      "direction": "none",
+      "metric": "traits showing a correlated evolutionary trajectory with divergent actin presence",
+      "n": 6,
+      "note": "for all four discrete traits the independent-evolution model was more likely; neither continuous trait explained DFA presence or absence; no correlation was detected between DFA presence and any trait investigated",
+      "significant": false,
+      "value": 0
+     },
+     "evidence": [
+      {
+       "label": "The results: None of the six tested fungal traits correlate with DFA status",
+       "locator": "Tables 2 and 3",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "ascus dehiscence": {
+         "aic": 30.06,
+         "bestModel": "independent",
+         "n": 13
+        },
+        "auxin-responsive promoter": {
+         "aic": 144.88,
+         "bestModel": "independent",
+         "n": 71
+        },
+        "growth form": {
+         "aic": 69.34,
+         "bestModel": "independent",
+         "n": 24
+        },
+        "spore length": {
+         "bestModel": "not-significant",
+         "n": 10,
+         "pValue": 0.64
+        },
+        "spore width": {
+         "bestModel": "not-significant",
+         "n": 10,
+         "pValue": 0.71
+        },
+        "trophic mode": {
+         "aic": 211.79,
+         "bestModel": "independent",
+         "n": 63
+        }
+       }
+      },
+      {
+       "label": "Limitations",
+       "locator": "Limitations",
+       "source": "10.57844/arcadia-9768-f6c5",
+       "values": {
+        "stated": [
+         "Only six traits were investigated, and they may not include the traits biologically relevant to DFAs; the restricted scope follows directly from limited availability and quality of trait data.",
+         "The trait data were not collected with this study's goals in mind and are therefore likely limited in relevance to DFAs.",
+         "Trait-data scarcity significantly reduced statistical power: starting from 36,253 fungi with at least one protein structure in UniProt, reliable trait information was available for an average of 34 fungi per trait.",
+         "The ability to link a phenotype to DFA presence is limited by the ability to determine DFA absence, which depends on genome sequence quality and coverage; errors in DFA status reduce the ability to identify significant associations."
+        ]
+       }
+      },
+      {
+       "label": "Key takeaways",
+       "quote": "No correlation was found between any of the tested traits and DFAs, so the function of this variant remains unknown.",
+       "source": "10.57844/arcadia-9768-f6c5"
+      }
+     ],
+     "failureModes": [
+      "insufficient-data"
+     ],
+     "id": "trait-overall",
+     "informativeness": "uninformative",
+     "informativenessReason": "no positive control; no negative control; no sensitivity or power statement",
+     "note": "The authors attribute the null to trait coverage and to errors in calling divergent actin absent. The record adds that no positive control on the method was run, so the null cannot be separated from a method that would not have detected an association at these sample sizes.",
+     "outcomeClass": "inconclusive-no-positive-control",
+     "question": "Does any of the six curated fungal traits predict the presence or absence of a divergent fungal actin?",
+     "relatedFindings": [
+      "arcadia-dfa-trait-association#trait-growth-form",
+      "arcadia-dfa-trait-association#trait-trophic-mode",
+      "arcadia-dfa-trait-association#trait-ascus-dehiscence",
+      "arcadia-dfa-trait-association#trait-auxin-responsive-promoter",
+      "arcadia-dfa-trait-association#trait-spore-length",
+      "arcadia-dfa-trait-association#trait-spore-width"
+     ],
+     "replicates": {
+      "biological": 102,
+      "note": "102 species in total, an average of 34 species per trait out of 36,253 fungi with at least one structure in UniProt"
+     },
+     "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation no multiple-comparison correction is reported across the six traits; the discrete tests are AIC model selection rather than null-hypothesis tests, and the two continuous tests report uncorrected p-values",
+     "target": {
+      "identifier": "protein-family:divergent-fungal-actin",
+      "label": "divergent fungal actin function, inferred from trait association",
+      "type": "protein"
+     }
+    }
+   ],
+   "integrity": {
+    "contentAddress": "urn:portolan:nrr:sha256:c50f1b0896f675f7bdba819d1e653f56160f0a9185cb7bfced11ca7895e43425",
+    "duplicateOf": null,
+    "signature": null,
+    "signer": null,
+    "trustTier": "pilot-unsigned"
+   },
+   "invalidators": [
+    "a trait panel chosen for biological relevance with usable coverage",
+    "a positive control demonstrating the pipeline recovers a known protein-trait association at comparable sample sizes",
+    "a DFA-absence call based on genome assemblies rather than a UniProt protein-count threshold"
+   ],
+   "isPartOf": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071",
+   "kind": "attempt",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "operator": {
+    "identifier": "https://ror.org/052zd4v68",
+    "name": "Arcadia Science",
+    "type": "Organization"
+   },
+   "outcomeClass": "inconclusive-no-positive-control",
+   "outcomeSummary": "for all four discrete traits the independent-evolution model was more likely; neither continuous trait explained DFA presence or absence; no correlation was detected between DFA presence and any trait investigated",
+   "pathType": "computation",
+   "performers": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "data-curation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "methodology",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Austin H. Patton",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Austin H. Patton",
+     "role": "methodology",
+     "type": "person"
+    }
+   ],
+   "profile": "https://portolansoft.com/profile/nrr/0.2",
+   "provenanceNotes": [
+    "Each trait is recorded as its own finding and the aggregate claim as a seventh, so a naive count of negatives for this study would be seven rather than one.",
+    "Every per-trait finding is uninformative for the same reason, so the class negative-no-association never survives into the record even though it is the pub's own framing.",
+    "no multiple-comparison correction is reported across the six traits; the discrete tests are AIC model selection rather than null-hypothesis tests, and the two continuous tests report uncorrected p-values",
+    "Sample sizes per trait range from 10 to 71 species: growth form 24, trophic mode 63, ascus dehiscence 13, auxin-responsive promoter 71, spore length 10, spore width 10."
+   ],
+   "question": "Does any curated species-level fungal trait predict the presence or absence of the divergent fungal actin, which would suggest a function for it?",
+   "relations": [
+    {
+     "target": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071",
+     "type": "isPartOf"
+    },
+    {
+     "note": "lability motivated the search for an adaptive trait association",
+     "target": "urn:portolan:nrr:sha256:501b6d388dfa35a240e964ea40482b8f724952c090a697fb4bd35c281edf9c90",
+     "type": "wasDerivedFrom"
+    },
+    {
+     "target": "urn:portolan:nrr:sha256:fc66c5bb6c069f20da31e7c333175c18f3f5c21ce2dd90dc1bbe133e30c6aefd",
+     "type": "wasDerivedFrom"
+    }
+   ],
+   "slug": "arcadia-dfa-trait-association",
+   "sourceLicense": "CC BY 4.0",
+   "sources": [
+    {
+     "identifier": "doi:10.57844/arcadia-9768-f6c5",
+     "label": "A structurally divergent actin conserved in fungi has no association with specific traits",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "role": "source-publication",
+     "statusAtCheck": {
+      "assertedBy": "not-checked",
+      "checkedAt": "2026-09-25T00:00:00Z",
+      "integrity": "unknown",
+      "version": "unknown"
+     },
+     "url": "https://thestacks.org/publications/negative-data-divergent-fungal-actins"
+    },
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.10211653",
+       "checksum": "md5:d18392820bfa28495c8bec09b5877452",
+       "label": "Fungi_prot_uniprot.csv",
+       "repository": "Zenodo",
+       "role": "ProteinCartography inputs and outputs",
+       "size": 773426464,
+       "url": "https://zenodo.org/api/records/10211653/files/Fungi_prot_uniprot.csv/content"
+      },
+      {
+       "accession": "10.5281/zenodo.10211653",
+       "checksum": "md5:a32746bf5472f0399497c3ce32ec53f2",
+       "label": "fungal_divergent_actins_PC.zip",
+       "repository": "Zenodo",
+       "role": "ProteinCartography inputs and outputs",
+       "size": 858771097,
+       "url": "https://zenodo.org/api/records/10211653/files/fungal_divergent_actins_PC.zip/content"
+      }
+     ],
+     "identifier": "doi:10.5281/zenodo.10211653",
+     "label": "Fungal Divergent Actin: Trait mapping and function hypothesis",
+     "license": "CC BY 4.0",
+     "role": "data-deposit",
+     "statusAtCheck": {
+      "assertedBy": "not-checked",
+      "checkedAt": "2026-09-25T00:00:00Z",
+      "integrity": "unknown",
+      "version": "unknown"
+     }
+    },
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.10779267",
+       "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+       "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+       "repository": "Zenodo",
+       "role": "analysis code, divergent actin lists, species and trait tables",
+       "size": 2952432,
+       "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+      }
+     ],
+     "identifier": "doi:10.5281/zenodo.10779267",
+     "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot: Version 1.0",
+     "license": "CC BY 4.0",
+     "role": "code-repository",
+     "statusAtCheck": {
+      "assertedBy": "not-checked",
+      "checkedAt": "2026-09-25T00:00:00Z",
+      "integrity": "unknown",
+      "version": "unknown"
+     },
+     "url": "https://github.com/Arcadia-Science/Fungal-Secondary-Actin-Pilot"
+    }
+   ],
+   "stages": [
+    {
+     "label": "working-set definition and trait curation",
+     "method": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt. chosen to maximise overlap between species with trait information and species with known DFA status, and to include biological features for which actin is relevant. 13 species whose DFA status varied across strains were removed after BLASTp and tBLASTn checks proved uninterpretable, possibly from undersampling or noisy assemblies. 28 further species removed for absence from TimeTree.",
+     "note": "category levels were redefined after seeing the data, to keep at least four species per level",
+     "parameters": {
+      "finalSet": 102,
+      "thresholdSensitivityCheck": "varying the threshold from 6,000 to 25,000 proteins did not greatly change the ratio of species with to without a DFA (40:60 at 10,000; 44:56 at 20,000; 42:58 at 25,000)",
+      "withAnyTrait": 143
+     },
+     "performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "data-curation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "methodology",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "methodology",
+       "type": "person"
+      }
+     ],
+     "protocolAdaptations": [
+      "varying the threshold from 6,000 to 25,000 proteins did not greatly change the ratio of species with to without a DFA (40:60 at 10,000; 44:56 at 20,000; 42:58 at 25,000)",
+      "categorical trait levels were redefined to maximise the number of categories containing four or more species, because categories with fewer than four species would not support the model",
+      "growth form: yeast and facultative yeast collapsed into yeast; ergot, cordyceptoid, rust and xylaroid removed",
+      "trophic mode: three levels saprotroph, pathotroph, symbiotroph; species with multiple modes counted into each",
+      "ascus dehiscence: fissitunicate and rostrate removed",
+      "auxin-responsive promoter: promoter count transformed into a binary present/absent variable"
+     ],
+     "sourcesSearched": [
+      {
+       "coverage": "fungal trait data",
+       "kind": "reference database",
+       "name": "Fun Fun",
+       "url": "https://doi.org/10.1111/brv.12570"
+      },
+      {
+       "coverage": "ecological guild and trophic mode classification",
+       "kind": "reference database",
+       "name": "FUNGuild",
+       "url": "https://doi.org/10.1016/j.funeco.2015.06.006"
+      },
+      {
+       "coverage": "fungal order phylogeny and divergence times",
+       "kind": "reference database",
+       "name": "TimeTree",
+       "url": "https://timetree.org"
+      },
+      {
+       "coverage": "predicted structures",
+       "kind": "reference database",
+       "name": "AlphaFold Protein Structure Database",
+       "url": "https://doi.org/10.1093/nar/gkab1061"
+      },
+      {
+       "coverage": "protein sequences",
+       "kind": "reference database",
+       "name": "UniProtKB",
+       "url": "https://www.uniprot.org"
+      },
+      {
+       "coverage": "taxonomic classification",
+       "kind": "reference database",
+       "name": "NCBI Taxonomy",
+       "url": "https://www.ncbi.nlm.nih.gov/taxonomy"
+      }
+     ],
+     "stage": "computation"
+    },
+    {
+     "label": "evolutionary model selection and phylogeny-corrected regression",
+     "method": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins two model classes fitted per trait, a discrete-time Markov model assuming one rate of change regardless of state, and a hidden Markov model allowing two rates per observed trait status; four fits per trait in total phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+     "note": "no multiple-comparison correction is reported across the six traits; the discrete tests are AIC model selection rather than null-hypothesis tests, and the two continuous tests report uncorrected p-values",
+     "outputs": [
+      {
+       "accession": "10.5281/zenodo.10779267",
+       "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+       "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+       "repository": "Zenodo",
+       "role": "analysis code, divergent actin lists, species and trait tables",
+       "size": 2952432,
+       "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+      }
+     ],
+     "performedBy": [
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "data-curation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "investigation",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Manon Morin",
+       "role": "methodology",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "formal-analysis",
+       "type": "person"
+      },
+      {
+       "affiliation": "Arcadia Science",
+       "name": "Austin H. Patton",
+       "role": "methodology",
+       "type": "person"
+      }
+     ],
+     "software": [
+      {
+       "name": "corHMM",
+       "version": "2.8"
+      },
+      {
+       "name": "phyr",
+       "version": "1.1.2"
+      }
+     ],
+     "stage": "analysis"
+    }
+   ],
+   "studyId": "arcadia-dfa",
+   "successCriteria": "A trait whose evolutionary history is better explained by a model correlated with divergent actin presence, or a continuous trait with a slope significantly different from zero.",
+   "title": "None of six curated fungal traits predicts the presence of a divergent fungal actin",
+   "version": "1",
+   "visibility": "public"
+  },
+  "visibility": "public"
+ },
+ "tool": "nrr_deposit"
+}

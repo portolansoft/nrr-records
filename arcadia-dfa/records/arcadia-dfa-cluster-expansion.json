@@ -1,0 +1,724 @@
+{
+ "@id": "urn:portolan:nrr:sha256:fc66c5bb6c069f20da31e7c333175c18f3f5c21ce2dd90dc1bbe133e30c6aefd",
+ "aiUseDeclaration": {
+  "statement": "We used ChatGPT to help write some code.",
+  "tools": [
+   {
+    "name": "ChatGPT",
+    "provider": "OpenAI",
+    "purpose": "writing some analysis code"
+   }
+  ]
+ },
+ "applicabilityConditions": {
+  "absenceDefinition": "a species was treated as lacking a DFA if it had no DFA hit and also had more than 6,000 proteins in UniProt the criteria are liberal and likely produce false negatives, especially for species with far more than 6,000 proteins, so DFA prevalence across the fungal tree is probably underestimated",
+  "note": "conclusions are bounded by which traits had usable public data, not by which traits are biologically plausible",
+  "phylogeny": "TimeTree database web interface; the resulting tree represented 85 fungal orders",
+  "proteinFamily": "structurally divergent fungal actins, defined as ProteinCartography clusters LC04, LC11 and LC14",
+  "speciesAnalysed": 102,
+  "speciesWithDfa": 346,
+  "speciesWithoutDfa": 507,
+  "statistics": "model selection comparing a model in which DFA presence/absence and the trait share an evolutionary trajectory against a model in which they evolved independently, scored by Akaike information criterion where the lowest AIC wins phylogeny-corrected generalized linear mixed model (logistic regression) testing whether variation in the continuous trait accounts for variation in DFA status while controlling for shared evolutionary history; a slope significantly different from zero would indicate a correlation",
+  "taxonomicScope": "Fungi (NCBITaxon:4751)",
+  "traitSource": "Fun Fun: aggregates species-level ecological, cellular and biochemical trait information from multiple studies, including FUNGuild classifications of ecological function and trophic mode",
+  "traitsTested": [
+   "growth form",
+   "trophic mode",
+   "ascus dehiscence",
+   "auxin-responsive promoter",
+   "spore length",
+   "spore width"
+  ],
+  "unitOfObservation": "species, not independent observations; phylogenetic non-independence is modelled explicitly",
+  "workingSetSpecies": 853
+ },
+ "attemptType": "computational",
+ "confidence": {
+  "basis": "average cluster compactness 0.6 sits mid-range against 25 previous runs; cluster membership is the definition of the protein family rather than an independently validated boundary",
+  "level": "medium"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:fc66c5bb6c069f20da31e7c333175c18f3f5c21ce2dd90dc1bbe133e30c6aefd",
+ "cost": {
+  "note": "computational study; 853 species in the working set, 102 analysed; no monetary or compute cost is reported",
+  "source": "The approach"
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "biology"
+ ],
+ "entities": [
+  {
+   "id": "NCBITaxon:4751",
+   "label": "Fungi (kingdom)",
+   "role": "taxonomic scope",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "uniprot:P60709",
+   "label": "human cytoplasmic beta-actin (ACTB)",
+   "role": "seed protein for the original ProteinCartography run",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "id": "protein-family:divergent-fungal-actin",
+   "label": "divergent fungal actin (DFA)",
+   "note": "A cluster of about 290 proteins, overwhelmingly fungal, annotated as Actin-2 or actin-like, structurally distinct from canonical cytoskeletal actin and found in species that also carry a canonical actin. ATP-binding residues are conserved; residues required for polymerization are not well conserved.",
+   "role": "the protein family whose function is in question",
+   "type": "protein"
+  },
+  {
+   "id": "ror:052zd4v68",
+   "label": "Arcadia Science",
+   "type": "organization",
+   "url": "https://ror.org/052zd4v68"
+  },
+  {
+   "id": "uniprot:A0A401L4A6",
+   "label": "divergent fungal actin representative A0A401L4A6",
+   "role": "ProteinCartography search input",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "id": "uniprot:A0A0C9N219",
+   "label": "divergent fungal actin representative A0A0C9N219",
+   "role": "ProteinCartography search input",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "id": "uniprot:A0A2N1JBK3",
+   "label": "divergent fungal actin representative A0A2N1JBK3",
+   "role": "ProteinCartography search input",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "id": "uniprot:A0A5B0SCN5",
+   "label": "divergent fungal actin representative A0A5B0SCN5",
+   "role": "ProteinCartography search input",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "id": "uniprot:A0A226D8X1",
+   "label": "divergent fungal actin representative A0A226D8X1",
+   "role": "ProteinCartography search input",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "id": "uniprot:A0A7J6TT41",
+   "label": "divergent fungal actin representative A0A7J6TT41",
+   "role": "ProteinCartography search input",
+   "scheme": "UniProt",
+   "type": "protein"
+  },
+  {
+   "extra": {
+    "categories": "3 (agaricoid/microfungus/yeast)",
+    "dataType": "discrete",
+    "speciesWithData": 24
+   },
+   "id": "trait:growth-form",
+   "label": "growth form",
+   "role": "candidate predictor of DFA presence",
+   "scheme": "Fun Fun",
+   "type": "phenotype"
+  },
+  {
+   "extra": {
+    "categories": "3 (saprotroph/pathotroph/symbiotroph)",
+    "dataType": "discrete",
+    "speciesWithData": 63
+   },
+   "id": "trait:trophic-mode",
+   "label": "trophic mode",
+   "role": "candidate predictor of DFA presence",
+   "scheme": "Fun Fun",
+   "type": "phenotype"
+  },
+  {
+   "extra": {
+    "categories": "2 (deliquescent/poricidal)",
+    "dataType": "discrete",
+    "speciesWithData": 13
+   },
+   "id": "trait:ascus-dehiscence",
+   "label": "ascus dehiscence",
+   "role": "candidate predictor of DFA presence",
+   "scheme": "Fun Fun",
+   "type": "phenotype"
+  },
+  {
+   "extra": {
+    "categories": "2 (present/absent)",
+    "dataType": "discrete",
+    "speciesWithData": 71
+   },
+   "id": "trait:auxin-responsive-promoter",
+   "label": "auxin-responsive promoter",
+   "role": "candidate predictor of DFA presence",
+   "scheme": "Fun Fun",
+   "type": "phenotype"
+  },
+  {
+   "extra": {
+    "dataType": "continuous",
+    "speciesWithData": 10
+   },
+   "id": "trait:spore-length",
+   "label": "spore length",
+   "role": "candidate predictor of DFA presence",
+   "scheme": "Fun Fun",
+   "type": "phenotype"
+  },
+  {
+   "extra": {
+    "dataType": "continuous",
+    "speciesWithData": 10
+   },
+   "id": "trait:spore-width",
+   "label": "spore width",
+   "role": "candidate predictor of DFA presence",
+   "scheme": "Fun Fun",
+   "type": "phenotype"
+  },
+  {
+   "extra": {
+    "doi": "10.57844/arcadia-a5a6-1068",
+    "version": "v0.4.0-alpha"
+   },
+   "id": "software:ProteinCartography",
+   "label": "ProteinCartography",
+   "role": "structure-based protein clustering",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "doi": "10.1038/nbt.3988",
+    "version": "14.7e284"
+   },
+   "id": "software:MMseqs2",
+   "label": "MMseqs2",
+   "role": "sequence clustering of the original cluster",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "doi": "10.1101/2022.02.07.479398"
+   },
+   "id": "software:Foldseek",
+   "label": "Foldseek",
+   "role": "structure search within ProteinCartography",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "doi": "10.1186/1471-2105-10-421"
+   },
+   "id": "software:BLAST+",
+   "label": "BLAST+",
+   "role": "sequence search and genomic verification",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "doi": "10.1093/sysbio/syt034",
+    "version": "2.8"
+   },
+   "id": "software:corHMM",
+   "label": "corHMM",
+   "role": "discrete-trait evolutionary model fitting",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "doi": "10.1111/2041-210x.13471",
+    "version": "1.1.2"
+   },
+   "id": "software:phyr",
+   "label": "phyr",
+   "role": "phylogeny-corrected generalized linear mixed models",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "doi": "10.1111/brv.12570"
+   },
+   "id": "database:fun-fun",
+   "label": "Fun Fun",
+   "role": "fungal trait data",
+   "type": "dataset"
+  },
+  {
+   "extra": {
+    "doi": "10.1016/j.funeco.2015.06.006"
+   },
+   "id": "database:funguild",
+   "label": "FUNGuild",
+   "role": "ecological guild and trophic mode classification",
+   "type": "dataset"
+  },
+  {
+   "extra": {
+    "doi": "10.1093/molbev/msac174"
+   },
+   "id": "database:timetree",
+   "label": "TimeTree",
+   "role": "fungal order phylogeny and divergence times",
+   "type": "dataset",
+   "url": "https://timetree.org"
+  },
+  {
+   "extra": {
+    "doi": "10.1093/nar/gkab1061"
+   },
+   "id": "database:alphafold-protein-structure-database",
+   "label": "AlphaFold Protein Structure Database",
+   "role": "predicted structures",
+   "type": "dataset"
+  },
+  {
+   "id": "database:uniprotkb",
+   "label": "UniProtKB",
+   "role": "protein sequences",
+   "type": "dataset",
+   "url": "https://www.uniprot.org"
+  },
+  {
+   "id": "database:ncbi-taxonomy",
+   "label": "NCBI Taxonomy",
+   "role": "taxonomic classification",
+   "type": "dataset",
+   "url": "https://www.ncbi.nlm.nih.gov/taxonomy"
+  }
+ ],
+ "findings": [
+  {
+   "conditions": {
+    "averageCompactness": 0.6,
+    "clusters": 17,
+    "compactnessContext": "25 previous ProteinCartography runs gave cluster compactness scores of 0.35 to 0.86, so 0.6 is a reasonable score",
+    "hits": 3596,
+    "proteinCartographyVersion": "v0.4.0-alpha"
+   },
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none",
+     "note": "cluster compactness is used as a quality measure rather than a control"
+    }
+   },
+   "effect": {
+    "comparedTo": "the original cluster of 292 sequences",
+    "direction": "increase",
+    "metric": "divergent actin proteins in the extended set",
+    "n": 412,
+    "note": "the six input proteins fell into clusters LC04 and LC11, together 407 proteins, of which 144 were new; 436 divergent actins spanning 412 strains, after combining LC04 and LC11 with the original LC14",
+    "value": 436
+   },
+   "evidence": [
+    {
+     "data": [
+      {
+       "accession": "10.5281/zenodo.10211653",
+       "checksum": "md5:d18392820bfa28495c8bec09b5877452",
+       "label": "Fungi_prot_uniprot.csv",
+       "repository": "Zenodo",
+       "role": "ProteinCartography inputs and outputs",
+       "size": 773426464,
+       "url": "https://zenodo.org/api/records/10211653/files/Fungi_prot_uniprot.csv/content"
+      },
+      {
+       "accession": "10.5281/zenodo.10211653",
+       "checksum": "md5:a32746bf5472f0399497c3ce32ec53f2",
+       "label": "fungal_divergent_actins_PC.zip",
+       "repository": "Zenodo",
+       "role": "ProteinCartography inputs and outputs",
+       "size": 858771097,
+       "url": "https://zenodo.org/api/records/10211653/files/fungal_divergent_actins_PC.zip/content"
+      }
+     ],
+     "label": "The results: ProteinCartography identifies clusters of divergent actins",
+     "locator": "Figure 3",
+     "source": "10.57844/arcadia-9768-f6c5",
+     "values": {
+      "clusters": 17,
+      "extendedSet": 436,
+      "hits": 3596,
+      "strains": 412,
+      "wellDefined": [
+       "LC01",
+       "LC03",
+       "LC04",
+       "LC10",
+       "LC11",
+       "LC12",
+       "LC14",
+       "LC15"
+      ]
+     }
+    }
+   ],
+   "id": "extended-set",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "question": "How many structurally similar divergent actins exist beyond the original cluster, and in how many strains?",
+   "target": {
+    "identifier": "protein-family:divergent-fungal-actin",
+    "label": "divergent fungal actin protein family",
+    "type": "protein"
+   }
+  },
+  {
+   "conditions": {
+    "kingdomAssignment": "NCBI Taxonomy, with manual curation to clade level where UniProt reports no kingdom"
+   },
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "Metazoa, the next most represented kingdom, at 2%",
+    "direction": "not-applicable",
+    "metric": "share of the extended set found in fungal species",
+    "note": "406 DFA proteins in 385 unique strains after removing non-fungal kingdoms",
+    "unit": "%",
+    "value": "more than 93%"
+   },
+   "evidence": [
+    {
+     "label": "The results: The extended set still contains mainly fungal proteins",
+     "locator": "Figure 4A",
+     "source": "10.57844/arcadia-9768-f6c5",
+     "values": {
+      "fungalPercent": 93,
+      "metazoaPercent": 2
+     }
+    }
+   ],
+   "id": "fungal-specificity",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "question": "Is the extended set of divergent actins still overwhelmingly fungal?",
+   "target": {
+    "identifier": "protein-family:divergent-fungal-actin",
+    "label": "kingdom distribution of the divergent actin family",
+    "type": "protein"
+   }
+  },
+  {
+   "conditions": {
+    "verification": "tBLASTn against genomes for strains with multiple hits"
+   },
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "direction": "not-applicable",
+    "metric": "share of divergent-actin-carrying species with exactly one copy",
+    "note": "16 strains had two or more DFA hits; for half, a single sequence had been annotated by different groups; for the rest tBLASTn could not resolve discrete genomic locations, likely low coverage or assembly quality; at least 95% of DFA-carrying species appear to have exactly one DFA",
+    "unit": "%",
+    "value": "at least 95%"
+   },
+   "evidence": [
+    {
+     "label": "The approach: Taxonomic analysis of the extended set",
+     "source": "10.57844/arcadia-9768-f6c5",
+     "values": {
+      "strainsWithMultipleHits": 16
+     }
+    }
+   ],
+   "id": "single-copy",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "For half the multi-hit strains the duplicates were the same sequence annotated by different groups; for the rest tBLASTn could not resolve discrete loci, which the authors attribute to genome quality.",
+   "outcomeClass": "positive",
+   "question": "Do fungal species that carry a divergent actin carry more than one?",
+   "target": {
+    "identifier": "protein-family:divergent-fungal-actin",
+    "label": "divergent actin copy number per species",
+    "type": "protein"
+   }
+  }
+ ],
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:fc66c5bb6c069f20da31e7c333175c18f3f5c21ce2dd90dc1bbe133e30c6aefd",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "isPartOf": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/052zd4v68",
+  "name": "Arcadia Science",
+  "type": "Organization"
+ },
+ "outcomeClass": "positive",
+ "outcomeSummary": "436 divergent actins spanning 412 strains, after combining LC04 and LC11 with the original LC14 more than 93% of the extended set is fungal; the next most represented kingdom, Metazoa, is 2%",
+ "pathType": "computation",
+ "performers": [
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Manon Morin",
+   "role": "data-curation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Manon Morin",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Manon Morin",
+   "role": "investigation",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Manon Morin",
+   "role": "methodology",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Austin H. Patton",
+   "role": "formal-analysis",
+   "type": "person"
+  },
+  {
+   "affiliation": "Arcadia Science",
+   "name": "Austin H. Patton",
+   "role": "methodology",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "The protein family is defined operationally as membership of ProteinCartography clusters LC04, LC11 and LC14. There is no sequence-motif or experimental definition, so the family boundary is a clustering decision."
+ ],
+ "question": "Which proteins are structurally similar to the six representative divergent fungal actins, and in which organisms do they occur?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:de2584b71cf4c1679aa99b944fa18f38c976576cb1992c1b0a6f33fefb001071",
+   "type": "isPartOf"
+  }
+ ],
+ "slug": "arcadia-dfa-cluster-expansion",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.57844/arcadia-9768-f6c5",
+   "label": "A structurally divergent actin conserved in fungi has no association with specific traits",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "not-checked",
+    "checkedAt": "2026-09-25T00:00:00Z",
+    "integrity": "unknown",
+    "version": "unknown"
+   },
+   "url": "https://thestacks.org/publications/negative-data-divergent-fungal-actins"
+  },
+  {
+   "data": [
+    {
+     "accession": "10.5281/zenodo.10211653",
+     "checksum": "md5:d18392820bfa28495c8bec09b5877452",
+     "label": "Fungi_prot_uniprot.csv",
+     "repository": "Zenodo",
+     "role": "ProteinCartography inputs and outputs",
+     "size": 773426464,
+     "url": "https://zenodo.org/api/records/10211653/files/Fungi_prot_uniprot.csv/content"
+    },
+    {
+     "accession": "10.5281/zenodo.10211653",
+     "checksum": "md5:a32746bf5472f0399497c3ce32ec53f2",
+     "label": "fungal_divergent_actins_PC.zip",
+     "repository": "Zenodo",
+     "role": "ProteinCartography inputs and outputs",
+     "size": 858771097,
+     "url": "https://zenodo.org/api/records/10211653/files/fungal_divergent_actins_PC.zip/content"
+    }
+   ],
+   "identifier": "doi:10.5281/zenodo.10211653",
+   "label": "Fungal Divergent Actin: Trait mapping and function hypothesis",
+   "license": "CC BY 4.0",
+   "role": "data-deposit",
+   "statusAtCheck": {
+    "assertedBy": "not-checked",
+    "checkedAt": "2026-09-25T00:00:00Z",
+    "integrity": "unknown",
+    "version": "unknown"
+   }
+  },
+  {
+   "data": [
+    {
+     "accession": "10.5281/zenodo.10779267",
+     "checksum": "md5:6b738038a9eebb720ab881bdbd8b1233",
+     "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip",
+     "repository": "Zenodo",
+     "role": "analysis code, divergent actin lists, species and trait tables",
+     "size": 2952432,
+     "url": "https://zenodo.org/api/records/10779267/files/Arcadia-Science/Fungal-Secondary-Actin-Pilot-v1.0.zip/content"
+    }
+   ],
+   "identifier": "doi:10.5281/zenodo.10779267",
+   "label": "Arcadia-Science/Fungal-Secondary-Actin-Pilot: Version 1.0",
+   "license": "CC BY 4.0",
+   "role": "code-repository",
+   "statusAtCheck": {
+    "assertedBy": "not-checked",
+    "checkedAt": "2026-09-25T00:00:00Z",
+    "integrity": "unknown",
+    "version": "unknown"
+   },
+   "url": "https://github.com/Arcadia-Science/Fungal-Secondary-Actin-Pilot"
+  }
+ ],
+ "stages": [
+  {
+   "label": "ProteinCartography structure search and clustering",
+   "method": "search mode with standard parameters; 3,000 Foldseek hits requested per input protein, 6,000 total proteins per input; Leiden clustering on the all-versus-all structural similarity matrix; similarity by TM-score from TM-align, where above 0.5 suggests structural similarity and below 0.17 indicates unrelated proteins",
+   "outputs": [
+    {
+     "accession": "10.5281/zenodo.10211653",
+     "checksum": "md5:d18392820bfa28495c8bec09b5877452",
+     "label": "Fungi_prot_uniprot.csv",
+     "repository": "Zenodo",
+     "role": "ProteinCartography inputs and outputs",
+     "size": 773426464,
+     "url": "https://zenodo.org/api/records/10211653/files/Fungi_prot_uniprot.csv/content"
+    },
+    {
+     "accession": "10.5281/zenodo.10211653",
+     "checksum": "md5:a32746bf5472f0399497c3ce32ec53f2",
+     "label": "fungal_divergent_actins_PC.zip",
+     "repository": "Zenodo",
+     "role": "ProteinCartography inputs and outputs",
+     "size": 858771097,
+     "url": "https://zenodo.org/api/records/10211653/files/fungal_divergent_actins_PC.zip/content"
+    }
+   ],
+   "parameters": {
+    "averageCompactness": 0.6,
+    "clusters": 17,
+    "compactnessThreshold": "clusters with compactness above 0.6 treated as well defined",
+    "hits": 3596,
+    "wellDefinedClusters": [
+     "LC01",
+     "LC03",
+     "LC04",
+     "LC10",
+     "LC11",
+     "LC12",
+     "LC14",
+     "LC15"
+    ]
+   },
+   "performedBy": [
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "data-curation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "investigation",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Manon Morin",
+     "role": "methodology",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Austin H. Patton",
+     "role": "formal-analysis",
+     "type": "person"
+    },
+    {
+     "affiliation": "Arcadia Science",
+     "name": "Austin H. Patton",
+     "role": "methodology",
+     "type": "person"
+    }
+   ],
+   "software": [
+    {
+     "name": "ProteinCartography",
+     "version": "v0.4.0-alpha"
+    },
+    {
+     "name": "MMseqs2",
+     "version": "14.7e284"
+    },
+    {
+     "name": "Foldseek"
+    },
+    {
+     "name": "BLAST+"
+    }
+   ],
+   "sourcesSearched": [
+    {
+     "coverage": "predicted structures",
+     "kind": "reference database",
+     "name": "AlphaFold Protein Structure Database",
+     "url": "https://doi.org/10.1093/nar/gkab1061"
+    },
+    {
+     "coverage": "protein sequences",
+     "kind": "reference database",
+     "name": "UniProtKB",
+     "url": "https://www.uniprot.org"
+    },
+    {
+     "coverage": "taxonomic classification",
+     "kind": "reference database",
+     "name": "NCBI Taxonomy",
+     "url": "https://www.ncbi.nlm.nih.gov/taxonomy"
+    }
+   ],
+   "stage": "computation"
+  }
+ ],
+ "studyId": "arcadia-dfa",
+ "successCriteria": "A well-defined structural cluster containing the input proteins, large enough to support a species-level comparative analysis.",
+ "title": "ProteinCartography expands the divergent fungal actin set to 436 proteins across 412 strains",
+ "version": "1",
+ "visibility": "public"
+}
