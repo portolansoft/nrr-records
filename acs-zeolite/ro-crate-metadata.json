@@ -1,0 +1,98 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.2/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.2"
+   },
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "Portolan NRR records: Computationally guided search for OSDAs to crystallise aluminosilicate STF and IFR in hydroxide media",
+   "description": "Can synthesis-energy ranking, machine-learning classification and de novo design over more than 10,000 OSDAs find an organic structure-directing agent that crystallises aluminosilicate STF or IFR in hydroxide media?",
+   "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "datePublished": "2026-09-25",
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "isBasedOn": {
+    "@id": "https://doi.org/10.1021/acs.chemmater.5c01751"
+   },
+   "hasPart": [
+    {
+     "@id": "crates/acs-zeolite-path/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-zeolite-stf-synthesis/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-zeolite-ifr-synthesis-qg001780m/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-zeolite-ifr-synthesis-qg001780m2/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-zeolite-osda-screen/ro-crate-metadata.json"
+    }
+   ],
+   "publisher": {
+    "@id": "#portolan"
+   }
+  },
+  {
+   "@id": "#portolan",
+   "@type": "Organization",
+   "name": "Portolan Software",
+   "url": "https://portolansoft.com/"
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.chemmater.5c01751",
+   "@type": "ScholarlyArticle",
+   "name": "Lessons from Failed Attempts of Computationally Guided Synthesis of Aluminosilicate STF and IFR Zeolites in Hydroxide Media",
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "crates/acs-zeolite-path/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Computationally guided search for OSDAs to crystallise aluminosilicate STF and IFR in hydroxide media",
+   "identifier": "urn:portolan:nrr:sha256:35aa966ec69d77a2d2553736628601730472dcdca44084df724eb9385d2d611d",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/acs-zeolite-stf-synthesis/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Hydrothermal synthesis targeting aluminosilicate STF with the shortlisted spirocyclic OSDA gives only amorphous solids",
+   "identifier": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/acs-zeolite-ifr-synthesis-qg001780m/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Hydrothermal synthesis targeting aluminosilicate IFR with QG001780m gives only amorphous solids",
+   "identifier": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/acs-zeolite-ifr-synthesis-qg001780m2/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Hydrothermal synthesis targeting aluminosilicate IFR with QG001780m2 gives amorphous solids, MOR, ZSM-12 or dense phases",
+   "identifier": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/acs-zeolite-osda-screen/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Synthesis-energy, machine-learning and de novo screen of more than 10,000 OSDAs predicts CHA and AEI everywhere and shortlists three OSDAs whose predictions the syntheses refute",
+   "identifier": "urn:portolan:nrr:sha256:98f4a9863efd82b6766d628d51f859bb9c3f59fccc2c98282defb4052d7574d9",
+   "nrr:outcomeClass": "refuted"
+  }
+ ]
+}
