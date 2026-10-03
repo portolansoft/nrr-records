@@ -1,0 +1,755 @@
+{
+ "@id": "urn:portolan:nrr:sha256:2e47f2e0f87a90dc70a63de12f6ef0a9cd798d3bf19716b45b3705745cb4ba56",
+ "aiUseDeclaration": {
+  "statement": "The article makes no statement about the use of AI tools."
+ },
+ "applicabilityConditions": {
+  "analysis": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+  "duration": "24 h to 28 days with repeated enzyme and mediator dosing",
+  "enzymes": "Trametes versicolor laccase (MilliporeSigma) for the TvL experiments; Agaricus bisporus and a native white-rot laccase in the screen; the Pleurotus ostreatus laccase of the prior reports was not available",
+  "matrices": "10 mM CuSO4 pH 5 or 50 mM sodium malonate pH 4.5",
+  "note": "the negative is about detectable degradation under these conditions; sorption to the enzyme is shown to mimic up to about 60 % apparent removal when only the aqueous phase is sampled",
+  "substrateConcentrations": "1 uM (screen and two-week experiment) and 0.1 uM (96 h and 24 h experiments)",
+  "system": "laccase mediator systems with nitroxyl (N-OH or N-oxyl) mediators in aerated batch reactors at 30 °C"
+ },
+ "attemptType": "wet-lab",
+ "confidence": {
+  "basis": "triplicates, both phases extracted, mass balance closes within error",
+  "level": "high"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:2e47f2e0f87a90dc70a63de12f6ef0a9cd798d3bf19716b45b3705745cb4ba56",
+ "cost": {
+  "note": "batch reactors in triplicate; the longest experiment 28 days; no monetary cost reported",
+  "source": "Materials and Methods; SI",
+  "wetLabDays": 28
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "chemistry"
+ ],
+ "entities": [
+  {
+   "id": "pubchem:CID9554",
+   "label": "perfluorooctanoic acid (PFOA)",
+   "role": "target substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID74483",
+   "label": "perfluorooctanesulfonic acid (PFOS)",
+   "role": "target substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID2554",
+   "label": "carbamazepine (CBZ)",
+   "role": "positive-control substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID75771",
+   "label": "1-hydroxybenzotriazole (HBT)",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID10665",
+   "label": "N-hydroxyphthalimide (HPI)",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID66599",
+   "label": "violuric acid",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID2724126",
+   "label": "TEMPO",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID42643072",
+   "label": "AZADO (2-azaadamantane N-oxyl)",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "protein:trametes-versicolor-laccase",
+   "label": "Trametes versicolor laccase (TvL), MilliporeSigma",
+   "note": "commercial preparation; no UniProt accession is given in the article",
+   "role": "enzyme under test",
+   "type": "protein"
+  },
+  {
+   "id": "protein:agaricus-bisporus-laccase",
+   "label": "Agaricus bisporus laccase, MilliporeSigma",
+   "role": "enzyme in the mediator screen",
+   "type": "protein"
+  },
+  {
+   "id": "protein:native-white-rot-laccase",
+   "label": "native white rot fungal laccase, Creative Enzymes",
+   "note": "species not stated",
+   "role": "enzyme in the mediator screen",
+   "type": "protein"
+  },
+  {
+   "id": "pubchem:CID24462",
+   "label": "copper(II) sulfate, 10 mM, pH 5",
+   "role": "reaction matrix",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID8865",
+   "label": "sodium malonate buffer, 50 mM, pH 4.5",
+   "role": "reaction matrix",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID7041",
+   "label": "2,6-dimethoxyphenol (DMP)",
+   "role": "laccase activity assay substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID887",
+   "label": "basic methanol (0.5 % NH4OH)",
+   "role": "quench and extraction solvent",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "assay:lc-msms-pfas",
+   "label": "LC-MS/MS isotope-dilution quantification of PFAS",
+   "note": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+   "role": "analytical method",
+   "type": "assay"
+  },
+  {
+   "id": "assay:epr-btno",
+   "label": "X-band CW EPR of the benzotriazole-N-oxyl (BTNO) radical",
+   "note": "X-band (9.4 GHz) CW EPR, Bruker EleXsys E500; BTNO from Ce(IV) in CH3CN at room temperature and from TvL/HBT/CuSO4 in water at 50 K; simulations in EasySpin 5.2.35 (Text S3)",
+   "role": "mediator radical check",
+   "type": "assay"
+  },
+  {
+   "id": "assay:dmp-activity",
+   "label": "DMP laccase activity assay",
+   "note": "2,6-dimethoxyphenol (DMP) oxidation to the quinone at 468 nm, 96-well plate, triplicate (Text S5)",
+   "role": "enzyme activity check",
+   "type": "assay"
+  },
+  {
+   "id": "https://ror.org/01an7q238",
+   "label": "University of California, Berkeley",
+   "note": "Departments of Chemistry and of Civil and Environmental Engineering; EPR at the CalEPR Center, University of California, Davis",
+   "type": "organization"
+  },
+  {
+   "id": "NCBITaxon:5325",
+   "label": "Trametes versicolor",
+   "role": "white-rot fungus; source of TvL, the laccase used in every TvL experiment",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "NCBITaxon:5341",
+   "label": "Agaricus bisporus",
+   "role": "source of the second commercial laccase in the mediator screen",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "NCBITaxon:5322",
+   "label": "Pleurotus ostreatus",
+   "role": "source of the laccase in the prior reports; no longer commercially available",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  }
+ ],
+ "findings": [
+  {
+   "conditions": {
+    "duration": "24 h",
+    "enzymeMg": 60,
+    "enzymeUnitsPerMl": 2,
+    "extraction": "basic methanol added directly to the reactor (2x dilution) for the 96 h experiment; in the revised protocol the enzyme/buffer solution is transferred to a fresh vial and diluted 2-fold, and the emptied reactor is rinsed with 10 mM CuSO4 and basic MeOH (4 mL, 50/50) to recover PFAA sorbed to the walls (Text S1)",
+    "matrix": "10 mM CuSO4",
+    "mediatorConcentration": "2 mM",
+    "substrateConcentrationUm": 0.1,
+    "tvlOnlyLossPct": 8
+   },
+   "controls": {
+    "negative": {
+     "expected": "no loss to protein",
+     "kind": "no-treatment",
+     "label": "enzyme-free control reactors",
+     "observed": "delta solution 2 +/- 4.4 %",
+     "passed": true
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "8 +/- 1.8 % with TvL only; delta solution (mass lost from solution between 0 and 24 h, attributed to protein sorption) 13 +/- 6.1 % with TvL + HBT and 4 +/- 2.6 % with TvL only",
+    "direction": "not-applicable",
+    "metric": "apparent loss from the 24 h subsample relative to total extracted mass, TvL + HBT",
+    "n": 3,
+    "note": "delta solution gives a complete mass balance within error against the solution extract (Figure 2)",
+    "sd": 1.7,
+    "unit": "%",
+    "value": 18
+   },
+   "evidence": [
+    {
+     "label": "TvL + HBT / subsample (24 hours)",
+     "locator": "SI Table S2 (image on page S8), row TvL + HBT / Subsample (24 hours)",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 1.7,
+      "massRecoveredPct": 82
+     }
+    },
+    {
+     "label": "TvL + HBT / solution extract",
+     "locator": "SI Table S2 (image on page S8), row TvL + HBT / Solution extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 1.2,
+      "massRecoveredPct": 90
+     }
+    },
+    {
+     "label": "TvL + HBT / reactor extract",
+     "locator": "SI Table S2 (image on page S8), row TvL + HBT / Reactor extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 0.6,
+      "massRecoveredPct": 10
+     }
+    },
+    {
+     "label": "TvL + HBT / delta solution",
+     "locator": "SI Table S2 (image on page S8), row TvL + HBT / Delta Solution",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 6.1,
+      "massRecoveredPct": 13
+     }
+    },
+    {
+     "label": "TvL / subsample (24 hours)",
+     "locator": "SI Table S2 (image on page S8), row TvL / Subsample (24 hours)",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 1.8,
+      "massRecoveredPct": 92
+     }
+    },
+    {
+     "label": "TvL / solution extract",
+     "locator": "SI Table S2 (image on page S8), row TvL / Solution extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 1.3,
+      "massRecoveredPct": 98
+     }
+    },
+    {
+     "label": "TvL / reactor extract",
+     "locator": "SI Table S2 (image on page S8), row TvL / Reactor extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 0.1,
+      "massRecoveredPct": 2
+     }
+    },
+    {
+     "label": "TvL / delta solution",
+     "locator": "SI Table S2 (image on page S8), row TvL / Delta Solution",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 2.6,
+      "massRecoveredPct": 4
+     }
+    },
+    {
+     "label": "control / subsample (24 hours)",
+     "locator": "SI Table S2 (image on page S8), row Control / Subsample (24 hours)",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 3.6,
+      "massRecoveredPct": 87
+     }
+    },
+    {
+     "label": "control / solution extract",
+     "locator": "SI Table S2 (image on page S8), row Control / Solution extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 0.6,
+      "massRecoveredPct": 89
+     }
+    },
+    {
+     "label": "control / reactor extract",
+     "locator": "SI Table S2 (image on page S8), row Control / Reactor extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 1.2,
+      "massRecoveredPct": 11
+     }
+    },
+    {
+     "label": "control / delta solution",
+     "locator": "SI Table S2 (image on page S8), row Control / Delta Solution",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 4.4,
+      "massRecoveredPct": 2
+     }
+    }
+   ],
+   "id": "pfoa-partition",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "PFOA sorption appeared substantial only where the mediator was present, consistent with side-chain exposure or charge changes on oxidation of TvL; PFOS sorption was unaltered by the mediator, consistent with a structurally intact side chain and PFOS hydrophobicity",
+   "outcomeClass": "positive",
+   "question": "Where does the PFOA mass that disappears from solution in TvL/HBT reactors go: protein, vessel or transformation?",
+   "replicates": {
+    "biological": 3
+   },
+   "target": {
+    "identifier": "pubchem:CID9554",
+    "label": "perfluorooctanoic acid (PFOA)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "duration": "24 h",
+    "enzymeMg": 60,
+    "enzymeUnitsPerMl": 2,
+    "extraction": "basic methanol added directly to the reactor (2x dilution) for the 96 h experiment; in the revised protocol the enzyme/buffer solution is transferred to a fresh vial and diluted 2-fold, and the emptied reactor is rinsed with 10 mM CuSO4 and basic MeOH (4 mL, 50/50) to recover PFAA sorbed to the walls (Text S1)",
+    "matrix": "10 mM CuSO4",
+    "mediatorConcentration": "2 mM",
+    "substrateConcentrationUm": 0.1,
+    "tvlOnlyLossPct": 35
+   },
+   "controls": {
+    "negative": {
+     "expected": "no loss to protein",
+     "kind": "no-treatment",
+     "label": "enzyme-free control reactors",
+     "observed": "delta solution 8 +/- 19.0 %",
+     "passed": true
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "35 +/- 3.1 % with TvL only; delta solution (mass lost from solution between 0 and 24 h, attributed to protein sorption) 20 +/- 4.5 % with TvL + HBT and 19 +/- 4.0 % with TvL only",
+    "direction": "not-applicable",
+    "metric": "apparent loss from the 24 h subsample relative to total extracted mass, TvL + HBT",
+    "n": 3,
+    "note": "delta solution gives a complete mass balance within error against the solution extract (Figure 2)",
+    "sd": 3.5,
+    "unit": "%",
+    "value": 34
+   },
+   "evidence": [
+    {
+     "label": "TvL + HBT / subsample (24 hours)",
+     "locator": "SI Table S3 (image on page S8), row TvL + HBT / Subsample (24 hours)",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 3.5,
+      "massRecoveredPct": 66
+     }
+    },
+    {
+     "label": "TvL + HBT / solution extract",
+     "locator": "SI Table S3 (image on page S8), row TvL + HBT / Solution extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 3.3,
+      "massRecoveredPct": 86
+     }
+    },
+    {
+     "label": "TvL + HBT / reactor extract",
+     "locator": "SI Table S3 (image on page S8), row TvL + HBT / Reactor extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 1.6,
+      "massRecoveredPct": 14
+     }
+    },
+    {
+     "label": "TvL + HBT / delta solution",
+     "locator": "SI Table S3 (image on page S8), row TvL + HBT / Delta Solution",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 4.5,
+      "massRecoveredPct": 20
+     }
+    },
+    {
+     "label": "TvL / subsample (24 hours)",
+     "locator": "SI Table S3 (image on page S8), row TvL / Subsample (24 hours)",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 3.1,
+      "massRecoveredPct": 65
+     }
+    },
+    {
+     "label": "TvL / solution extract",
+     "locator": "SI Table S3 (image on page S8), row TvL / Solution extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 2.5,
+      "massRecoveredPct": 88
+     }
+    },
+    {
+     "label": "TvL / reactor extract",
+     "locator": "SI Table S3 (image on page S8), row TvL / Reactor extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 0.4,
+      "massRecoveredPct": 12
+     }
+    },
+    {
+     "label": "TvL / delta solution",
+     "locator": "SI Table S3 (image on page S8), row TvL / Delta Solution",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 4.0,
+      "massRecoveredPct": 19
+     }
+    },
+    {
+     "label": "control / subsample (24 hours)",
+     "locator": "SI Table S3 (image on page S8), row Control / Subsample (24 hours)",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 16.5,
+      "massRecoveredPct": 73
+     }
+    },
+    {
+     "label": "control / solution extract",
+     "locator": "SI Table S3 (image on page S8), row Control / Solution extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 13.5,
+      "massRecoveredPct": 60
+     }
+    },
+    {
+     "label": "control / reactor extract",
+     "locator": "SI Table S3 (image on page S8), row Control / Reactor extract",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 12.1,
+      "massRecoveredPct": 40
+     }
+    },
+    {
+     "label": "control / delta solution",
+     "locator": "SI Table S3 (image on page S8), row Control / Delta Solution",
+     "source": "10.1021/acs.estlett.3c00173",
+     "values": {
+      "errorPct": 19.0,
+      "massRecoveredPct": 8
+     }
+    }
+   ],
+   "id": "pfos-partition",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "apparent PFOA loss in the TvL/HBT-treated reactors of 18 +/- 2 % compared to the total PFOA mass extracted; for PFOS 34 +/- 4 %; in the reactors containing only the TvL enzyme, similar losses for PFOS of 35 +/- 3 %; for PFOA a substantial mass loss was not observed",
+   "outcomeClass": "positive",
+   "question": "Where does the PFOS mass that disappears from solution in TvL/HBT reactors go: protein, vessel or transformation?",
+   "replicates": {
+    "biological": 3
+   },
+   "target": {
+    "identifier": "pubchem:CID74483",
+    "label": "perfluorooctanesulfonic acid (PFOS)",
+    "type": "compound"
+   }
+  },
+  {
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "14 +/- 1.6 % with TvL + HBT and 12 +/- 0.4 % with TvL only",
+    "direction": "not-applicable",
+    "metric": "PFOS mass recovered from the emptied reactor, enzyme-free control",
+    "n": 3,
+    "note": "sorption to the protein is more favourable than to the glass",
+    "sd": 12.1,
+    "unit": "%",
+    "value": 40
+   },
+   "evidence": [
+    {
+     "label": "SI Table S3 reactor extract rows",
+     "locator": "SI Table S3 (image on page S8), Reactor extract rows; Figure 2b",
+     "quote": "sorption of PFOS to the reactor was greater in the enzyme-free control (40 +/- 12 % of total mass) relative to the TvL/HBT (14 +/- 2 %) and TvL (12 +/- 1 %) treatments, suggesting that sorption to the protein was more favorable",
+     "source": "10.1021/acs.estlett.3c00173"
+    }
+   ],
+   "id": "pfos-reactor-sorption",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "question": "Does PFOS sorb to the glass reactor, and does the presence of enzyme change how much?",
+   "target": {
+    "identifier": "pubchem:CID74483",
+    "label": "perfluorooctanesulfonic acid (PFOS)",
+    "type": "compound"
+   }
+  }
+ ],
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:2e47f2e0f87a90dc70a63de12f6ef0a9cd798d3bf19716b45b3705745cb4ba56",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "isPartOf": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/01an7q238",
+  "name": "University of California, Berkeley",
+  "type": "Organization"
+ },
+ "outcomeClass": "positive",
+ "outcomeSummary": "apparent PFOA loss in the TvL/HBT-treated reactors of 18 +/- 2 % compared to the total PFOA mass extracted; for PFOS 34 +/- 4 %; in the reactors containing only the TvL enzyme, similar losses for PFOS of 35 +/- 3 %; for PFOA a substantial mass loss was not observed sorption of PFOS to the reactor was greater in the enzyme-free control (40 +/- 12 % of total mass) relative to the TvL/HBT (14 +/- 2 %) and TvL (12 +/- 1 %) treatments, suggesting that sorption to the protein was more favorable PFOA sorption appeared substantial only where the mediator was present, consistent with side-chain exposure or charge changes on oxidation of TvL; PFOS sorption was unaltered by the mediator, consistent with a structurally intact side chain and PFOS hydrophobicity",
+ "pathType": "experiment",
+ "performers": [
+  {
+   "affiliation": "University of California, Berkeley",
+   "identifier": "https://orcid.org/0000-0003-4663-8264",
+   "name": "Sophia D. Steffens",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "name": "Edmund H. Antell",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "identifier": "https://orcid.org/0000-0002-4587-3097",
+   "name": "Emily K. Cook",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Davis",
+   "identifier": "https://orcid.org/0000-0001-8043-3436",
+   "name": "Guodong Rao",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Davis",
+   "identifier": "https://orcid.org/0000-0003-0889-8436",
+   "name": "R. David Britt",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "identifier": "https://orcid.org/0000-0003-1686-8464",
+   "name": "David L. Sedlak",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "name": "Lisa Alvarez-Cohen",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "All 24 cells of SI Tables S2 and S3 were transcribed from the images; the main text's '18 +/- 2 %' is 100 minus the 82 % subsample recovery with its 1.7 % error rounded."
+ ],
+ "question": "How much PFOA and PFOS sorbs to the enzyme and to the reactor in 24 h, and does the mediator change it?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+   "type": "isPartOf"
+  },
+  {
+   "note": "explains the apparent loss recorded as refuted in the degradation attempt",
+   "target": "urn:portolan:nrr:sha256:c749de6336e2dc6272673479045f4e8af2a3c7511103754c7bb8de210989e4d6",
+   "type": "informs"
+  }
+ ],
+ "slug": "acs-laccase-sorption",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.1021/acs.estlett.3c00173",
+   "label": "An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:18Z",
+    "integrity": "none",
+    "version": "VoR"
+   },
+   "url": "https://doi.org/10.1021/acs.estlett.3c00173"
+  },
+  {
+   "data": [
+    {
+     "accession": "PMC10100556",
+     "checksum": "sha256:94d0c1f8982a6015ad6667433f4cc653bfca2848a6f91b9fdb55dc985ced151b",
+     "format": "application/pdf",
+     "label": "ez3c00173_si_001.pdf",
+     "repository": "Europe PMC",
+     "role": "Supporting Information: protocols (Text S1 to S5), Tables S1 to S3, Figures S1 to S8",
+     "size": 594281,
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+    }
+   ],
+   "identifier": "pmc:PMC10100556/ez3c00173_si_001.pdf",
+   "label": "Supporting Information (PDF)",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "No data availability statement and no deposit; data tables associated with the main-text figures are in the Supporting Information. Tables S2 and S3 are images in the PDF.",
+   "role": "supplementary",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+  }
+ ],
+ "stages": [
+  {
+   "conditions": {
+    "dosing": "single dose (60 mg TvL)",
+    "duration": "24 h",
+    "enzyme": "Trametes versicolor laccase (TvL)",
+    "enzymeUnitsPerMl": "2",
+    "matrix": "10 mM CuSO4",
+    "mediator": "HBT or none",
+    "mediatorConcentration": "2 mM",
+    "substrate": "PFOA or PFOS",
+    "substrateConcentrationUm": "0.1"
+   },
+   "instrument": [
+    "New Brunswick Excella E25 shaker incubator",
+    "Agilent Triple Quad 6460A LC-MS/MS"
+   ],
+   "label": "24 h partition experiment with separate extraction of enzyme solution and reactor",
+   "method": "20 mL glass scintillation vials, 5 mL solution, 30 °C, 130 rpm; opened at least 10 minutes at each sampling to promote aeration; aliquots diluted immediately in basic methanol (0.5 % ammonium hydroxide); LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+   "performedBy": [
+    {
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0003-4663-8264",
+     "name": "Sophia D. Steffens",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "name": "Edmund H. Antell",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0002-4587-3097",
+     "name": "Emily K. Cook",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Davis",
+     "identifier": "https://orcid.org/0000-0001-8043-3436",
+     "name": "Guodong Rao",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Davis",
+     "identifier": "https://orcid.org/0000-0003-0889-8436",
+     "name": "R. David Britt",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0003-1686-8464",
+     "name": "David L. Sedlak",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "name": "Lisa Alvarez-Cohen",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    }
+   ],
+   "protocol": "basic methanol added directly to the reactor (2x dilution) for the 96 h experiment; in the revised protocol the enzyme/buffer solution is transferred to a fresh vial and diluted 2-fold, and the emptied reactor is rinsed with 10 mM CuSO4 and basic MeOH (4 mL, 50/50) to recover PFAA sorbed to the walls (Text S1)",
+   "replicates": {
+    "reactors": 3
+   },
+   "stage": "experiment"
+  }
+ ],
+ "studyId": "acs-laccase",
+ "successCriteria": "Separate extraction of the enzyme solution and the emptied vessel accounting for the total mass within error.",
+ "title": "The apparent PFOA and PFOS loss is sorption to the laccase, 18 +/- 2 % and 34 +/- 4 %, with a complete mass balance",
+ "version": "1",
+ "visibility": "public"
+}

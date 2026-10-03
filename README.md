@@ -7,6 +7,7 @@ record, a manifest, and a collection-level `ro-crate-metadata.json`.
 | study | source | records | licence of the records |
 |---|---|---|---|
 | `acs-zeolite/` | Altundal, O. F., Galvez-Llompart, M., Cantin, A. et al. (2025). *Lessons from Failed Attempts of Computationally Guided Synthesis of Aluminosilicate STF and IFR Zeolites in Hydroxide Media*. Chemistry of Materials 37(24), 9689-9702. https://doi.org/10.1021/acs.chemmater.5c01751 (CC BY 4.0; full text via Europe PMC PMC12747119). | 1 path + 4 attempts, 16 findings | CC BY 4.0 |
+| `acs-laccase/` | Steffens, S. D., Antell, E. H., Cook, E. K., Rao, G., Britt, R. D., Sedlak, D. L., Alvarez-Cohen, L. (2023). *An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System*. Environmental Science & Technology Letters 10(4), 337-342. https://doi.org/10.1021/acs.estlett.3c00173 (CC BY 4.0; full text via Europe PMC PMC10100556). | 1 path + 4 attempts, 11 findings | CC BY 4.0 |
 | `acs-tmeda/` | Macleod, J., Bage, A. D., Meyer, L. M., Thomas, S. P. (2024). *Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition*. Organic Letters 26(44), 9564-9567. https://doi.org/10.1021/acs.orglett.4c03591 (CC BY 4.0; full text via Europe PMC PMC11555781). | 1 path + 4 attempts, 20 findings | CC BY 4.0 |
 | `arcadia-alcalase/` | Caddell, D., Futia, R., Kraemer, J. A. et al. (2026). *Evaluation of Alcalase pretreatment for Chlamydomonas reinhardtii CRISPR knock-in*. The Stacks (Astera Institute). https://doi.org/10.57844/arcadia-pdu7-q2zz (CC BY 4.0). Data: Arcadia Science (2026), Zenodo, https://doi.org/10.5281/zenodo.22238548 (CC BY 4.0). | 1 path + 6 attempts, 11 findings | CC BY 4.0 |
 | `arcadia-dfa/` | Morin, M., Patton, A. H. et al. (2024). *A structurally divergent actin conserved in fungi has no association with specific traits*. The Stacks (Astera Institute). https://doi.org/10.57844/arcadia-9768-f6c5 (CC BY 4.0). Data: Arcadia Science (2023), Zenodo, https://doi.org/10.5281/zenodo.10211653 (CC BY 4.0). Code: https://doi.org/10.5281/zenodo.10779267. | 1 path + 3 attempts, 11 findings | CC BY 4.0 |
@@ -37,6 +38,9 @@ Each was chosen to test a different part of the profile.
 - **TMEDA inhibition** is a negative about a control method: the standard test for hidden boron catalysis gives false
   negatives above 60 °C. The test itself is an entity of type `assay` and the target of a `refuted` finding; the kinetic
   negatives at 60 °C are the first chemistry findings to pass the informativeness rule. It required no schema change.
+- **Laccase and PFAS** is a replication failure with the artefact explained: a surrogate substrate (carbamazepine) as the
+  positive control makes the two-week PFOA result the corpus's first informative `negative-not-replicated`, and the
+  apparent 64 to 67 % losses are `refuted` by mass balance. It required one vocabulary term (`measurement-artifact`).
 
 Together with the fourth study in the pipeline repository, every clause of the informativeness rule has now fired on real
 published data, each traceable to a different study. That is what shows the rule working as a diagnosis rather than as a

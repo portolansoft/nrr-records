@@ -1,0 +1,864 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:fc9622e855f881e29a8aa39009ef2056331ef311aecaa2bc5f8b9edc35ce1473",
+   "name": "Two commercial laccases with five nitroxyl mediators do not remove PFOS over 28 days",
+   "description": "Does any of five nitroxyl mediators with a high-redox commercial laccase remove PFOS within the 20 to 30 days the prior report needed?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "attempt",
+   "nrr:studyId": "acs-laccase",
+   "nrr:slug": "acs-laccase-mediator-screen",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "A significant decrease in PFOS concentration relative to the enzyme-only control by day 28.",
+   "keywords": [
+    "chemistry"
+   ],
+   "hasPart": [
+    {
+     "@id": "#attempt"
+    },
+    {
+     "@id": "#finding-screen-white-rot"
+    },
+    {
+     "@id": "#finding-screen-agaricus"
+    },
+    {
+     "@id": "#screened-1"
+    },
+    {
+     "@id": "#screened-2"
+    },
+    {
+     "@id": "#screened-3"
+    },
+    {
+     "@id": "#screened-4"
+    },
+    {
+     "@id": "#screened-5"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-sophia-d-steffens-writing"
+    },
+    {
+     "@id": "#performer-edmund-h-antell-writing"
+    },
+    {
+     "@id": "#performer-emily-k-cook-writing"
+    },
+    {
+     "@id": "#performer-guodong-rao-writing"
+    },
+    {
+     "@id": "#performer-r-david-britt-writing"
+    },
+    {
+     "@id": "#performer-david-l-sedlak-writing"
+    },
+    {
+     "@id": "#performer-lisa-alvarez-cohen-writing"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "system": "laccase mediator systems with nitroxyl (N-OH or N-oxyl) mediators in aerated batch reactors at 30 °C",
+    "enzymes": "Trametes versicolor laccase (MilliporeSigma) for the TvL experiments; Agaricus bisporus and a native white-rot laccase in the screen; the Pleurotus ostreatus laccase of the prior reports was not available",
+    "substrateConcentrations": "1 uM (screen and two-week experiment) and 0.1 uM (96 h and 24 h experiments)",
+    "matrices": "10 mM CuSO4 pH 5 or 50 mM sodium malonate pH 4.5",
+    "duration": "24 h to 28 days with repeated enzyme and mediator dosing",
+    "analysis": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+    "note": "the negative is about detectable degradation under these conditions; sorption to the enzyme is shown to mimic up to about 60 % apparent removal when only the aqueous phase is sampled"
+   },
+   "nrr:cost": {
+    "wetLabDays": 28,
+    "note": "batch reactors in triplicate; the longest experiment 28 days; no monetary cost reported",
+    "source": "Materials and Methods; SI"
+   },
+   "nrr:provenanceNotes": [
+    "The rule remaps this to inconclusive-no-positive-control: the surrogate-substrate control was run with a different enzyme. The authors moved to TvL after this screen because the P. ostreatus laccase of the prior reports was unavailable."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "nrr:confidence": {
+    "level": "medium",
+    "basis": "no positive control with these enzymes; evaporation correction needed"
+   },
+   "nrr:outcomeSummary": "we observed no significant differences among the enzyme/mediator treatment conditions and the enzyme-only control (Figure S2) p = 0.58 (white rot) and 0.24 (Agaricus bisporus).",
+   "nrr:screenedSummary": {
+    "laccases": 2,
+    "mediators": 5,
+    "days": 28
+   },
+   "isPartOf": {
+    "@id": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596"
+   },
+   "mainEntity": {
+    "@id": "#attempt"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.1021/acs.estlett.3c00173"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "pmc:PMC10100556/ez3c00173_si_001.pdf"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "pubchem:CID9554"
+    },
+    {
+     "@id": "pubchem:CID74483"
+    },
+    {
+     "@id": "pubchem:CID2554"
+    },
+    {
+     "@id": "pubchem:CID75771"
+    },
+    {
+     "@id": "pubchem:CID10665"
+    },
+    {
+     "@id": "pubchem:CID66599"
+    },
+    {
+     "@id": "pubchem:CID2724126"
+    },
+    {
+     "@id": "pubchem:CID42643072"
+    },
+    {
+     "@id": "protein:trametes-versicolor-laccase"
+    },
+    {
+     "@id": "protein:agaricus-bisporus-laccase"
+    },
+    {
+     "@id": "protein:native-white-rot-laccase"
+    },
+    {
+     "@id": "pubchem:CID24462"
+    },
+    {
+     "@id": "pubchem:CID8865"
+    },
+    {
+     "@id": "pubchem:CID7041"
+    },
+    {
+     "@id": "pubchem:CID887"
+    },
+    {
+     "@id": "assay:lc-msms-pfas"
+    },
+    {
+     "@id": "assay:epr-btno"
+    },
+    {
+     "@id": "assay:dmp-activity"
+    },
+    {
+     "@id": "https://ror.org/01an7q238"
+    },
+    {
+     "@id": "NCBITaxon:5325"
+    },
+    {
+     "@id": "NCBITaxon:5341"
+    },
+    {
+     "@id": "NCBITaxon:5322"
+    }
+   ],
+   "nrr:isPartOf": [
+    {
+     "@id": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "University of California, Berkeley",
+   "identifier": "https://ror.org/01an7q238"
+  },
+  {
+   "@id": "#performer-sophia-d-steffens-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Sophia D. Steffens",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Berkeley",
+   "nrr:identifier": "https://orcid.org/0000-0003-4663-8264",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-edmund-h-antell-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Edmund H. Antell",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Berkeley",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-emily-k-cook-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Emily K. Cook",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Berkeley",
+   "nrr:identifier": "https://orcid.org/0000-0002-4587-3097",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-guodong-rao-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Guodong Rao",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Davis",
+   "nrr:identifier": "https://orcid.org/0000-0001-8043-3436",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-r-david-britt-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "R. David Britt",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Davis",
+   "nrr:identifier": "https://orcid.org/0000-0003-0889-8436",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-david-l-sedlak-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "David L. Sedlak",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Berkeley",
+   "nrr:identifier": "https://orcid.org/0000-0003-1686-8464",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-lisa-alvarez-cohen-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Lisa Alvarez-Cohen",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of California, Berkeley",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#finding-screen-white-rot",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does a native white-rot laccase (Creative Enzymes) with any of five nitroxyl mediators remove PFOS over 28 days?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does a native white-rot laccase (Creative Enzymes) with any of five nitroxyl mediators remove PFOS over 28 days?",
+   "nrr:target": {
+    "label": "PFOS",
+    "type": "compound",
+    "identifier": "pubchem:CID74483"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:effect": {
+    "metric": "PFOS concentration relative to the no-mediator control after evaporation correction",
+    "value": "no significant difference",
+    "n": 3,
+    "direction": "none",
+    "test": "two-tailed t test",
+    "pValue": 0.58,
+    "significant": false,
+    "comparedTo": "enzyme-only (no-mediator) reactors; the prior report expected >20 % removal at 20 days and >30 % at 30 days"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no surrogate substrate was run with these two laccases; the carbamazepine control used Trametes versicolor laccase in a separate experiment"
+    },
+    "negative": {
+     "kind": "no-treatment",
+     "label": "untreated reactor (no enzyme, no mediator) and enzyme-only reactors",
+     "expected": "no loss",
+     "observed": "concentrations rose through evaporation from filter caps and were used to correct all treatments (Text S4)",
+     "passed": true,
+     "note": "clean in the sense of no unexplained loss; the evaporation correction is derived from this control"
+    }
+   },
+   "nrr:sensitivity": "LC-MS/MS isotope-dilution quantification with a 0.2 to 10 ug/L calibration range (Text S2) in triplicate reactors with standard deviations reported; the effect sought was the previously reported >20 % removal at 10 days (PFOA) and >20 % at 20 days, >30 % at 30 days (PFOS). The ingest treats the stated quantification range and the stated expected effect size as the sensitivity statement; the article reports no formal power analysis.",
+   "nrr:replicates": {
+    "biological": 3,
+    "note": "triplicate reactors; 10 mL in 30 mL polypropylene flasks"
+   },
+   "nrr:conditions": {
+    "enzyme": "native white rot laccase (Creative Enzymes)",
+    "enzymeUnitsPerMl": 1,
+    "mediators": [
+     "1-hydroxybenzotriazole (HBT)",
+     "N-hydroxyphthalimide (HPI)",
+     "violuric acid",
+     "TEMPO",
+     "AZADO (2-azaadamantane N-oxyl)"
+    ],
+    "mediatorConcentration": "20 uM",
+    "substrateConcentrationUm": 1,
+    "matrix": "10 mM CuSO4 (pH 5)",
+    "dosing": "weekly enzyme and mediator",
+    "duration": "28 days"
+   },
+   "nrr:evidence": [
+    {
+     "label": "SI Figure S2a and legend; Text S4",
+     "source": "10.1021/acs.estlett.3c00173",
+     "locator": "SI Figure S2a and legend; Text S4",
+     "values": {
+      "pValue": 0.58,
+      "replicates": 3
+     },
+     "quote": "we observed no significant differences among the enzyme/mediator treatment conditions and the enzyme-only control (Figure S2)"
+    }
+   ],
+   "nrr:nearestPriorResult": "Luo et al. 2018, perfluorooctanesulfonate degrades in a laccase-mediator system (ES&T 52, 10617-10626): >20 % and >30 % PFOS removal at 20 and 30 days with Pleurotus ostreatus laccase and HBT",
+   "nrr:informativenessReason": "no positive control"
+  },
+  {
+   "@id": "#finding-screen-agaricus",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does Agaricus bisporus laccase (Sigma) with any of five nitroxyl mediators remove PFOS over 28 days?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does Agaricus bisporus laccase (Sigma) with any of five nitroxyl mediators remove PFOS over 28 days?",
+   "nrr:target": {
+    "label": "PFOS",
+    "type": "compound",
+    "identifier": "pubchem:CID74483"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:effect": {
+    "metric": "PFOS concentration relative to the no-mediator control after evaporation correction",
+    "value": "no significant difference",
+    "n": 3,
+    "direction": "none",
+    "test": "two-tailed t test",
+    "pValue": 0.24,
+    "significant": false,
+    "comparedTo": "enzyme-only (no-mediator) reactors; the prior report expected >20 % removal at 20 days and >30 % at 30 days"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no surrogate substrate was run with these two laccases; the carbamazepine control used Trametes versicolor laccase in a separate experiment"
+    },
+    "negative": {
+     "kind": "no-treatment",
+     "label": "untreated reactor (no enzyme, no mediator) and enzyme-only reactors",
+     "expected": "no loss",
+     "observed": "concentrations rose through evaporation from filter caps and were used to correct all treatments (Text S4)",
+     "passed": true,
+     "note": "clean in the sense of no unexplained loss; the evaporation correction is derived from this control"
+    }
+   },
+   "nrr:sensitivity": "LC-MS/MS isotope-dilution quantification with a 0.2 to 10 ug/L calibration range (Text S2) in triplicate reactors with standard deviations reported; the effect sought was the previously reported >20 % removal at 10 days (PFOA) and >20 % at 20 days, >30 % at 30 days (PFOS). The ingest treats the stated quantification range and the stated expected effect size as the sensitivity statement; the article reports no formal power analysis.",
+   "nrr:replicates": {
+    "biological": 3,
+    "note": "triplicate reactors; 10 mL in 30 mL polypropylene flasks"
+   },
+   "nrr:conditions": {
+    "enzyme": "Agaricus bisporus laccase (Sigma)",
+    "enzymeUnitsPerMl": 1,
+    "mediators": [
+     "1-hydroxybenzotriazole (HBT)",
+     "N-hydroxyphthalimide (HPI)",
+     "violuric acid",
+     "TEMPO",
+     "AZADO (2-azaadamantane N-oxyl)"
+    ],
+    "mediatorConcentration": "20 uM",
+    "substrateConcentrationUm": 1,
+    "matrix": "10 mM CuSO4 (pH 5)",
+    "dosing": "weekly enzyme and mediator",
+    "duration": "28 days"
+   },
+   "nrr:evidence": [
+    {
+     "label": "SI Figure S2b and legend; Text S4",
+     "source": "10.1021/acs.estlett.3c00173",
+     "locator": "SI Figure S2b and legend; Text S4",
+     "values": {
+      "pValue": 0.24,
+      "replicates": 3
+     },
+     "quote": "we observed no significant differences among the enzyme/mediator treatment conditions and the enzyme-only control (Figure S2)"
+    }
+   ],
+   "nrr:nearestPriorResult": "Luo et al. 2018, perfluorooctanesulfonate degrades in a laccase-mediator system (ES&T 52, 10617-10626): >20 % and >30 % PFOS removal at 20 and 30 days with Pleurotus ostreatus laccase and HBT",
+   "nrr:informativenessReason": "no positive control"
+  },
+  {
+   "@id": "#screened-1",
+   "@type": "nrr:ScreenedItem",
+   "name": "1-hydroxybenzotriazole (HBT)",
+   "nrr:type": "compound",
+   "nrr:identifier": "pubchem:CID75771",
+   "nrr:decision": "included",
+   "nrr:reason": "selected-for-testing",
+   "nrr:note": "nitroxyl mediator screened with both laccases against 1 uM PFOS (SI Figure S1)"
+  },
+  {
+   "@id": "#screened-2",
+   "@type": "nrr:ScreenedItem",
+   "name": "N-hydroxyphthalimide (HPI)",
+   "nrr:type": "compound",
+   "nrr:identifier": "pubchem:CID10665",
+   "nrr:decision": "included",
+   "nrr:reason": "selected-for-testing",
+   "nrr:note": "nitroxyl mediator screened with both laccases against 1 uM PFOS (SI Figure S1)"
+  },
+  {
+   "@id": "#screened-3",
+   "@type": "nrr:ScreenedItem",
+   "name": "violuric acid",
+   "nrr:type": "compound",
+   "nrr:identifier": "pubchem:CID66599",
+   "nrr:decision": "included",
+   "nrr:reason": "selected-for-testing",
+   "nrr:note": "nitroxyl mediator screened with both laccases against 1 uM PFOS (SI Figure S1)"
+  },
+  {
+   "@id": "#screened-4",
+   "@type": "nrr:ScreenedItem",
+   "name": "TEMPO",
+   "nrr:type": "compound",
+   "nrr:identifier": "pubchem:CID2724126",
+   "nrr:decision": "included",
+   "nrr:reason": "selected-for-testing",
+   "nrr:note": "nitroxyl mediator screened with both laccases against 1 uM PFOS (SI Figure S1)"
+  },
+  {
+   "@id": "#screened-5",
+   "@type": "nrr:ScreenedItem",
+   "name": "AZADO (2-azaadamantane N-oxyl)",
+   "nrr:type": "compound",
+   "nrr:identifier": "pubchem:CID42643072",
+   "nrr:decision": "included",
+   "nrr:reason": "selected-for-testing",
+   "nrr:note": "nitroxyl mediator screened with both laccases against 1 uM PFOS (SI Figure S1)"
+  },
+  {
+   "@id": "#stage-1-experiment",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "28-day PFOS screen, two laccases by five mediators, weekly dosing",
+   "nrr:stage": "experiment",
+   "nrr:performedBy": [
+    {
+     "name": "Sophia D. Steffens",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0003-4663-8264",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Edmund H. Antell",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Berkeley",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Emily K. Cook",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0002-4587-3097",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Guodong Rao",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Davis",
+     "identifier": "https://orcid.org/0000-0001-8043-3436",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "R. David Britt",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Davis",
+     "identifier": "https://orcid.org/0000-0003-0889-8436",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "David L. Sedlak",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0003-1686-8464",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Lisa Alvarez-Cohen",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of California, Berkeley",
+     "note": "listed author; the article carries no author-contribution statement"
+    }
+   ],
+   "nrr:method": "20 mL glass scintillation vials, 5 mL solution, 30 °C, 130 rpm; opened at least 10 minutes at each sampling to promote aeration; aliquots diluted immediately in basic methanol (0.5 % ammonium hydroxide); LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+   "nrr:conditions": {
+    "substrate": "PFOS",
+    "substrateConcentrationUm": "1",
+    "enzyme": "native white rot laccase (Creative Enzymes)",
+    "enzymeUnitsPerMl": "1",
+    "mediator": "HBT, violuric acid, HPI, TEMPO or AZADO",
+    "mediatorConcentration": "20 uM",
+    "matrix": "10 mM CuSO4 (pH 5)",
+    "dosing": "weekly enzyme and mediator",
+    "duration": "28 days"
+   },
+   "nrr:replicates": {
+    "reactors": 3
+   },
+   "nrr:instrument": [
+    "New Brunswick Excella E25 shaker incubator",
+    "Agilent Triple Quad 6460A LC-MS/MS"
+   ]
+  },
+  {
+   "@id": "#attempt",
+   "@type": [
+    "CreateAction",
+    "prov:Activity"
+   ],
+   "name": "Two commercial laccases with five nitroxyl mediators do not remove PFOS over 28 days",
+   "description": "Does any of five nitroxyl mediators with a high-redox commercial laccase remove PFOS within the 20 to 30 days the prior report needed?",
+   "actionStatus": "FailedActionStatus",
+   "nrr:attemptType": "wet-lab",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "agent": {
+    "@id": "#operator"
+   },
+   "instrument": [
+    {
+     "@id": "#performer-sophia-d-steffens-writing"
+    },
+    {
+     "@id": "#performer-edmund-h-antell-writing"
+    },
+    {
+     "@id": "#performer-emily-k-cook-writing"
+    },
+    {
+     "@id": "#performer-guodong-rao-writing"
+    },
+    {
+     "@id": "#performer-r-david-britt-writing"
+    },
+    {
+     "@id": "#performer-david-l-sedlak-writing"
+    },
+    {
+     "@id": "#performer-lisa-alvarez-cohen-writing"
+    }
+   ],
+   "object": [],
+   "result": [
+    {
+     "@id": "#finding-screen-white-rot"
+    },
+    {
+     "@id": "#finding-screen-agaricus"
+    }
+   ],
+   "hasPart": [
+    {
+     "@id": "#stage-1-experiment"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.estlett.3c00173",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System",
+   "nrr:url": "https://doi.org/10.1021/acs.estlett.3c00173",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:18Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')"
+  },
+  {
+   "@id": "pmc:PMC10100556/ez3c00173_si_001.pdf",
+   "@type": "Dataset",
+   "nrr:role": "supplementary",
+   "name": "Supporting Information (PDF)",
+   "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles",
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "No data availability statement and no deposit; data tables associated with the main-text figures are in the Supporting Information. Tables S2 and S3 are images in the PDF.",
+   "nrr:data": [
+    {
+     "label": "ez3c00173_si_001.pdf",
+     "repository": "Europe PMC",
+     "accession": "PMC10100556",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles",
+     "checksum": "sha256:94d0c1f8982a6015ad6667433f4cc653bfca2848a6f91b9fdb55dc985ced151b",
+     "size": 594281,
+     "format": "application/pdf",
+     "role": "Supporting Information: protocols (Text S1 to S5), Tables S1 to S3, Figures S1 to S8"
+    }
+   ]
+  },
+  {
+   "@id": "pubchem:CID9554",
+   "@type": "ChemicalSubstance",
+   "name": "perfluorooctanoic acid (PFOA)",
+   "nrr:entityType": "compound",
+   "nrr:role": "target substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID74483",
+   "@type": "ChemicalSubstance",
+   "name": "perfluorooctanesulfonic acid (PFOS)",
+   "nrr:entityType": "compound",
+   "nrr:role": "target substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID2554",
+   "@type": "ChemicalSubstance",
+   "name": "carbamazepine (CBZ)",
+   "nrr:entityType": "compound",
+   "nrr:role": "positive-control substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID75771",
+   "@type": "ChemicalSubstance",
+   "name": "1-hydroxybenzotriazole (HBT)",
+   "nrr:entityType": "compound",
+   "nrr:role": "nitroxyl mediator",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID10665",
+   "@type": "ChemicalSubstance",
+   "name": "N-hydroxyphthalimide (HPI)",
+   "nrr:entityType": "compound",
+   "nrr:role": "nitroxyl mediator",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID66599",
+   "@type": "ChemicalSubstance",
+   "name": "violuric acid",
+   "nrr:entityType": "compound",
+   "nrr:role": "nitroxyl mediator",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID2724126",
+   "@type": "ChemicalSubstance",
+   "name": "TEMPO",
+   "nrr:entityType": "compound",
+   "nrr:role": "nitroxyl mediator",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID42643072",
+   "@type": "ChemicalSubstance",
+   "name": "AZADO (2-azaadamantane N-oxyl)",
+   "nrr:entityType": "compound",
+   "nrr:role": "nitroxyl mediator",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "protein:trametes-versicolor-laccase",
+   "@type": "Protein",
+   "name": "Trametes versicolor laccase (TvL), MilliporeSigma",
+   "nrr:entityType": "protein",
+   "nrr:role": "enzyme under test"
+  },
+  {
+   "@id": "protein:agaricus-bisporus-laccase",
+   "@type": "Protein",
+   "name": "Agaricus bisporus laccase, MilliporeSigma",
+   "nrr:entityType": "protein",
+   "nrr:role": "enzyme in the mediator screen"
+  },
+  {
+   "@id": "protein:native-white-rot-laccase",
+   "@type": "Protein",
+   "name": "native white rot fungal laccase, Creative Enzymes",
+   "nrr:entityType": "protein",
+   "nrr:role": "enzyme in the mediator screen"
+  },
+  {
+   "@id": "pubchem:CID24462",
+   "@type": "ChemicalSubstance",
+   "name": "copper(II) sulfate, 10 mM, pH 5",
+   "nrr:entityType": "compound",
+   "nrr:role": "reaction matrix",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID8865",
+   "@type": "ChemicalSubstance",
+   "name": "sodium malonate buffer, 50 mM, pH 4.5",
+   "nrr:entityType": "compound",
+   "nrr:role": "reaction matrix",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID7041",
+   "@type": "ChemicalSubstance",
+   "name": "2,6-dimethoxyphenol (DMP)",
+   "nrr:entityType": "compound",
+   "nrr:role": "laccase activity assay substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID887",
+   "@type": "ChemicalSubstance",
+   "name": "basic methanol (0.5 % NH4OH)",
+   "nrr:entityType": "compound",
+   "nrr:role": "quench and extraction solvent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "assay:lc-msms-pfas",
+   "@type": "DefinedTerm",
+   "name": "LC-MS/MS isotope-dilution quantification of PFAS",
+   "nrr:entityType": "assay",
+   "nrr:role": "analytical method"
+  },
+  {
+   "@id": "assay:epr-btno",
+   "@type": "DefinedTerm",
+   "name": "X-band CW EPR of the benzotriazole-N-oxyl (BTNO) radical",
+   "nrr:entityType": "assay",
+   "nrr:role": "mediator radical check"
+  },
+  {
+   "@id": "assay:dmp-activity",
+   "@type": "DefinedTerm",
+   "name": "DMP laccase activity assay",
+   "nrr:entityType": "assay",
+   "nrr:role": "enzyme activity check"
+  },
+  {
+   "@id": "https://ror.org/01an7q238",
+   "@type": "Organization",
+   "name": "University of California, Berkeley",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "NCBITaxon:5325",
+   "@type": "Taxon",
+   "name": "Trametes versicolor",
+   "nrr:entityType": "organism",
+   "nrr:role": "white-rot fungus; source of TvL, the laccase used in every TvL experiment",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "NCBITaxon:5341",
+   "@type": "Taxon",
+   "name": "Agaricus bisporus",
+   "nrr:entityType": "organism",
+   "nrr:role": "source of the second commercial laccase in the mediator screen",
+   "nrr:scheme": "NCBI Taxonomy"
+  },
+  {
+   "@id": "NCBITaxon:5322",
+   "@type": "Taxon",
+   "name": "Pleurotus ostreatus",
+   "nrr:entityType": "organism",
+   "nrr:role": "source of the laccase in the prior reports; no longer commercially available",
+   "nrr:scheme": "NCBI Taxonomy"
+  }
+ ]
+}
