@@ -1,0 +1,1670 @@
+{
+ "arguments": {
+  "attachments": [],
+  "crate": {
+   "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+     "nrr": "https://portolansoft.com/schema/nrr/0.2#",
+     "prov": "http://www.w3.org/ns/prov#"
+    }
+   ],
+   "@graph": [
+    {
+     "@id": "ro-crate-metadata.json",
+     "@type": "CreativeWork",
+     "about": {
+      "@id": "./"
+     },
+     "conformsTo": [
+      {
+       "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      {
+       "@id": "https://portolansoft.com/profile/nrr/0.2"
+      }
+     ]
+    },
+    {
+     "@id": "./",
+     "@type": "Dataset",
+     "conformsTo": {
+      "@id": "https://portolansoft.com/profile/nrr/0.2"
+     },
+     "datePublished": "2026-09-25T00:00:00Z",
+     "description": "How widely is the TMEDA inhibition test used, and how often above the temperature at which it is now shown to fail?",
+     "hasPart": [
+      {
+       "@id": "#attempt"
+      },
+      {
+       "@id": "#finding-uptake"
+      },
+      {
+       "@id": "#finding-tests-above-60"
+      }
+     ],
+     "identifier": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+     "isPartOf": {
+      "@id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb"
+     },
+     "isSupplementTo": [
+      {
+       "@id": "https://doi.org/10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "keywords": [
+      "chemistry"
+     ],
+     "license": {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "mainEntity": {
+      "@id": "#attempt"
+     },
+     "mentions": [
+      {
+       "@id": "assay:tmeda-inhibition-test"
+      },
+      {
+       "@id": "pubchem:CID8037"
+      },
+      {
+       "@id": "compound:tmeda-bis-borane"
+      },
+      {
+       "@id": "pubchem:CID6364989"
+      },
+      {
+       "@id": "pubchem:CID6331"
+      },
+      {
+       "@id": "pubchem:CID9833925"
+      },
+      {
+       "@id": "pubchem:CID10821"
+      },
+      {
+       "@id": "pubchem:CID15627"
+      },
+      {
+       "@id": "pubchem:CID9237"
+      },
+      {
+       "@id": "pubchem:CID18196"
+      },
+      {
+       "@id": "pubchem:CID7972"
+      },
+      {
+       "@id": "pubchem:CID81531"
+      },
+      {
+       "@id": "pubchem:CID8471"
+      },
+      {
+       "@id": "pubchem:CID1146"
+      },
+      {
+       "@id": "pubchem:CID23664764"
+      },
+      {
+       "@id": "pubchem:CID69301"
+      },
+      {
+       "@id": "pubchem:CID1140"
+      },
+      {
+       "@id": "pubchem:CID8150"
+      },
+      {
+       "@id": "https://ror.org/01nrxwf90"
+      }
+     ],
+     "name": "Of 633 catalysed HBpin hydroboration papers since 2010, 24 used TMEDA inhibition and 15 of those ran it above 60 °C",
+     "nrr:aiUseDeclaration": {
+      "statement": "The article makes no statement about the use of AI tools."
+     },
+     "nrr:applicabilityConditions": {
+      "falseNegativesFromC": 80,
+      "hbpinThermalDecompositionFromC": 80,
+      "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis",
+      "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+      "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+      "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+      "tmedaInhibitionTestValidUpToC": 60,
+      "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely"
+     },
+     "nrr:confidence": {
+      "basis": "single-database search with stated terms; classification by the authors; the per-paper spreadsheet is not deposited",
+      "level": "medium"
+     },
+     "nrr:cost": {
+      "note": "manual classification; effort not reported",
+      "papersProcessed": 633,
+      "source": "SI Section S4"
+     },
+     "nrr:isPartOf": [
+      {
+       "@id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb"
+      }
+     ],
+     "nrr:kind": "attempt",
+     "nrr:outcomeClass": "positive",
+     "nrr:outcomeSummary": "633 publications; 5 % tested for hidden catalysis before May 2020 and 23 % after; 24 used TMEDA inhibition, 15 of them above 60 °C and 7 on carbonyl substrates.",
+     "nrr:pathType": "literature",
+     "nrr:provenanceNotes": [
+      "SI references 9 to 27 are given as 'some examples where TMEDA reaction inhibition has been used as a detection method'; the SI does not say which of them ran the test above 60 °C The ingest therefore does not assert per paper that its negative was invalidated; the count of 15 is the authors' aggregate.",
+      "The per-paper spreadsheet behind Figure S6 is not deposited."
+     ],
+     "nrr:screenedSummary": {
+      "afterMay2020": 212,
+      "beforeMay2020": 421,
+      "exampleReferencesListed": 19,
+      "publications": 633,
+      "testedAfter": 49,
+      "testedBefore": 23,
+      "tmedaAbove60C": 15,
+      "tmedaOnCarbonyls": 7,
+      "usedTmedaInhibition": 24
+     },
+     "nrr:slug": "acs-tmeda-literature-survey",
+     "nrr:sourceLicense": "CC BY 4.0",
+     "nrr:studyId": "acs-tmeda",
+     "nrr:successCriteria": "A count of publications using the test, split by whether the test temperature exceeded 60 °C.",
+     "nrr:visibility": "public",
+     "prov:used": [
+      {
+       "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acsomega.2c01866"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acs.joc.1c01208"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acscatal.2c03901"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acs.joc.1c03012"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acs.orglett.1c00809"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d3qi00478c"
+      },
+      {
+       "@id": "https://doi.org/10.1002/chem.202202794"
+      },
+      {
+       "@id": "https://doi.org/10.1002/ejic.202200129"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d1cc04148g"
+      },
+      {
+       "@id": "https://doi.org/10.1016/j.jorganchem.2021.121924"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d2gc04163d"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d2nj05849a"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d1dt00364j"
+      },
+      {
+       "@id": "https://doi.org/10.1002/chem.202103009"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d1cc06963b"
+      },
+      {
+       "@id": "https://doi.org/10.1002/anie.202207647"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acs.inorgchem.0c03451"
+      },
+      {
+       "@id": "https://doi.org/10.1021/acs.inorgchem.0c03507"
+      },
+      {
+       "@id": "https://doi.org/10.1039/d3dt03333c"
+      }
+     ],
+     "prov:wasAttributedTo": [
+      {
+       "@id": "#operator"
+      },
+      {
+       "@id": "#performer-julie-macleod-writing"
+      },
+      {
+       "@id": "#performer-andrew-d-bage-writing"
+      },
+      {
+       "@id": "#performer-leonie-m-meyer-writing"
+      },
+      {
+       "@id": "#performer-stephen-p-thomas-writing"
+      }
+     ],
+     "version": "1"
+    },
+    {
+     "@id": "#operator",
+     "@type": "Organization",
+     "identifier": "https://ror.org/01nrxwf90",
+     "name": "University of Edinburgh"
+    },
+    {
+     "@id": "#performer-julie-macleod-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Julie Macleod",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-andrew-d-bage-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Andrew D. Bage",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-leonie-m-meyer-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Leonie M. Meyer",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-stephen-p-thomas-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Stephen P. Thomas",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#finding-uptake",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "How many catalysed-HBpin-hydroboration publications test for hidden boron catalysis, before and after the TMEDA method was introduced in May 2020?",
+     "nrr:conditions": {
+      "accessed": "2024-08",
+      "database": "SciFinder",
+      "searchTerms": [
+       "Hydroboration",
+       "HBpin",
+       "Pinacolborane",
+       "HBcat",
+       "Catecholborane",
+       "Borylations"
+      ],
+      "window": "January 2010 to September 2024"
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "23 of 421 (5 %) before May 2020",
+      "direction": "increase",
+      "metric": "publications testing for hidden boron catalysis after May 2020",
+      "n": 212,
+      "note": "23 % after; 24 of the 49 used TMEDA inhibition",
+      "unit": "publications",
+      "value": 49
+     },
+     "nrr:evidence": [
+      {
+       "label": "SI Section S4 and Figure S6",
+       "locator": "SI Section S4",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "after": {
+         "percent": 23,
+         "publications": 212,
+         "testedForHiddenCatalysis": 49
+        },
+        "before": {
+         "note": "before May 2020 (Org. Lett. 2020, 22, 4107)",
+         "percent": 5,
+         "publications": 421,
+         "testedForHiddenCatalysis": 23
+        },
+        "publications": 633,
+        "tmeda": {
+         "percentOfTested": 49,
+         "publications": 24
+        }
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "How many catalysed-HBpin-hydroboration publications test for hidden boron catalysis, before and after the TMEDA method was introduced in May 2020?",
+     "nrr:target": {
+      "label": "catalysed hydroboration literature with HBpin, 2010 to September 2024",
+      "type": "other"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-tests-above-60",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "How many published uses of the TMEDA inhibition test were run above 60 °C, where this study shows the test gives false negatives?",
+     "nrr:conditions": {
+      "temperatureLimitC": 60
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "nrr:effect": {
+      "direction": "not-applicable",
+      "metric": "TMEDA inhibition tests run above 60 °C",
+      "n": 24,
+      "note": "63 %; a further 7 (29 %) applied the test to carbonyl substrates, which are not compatible with it",
+      "unit": "publications",
+      "value": 15
+     },
+     "nrr:evidence": [
+      {
+       "label": "SI Section S4",
+       "locator": "SI Section S4",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "above60": {
+         "percentOfTmeda": 63,
+         "publications": 15
+        },
+        "carbonyls": {
+         "note": "carbonyl compounds are not compatible with this test method",
+         "percentOfTmeda": 29,
+         "publications": 7
+        }
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "These are the published negatives the kinetics invalidate as evidence of true catalysis. The SI gives references 9 to 27 as examples of papers using the test but does not say which of them ran it hot, so they are attached as references here, not as per-paper refutations.",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "How many published uses of the TMEDA inhibition test were run above 60 °C, where this study shows the test gives false negatives?",
+     "nrr:relatedFindings": [
+      "acs-tmeda-adduct-kinetics#tmeda-test-false-negative-above-60"
+     ],
+     "nrr:target": {
+      "identifier": "assay:tmeda-inhibition-test",
+      "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+      "type": "assay"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#stage-1-literature-search",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "all catalysed hydroboration publications with HBpin, January 2010 to September 2024",
+     "nrr:method": "spreadsheet classification of each publication by whether and how it tested for hidden boron catalysis",
+     "nrr:note": "SI Section S4 and Figure S6",
+     "nrr:performedBy": [
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Julie Macleod",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Andrew D. Bage",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Leonie M. Meyer",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Stephen P. Thomas",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "nrr:queries": [
+      {
+       "date": "2024-08",
+       "recordsFound": 633,
+       "text": "Hydroboration, HBpin, Pinacolborane, HBcat, Catecholborane, Borylations",
+       "verbatim": true
+      }
+     ],
+     "nrr:recordsFound": 633,
+     "nrr:sourcesSearched": [
+      {
+       "coverage": "January 2010 to September 2024",
+       "kind": "abstracting database",
+       "name": "SciFinder",
+       "platform": "CAS SciFinder-n",
+       "url": "https://scifinder-n.cas.org/"
+      }
+     ],
+     "nrr:stage": "literature-search"
+    },
+    {
+     "@id": "#attempt",
+     "@type": [
+      "SearchAction",
+      "prov:Activity"
+     ],
+     "actionStatus": "CompletedActionStatus",
+     "agent": {
+      "@id": "#operator"
+     },
+     "description": "How widely is the TMEDA inhibition test used, and how often above the temperature at which it is now shown to fail?",
+     "hasPart": [
+      {
+       "@id": "#stage-1-literature-search"
+      }
+     ],
+     "instrument": [
+      {
+       "@id": "#performer-julie-macleod-writing"
+      },
+      {
+       "@id": "#performer-andrew-d-bage-writing"
+      },
+      {
+       "@id": "#performer-leonie-m-meyer-writing"
+      },
+      {
+       "@id": "#performer-stephen-p-thomas-writing"
+      }
+     ],
+     "name": "Of 633 catalysed HBpin hydroboration papers since 2010, 24 used TMEDA inhibition and 15 of those ran it above 60 °C",
+     "nrr:attemptType": "evidence-synthesis",
+     "nrr:outcomeClass": "positive",
+     "object": [],
+     "result": [
+      {
+       "@id": "#finding-uptake"
+      },
+      {
+       "@id": "#finding-tests-above-60"
+      }
+     ]
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.orglett.4c03591",
+     "@type": "ScholarlyArticle",
+     "name": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+     "nrr:role": "source-publication",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:07Z",
+      "integrity": "none",
+      "version": "VoR"
+     },
+     "nrr:url": "https://doi.org/10.1021/acs.orglett.4c03591"
+    },
+    {
+     "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+     "@type": "Dataset",
+     "name": "Supporting Information (PDF)",
+     "nrr:data": [
+      {
+       "accession": "PMC11555781",
+       "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+       "format": "application/pdf",
+       "label": "ol4c03591_si_001.pdf",
+       "repository": "Europe PMC",
+       "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4",
+       "size": 977253,
+       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+      }
+     ],
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:note": "The data underlying this study are available in the published article and its Supporting Information.",
+     "nrr:role": "supplementary",
+     "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+    },
+    {
+     "@id": "https://doi.org/10.1021/acsomega.2c01866",
+     "@type": "ScholarlyArticle",
+     "name": "Shi Y.; Wang Y.; Huang Z.; Zhang F.; Shao Y. tBuOLi-Promoted Hydroboration of Esters and Epoxides. ACS Omega, 2022, 7, 18876-18886.",
+     "nrr:note": "SI reference 9: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:09Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.joc.1c01208",
+     "@type": "ScholarlyArticle",
+     "name": "Ton N. N. H.; Mai B. K.; Nguyen T. V. Tropylium-Promoted Hydroboration Reactions: Mechanistic Insights Via Experimental and Computational Studies. J. Org. Chem.",
+     "nrr:note": "SI reference 10: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:04Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1021/acscatal.2c03901",
+     "@type": "ScholarlyArticle",
+     "name": "Doan S. H.; Ton N. N. H.; Mai B. K.; Nguyen T. V. Organosuperbase-Catalyzed 1,1-Diboration of Alkynes. ACS Catal., 2022, 12, 12409-12418.",
+     "nrr:note": "SI reference 11: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:09Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.joc.1c03012",
+     "@type": "ScholarlyArticle",
+     "name": "Liu J.; Wu C.; Hu T.; Yang W.; Xie Y.; Shi Y.; Liu Q.; Shao Y.; Zhang F. Hexamethyldisilazane Lithium (LiHMDS)-Promoted Hydroboration of Alkynes and Alkenes wit",
+     "nrr:note": "SI reference 12: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:05Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.orglett.1c00809",
+     "@type": "ScholarlyArticle",
+     "name": "Zou Y.; Zhang B.; Wang L.; Zhang H. Benzoic Acid-Promoted C2-H Borylation of Indoles with Pinacolborane. Org. Lett., 2021, 23, 2821-2825.",
+     "nrr:note": "SI reference 13: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:06Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d3qi00478c",
+     "@type": "ScholarlyArticle",
+     "name": "Lewandowski D.; Hreczycho G. Cobalt Pincer-type Complexes Demonstrating Unique Selectivity for the Hydroboration Reaction of Olefins Under Mild Conditions. Inor",
+     "nrr:note": "SI reference 14: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:17Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1002/chem.202202794",
+     "@type": "ScholarlyArticle",
+     "name": "Kumar R.; Dutta S.; Sharma V.; Singh P. P.; Gonnade R. G.; Koley D.; Sen S. S. Monomeric Magnesium Catalyzed Alkene and Alkyne Hydroboration. Chem. Eur. J., 202",
+     "nrr:note": "SI reference 15: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:00Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1002/ejic.202200129",
+     "@type": "ScholarlyArticle",
+     "name": "Lee J.; Fan J.; Koh A.-P.; Joslyn Cheang W.-J.; Yang M.-C.; Su M.-D.; So C.-W. Amidinato Isopropylmethylamidosilylene-Catalyzed Hydroboration of Carbonyl Compou",
+     "nrr:note": "SI reference 16: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:01Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d1cc04148g",
+     "@type": "ScholarlyArticle",
+     "name": "Kumar R.; Bisai M. K.; Jain S.; Vanka K.; Sen S. S. Deoxygenative Hydroboration of Primary and Secondary Amides: A Catalyst-free and Solvent-free Approach. Chem",
+     "nrr:note": "SI reference 17: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:12Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1016/j.jorganchem.2021.121924",
+     "@type": "ScholarlyArticle",
+     "name": "Bisai M. K.; Gour K.; Das T.; Vanka K.; Sen S. S. Readily Available Lithium Compounds as Catalysts for the Hydroboration of Carbodiimides and Esters. J. Organom",
+     "nrr:note": "SI reference 18: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:02Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d2gc04163d",
+     "@type": "ScholarlyArticle",
+     "name": "Huninik P.; Szyling J.; Czapik A.; Walkowiak J. Organocatalytic Hydroboration of Olefins in Pyrrolidinium Ionic Liquids. Green Chem., 2023, 25, 3715-3722.",
+     "nrr:note": "SI reference 19: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:14Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d2nj05849a",
+     "@type": "ScholarlyArticle",
+     "name": "Yan B.; Ma X.; Pang Z.; Yang Z. NaHBEt3-catalyzed HBpin Hydroboration and Deoxygenation of Primary, Secondary, and Tertiary Amides. New J. Chem., 2023, 47, 3202",
+     "nrr:note": "SI reference 20: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:15Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d1dt00364j",
+     "@type": "ScholarlyArticle",
+     "name": "Bisai M. K.; Gour K.; Das T.; Vanka K.; Sen S. S. Lithium Compound Catalyzed Deoxygenative Hydroboration of Primary, Secondary and Tertiary Amides. Dalton Trans",
+     "nrr:note": "SI reference 21: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:14Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1002/chem.202103009",
+     "@type": "ScholarlyArticle",
+     "name": "Liu L.; Lo S.-K.; Smith C.; Goicoechea J. M. Pincer-Supported Gallium Complexes for the Catalytic Hydroboration of Aldehydes, Ketones and Carbon Dioxide. Chem. ",
+     "nrr:note": "SI reference 22: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:46:59Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d1cc06963b",
+     "@type": "ScholarlyArticle",
+     "name": "Shlian D. G.; Amemiya E.; Parkin G. Synthesis of Bis(2-pyridylthio)methyl Zinc Hydride and Catalytic Hydrosilylation and Hydroboration of CO2. Chem. Commun., 20",
+     "nrr:note": "SI reference 23: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:13Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1002/anie.202207647",
+     "@type": "ScholarlyArticle",
+     "name": "Lunic D.; Sanosa N.; Funes-Ardoiz I.; Teskey C. J. Mild and Chemoselective Carboxylic Acid Reduction Promoted by Borane Catalysis. Angew. Chem. Int. Ed., 2022, ",
+     "nrr:note": "SI reference 24: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:46:58Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.inorgchem.0c03451",
+     "@type": "ScholarlyArticle",
+     "name": "Garhwal S.; Kroeger A. A.; Thenarukandiyil R.; Fridman N.; Karton A.; de Ruiter G. Manganese-Catalyzed Hydroboration of Terminal Olefins and Metal-Dependent Sel",
+     "nrr:note": "SI reference 25: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:03Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.inorgchem.0c03507",
+     "@type": "ScholarlyArticle",
+     "name": "Chia C.-C.; Teo Y.-C.; Cham N.; Ho S. Y.-F.; Ng Z.-H.; Toh H.-M.; Mezailles N.; So C.-W. Aluminum-Hydride-Catalyzed Hydroboration of Carbon Dioxide. Inorg. Chem",
+     "nrr:note": "SI reference 26: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:04Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "https://doi.org/10.1039/d3dt03333c",
+     "@type": "ScholarlyArticle",
+     "name": "Sokolnicki T.; Alharbi M. M.; van Ingen Y.; Rahim S.; Pramanik M.; Roldan A.; Walkowiak J.; Melen R. L. Reactivity of a Series of Triaryl Borates, B(OArx)3, in ",
+     "nrr:note": "SI reference 27: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "nrr:role": "reference",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:16Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "@id": "assay:tmeda-inhibition-test",
+     "@type": "DefinedTerm",
+     "name": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+     "nrr:entityType": "assay",
+     "nrr:role": "the control method under test"
+    },
+    {
+     "@id": "pubchem:CID8037",
+     "@type": "ChemicalSubstance",
+     "name": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+     "nrr:entityType": "compound",
+     "nrr:role": "BH3 trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "compound:tmeda-bis-borane",
+     "@type": "ChemicalSubstance",
+     "name": "TMEDA.(BH3)2 adduct",
+     "nrr:entityType": "compound",
+     "nrr:role": "the trapped species, tested as a catalyst"
+    },
+    {
+     "@id": "pubchem:CID6364989",
+     "@type": "ChemicalSubstance",
+     "name": "pinacolborane (HBpin)",
+     "nrr:entityType": "compound",
+     "nrr:role": "hydroboration reagent",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID6331",
+     "@type": "ChemicalSubstance",
+     "name": "borane (BH3)",
+     "nrr:entityType": "compound",
+     "nrr:role": "the hidden catalyst",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID9833925",
+     "@type": "ChemicalSubstance",
+     "name": "borane dimethyl sulfide (Me2S.BH3)",
+     "nrr:entityType": "compound",
+     "nrr:role": "positive-control BH3 source",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID10821",
+     "@type": "ChemicalSubstance",
+     "name": "phenylacetylene (1)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alkyne substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID15627",
+     "@type": "ChemicalSubstance",
+     "name": "4-tert-butylstyrene (3)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alkene substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID9237",
+     "@type": "ChemicalSubstance",
+     "name": "DABCO (amine of 5a)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID18196",
+     "@type": "ChemicalSubstance",
+     "name": "PMDTA (amine of 5b)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID7972",
+     "@type": "ChemicalSubstance",
+     "name": "N-methylmorpholine (amine of 5c)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID81531",
+     "@type": "ChemicalSubstance",
+     "name": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID8471",
+     "@type": "ChemicalSubstance",
+     "name": "triethylamine",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap; also the stabiliser in commercial HBpin",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID1146",
+     "@type": "ChemicalSubstance",
+     "name": "trimethylamine",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID23664764",
+     "@type": "ChemicalSubstance",
+     "name": "lithium tert-butoxide (LiOtBu)",
+     "nrr:entityType": "compound",
+     "nrr:role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID69301",
+     "@type": "ChemicalSubstance",
+     "name": "1,3,5-trimethoxybenzene",
+     "nrr:entityType": "compound",
+     "nrr:role": "NMR internal standard",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID1140",
+     "@type": "ChemicalSubstance",
+     "name": "toluene",
+     "nrr:entityType": "compound",
+     "nrr:role": "solvent",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID8150",
+     "@type": "ChemicalSubstance",
+     "name": "diglyme",
+     "nrr:entityType": "compound",
+     "nrr:role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "https://ror.org/01nrxwf90",
+     "@type": "Organization",
+     "name": "University of Edinburgh",
+     "nrr:entityType": "organization"
+    }
+   ]
+  },
+  "idempotencyKey": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+  "profile": "https://portolansoft.com/profile/nrr/0.2",
+  "record": {
+   "@id": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+   "aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "applicabilityConditions": {
+    "falseNegativesFromC": 80,
+    "hbpinThermalDecompositionFromC": 80,
+    "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis",
+    "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+    "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+    "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+    "tmedaInhibitionTestValidUpToC": 60,
+    "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely"
+   },
+   "attemptType": "evidence-synthesis",
+   "confidence": {
+    "basis": "single-database search with stated terms; classification by the authors; the per-paper spreadsheet is not deposited",
+    "level": "medium"
+   },
+   "contentAddress": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+   "cost": {
+    "note": "manual classification; effort not reported",
+    "papersProcessed": 633,
+    "source": "SI Section S4"
+   },
+   "dateCreated": "2026-09-25T00:00:00Z",
+   "domainTags": [
+    "chemistry"
+   ],
+   "entities": [
+    {
+     "id": "assay:tmeda-inhibition-test",
+     "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+     "note": "a lack of inhibition on adding TMEDA has been read as evidence of true, non-boron catalysis",
+     "role": "the control method under test",
+     "type": "assay"
+    },
+    {
+     "id": "pubchem:CID8037",
+     "label": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+     "role": "BH3 trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "compound:tmeda-bis-borane",
+     "label": "TMEDA.(BH3)2 adduct",
+     "note": "11B NMR -10.6 ppm (q, J = 98 Hz); no registry identifier given",
+     "role": "the trapped species, tested as a catalyst",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID6364989",
+     "label": "pinacolborane (HBpin)",
+     "role": "hydroboration reagent",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID6331",
+     "label": "borane (BH3)",
+     "role": "the hidden catalyst",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID9833925",
+     "label": "borane dimethyl sulfide (Me2S.BH3)",
+     "role": "positive-control BH3 source",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID10821",
+     "label": "phenylacetylene (1)",
+     "role": "alkyne substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID15627",
+     "label": "4-tert-butylstyrene (3)",
+     "role": "alkene substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID9237",
+     "label": "DABCO (amine of 5a)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID18196",
+     "label": "PMDTA (amine of 5b)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID7972",
+     "label": "N-methylmorpholine (amine of 5c)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID81531",
+     "label": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID8471",
+     "label": "triethylamine",
+     "role": "alternative trap; also the stabiliser in commercial HBpin",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID1146",
+     "label": "trimethylamine",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID23664764",
+     "label": "lithium tert-butoxide (LiOtBu)",
+     "role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID69301",
+     "label": "1,3,5-trimethoxybenzene",
+     "role": "NMR internal standard",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID1140",
+     "label": "toluene",
+     "role": "solvent",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID8150",
+     "label": "diglyme",
+     "role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "https://ror.org/01nrxwf90",
+     "label": "University of Edinburgh",
+     "note": "EaStCHEM School of Chemistry; all four authors",
+     "type": "organization"
+    }
+   ],
+   "findings": [
+    {
+     "conditions": {
+      "accessed": "2024-08",
+      "database": "SciFinder",
+      "searchTerms": [
+       "Hydroboration",
+       "HBpin",
+       "Pinacolborane",
+       "HBcat",
+       "Catecholborane",
+       "Borylations"
+      ],
+      "window": "January 2010 to September 2024"
+     },
+     "controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "effect": {
+      "comparedTo": "23 of 421 (5 %) before May 2020",
+      "direction": "increase",
+      "metric": "publications testing for hidden boron catalysis after May 2020",
+      "n": 212,
+      "note": "23 % after; 24 of the 49 used TMEDA inhibition",
+      "unit": "publications",
+      "value": 49
+     },
+     "evidence": [
+      {
+       "label": "SI Section S4 and Figure S6",
+       "locator": "SI Section S4",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "after": {
+         "percent": 23,
+         "publications": 212,
+         "testedForHiddenCatalysis": 49
+        },
+        "before": {
+         "note": "before May 2020 (Org. Lett. 2020, 22, 4107)",
+         "percent": 5,
+         "publications": 421,
+         "testedForHiddenCatalysis": 23
+        },
+        "publications": 633,
+        "tmeda": {
+         "percentOfTested": 49,
+         "publications": 24
+        }
+       }
+      }
+     ],
+     "id": "uptake",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "question": "How many catalysed-HBpin-hydroboration publications test for hidden boron catalysis, before and after the TMEDA method was introduced in May 2020?",
+     "target": {
+      "label": "catalysed hydroboration literature with HBpin, 2010 to September 2024",
+      "type": "other"
+     }
+    },
+    {
+     "conditions": {
+      "temperatureLimitC": 60
+     },
+     "controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "effect": {
+      "direction": "not-applicable",
+      "metric": "TMEDA inhibition tests run above 60 °C",
+      "n": 24,
+      "note": "63 %; a further 7 (29 %) applied the test to carbonyl substrates, which are not compatible with it",
+      "unit": "publications",
+      "value": 15
+     },
+     "evidence": [
+      {
+       "label": "SI Section S4",
+       "locator": "SI Section S4",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "above60": {
+         "percentOfTmeda": 63,
+         "publications": 15
+        },
+        "carbonyls": {
+         "note": "carbonyl compounds are not compatible with this test method",
+         "percentOfTmeda": 29,
+         "publications": 7
+        }
+       }
+      }
+     ],
+     "id": "tests-above-60",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "These are the published negatives the kinetics invalidate as evidence of true catalysis. The SI gives references 9 to 27 as examples of papers using the test but does not say which of them ran it hot, so they are attached as references here, not as per-paper refutations.",
+     "outcomeClass": "positive",
+     "question": "How many published uses of the TMEDA inhibition test were run above 60 °C, where this study shows the test gives false negatives?",
+     "relatedFindings": [
+      "acs-tmeda-adduct-kinetics#tmeda-test-false-negative-above-60"
+     ],
+     "target": {
+      "identifier": "assay:tmeda-inhibition-test",
+      "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+      "type": "assay"
+     }
+    }
+   ],
+   "integrity": {
+    "contentAddress": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+    "duplicateOf": null,
+    "signature": null,
+    "signer": null,
+    "trustTier": "pilot-unsigned"
+   },
+   "isPartOf": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+   "kind": "attempt",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "operator": {
+    "identifier": "https://ror.org/01nrxwf90",
+    "name": "University of Edinburgh",
+    "type": "Organization"
+   },
+   "outcomeClass": "positive",
+   "outcomeSummary": "633 publications; 5 % tested for hidden catalysis before May 2020 and 23 % after; 24 used TMEDA inhibition, 15 of them above 60 °C and 7 on carbonyl substrates.",
+   "pathType": "literature",
+   "performers": [
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Julie Macleod",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Andrew D. Bage",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Leonie M. Meyer",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Stephen P. Thomas",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    }
+   ],
+   "profile": "https://portolansoft.com/profile/nrr/0.2",
+   "provenanceNotes": [
+    "SI references 9 to 27 are given as 'some examples where TMEDA reaction inhibition has been used as a detection method'; the SI does not say which of them ran the test above 60 °C The ingest therefore does not assert per paper that its negative was invalidated; the count of 15 is the authors' aggregate.",
+    "The per-paper spreadsheet behind Figure S6 is not deposited."
+   ],
+   "question": "How widely is the TMEDA inhibition test used, and how often above the temperature at which it is now shown to fail?",
+   "relations": [
+    {
+     "target": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+     "type": "isPartOf"
+    }
+   ],
+   "screenedSummary": {
+    "afterMay2020": 212,
+    "beforeMay2020": 421,
+    "exampleReferencesListed": 19,
+    "publications": 633,
+    "testedAfter": 49,
+    "testedBefore": 23,
+    "tmedaAbove60C": 15,
+    "tmedaOnCarbonyls": 7,
+    "usedTmedaInhibition": 24
+   },
+   "slug": "acs-tmeda-literature-survey",
+   "sourceLicense": "CC BY 4.0",
+   "sources": [
+    {
+     "identifier": "doi:10.1021/acs.orglett.4c03591",
+     "label": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+     "role": "source-publication",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:07Z",
+      "integrity": "none",
+      "version": "VoR"
+     },
+     "url": "https://doi.org/10.1021/acs.orglett.4c03591"
+    },
+    {
+     "data": [
+      {
+       "accession": "PMC11555781",
+       "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+       "format": "application/pdf",
+       "label": "ol4c03591_si_001.pdf",
+       "repository": "Europe PMC",
+       "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4",
+       "size": 977253,
+       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+      }
+     ],
+     "identifier": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+     "label": "Supporting Information (PDF)",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "note": "The data underlying this study are available in the published article and its Supporting Information.",
+     "role": "supplementary",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+    },
+    {
+     "identifier": "doi:10.1021/acsomega.2c01866",
+     "label": "Shi Y.; Wang Y.; Huang Z.; Zhang F.; Shao Y. tBuOLi-Promoted Hydroboration of Esters and Epoxides. ACS Omega, 2022, 7, 18876-18886.",
+     "note": "SI reference 9: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:09Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1021/acs.joc.1c01208",
+     "label": "Ton N. N. H.; Mai B. K.; Nguyen T. V. Tropylium-Promoted Hydroboration Reactions: Mechanistic Insights Via Experimental and Computational Studies. J. Org. Chem.",
+     "note": "SI reference 10: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:04Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1021/acscatal.2c03901",
+     "label": "Doan S. H.; Ton N. N. H.; Mai B. K.; Nguyen T. V. Organosuperbase-Catalyzed 1,1-Diboration of Alkynes. ACS Catal., 2022, 12, 12409-12418.",
+     "note": "SI reference 11: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:09Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1021/acs.joc.1c03012",
+     "label": "Liu J.; Wu C.; Hu T.; Yang W.; Xie Y.; Shi Y.; Liu Q.; Shao Y.; Zhang F. Hexamethyldisilazane Lithium (LiHMDS)-Promoted Hydroboration of Alkynes and Alkenes wit",
+     "note": "SI reference 12: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:05Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1021/acs.orglett.1c00809",
+     "label": "Zou Y.; Zhang B.; Wang L.; Zhang H. Benzoic Acid-Promoted C2-H Borylation of Indoles with Pinacolborane. Org. Lett., 2021, 23, 2821-2825.",
+     "note": "SI reference 13: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:06Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d3qi00478c",
+     "label": "Lewandowski D.; Hreczycho G. Cobalt Pincer-type Complexes Demonstrating Unique Selectivity for the Hydroboration Reaction of Olefins Under Mild Conditions. Inor",
+     "note": "SI reference 14: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:17Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1002/chem.202202794",
+     "label": "Kumar R.; Dutta S.; Sharma V.; Singh P. P.; Gonnade R. G.; Koley D.; Sen S. S. Monomeric Magnesium Catalyzed Alkene and Alkyne Hydroboration. Chem. Eur. J., 202",
+     "note": "SI reference 15: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:00Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1002/ejic.202200129",
+     "label": "Lee J.; Fan J.; Koh A.-P.; Joslyn Cheang W.-J.; Yang M.-C.; Su M.-D.; So C.-W. Amidinato Isopropylmethylamidosilylene-Catalyzed Hydroboration of Carbonyl Compou",
+     "note": "SI reference 16: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:01Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d1cc04148g",
+     "label": "Kumar R.; Bisai M. K.; Jain S.; Vanka K.; Sen S. S. Deoxygenative Hydroboration of Primary and Secondary Amides: A Catalyst-free and Solvent-free Approach. Chem",
+     "note": "SI reference 17: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:12Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1016/j.jorganchem.2021.121924",
+     "label": "Bisai M. K.; Gour K.; Das T.; Vanka K.; Sen S. S. Readily Available Lithium Compounds as Catalysts for the Hydroboration of Carbodiimides and Esters. J. Organom",
+     "note": "SI reference 18: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:02Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d2gc04163d",
+     "label": "Huninik P.; Szyling J.; Czapik A.; Walkowiak J. Organocatalytic Hydroboration of Olefins in Pyrrolidinium Ionic Liquids. Green Chem., 2023, 25, 3715-3722.",
+     "note": "SI reference 19: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:14Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d2nj05849a",
+     "label": "Yan B.; Ma X.; Pang Z.; Yang Z. NaHBEt3-catalyzed HBpin Hydroboration and Deoxygenation of Primary, Secondary, and Tertiary Amides. New J. Chem., 2023, 47, 3202",
+     "note": "SI reference 20: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:15Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d1dt00364j",
+     "label": "Bisai M. K.; Gour K.; Das T.; Vanka K.; Sen S. S. Lithium Compound Catalyzed Deoxygenative Hydroboration of Primary, Secondary and Tertiary Amides. Dalton Trans",
+     "note": "SI reference 21: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:14Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1002/chem.202103009",
+     "label": "Liu L.; Lo S.-K.; Smith C.; Goicoechea J. M. Pincer-Supported Gallium Complexes for the Catalytic Hydroboration of Aldehydes, Ketones and Carbon Dioxide. Chem. ",
+     "note": "SI reference 22: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:46:59Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d1cc06963b",
+     "label": "Shlian D. G.; Amemiya E.; Parkin G. Synthesis of Bis(2-pyridylthio)methyl Zinc Hydride and Catalytic Hydrosilylation and Hydroboration of CO2. Chem. Commun., 20",
+     "note": "SI reference 23: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:13Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1002/anie.202207647",
+     "label": "Lunic D.; Sanosa N.; Funes-Ardoiz I.; Teskey C. J. Mild and Chemoselective Carboxylic Acid Reduction Promoted by Borane Catalysis. Angew. Chem. Int. Ed., 2022, ",
+     "note": "SI reference 24: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:46:58Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1021/acs.inorgchem.0c03451",
+     "label": "Garhwal S.; Kroeger A. A.; Thenarukandiyil R.; Fridman N.; Karton A.; de Ruiter G. Manganese-Catalyzed Hydroboration of Terminal Olefins and Metal-Dependent Sel",
+     "note": "SI reference 25: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:03Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1021/acs.inorgchem.0c03507",
+     "label": "Chia C.-C.; Teo Y.-C.; Cham N.; Ho S. Y.-F.; Ng Z.-H.; Toh H.-M.; Mezailles N.; So C.-W. Aluminum-Hydride-Catalyzed Hydroboration of Carbon Dioxide. Inorg. Chem",
+     "note": "SI reference 26: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:04Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    },
+    {
+     "identifier": "doi:10.1039/d3dt03333c",
+     "label": "Sokolnicki T.; Alharbi M. M.; van Ingen Y.; Rahim S.; Pramanik M.; Roldan A.; Walkowiak J.; Melen R. L. Reactivity of a Series of Triaryl Borates, B(OArx)3, in ",
+     "note": "SI reference 27: cited as an example of a publication using TMEDA reaction inhibition as the detection method for hidden boron catalysis; whether its test was run above 60 °C is not stated per paper",
+     "role": "reference",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:16Z",
+      "integrity": "none",
+      "version": "VoR"
+     }
+    }
+   ],
+   "stages": [
+    {
+     "label": "all catalysed hydroboration publications with HBpin, January 2010 to September 2024",
+     "method": "spreadsheet classification of each publication by whether and how it tested for hidden boron catalysis",
+     "note": "SI Section S4 and Figure S6",
+     "performedBy": [
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Julie Macleod",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Andrew D. Bage",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Leonie M. Meyer",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Stephen P. Thomas",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "queries": [
+      {
+       "date": "2024-08",
+       "recordsFound": 633,
+       "text": "Hydroboration, HBpin, Pinacolborane, HBcat, Catecholborane, Borylations",
+       "verbatim": true
+      }
+     ],
+     "recordsFound": 633,
+     "sourcesSearched": [
+      {
+       "coverage": "January 2010 to September 2024",
+       "kind": "abstracting database",
+       "name": "SciFinder",
+       "platform": "CAS SciFinder-n",
+       "url": "https://scifinder-n.cas.org/"
+      }
+     ],
+     "stage": "literature-search"
+    }
+   ],
+   "studyId": "acs-tmeda",
+   "successCriteria": "A count of publications using the test, split by whether the test temperature exceeded 60 °C.",
+   "title": "Of 633 catalysed HBpin hydroboration papers since 2010, 24 used TMEDA inhibition and 15 of those ran it above 60 °C",
+   "version": "1",
+   "visibility": "public"
+  },
+  "visibility": "public"
+ },
+ "tool": "nrr_deposit"
+}

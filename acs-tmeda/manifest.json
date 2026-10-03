@@ -1,0 +1,57 @@
+{
+ "study": "acs-tmeda",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "26bb6b5e97d5251da01206d6c1d9a4b9b6f19b24",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.1021/acs.orglett.4c03591",
+  "label": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "acs-tmeda-path",
+   "id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "partial",
+   "findings": 0
+  },
+  {
+   "slug": "acs-tmeda-adduct-kinetics",
+   "id": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "refuted",
+   "findings": 9
+  },
+  {
+   "slug": "acs-tmeda-amine-screen",
+   "id": "urn:portolan:nrr:sha256:71ad120a3ec26bf63a8b128eaa0708e89b5bd06b4e0d5661c7caa0099a26916c",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 7
+  },
+  {
+   "slug": "acs-tmeda-loading",
+   "id": "urn:portolan:nrr:sha256:9c68fcca19e5ba1241d8e31cb10f5e941290723c6a6530f59b24b85ff9d8e6bd",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "partial",
+   "findings": 2
+  },
+  {
+   "slug": "acs-tmeda-literature-survey",
+   "id": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+   "kind": "attempt",
+   "attemptType": "evidence-synthesis",
+   "outcomeClass": "positive",
+   "findings": 2
+  }
+ ]
+}

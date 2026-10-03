@@ -1,0 +1,2086 @@
+{
+ "arguments": {
+  "attachments": [],
+  "crate": {
+   "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+     "nrr": "https://portolansoft.com/schema/nrr/0.2#",
+     "prov": "http://www.w3.org/ns/prov#"
+    }
+   ],
+   "@graph": [
+    {
+     "@id": "ro-crate-metadata.json",
+     "@type": "CreativeWork",
+     "about": {
+      "@id": "./"
+     },
+     "conformsTo": [
+      {
+       "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      {
+       "@id": "https://portolansoft.com/profile/nrr/0.2"
+      }
+     ]
+    },
+    {
+     "@id": "./",
+     "@type": "Dataset",
+     "conformsTo": {
+      "@id": "https://portolansoft.com/profile/nrr/0.2"
+     },
+     "datePublished": "2026-09-25T00:00:00Z",
+     "description": "Over what temperature range does the TMEDA.(BH3)2 adduct remain inert as a hydroboration catalyst, compared with free BH3 and with no catalyst?",
+     "hasPart": [
+      {
+       "@id": "#attempt"
+      },
+      {
+       "@id": "#finding-alkyne-60"
+      },
+      {
+       "@id": "#finding-alkyne-80"
+      },
+      {
+       "@id": "#finding-alkyne-100"
+      },
+      {
+       "@id": "#finding-alkene-60"
+      },
+      {
+       "@id": "#finding-alkene-80"
+      },
+      {
+       "@id": "#finding-alkene-100"
+      },
+      {
+       "@id": "#finding-tmeda-test-false-negative-above-60"
+      },
+      {
+       "@id": "#finding-hidden-catalysis-demonstration"
+      },
+      {
+       "@id": "#finding-hbpin-thermal-decomposition"
+      }
+     ],
+     "identifier": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+     "isPartOf": {
+      "@id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb"
+     },
+     "isSupplementTo": [
+      {
+       "@id": "https://doi.org/10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "keywords": [
+      "chemistry"
+     ],
+     "license": {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "mainEntity": {
+      "@id": "#attempt"
+     },
+     "mentions": [
+      {
+       "@id": "assay:tmeda-inhibition-test"
+      },
+      {
+       "@id": "pubchem:CID8037"
+      },
+      {
+       "@id": "compound:tmeda-bis-borane"
+      },
+      {
+       "@id": "pubchem:CID6364989"
+      },
+      {
+       "@id": "pubchem:CID6331"
+      },
+      {
+       "@id": "pubchem:CID9833925"
+      },
+      {
+       "@id": "pubchem:CID10821"
+      },
+      {
+       "@id": "pubchem:CID15627"
+      },
+      {
+       "@id": "pubchem:CID9237"
+      },
+      {
+       "@id": "pubchem:CID18196"
+      },
+      {
+       "@id": "pubchem:CID7972"
+      },
+      {
+       "@id": "pubchem:CID81531"
+      },
+      {
+       "@id": "pubchem:CID8471"
+      },
+      {
+       "@id": "pubchem:CID1146"
+      },
+      {
+       "@id": "pubchem:CID23664764"
+      },
+      {
+       "@id": "pubchem:CID69301"
+      },
+      {
+       "@id": "pubchem:CID1140"
+      },
+      {
+       "@id": "pubchem:CID8150"
+      },
+      {
+       "@id": "https://ror.org/01nrxwf90"
+      }
+     ],
+     "name": "TMEDA.(BH3)2 is inert at 60 °C but catalyses HBpin hydroboration at 80 and 100 °C, so the TMEDA inhibition test gives false negatives above 60 °C",
+     "nrr:aiUseDeclaration": {
+      "statement": "The article makes no statement about the use of AI tools."
+     },
+     "nrr:applicabilityConditions": {
+      "falseNegativesFromC": 80,
+      "hbpinThermalDecompositionFromC": 80,
+      "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis",
+      "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+      "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+      "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+      "tmedaInhibitionTestValidUpToC": 60,
+      "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely"
+     },
+     "nrr:confidence": {
+      "basis": "designated free-BH3 control and no-catalyst background at every temperature; threshold defined; two substrates",
+      "level": "high"
+     },
+     "nrr:cost": {
+      "note": "bench-scale NMR kinetics; runs are the average of two; no monetary cost reported",
+      "source": "SI Section S3"
+     },
+     "nrr:isPartOf": [
+      {
+       "@id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb"
+      }
+     ],
+     "nrr:kind": "attempt",
+     "nrr:outcomeClass": "refuted",
+     "nrr:outcomeSummary": "Alkyne: 0.3 mM/s and 4 % at 60 °C against 9.6 mM/s and 87 % for free BH3; 50 % at 80 °C and 94 % at 100 °C. Alkene: 0.02 mM/s and 3 % at 60 °C against 1.8 mM/s and >95 %; complete at 80 and 100 °C. HBpin alone decomposes to BH3 from 80 °C.",
+     "nrr:pathType": "experiment",
+     "nrr:provenanceNotes": [
+      "Attempt headline is 'refuted' because the finding the authors built the paper around is the refutation of the inference 'no inhibition means true catalysis' above 60 °C; the six kinetic findings carry the data, two of them informative negatives at 60 °C."
+     ],
+     "nrr:slug": "acs-tmeda-adduct-kinetics",
+     "nrr:sourceLicense": "CC BY 4.0",
+     "nrr:studyId": "acs-tmeda",
+     "nrr:successCriteria": "Adduct-catalysed rate indistinguishable from the no-catalyst background and far below the Me2S.BH3 control, with less than 5 % product.",
+     "nrr:visibility": "public",
+     "prov:used": [
+      {
+       "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf"
+      }
+     ],
+     "prov:wasAttributedTo": [
+      {
+       "@id": "#operator"
+      },
+      {
+       "@id": "#performer-julie-macleod-writing"
+      },
+      {
+       "@id": "#performer-andrew-d-bage-writing"
+      },
+      {
+       "@id": "#performer-leonie-m-meyer-writing"
+      },
+      {
+       "@id": "#performer-stephen-p-thomas-writing"
+      }
+     ],
+     "version": "1"
+    },
+    {
+     "@id": "#operator",
+     "@type": "Organization",
+     "identifier": "https://ror.org/01nrxwf90",
+     "name": "University of Edinburgh"
+    },
+    {
+     "@id": "#performer-julie-macleod-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Julie Macleod",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-andrew-d-bage-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Andrew D. Bage",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-leonie-m-meyer-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Leonie M. Meyer",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-stephen-p-thomas-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Stephen P. Thomas",
+     "nrr:affiliation": "University of Edinburgh",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#finding-alkyne-60",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 60 °C?",
+     "nrr:conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "phenylacetylene (1)",
+      "temperatureC": 60,
+      "yieldPct": 4,
+      "yieldTime": "3 h"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "9.6 mM/s and 87 % in 40 min for the Me2S.BH3 control at 60 °C",
+      "direction": "none",
+      "metric": "initial rate of boronic ester formation",
+      "note": "4 % of product after 3 h",
+      "unit": "mM/s",
+      "value": 0.3
+     },
+     "nrr:evidence": [
+      {
+       "label": "Scheme 2 and text",
+       "locator": "Scheme 2 and text",
+       "quote": "only trace alkenyl boronic ester 2 observed after 40 min and only 4% after 3 h ... initial rate (0.3 mM s-1)",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.3,
+        "yieldPct": 4,
+        "yieldTime": "3 h"
+       }
+      }
+     ],
+     "nrr:informativeness": "informative",
+     "nrr:informativenessReason": "designated positive control passed; negative control clean; sensitivity or power stated",
+     "nrr:note": "not sufficiently labile to meaningfully catalyse the reaction",
+     "nrr:outcomeClass": "negative-no-effect",
+     "nrr:question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 60 °C?",
+     "nrr:replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-alkyne-80",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 80 °C?",
+     "nrr:conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "phenylacetylene (1)",
+      "temperatureC": 80,
+      "yieldPct": 50,
+      "yieldTime": "40 min"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "9.6 mM/s and 87 % in 40 min for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "50 % of product after 40 min",
+      "unit": "mM/s",
+      "value": 0.6
+     },
+     "nrr:evidence": [
+      {
+       "label": "Scheme 2 and text",
+       "locator": "Scheme 2 and text",
+       "quote": "50% of the boronic ester 2 produced at 80 °C ... 0.6 mM s-1",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.6,
+        "yieldPct": 50,
+        "yieldTime": "40 min"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "sufficiently labile to release catalytically active BH3",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 80 °C?",
+     "nrr:replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-alkyne-100",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 100 °C?",
+     "nrr:conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "phenylacetylene (1)",
+      "temperatureC": 100,
+      "yieldPct": 94,
+      "yieldTime": "40 min"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "9.6 mM/s and 87 % in 40 min for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "94 % of product after 40 min",
+      "unit": "mM/s",
+      "value": 4.56
+     },
+     "nrr:evidence": [
+      {
+       "label": "Scheme 2 and text",
+       "locator": "Scheme 2 and text",
+       "quote": "94% at 100 °C after 40 min ... 4.56 mM s-1",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 4.56,
+        "yieldPct": 94,
+        "yieldTime": "40 min"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "sufficiently labile to release catalytically active BH3",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 100 °C?",
+     "nrr:replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-alkene-60",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 60 °C?",
+     "nrr:conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "4-tert-butylstyrene (3)",
+      "temperatureC": 60,
+      "yieldPct": 3,
+      "yieldTime": "7 h"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "1.8 mM/s and >95 % in 7 h for the Me2S.BH3 control at 60 °C",
+      "direction": "none",
+      "metric": "initial rate of boronic ester formation",
+      "note": "3 % of product after 7 h",
+      "unit": "mM/s",
+      "value": 0.02
+     },
+     "nrr:evidence": [
+      {
+       "label": "Scheme 3 and text",
+       "locator": "Scheme 3 and text",
+       "quote": "only 3% of the boronic ester 4 was observed after 7 h, and 6% after 19 h. The initial rate (0.02 mM s-1)",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.02,
+        "yieldPct": 3,
+        "yieldTime": "7 h"
+       }
+      }
+     ],
+     "nrr:informativeness": "informative",
+     "nrr:informativenessReason": "designated positive control passed; negative control clean; sensitivity or power stated",
+     "nrr:note": "not sufficiently labile to meaningfully catalyse the reaction",
+     "nrr:outcomeClass": "negative-no-effect",
+     "nrr:question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 60 °C?",
+     "nrr:replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-alkene-80",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 80 °C?",
+     "nrr:conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "4-tert-butylstyrene (3)",
+      "temperatureC": 80,
+      "yieldPct": 100,
+      "yieldTime": "19 h"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "1.8 mM/s and >95 % in 7 h for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "100 % of product after 19 h",
+      "unit": "mM/s",
+      "value": 0.19
+     },
+     "nrr:evidence": [
+      {
+       "label": "Scheme 3 and text",
+       "locator": "Scheme 3 and text",
+       "quote": "complete conversion to the boronic ester 4 in 19 h at 80 °C ... initial rates of 0.19",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.19,
+        "yieldPct": 100,
+        "yieldTime": "19 h"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "sufficiently labile to release catalytically active BH3",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 80 °C?",
+     "nrr:replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-alkene-100",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 100 °C?",
+     "nrr:conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "4-tert-butylstyrene (3)",
+      "temperatureC": 100,
+      "yieldPct": 100,
+      "yieldTime": "4 h"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "1.8 mM/s and >95 % in 7 h for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "100 % of product after 4 h",
+      "unit": "mM/s",
+      "value": 0.7
+     },
+     "nrr:evidence": [
+      {
+       "label": "Scheme 3 and text",
+       "locator": "Scheme 3 and text",
+       "quote": "in 4 h at 100 °C ... 0.7 mM s-1",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.7,
+        "yieldPct": 100,
+        "yieldTime": "4 h"
+       }
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "sufficiently labile to release catalytically active BH3",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 100 °C?",
+     "nrr:replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-tmeda-test-false-negative-above-60",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does a lack of inhibition by TMEDA demonstrate true, non-boron catalysis at the temperatures the test is used at?",
+     "nrr:conditions": {
+      "falseNegativeFromC": 80,
+      "literatureUseAboveLimitPct": 63,
+      "validUpToC": 60
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "nrr:effect": {
+      "direction": "not-applicable",
+      "metric": "temperature above which the trapped adduct catalyses hydroboration",
+      "note": "50 % product at 80 °C and 94 % at 100 °C for the alkyne, complete conversion at 80 and 100 °C for the alkene, with the adduct as the only BH3 source",
+      "unit": "°C",
+      "value": 60
+     },
+     "nrr:evidence": [
+      {
+       "label": "Abstract",
+       "locator": "Abstract",
+       "quote": "Kinetic analyses showed that TMEDA inhibition is only applicable below 60 °C and that other amine traps are likewise ineffective.",
+       "source": "10.1021/acs.orglett.4c03591"
+      },
+      {
+       "label": "Conclusion",
+       "locator": "final paragraph",
+       "quote": "Application of the TMEDA inhibition test, to identify hidden BH3 catalysis, was found to be unsuitable above 60 °C when using a one-to-one loading of TMEDA to 'catalyst'. Higher loading of TMEDA, with respect to catalyst, offered increased inhibition of BH3 catalysis but did not give complete inhibition of catalysis; thus, false negatives remain possible. Reaction at temperatures of >=80 °C will generate BH3 by thermal decomposition of HBpin, and therefore will always be susceptible to hidden BH3 catalysis.",
+       "source": "10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "nrr:failureModes": [
+      "reagent-nonspecific"
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "an affirmative refutation is judged on the refuting analysis, not on the controls of the run it refutes",
+     "nrr:note": "What is refuted is the inference 'no inhibition, therefore true catalysis' above 60 °C, not the existence of hidden catalysis. The record keeps the test valid at or below 60 °C.",
+     "nrr:outcomeClass": "refuted",
+     "nrr:question": "Does a lack of inhibition by TMEDA demonstrate true, non-boron catalysis at the temperatures the test is used at?",
+     "nrr:relatedFindings": [
+      "acs-tmeda-adduct-kinetics#alkyne-80",
+      "acs-tmeda-adduct-kinetics#alkyne-100",
+      "acs-tmeda-adduct-kinetics#alkene-80",
+      "acs-tmeda-adduct-kinetics#alkene-100"
+     ],
+     "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "nrr:target": {
+      "identifier": "assay:tmeda-inhibition-test",
+      "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+      "type": "assay"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-hidden-catalysis-demonstration",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does TMEDA added to a deliberately hidden BH3-catalysed reaction inhibit it at 60 °C, and does the inhibition survive heating to 100 °C?",
+     "nrr:conditions": {
+      "heatedTo100AtMin": 180,
+      "nucleophile": "LiOtBu 10 mol %",
+      "tmedaAddedAtMin": 90,
+      "tmedaEquiv": 0.1
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "expected": "hydroboration proceeds",
+       "kind": "internal-positive",
+       "label": "LiOtBu 10 mol % generating BH3 from HBpin",
+       "observed": "product forming over 90 min at 60 °C",
+       "passed": true
+      }
+     },
+     "nrr:effect": {
+      "direction": "not-applicable",
+      "metric": "inhibition on adding 0.1 eq TMEDA at 60 °C",
+      "value": "complete, lost at 100 °C"
+     },
+     "nrr:evidence": [
+      {
+       "label": "SI S3.4 and Figure S4",
+       "locator": "SI Section S3.4, Figure S4",
+       "quote": "LiOtBu (10 mol percent) decomposes HBpin to BH3 and catalyses phenylacetylene hydroboration at 60 °C; TMEDA (0.1 eq) added at 90 min inhibits the reaction; moving the vial to 100 °C at 180 min restores product formation (SI S3.4, Figure S4)",
+       "source": "10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does TMEDA added to a deliberately hidden BH3-catalysed reaction inhibit it at 60 °C, and does the inhibition survive heating to 100 °C?",
+     "nrr:target": {
+      "identifier": "assay:tmeda-inhibition-test",
+      "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+      "type": "assay"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-hbpin-thermal-decomposition",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "At what temperature does pinacolborane alone decompose to BH3?",
+     "nrr:conditions": {
+      "bh3ObservedFromC": 80,
+      "duration": "20 h",
+      "otherDecompositionFromC": 90
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no BH3",
+       "kind": "background",
+       "label": "distilled HBpin with Et3N at room temperature, 60 and 70 °C for 20 h",
+       "observed": "no decomposition",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "nrr:effect": {
+      "direction": "not-applicable",
+      "metric": "lowest temperature at which Et3N.BH3 is observed by 11B NMR after 20 h",
+      "unit": "°C",
+      "value": 80
+     },
+     "nrr:evidence": [
+      {
+       "label": "SI S3.5 and Figure S5",
+       "locator": "SI Section S3.5, Figure S5",
+       "quote": "no decomposition of distilled HBpin with Et3N after 20 h at room temperature, 60 or 70 °C; Et3N.BH3 observed after 20 h at 80 °C; other decomposition products at 90 and 100 °C (SI S3.5, Figure S5); commercial HBpin contains 0.1 to 1.5 percent triethylamine and often trace BH3",
+       "source": "10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "This is why the background control of the amine screen fails at 80 °C, and why the authors say any HBpin hydroboration at or above 80 °C is inherently susceptible to hidden BH3 catalysis.",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "At what temperature does pinacolborane alone decompose to BH3?",
+     "nrr:target": {
+      "identifier": "pubchem:CID6364989",
+      "label": "pinacolborane (HBpin)",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#stage-1-experiment",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "NMR reaction monitoring of HBpin hydroboration catalysed by Me2S.BH3 or TMEDA.(BH3)2",
+     "nrr:conditions": {
+      "solvents": [
+       "toluene",
+       "diglyme"
+      ],
+      "temperaturesC": [
+       60,
+       80,
+       100
+      ]
+     },
+     "nrr:instrument": [
+      "Bruker Avance III 400 and 500 MHz, PRO 500 MHz, Avance I 600 MHz NMR spectrometers"
+     ],
+     "nrr:method": "substrate 2.0 mmol, HBpin 3.0 mmol, 20 mol percent BH3 as Me2S.BH3 (0.40 mmol) or TMEDA.(BH3)2 (0.20 mmol), toluene 0.40 mL; temperatures are external heating-block temperatures; room temperature about 18 °C; 1H NMR against 1,3,5-trimethoxybenzene internal standard, average of two runs; aliquots quenched in Et2O (SI S3.2)",
+     "nrr:note": "TMEDA.(BH3)2 from borane dimethyl sulfide and TMEDA in toluene, 76 percent, 11B NMR -10.6 ppm (q, J = 98 Hz) (SI S3.1)",
+     "nrr:performedBy": [
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Julie Macleod",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Andrew D. Bage",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Leonie M. Meyer",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Stephen P. Thomas",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "nrr:replicates": {
+      "runsAveraged": 2
+     },
+     "nrr:stage": "experiment"
+    },
+    {
+     "@id": "#attempt",
+     "@type": [
+      "CreateAction",
+      "prov:Activity"
+     ],
+     "actionStatus": "FailedActionStatus",
+     "agent": {
+      "@id": "#operator"
+     },
+     "description": "Over what temperature range does the TMEDA.(BH3)2 adduct remain inert as a hydroboration catalyst, compared with free BH3 and with no catalyst?",
+     "hasPart": [
+      {
+       "@id": "#stage-1-experiment"
+      }
+     ],
+     "instrument": [
+      {
+       "@id": "#performer-julie-macleod-writing"
+      },
+      {
+       "@id": "#performer-andrew-d-bage-writing"
+      },
+      {
+       "@id": "#performer-leonie-m-meyer-writing"
+      },
+      {
+       "@id": "#performer-stephen-p-thomas-writing"
+      }
+     ],
+     "name": "TMEDA.(BH3)2 is inert at 60 °C but catalyses HBpin hydroboration at 80 and 100 °C, so the TMEDA inhibition test gives false negatives above 60 °C",
+     "nrr:attemptType": "wet-lab",
+     "nrr:outcomeClass": "refuted",
+     "object": [],
+     "result": [
+      {
+       "@id": "#finding-alkyne-60"
+      },
+      {
+       "@id": "#finding-alkyne-80"
+      },
+      {
+       "@id": "#finding-alkyne-100"
+      },
+      {
+       "@id": "#finding-alkene-60"
+      },
+      {
+       "@id": "#finding-alkene-80"
+      },
+      {
+       "@id": "#finding-alkene-100"
+      },
+      {
+       "@id": "#finding-tmeda-test-false-negative-above-60"
+      },
+      {
+       "@id": "#finding-hidden-catalysis-demonstration"
+      },
+      {
+       "@id": "#finding-hbpin-thermal-decomposition"
+      }
+     ]
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.orglett.4c03591",
+     "@type": "ScholarlyArticle",
+     "name": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+     "nrr:role": "source-publication",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:07Z",
+      "integrity": "none",
+      "version": "VoR"
+     },
+     "nrr:url": "https://doi.org/10.1021/acs.orglett.4c03591"
+    },
+    {
+     "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+     "@type": "Dataset",
+     "name": "Supporting Information (PDF)",
+     "nrr:data": [
+      {
+       "accession": "PMC11555781",
+       "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+       "format": "application/pdf",
+       "label": "ol4c03591_si_001.pdf",
+       "repository": "Europe PMC",
+       "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4",
+       "size": 977253,
+       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+      }
+     ],
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:note": "The data underlying this study are available in the published article and its Supporting Information.",
+     "nrr:role": "supplementary",
+     "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+    },
+    {
+     "@id": "assay:tmeda-inhibition-test",
+     "@type": "DefinedTerm",
+     "name": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+     "nrr:entityType": "assay",
+     "nrr:role": "the control method under test"
+    },
+    {
+     "@id": "pubchem:CID8037",
+     "@type": "ChemicalSubstance",
+     "name": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+     "nrr:entityType": "compound",
+     "nrr:role": "BH3 trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "compound:tmeda-bis-borane",
+     "@type": "ChemicalSubstance",
+     "name": "TMEDA.(BH3)2 adduct",
+     "nrr:entityType": "compound",
+     "nrr:role": "the trapped species, tested as a catalyst"
+    },
+    {
+     "@id": "pubchem:CID6364989",
+     "@type": "ChemicalSubstance",
+     "name": "pinacolborane (HBpin)",
+     "nrr:entityType": "compound",
+     "nrr:role": "hydroboration reagent",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID6331",
+     "@type": "ChemicalSubstance",
+     "name": "borane (BH3)",
+     "nrr:entityType": "compound",
+     "nrr:role": "the hidden catalyst",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID9833925",
+     "@type": "ChemicalSubstance",
+     "name": "borane dimethyl sulfide (Me2S.BH3)",
+     "nrr:entityType": "compound",
+     "nrr:role": "positive-control BH3 source",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID10821",
+     "@type": "ChemicalSubstance",
+     "name": "phenylacetylene (1)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alkyne substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID15627",
+     "@type": "ChemicalSubstance",
+     "name": "4-tert-butylstyrene (3)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alkene substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID9237",
+     "@type": "ChemicalSubstance",
+     "name": "DABCO (amine of 5a)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID18196",
+     "@type": "ChemicalSubstance",
+     "name": "PMDTA (amine of 5b)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID7972",
+     "@type": "ChemicalSubstance",
+     "name": "N-methylmorpholine (amine of 5c)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID81531",
+     "@type": "ChemicalSubstance",
+     "name": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID8471",
+     "@type": "ChemicalSubstance",
+     "name": "triethylamine",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap; also the stabiliser in commercial HBpin",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID1146",
+     "@type": "ChemicalSubstance",
+     "name": "trimethylamine",
+     "nrr:entityType": "compound",
+     "nrr:role": "alternative trap",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID23664764",
+     "@type": "ChemicalSubstance",
+     "name": "lithium tert-butoxide (LiOtBu)",
+     "nrr:entityType": "compound",
+     "nrr:role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID69301",
+     "@type": "ChemicalSubstance",
+     "name": "1,3,5-trimethoxybenzene",
+     "nrr:entityType": "compound",
+     "nrr:role": "NMR internal standard",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID1140",
+     "@type": "ChemicalSubstance",
+     "name": "toluene",
+     "nrr:entityType": "compound",
+     "nrr:role": "solvent",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID8150",
+     "@type": "ChemicalSubstance",
+     "name": "diglyme",
+     "nrr:entityType": "compound",
+     "nrr:role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "https://ror.org/01nrxwf90",
+     "@type": "Organization",
+     "name": "University of Edinburgh",
+     "nrr:entityType": "organization"
+    }
+   ]
+  },
+  "idempotencyKey": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+  "profile": "https://portolansoft.com/profile/nrr/0.2",
+  "record": {
+   "@id": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+   "aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "applicabilityConditions": {
+    "falseNegativesFromC": 80,
+    "hbpinThermalDecompositionFromC": 80,
+    "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis",
+    "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+    "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+    "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+    "tmedaInhibitionTestValidUpToC": 60,
+    "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely"
+   },
+   "attemptType": "wet-lab",
+   "confidence": {
+    "basis": "designated free-BH3 control and no-catalyst background at every temperature; threshold defined; two substrates",
+    "level": "high"
+   },
+   "contentAddress": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+   "cost": {
+    "note": "bench-scale NMR kinetics; runs are the average of two; no monetary cost reported",
+    "source": "SI Section S3"
+   },
+   "dateCreated": "2026-09-25T00:00:00Z",
+   "domainTags": [
+    "chemistry"
+   ],
+   "entities": [
+    {
+     "id": "assay:tmeda-inhibition-test",
+     "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+     "note": "a lack of inhibition on adding TMEDA has been read as evidence of true, non-boron catalysis",
+     "role": "the control method under test",
+     "type": "assay"
+    },
+    {
+     "id": "pubchem:CID8037",
+     "label": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+     "role": "BH3 trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "compound:tmeda-bis-borane",
+     "label": "TMEDA.(BH3)2 adduct",
+     "note": "11B NMR -10.6 ppm (q, J = 98 Hz); no registry identifier given",
+     "role": "the trapped species, tested as a catalyst",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID6364989",
+     "label": "pinacolborane (HBpin)",
+     "role": "hydroboration reagent",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID6331",
+     "label": "borane (BH3)",
+     "role": "the hidden catalyst",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID9833925",
+     "label": "borane dimethyl sulfide (Me2S.BH3)",
+     "role": "positive-control BH3 source",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID10821",
+     "label": "phenylacetylene (1)",
+     "role": "alkyne substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID15627",
+     "label": "4-tert-butylstyrene (3)",
+     "role": "alkene substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID9237",
+     "label": "DABCO (amine of 5a)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID18196",
+     "label": "PMDTA (amine of 5b)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID7972",
+     "label": "N-methylmorpholine (amine of 5c)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID81531",
+     "label": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID8471",
+     "label": "triethylamine",
+     "role": "alternative trap; also the stabiliser in commercial HBpin",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID1146",
+     "label": "trimethylamine",
+     "role": "alternative trap",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID23664764",
+     "label": "lithium tert-butoxide (LiOtBu)",
+     "role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID69301",
+     "label": "1,3,5-trimethoxybenzene",
+     "role": "NMR internal standard",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID1140",
+     "label": "toluene",
+     "role": "solvent",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID8150",
+     "label": "diglyme",
+     "role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "https://ror.org/01nrxwf90",
+     "label": "University of Edinburgh",
+     "note": "EaStCHEM School of Chemistry; all four authors",
+     "type": "organization"
+    }
+   ],
+   "findings": [
+    {
+     "conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "phenylacetylene (1)",
+      "temperatureC": 60,
+      "yieldPct": 4,
+      "yieldTime": "3 h"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "comparedTo": "9.6 mM/s and 87 % in 40 min for the Me2S.BH3 control at 60 °C",
+      "direction": "none",
+      "metric": "initial rate of boronic ester formation",
+      "note": "4 % of product after 3 h",
+      "unit": "mM/s",
+      "value": 0.3
+     },
+     "evidence": [
+      {
+       "label": "Scheme 2 and text",
+       "locator": "Scheme 2 and text",
+       "quote": "only trace alkenyl boronic ester 2 observed after 40 min and only 4% after 3 h ... initial rate (0.3 mM s-1)",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.3,
+        "yieldPct": 4,
+        "yieldTime": "3 h"
+       }
+      }
+     ],
+     "id": "alkyne-60",
+     "informativeness": "informative",
+     "informativenessReason": "designated positive control passed; negative control clean; sensitivity or power stated",
+     "note": "not sufficiently labile to meaningfully catalyse the reaction",
+     "outcomeClass": "negative-no-effect",
+     "question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 60 °C?",
+     "replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "phenylacetylene (1)",
+      "temperatureC": 80,
+      "yieldPct": 50,
+      "yieldTime": "40 min"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "comparedTo": "9.6 mM/s and 87 % in 40 min for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "50 % of product after 40 min",
+      "unit": "mM/s",
+      "value": 0.6
+     },
+     "evidence": [
+      {
+       "label": "Scheme 2 and text",
+       "locator": "Scheme 2 and text",
+       "quote": "50% of the boronic ester 2 produced at 80 °C ... 0.6 mM s-1",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.6,
+        "yieldPct": 50,
+        "yieldTime": "40 min"
+       }
+      }
+     ],
+     "id": "alkyne-80",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "sufficiently labile to release catalytically active BH3",
+     "outcomeClass": "positive",
+     "question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 80 °C?",
+     "replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "phenylacetylene (1)",
+      "temperatureC": 100,
+      "yieldPct": 94,
+      "yieldTime": "40 min"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "comparedTo": "9.6 mM/s and 87 % in 40 min for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "94 % of product after 40 min",
+      "unit": "mM/s",
+      "value": 4.56
+     },
+     "evidence": [
+      {
+       "label": "Scheme 2 and text",
+       "locator": "Scheme 2 and text",
+       "quote": "94% at 100 °C after 40 min ... 4.56 mM s-1",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 4.56,
+        "yieldPct": 94,
+        "yieldTime": "40 min"
+       }
+      }
+     ],
+     "id": "alkyne-100",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "sufficiently labile to release catalytically active BH3",
+     "outcomeClass": "positive",
+     "question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of phenylacetylene (1) with HBpin at 100 °C?",
+     "replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "4-tert-butylstyrene (3)",
+      "temperatureC": 60,
+      "yieldPct": 3,
+      "yieldTime": "7 h"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "comparedTo": "1.8 mM/s and >95 % in 7 h for the Me2S.BH3 control at 60 °C",
+      "direction": "none",
+      "metric": "initial rate of boronic ester formation",
+      "note": "3 % of product after 7 h",
+      "unit": "mM/s",
+      "value": 0.02
+     },
+     "evidence": [
+      {
+       "label": "Scheme 3 and text",
+       "locator": "Scheme 3 and text",
+       "quote": "only 3% of the boronic ester 4 was observed after 7 h, and 6% after 19 h. The initial rate (0.02 mM s-1)",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.02,
+        "yieldPct": 3,
+        "yieldTime": "7 h"
+       }
+      }
+     ],
+     "id": "alkene-60",
+     "informativeness": "informative",
+     "informativenessReason": "designated positive control passed; negative control clean; sensitivity or power stated",
+     "note": "not sufficiently labile to meaningfully catalyse the reaction",
+     "outcomeClass": "negative-no-effect",
+     "question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 60 °C?",
+     "replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "4-tert-butylstyrene (3)",
+      "temperatureC": 80,
+      "yieldPct": 100,
+      "yieldTime": "19 h"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "comparedTo": "1.8 mM/s and >95 % in 7 h for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "100 % of product after 19 h",
+      "unit": "mM/s",
+      "value": 0.19
+     },
+     "evidence": [
+      {
+       "label": "Scheme 3 and text",
+       "locator": "Scheme 3 and text",
+       "quote": "complete conversion to the boronic ester 4 in 19 h at 80 °C ... initial rates of 0.19",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.19,
+        "yieldPct": 100,
+        "yieldTime": "19 h"
+       }
+      }
+     ],
+     "id": "alkene-80",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "sufficiently labile to release catalytically active BH3",
+     "outcomeClass": "positive",
+     "question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 80 °C?",
+     "replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "bh3MolPct": 20,
+      "solvent": "toluene",
+      "substrate": "4-tert-butylstyrene (3)",
+      "temperatureC": 100,
+      "yieldPct": 100,
+      "yieldTime": "4 h"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "comparedTo": "1.8 mM/s and >95 % in 7 h for the Me2S.BH3 control at 60 °C",
+      "direction": "increase",
+      "metric": "initial rate of boronic ester formation",
+      "note": "100 % of product after 4 h",
+      "unit": "mM/s",
+      "value": 0.7
+     },
+     "evidence": [
+      {
+       "label": "Scheme 3 and text",
+       "locator": "Scheme 3 and text",
+       "quote": "in 4 h at 100 °C ... 0.7 mM s-1",
+       "source": "10.1021/acs.orglett.4c03591",
+       "values": {
+        "initialRate_mM_s": 0.7,
+        "yieldPct": 100,
+        "yieldTime": "4 h"
+       }
+      }
+     ],
+     "id": "alkene-100",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "sufficiently labile to release catalytically active BH3",
+     "outcomeClass": "positive",
+     "question": "Does the TMEDA.(BH3)2 adduct catalyse the hydroboration of 4-tert-butylstyrene (3) with HBpin at 100 °C?",
+     "replicates": {
+      "note": "yields are the average of two runs (SI S3.2)",
+      "technical": 2
+     },
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "compound:tmeda-bis-borane",
+      "label": "TMEDA.(BH3)2 adduct",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "falseNegativeFromC": 80,
+      "literatureUseAboveLimitPct": 63,
+      "validUpToC": 60
+     },
+     "controls": {
+      "negative": {
+       "expected": "no product",
+       "kind": "background",
+       "label": "HBpin and substrate with no BH3 source",
+       "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+       "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+       "passed": true,
+       "source": "SI S3.6 and Table 1 control row"
+      },
+      "positive": {
+       "expected": "fast BH3-catalysed hydroboration",
+       "kind": "designated",
+       "label": "Me2S.BH3 as free-BH3 source, 20 mol % BH3",
+       "note": "Me2S.BH3 was used as it has been shown to be a mimic for in situ generated BH3",
+       "observed": "9.6 mM/s, 87 % of 2 in 40 min at 60 °C (alkyne); 1.8 mM/s, >95 % of 4 in 7 h (alkene)",
+       "passed": true,
+       "source": "Schemes 2 and 3"
+      }
+     },
+     "effect": {
+      "direction": "not-applicable",
+      "metric": "temperature above which the trapped adduct catalyses hydroboration",
+      "note": "50 % product at 80 °C and 94 % at 100 °C for the alkyne, complete conversion at 80 and 100 °C for the alkene, with the adduct as the only BH3 source",
+      "unit": "°C",
+      "value": 60
+     },
+     "evidence": [
+      {
+       "label": "Abstract",
+       "locator": "Abstract",
+       "quote": "Kinetic analyses showed that TMEDA inhibition is only applicable below 60 °C and that other amine traps are likewise ineffective.",
+       "source": "10.1021/acs.orglett.4c03591"
+      },
+      {
+       "label": "Conclusion",
+       "locator": "final paragraph",
+       "quote": "Application of the TMEDA inhibition test, to identify hidden BH3 catalysis, was found to be unsuitable above 60 °C when using a one-to-one loading of TMEDA to 'catalyst'. Higher loading of TMEDA, with respect to catalyst, offered increased inhibition of BH3 catalysis but did not give complete inhibition of catalysis; thus, false negatives remain possible. Reaction at temperatures of >=80 °C will generate BH3 by thermal decomposition of HBpin, and therefore will always be susceptible to hidden BH3 catalysis.",
+       "source": "10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "failureModes": [
+      "reagent-nonspecific"
+     ],
+     "id": "tmeda-test-false-negative-above-60",
+     "informativeness": "not-applicable",
+     "informativenessReason": "an affirmative refutation is judged on the refuting analysis, not on the controls of the run it refutes",
+     "note": "What is refuted is the inference 'no inhibition, therefore true catalysis' above 60 °C, not the existence of hidden catalysis. The record keeps the test valid at or below 60 °C.",
+     "outcomeClass": "refuted",
+     "question": "Does a lack of inhibition by TMEDA demonstrate true, non-boron catalysis at the temperatures the test is used at?",
+     "relatedFindings": [
+      "acs-tmeda-adduct-kinetics#alkyne-80",
+      "acs-tmeda-adduct-kinetics#alkyne-100",
+      "acs-tmeda-adduct-kinetics#alkene-80",
+      "acs-tmeda-adduct-kinetics#alkene-100"
+     ],
+     "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+     "target": {
+      "identifier": "assay:tmeda-inhibition-test",
+      "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+      "type": "assay"
+     }
+    },
+    {
+     "conditions": {
+      "heatedTo100AtMin": 180,
+      "nucleophile": "LiOtBu 10 mol %",
+      "tmedaAddedAtMin": 90,
+      "tmedaEquiv": 0.1
+     },
+     "controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "expected": "hydroboration proceeds",
+       "kind": "internal-positive",
+       "label": "LiOtBu 10 mol % generating BH3 from HBpin",
+       "observed": "product forming over 90 min at 60 °C",
+       "passed": true
+      }
+     },
+     "effect": {
+      "direction": "not-applicable",
+      "metric": "inhibition on adding 0.1 eq TMEDA at 60 °C",
+      "value": "complete, lost at 100 °C"
+     },
+     "evidence": [
+      {
+       "label": "SI S3.4 and Figure S4",
+       "locator": "SI Section S3.4, Figure S4",
+       "quote": "LiOtBu (10 mol percent) decomposes HBpin to BH3 and catalyses phenylacetylene hydroboration at 60 °C; TMEDA (0.1 eq) added at 90 min inhibits the reaction; moving the vial to 100 °C at 180 min restores product formation (SI S3.4, Figure S4)",
+       "source": "10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "id": "hidden-catalysis-demonstration",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "question": "Does TMEDA added to a deliberately hidden BH3-catalysed reaction inhibit it at 60 °C, and does the inhibition survive heating to 100 °C?",
+     "target": {
+      "identifier": "assay:tmeda-inhibition-test",
+      "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+      "type": "assay"
+     }
+    },
+    {
+     "conditions": {
+      "bh3ObservedFromC": 80,
+      "duration": "20 h",
+      "otherDecompositionFromC": 90
+     },
+     "controls": {
+      "negative": {
+       "expected": "no BH3",
+       "kind": "background",
+       "label": "distilled HBpin with Et3N at room temperature, 60 and 70 °C for 20 h",
+       "observed": "no decomposition",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "effect": {
+      "direction": "not-applicable",
+      "metric": "lowest temperature at which Et3N.BH3 is observed by 11B NMR after 20 h",
+      "unit": "°C",
+      "value": 80
+     },
+     "evidence": [
+      {
+       "label": "SI S3.5 and Figure S5",
+       "locator": "SI Section S3.5, Figure S5",
+       "quote": "no decomposition of distilled HBpin with Et3N after 20 h at room temperature, 60 or 70 °C; Et3N.BH3 observed after 20 h at 80 °C; other decomposition products at 90 and 100 °C (SI S3.5, Figure S5); commercial HBpin contains 0.1 to 1.5 percent triethylamine and often trace BH3",
+       "source": "10.1021/acs.orglett.4c03591"
+      }
+     ],
+     "id": "hbpin-thermal-decomposition",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "This is why the background control of the amine screen fails at 80 °C, and why the authors say any HBpin hydroboration at or above 80 °C is inherently susceptible to hidden BH3 catalysis.",
+     "outcomeClass": "positive",
+     "question": "At what temperature does pinacolborane alone decompose to BH3?",
+     "target": {
+      "identifier": "pubchem:CID6364989",
+      "label": "pinacolborane (HBpin)",
+      "type": "compound"
+     }
+    }
+   ],
+   "integrity": {
+    "contentAddress": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+    "duplicateOf": null,
+    "signature": null,
+    "signer": null,
+    "trustTier": "pilot-unsigned"
+   },
+   "isPartOf": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+   "kind": "attempt",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "operator": {
+    "identifier": "https://ror.org/01nrxwf90",
+    "name": "University of Edinburgh",
+    "type": "Organization"
+   },
+   "outcomeClass": "refuted",
+   "outcomeSummary": "Alkyne: 0.3 mM/s and 4 % at 60 °C against 9.6 mM/s and 87 % for free BH3; 50 % at 80 °C and 94 % at 100 °C. Alkene: 0.02 mM/s and 3 % at 60 °C against 1.8 mM/s and >95 %; complete at 80 and 100 °C. HBpin alone decomposes to BH3 from 80 °C.",
+   "pathType": "experiment",
+   "performers": [
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Julie Macleod",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Andrew D. Bage",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Leonie M. Meyer",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Stephen P. Thomas",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    }
+   ],
+   "profile": "https://portolansoft.com/profile/nrr/0.2",
+   "provenanceNotes": [
+    "Attempt headline is 'refuted' because the finding the authors built the paper around is the refutation of the inference 'no inhibition means true catalysis' above 60 °C; the six kinetic findings carry the data, two of them informative negatives at 60 °C."
+   ],
+   "question": "Over what temperature range does the TMEDA.(BH3)2 adduct remain inert as a hydroboration catalyst, compared with free BH3 and with no catalyst?",
+   "relations": [
+    {
+     "target": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+     "type": "isPartOf"
+    }
+   ],
+   "slug": "acs-tmeda-adduct-kinetics",
+   "sourceLicense": "CC BY 4.0",
+   "sources": [
+    {
+     "identifier": "doi:10.1021/acs.orglett.4c03591",
+     "label": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+     "role": "source-publication",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:47:07Z",
+      "integrity": "none",
+      "version": "VoR"
+     },
+     "url": "https://doi.org/10.1021/acs.orglett.4c03591"
+    },
+    {
+     "data": [
+      {
+       "accession": "PMC11555781",
+       "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+       "format": "application/pdf",
+       "label": "ol4c03591_si_001.pdf",
+       "repository": "Europe PMC",
+       "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4",
+       "size": 977253,
+       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+      }
+     ],
+     "identifier": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+     "label": "Supporting Information (PDF)",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "note": "The data underlying this study are available in the published article and its Supporting Information.",
+     "role": "supplementary",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+    }
+   ],
+   "stages": [
+    {
+     "conditions": {
+      "solvents": [
+       "toluene",
+       "diglyme"
+      ],
+      "temperaturesC": [
+       60,
+       80,
+       100
+      ]
+     },
+     "instrument": [
+      "Bruker Avance III 400 and 500 MHz, PRO 500 MHz, Avance I 600 MHz NMR spectrometers"
+     ],
+     "label": "NMR reaction monitoring of HBpin hydroboration catalysed by Me2S.BH3 or TMEDA.(BH3)2",
+     "method": "substrate 2.0 mmol, HBpin 3.0 mmol, 20 mol percent BH3 as Me2S.BH3 (0.40 mmol) or TMEDA.(BH3)2 (0.20 mmol), toluene 0.40 mL; temperatures are external heating-block temperatures; room temperature about 18 °C; 1H NMR against 1,3,5-trimethoxybenzene internal standard, average of two runs; aliquots quenched in Et2O (SI S3.2)",
+     "note": "TMEDA.(BH3)2 from borane dimethyl sulfide and TMEDA in toluene, 76 percent, 11B NMR -10.6 ppm (q, J = 98 Hz) (SI S3.1)",
+     "performedBy": [
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Julie Macleod",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Andrew D. Bage",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Leonie M. Meyer",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of Edinburgh",
+       "name": "Stephen P. Thomas",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "replicates": {
+      "runsAveraged": 2
+     },
+     "stage": "experiment"
+    }
+   ],
+   "studyId": "acs-tmeda",
+   "successCriteria": "Adduct-catalysed rate indistinguishable from the no-catalyst background and far below the Me2S.BH3 control, with less than 5 % product.",
+   "title": "TMEDA.(BH3)2 is inert at 60 °C but catalyses HBpin hydroboration at 80 and 100 °C, so the TMEDA inhibition test gives false negatives above 60 °C",
+   "version": "1",
+   "visibility": "public"
+  },
+  "visibility": "public"
+ },
+ "tool": "nrr_deposit"
+}

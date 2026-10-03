@@ -1,0 +1,557 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+   "name": "Is TMEDA inhibition a reliable test for hidden BH3 catalysis, and is any amine a better trap?",
+   "description": "Determine the temperature range over which trapping by N,N,N',N'-tetramethylethylenediamine (TMEDA) inhibits BH3-catalysed hydroboration with pinacolborane (HBpin), and therefore over which a lack of inhibition can be read as evidence of true, non-boron catalysis; and find whether any other amine is a better trap.",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "path",
+   "nrr:studyId": "acs-tmeda",
+   "nrr:slug": "acs-tmeda-path",
+   "nrr:outcomeClass": "partial",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "A temperature range over which TMEDA (or another amine) completely inhibits BH3-catalysed HBpin hydroboration, defined as less than 5 % product by NMR, with the adduct shown not to catalyse on its own.",
+   "keywords": [
+    "chemistry"
+   ],
+   "hasPart": [
+    {
+     "@id": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:71ad120a3ec26bf63a8b128eaa0708e89b5bd06b4e0d5661c7caa0099a26916c"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:9c68fcca19e5ba1241d8e31cb10f5e941290723c6a6530f59b24b85ff9d8e6bd"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-julie-macleod-writing"
+    },
+    {
+     "@id": "#performer-andrew-d-bage-writing"
+    },
+    {
+     "@id": "#performer-leonie-m-meyer-writing"
+    },
+    {
+     "@id": "#performer-stephen-p-thomas-writing"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+    "tmedaInhibitionTestValidUpToC": 60,
+    "falseNegativesFromC": 80,
+    "hbpinThermalDecompositionFromC": 80,
+    "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely",
+    "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+    "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+    "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis"
+   },
+   "nrr:invalidators": [
+    "an amine or other trap shown to sequester BH3 completely at 80 °C and above under hydroboration conditions",
+    "a demonstration that TMEDA.(BH3)2 does not release catalytically active BH3 above 60 °C in a solvent or at a loading not tested here"
+   ],
+   "nrr:untriedBranches": [
+    {
+     "description": "Rely on observing the TMEDA.(BH3)2 adduct by 11B NMR rather than on inhibition alone.",
+     "status": "proposed-by-authors",
+     "source": "final paragraph"
+    },
+    {
+     "description": "Treat any HBpin hydroboration run at or above 80 °C as susceptible to hidden BH3 catalysis.",
+     "status": "proposed-by-authors",
+     "source": "final paragraph"
+    },
+    {
+     "description": "Re-test the published 'true catalysis' claims whose only evidence was TMEDA inhibition above 60 °C, at or below 60 °C or by direct 11B NMR observation of the adduct.",
+     "status": "inferred-by-ingest",
+     "source": "SI Section S4 counts"
+    }
+   ],
+   "nrr:openQuestions": [
+    "Is there any amine or other trap that sequesters BH3 irreversibly above 60 °C under hydroboration conditions?",
+    "Which of the published 'true catalysis' claims validated by TMEDA above 60 °C survive a re-test below 60 °C or by 11B NMR?"
+   ],
+   "nrr:cost": {
+    "note": "bench-scale NMR kinetics; runs are the average of two; no monetary cost reported",
+    "source": "SI Section S3"
+   },
+   "nrr:provenanceNotes": [
+    "The headline negative here is about a method, not a reaction: the record makes the TMEDA inhibition test itself an entity of type assay and the target of a refuted finding, with the valid temperature range in the finding's conditions and in applicabilityConditions.",
+    "Main-text Table 1 is an image in the PMC XML; its colour grid (green: less than 5 % product; pink: product observed) was transcribed cell by cell from the figure file ol4c03591_0004.jpg into curated/tmeda/amine_screen.csv. SI Table S3 repeats it without the colours in the text extraction.",
+    "The article has no author-contribution statement; every author is recorded with the role 'writing' only.",
+    "Rates and yields are read from the text accompanying Schemes 2 and 3 and from SI Tables S1 and S2; yields in SI Schemes S3 and S4 are in images and were not transcribed."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "nrr:confidence": {
+    "level": "high",
+    "basis": "the free-BH3 positive control and the no-catalyst background are both run at every temperature; the inhibition threshold is defined; two substrates agree; the loading and literature analyses are consistent with the kinetics"
+   },
+   "nrr:outcomeSummary": "Kinetic analyses showed that TMEDA inhibition is only applicable below 60 °C and that other amine traps are likewise ineffective. TMEDA reaction doping can still be used to indicate BH3 formation, but users should proceed with caution and rely on observing the adduct by 11B NMR spectroscopy.",
+   "nrr:hypothesis": "If the TMEDA.(BH3)2 adduct is labile at the temperatures hydroboration catalysis is run at, TMEDA will fail to inhibit BH3-catalysed hydroboration there and a lack of inhibition cannot be read as true catalysis.",
+   "nrr:nextSteps": [
+    "Rely on observing the TMEDA.(BH3)2 adduct by 11B NMR rather than on inhibition alone.",
+    "Treat any HBpin hydroboration run at or above 80 °C as susceptible to hidden BH3 catalysis."
+   ],
+   "nrr:governance": {
+    "humanSubjectData": "none",
+    "biosecurityTier": "none"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.1021/acs.orglett.4c03591"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf"
+    },
+    {
+     "@id": "https://doi.org/10.1021/acscatal.0c04051"
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.orglett.0c01168"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic00186a008"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic00062a048"
+    },
+    {
+     "@id": "https://doi.org/10.1016/S0040-4039(00)91802-1"
+    },
+    {
+     "@id": "https://doi.org/10.1055/s-0036-1591719"
+    },
+    {
+     "@id": "https://doi.org/10.1021/jacs.9b10114"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "assay:tmeda-inhibition-test"
+    },
+    {
+     "@id": "pubchem:CID8037"
+    },
+    {
+     "@id": "compound:tmeda-bis-borane"
+    },
+    {
+     "@id": "pubchem:CID6364989"
+    },
+    {
+     "@id": "pubchem:CID6331"
+    },
+    {
+     "@id": "pubchem:CID9833925"
+    },
+    {
+     "@id": "pubchem:CID10821"
+    },
+    {
+     "@id": "pubchem:CID15627"
+    },
+    {
+     "@id": "pubchem:CID9237"
+    },
+    {
+     "@id": "pubchem:CID18196"
+    },
+    {
+     "@id": "pubchem:CID7972"
+    },
+    {
+     "@id": "pubchem:CID81531"
+    },
+    {
+     "@id": "pubchem:CID8471"
+    },
+    {
+     "@id": "pubchem:CID1146"
+    },
+    {
+     "@id": "pubchem:CID23664764"
+    },
+    {
+     "@id": "pubchem:CID69301"
+    },
+    {
+     "@id": "pubchem:CID1140"
+    },
+    {
+     "@id": "pubchem:CID8150"
+    },
+    {
+     "@id": "https://ror.org/01nrxwf90"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "University of Edinburgh",
+   "identifier": "https://ror.org/01nrxwf90"
+  },
+  {
+   "@id": "#performer-julie-macleod-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Julie Macleod",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-andrew-d-bage-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Andrew D. Bage",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-leonie-m-meyer-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Leonie M. Meyer",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-stephen-p-thomas-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Stephen P. Thomas",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.orglett.4c03591",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+   "nrr:url": "https://doi.org/10.1021/acs.orglett.4c03591",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:07Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')"
+  },
+  {
+   "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+   "@type": "Dataset",
+   "nrr:role": "supplementary",
+   "name": "Supporting Information (PDF)",
+   "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles",
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "The data underlying this study are available in the published article and its Supporting Information.",
+   "nrr:data": [
+    {
+     "label": "ol4c03591_si_001.pdf",
+     "repository": "Europe PMC",
+     "accession": "PMC11555781",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles",
+     "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+     "size": 977253,
+     "format": "application/pdf",
+     "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1021/acscatal.0c04051",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Bage et al. 2020: the TMEDA trapping and inhibition test introduced, demonstrated up to 60 °C",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:08Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.orglett.0c01168",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Bage et al. 2020: nucleophile-promoted decomposition of HBpin to BH3",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:06Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic00186a008",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Brown and Murray 1984: TMEDA.(BH3)2 used as a hydroboration reagent at 110 °C",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:11Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic00062a048",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Westcott et al. 1993: nucleophile-promoted degradation of catecholborane",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:10Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/S0040-4039(00)91802-1",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Burgess and Jaspars 1993: 'beware of the Trojan horse'",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:01Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1055/s-0036-1591719",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "borane-catalysed hydroboration of alkynes and alkenes",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:17Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/jacs.9b10114",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "kinetics of alkyne hydroboration; why yields of 2 do not reach 100 %",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:12Z"
+   }
+  },
+  {
+   "@id": "assay:tmeda-inhibition-test",
+   "@type": "DefinedTerm",
+   "name": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+   "nrr:entityType": "assay",
+   "nrr:role": "the control method under test"
+  },
+  {
+   "@id": "pubchem:CID8037",
+   "@type": "ChemicalSubstance",
+   "name": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+   "nrr:entityType": "compound",
+   "nrr:role": "BH3 trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "compound:tmeda-bis-borane",
+   "@type": "ChemicalSubstance",
+   "name": "TMEDA.(BH3)2 adduct",
+   "nrr:entityType": "compound",
+   "nrr:role": "the trapped species, tested as a catalyst"
+  },
+  {
+   "@id": "pubchem:CID6364989",
+   "@type": "ChemicalSubstance",
+   "name": "pinacolborane (HBpin)",
+   "nrr:entityType": "compound",
+   "nrr:role": "hydroboration reagent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID6331",
+   "@type": "ChemicalSubstance",
+   "name": "borane (BH3)",
+   "nrr:entityType": "compound",
+   "nrr:role": "the hidden catalyst",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID9833925",
+   "@type": "ChemicalSubstance",
+   "name": "borane dimethyl sulfide (Me2S.BH3)",
+   "nrr:entityType": "compound",
+   "nrr:role": "positive-control BH3 source",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID10821",
+   "@type": "ChemicalSubstance",
+   "name": "phenylacetylene (1)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alkyne substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID15627",
+   "@type": "ChemicalSubstance",
+   "name": "4-tert-butylstyrene (3)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alkene substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID9237",
+   "@type": "ChemicalSubstance",
+   "name": "DABCO (amine of 5a)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID18196",
+   "@type": "ChemicalSubstance",
+   "name": "PMDTA (amine of 5b)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID7972",
+   "@type": "ChemicalSubstance",
+   "name": "N-methylmorpholine (amine of 5c)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID81531",
+   "@type": "ChemicalSubstance",
+   "name": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID8471",
+   "@type": "ChemicalSubstance",
+   "name": "triethylamine",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap; also the stabiliser in commercial HBpin",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID1146",
+   "@type": "ChemicalSubstance",
+   "name": "trimethylamine",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID23664764",
+   "@type": "ChemicalSubstance",
+   "name": "lithium tert-butoxide (LiOtBu)",
+   "nrr:entityType": "compound",
+   "nrr:role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID69301",
+   "@type": "ChemicalSubstance",
+   "name": "1,3,5-trimethoxybenzene",
+   "nrr:entityType": "compound",
+   "nrr:role": "NMR internal standard",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID1140",
+   "@type": "ChemicalSubstance",
+   "name": "toluene",
+   "nrr:entityType": "compound",
+   "nrr:role": "solvent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID8150",
+   "@type": "ChemicalSubstance",
+   "name": "diglyme",
+   "nrr:entityType": "compound",
+   "nrr:role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "https://ror.org/01nrxwf90",
+   "@type": "Organization",
+   "name": "University of Edinburgh",
+   "nrr:entityType": "organization"
+  }
+ ]
+}
