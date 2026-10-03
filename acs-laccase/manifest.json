@@ -1,0 +1,57 @@
+{
+ "study": "acs-laccase",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "7913fb67d8e5057710f790a5149c54ea628372bc",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.1021/acs.estlett.3c00173",
+  "label": "An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "acs-laccase-path",
+   "id": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "negative-not-replicated",
+   "findings": 0
+  },
+  {
+   "slug": "acs-laccase-mediator-screen",
+   "id": "urn:portolan:nrr:sha256:fc9622e855f881e29a8aa39009ef2056331ef311aecaa2bc5f8b9edc35ce1473",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "inconclusive-no-positive-control",
+   "findings": 2
+  },
+  {
+   "slug": "acs-laccase-system-checks",
+   "id": "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "positive",
+   "findings": 3
+  },
+  {
+   "slug": "acs-laccase-pfaa-degradation",
+   "id": "urn:portolan:nrr:sha256:c749de6336e2dc6272673479045f4e8af2a3c7511103754c7bb8de210989e4d6",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-replicated",
+   "findings": 3
+  },
+  {
+   "slug": "acs-laccase-sorption",
+   "id": "urn:portolan:nrr:sha256:2e47f2e0f87a90dc70a63de12f6ef0a9cd798d3bf19716b45b3705745cb4ba56",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "positive",
+   "findings": 3
+  }
+ ]
+}

@@ -1,0 +1,429 @@
+{
+ "@id": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+ "aiUseDeclaration": {
+  "statement": "The article makes no statement about the use of AI tools."
+ },
+ "applicabilityConditions": {
+  "analysis": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+  "duration": "24 h to 28 days with repeated enzyme and mediator dosing",
+  "enzymes": "Trametes versicolor laccase (MilliporeSigma) for the TvL experiments; Agaricus bisporus and a native white-rot laccase in the screen; the Pleurotus ostreatus laccase of the prior reports was not available",
+  "matrices": "10 mM CuSO4 pH 5 or 50 mM sodium malonate pH 4.5",
+  "note": "the negative is about detectable degradation under these conditions; sorption to the enzyme is shown to mimic up to about 60 % apparent removal when only the aqueous phase is sampled",
+  "substrateConcentrations": "1 uM (screen and two-week experiment) and 0.1 uM (96 h and 24 h experiments)",
+  "system": "laccase mediator systems with nitroxyl (N-OH or N-oxyl) mediators in aerated batch reactors at 30 °C"
+ },
+ "confidence": {
+  "basis": "surrogate-substrate positive control passed, radical formation confirmed by EPR, enzyme activity confirmed, triplicate reactors, and a full mass balance including vessel and protein extraction that accounts for the apparent loss",
+  "level": "high"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+ "cost": {
+  "note": "batch reactors in triplicate; the longest experiment 28 days; no monetary cost reported",
+  "source": "Materials and Methods; SI",
+  "wetLabDays": 28
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "chemistry"
+ ],
+ "entities": [
+  {
+   "id": "pubchem:CID9554",
+   "label": "perfluorooctanoic acid (PFOA)",
+   "role": "target substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID74483",
+   "label": "perfluorooctanesulfonic acid (PFOS)",
+   "role": "target substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID2554",
+   "label": "carbamazepine (CBZ)",
+   "role": "positive-control substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID75771",
+   "label": "1-hydroxybenzotriazole (HBT)",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID10665",
+   "label": "N-hydroxyphthalimide (HPI)",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID66599",
+   "label": "violuric acid",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID2724126",
+   "label": "TEMPO",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID42643072",
+   "label": "AZADO (2-azaadamantane N-oxyl)",
+   "role": "nitroxyl mediator",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "protein:trametes-versicolor-laccase",
+   "label": "Trametes versicolor laccase (TvL), MilliporeSigma",
+   "note": "commercial preparation; no UniProt accession is given in the article",
+   "role": "enzyme under test",
+   "type": "protein"
+  },
+  {
+   "id": "protein:agaricus-bisporus-laccase",
+   "label": "Agaricus bisporus laccase, MilliporeSigma",
+   "role": "enzyme in the mediator screen",
+   "type": "protein"
+  },
+  {
+   "id": "protein:native-white-rot-laccase",
+   "label": "native white rot fungal laccase, Creative Enzymes",
+   "note": "species not stated",
+   "role": "enzyme in the mediator screen",
+   "type": "protein"
+  },
+  {
+   "id": "pubchem:CID24462",
+   "label": "copper(II) sulfate, 10 mM, pH 5",
+   "role": "reaction matrix",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID8865",
+   "label": "sodium malonate buffer, 50 mM, pH 4.5",
+   "role": "reaction matrix",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID7041",
+   "label": "2,6-dimethoxyphenol (DMP)",
+   "role": "laccase activity assay substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID887",
+   "label": "basic methanol (0.5 % NH4OH)",
+   "role": "quench and extraction solvent",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "assay:lc-msms-pfas",
+   "label": "LC-MS/MS isotope-dilution quantification of PFAS",
+   "note": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+   "role": "analytical method",
+   "type": "assay"
+  },
+  {
+   "id": "assay:epr-btno",
+   "label": "X-band CW EPR of the benzotriazole-N-oxyl (BTNO) radical",
+   "note": "X-band (9.4 GHz) CW EPR, Bruker EleXsys E500; BTNO from Ce(IV) in CH3CN at room temperature and from TvL/HBT/CuSO4 in water at 50 K; simulations in EasySpin 5.2.35 (Text S3)",
+   "role": "mediator radical check",
+   "type": "assay"
+  },
+  {
+   "id": "assay:dmp-activity",
+   "label": "DMP laccase activity assay",
+   "note": "2,6-dimethoxyphenol (DMP) oxidation to the quinone at 468 nm, 96-well plate, triplicate (Text S5)",
+   "role": "enzyme activity check",
+   "type": "assay"
+  },
+  {
+   "id": "https://ror.org/01an7q238",
+   "label": "University of California, Berkeley",
+   "note": "Departments of Chemistry and of Civil and Environmental Engineering; EPR at the CalEPR Center, University of California, Davis",
+   "type": "organization"
+  },
+  {
+   "id": "NCBITaxon:5325",
+   "label": "Trametes versicolor",
+   "role": "white-rot fungus; source of TvL, the laccase used in every TvL experiment",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "NCBITaxon:5341",
+   "label": "Agaricus bisporus",
+   "role": "source of the second commercial laccase in the mediator screen",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  },
+  {
+   "id": "NCBITaxon:5322",
+   "label": "Pleurotus ostreatus",
+   "role": "source of the laccase in the prior reports; no longer commercially available",
+   "scheme": "NCBI Taxonomy",
+   "type": "organism"
+  }
+ ],
+ "governance": {
+  "biosecurityTier": "none",
+  "humanSubjectData": "none"
+ },
+ "hasPart": [
+  "urn:portolan:nrr:sha256:fc9622e855f881e29a8aa39009ef2056331ef311aecaa2bc5f8b9edc35ce1473",
+  "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+  "urn:portolan:nrr:sha256:c749de6336e2dc6272673479045f4e8af2a3c7511103754c7bb8de210989e4d6",
+  "urn:portolan:nrr:sha256:2e47f2e0f87a90dc70a63de12f6ef0a9cd798d3bf19716b45b3705745cb4ba56"
+ ],
+ "hypothesis": "Improve the scope and efficacy of laccase mediator system (LMS) treatment of perfluoroalkyl acids by a mechanistic investigation of each component, starting from literature reports of modest PFOA and PFOS losses over extended periods.",
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "invalidators": [
+  "a mass-balanced demonstration of PFOA or PFOS transformation products by any laccase mediator system",
+  "a Pleurotus ostreatus laccase preparation shown to degrade PFAAs with vessel and protein extraction accounted for"
+ ],
+ "kind": "path",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "nextSteps": [
+  "Use rigorous controls, in particular full mass balances including vessel and protein extraction, when evaluating bioinspired PFAS treatments.",
+  "Study PFAS-protein binding mechanisms as a route to bioinspired adsorptive materials, noting that the quantity of enzyme needed for adsorptive removal may be prohibitive."
+ ],
+ "openQuestions": [
+  "Why did the earlier Pleurotus ostreatus laccase systems report PFOA and PFOS loss: sorption of the kind shown here, a property of that enzyme, or something else?",
+  "Which side chains of TvL bind PFOA after oxidation by the mediator?"
+ ],
+ "operator": {
+  "identifier": "https://ror.org/01an7q238",
+  "name": "University of California, Berkeley",
+  "type": "Organization"
+ },
+ "outcomeClass": "negative-not-replicated",
+ "outcomeSummary": "While unable to replicate the oxidation of PFAAs, we show that interactions of the PFAA compounds with laccase and laccase mediator mixtures could cause an artifact that mimics transformation (<=60 %) of PFAAs. the LMS appears to be unable to detectably degrade the perfluorinated compounds PFOA and PFOS ... it is particularly important for researchers to use rigorous controls when analyzing treatment and removal strategies with novel bioinspired technologies",
+ "pathType": "experiment",
+ "performers": [
+  {
+   "affiliation": "University of California, Berkeley",
+   "identifier": "https://orcid.org/0000-0003-4663-8264",
+   "name": "Sophia D. Steffens",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "name": "Edmund H. Antell",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "identifier": "https://orcid.org/0000-0002-4587-3097",
+   "name": "Emily K. Cook",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Davis",
+   "identifier": "https://orcid.org/0000-0001-8043-3436",
+   "name": "Guodong Rao",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Davis",
+   "identifier": "https://orcid.org/0000-0003-0889-8436",
+   "name": "R. David Britt",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "identifier": "https://orcid.org/0000-0003-1686-8464",
+   "name": "David L. Sedlak",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of California, Berkeley",
+   "name": "Lisa Alvarez-Cohen",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "The positive control is a surrogate substrate (carbamazepine) run in a separate reactor set with the same enzyme, mediator and buffer, not an arm of the PFAA experiments. The ingest counts it as a designated positive control for the TvL/HBT findings and says so in each control's note; it does not count for the mediator screen, which used two other laccases.",
+  "The ingest treats the stated quantification range and the stated expected effect size as the sensitivity statement; the article reports no formal power analysis.",
+  "SI Tables S2 and S3 are images in the PDF; every cell was transcribed into curated/laccase/mass_balance.csv with the row and column as locator. The main text rounds them (82 % recovered becomes '18 +/- 2 % apparent loss').",
+  "The article has no author-contribution statement; every author is recorded with the role 'writing' only.",
+  "TvL/HBT against PFOS was tested only in the 0.1 uM 96 h and 24 h experiments; the two-week dosing experiment was PFOA only."
+ ],
+ "question": "Can a laccase mediator system be optimised to degrade perfluorooctanoic acid (PFOA) and perfluorooctanesulfonic acid (PFOS), as two earlier reports of modest losses suggested?",
+ "relations": [
+  {
+   "note": "PFOA removal >20 % at 10 days not replicated with TvL/HBT",
+   "target": "doi:10.1021/acs.estlett.5b00119",
+   "type": "contradicts"
+  },
+  {
+   "note": "PFOS removal not replicated with two commercial laccases and five mediators over 28 days",
+   "target": "doi:10.1021/acs.est.8b00839",
+   "type": "contradicts"
+  }
+ ],
+ "slug": "acs-laccase-path",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.1021/acs.estlett.3c00173",
+   "label": "An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:18Z",
+    "integrity": "none",
+    "version": "VoR"
+   },
+   "url": "https://doi.org/10.1021/acs.estlett.3c00173"
+  },
+  {
+   "data": [
+    {
+     "accession": "PMC10100556",
+     "checksum": "sha256:94d0c1f8982a6015ad6667433f4cc653bfca2848a6f91b9fdb55dc985ced151b",
+     "format": "application/pdf",
+     "label": "ez3c00173_si_001.pdf",
+     "repository": "Europe PMC",
+     "role": "Supporting Information: protocols (Text S1 to S5), Tables S1 to S3, Figures S1 to S8",
+     "size": 594281,
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+    }
+   ],
+   "identifier": "pmc:PMC10100556/ez3c00173_si_001.pdf",
+   "label": "Supporting Information (PDF)",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "No data availability statement and no deposit; data tables associated with the main-text figures are in the Supporting Information. Tables S2 and S3 are images in the PDF.",
+   "role": "supplementary",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+  },
+  {
+   "identifier": "doi:10.1021/acs.estlett.5b00119",
+   "label": "Luo et al. 2015, laccase-catalyzed degradation of perfluorooctanoic acid (ES&T Lett. 2, 198-203)",
+   "note": ">20 % PFOA removal after 10 days",
+   "role": "prior-art",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:19Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.1021/acs.est.8b00839",
+   "label": "Luo et al. 2018, perfluorooctanesulfonate degrades in a laccase-mediator system (ES&T 52, 10617-10626)",
+   "note": ">20 % and >30 % PFOS removal at 20 and 30 days with Pleurotus ostreatus laccase and HBT",
+   "role": "prior-art",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:17Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.1016/j.jhazmat.2010.05.103",
+   "label": "Hata et al. 2010, elimination of carbamazepine by repeated treatment with laccase and HBT",
+   "note": "CBZ is transformed by TvL/HBT",
+   "role": "comparator",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:17Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.1039/B407835G",
+   "label": "Galli et al. 2004, spectrophotometric, EPR and kinetic characterisation of the BTNO radical",
+   "role": "reference",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:20Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.1039/D1EW00501D",
+   "label": "Hernandez et al. 2022, proteins as adsorbents for PFAS removal from water",
+   "role": "reference",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:21Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  },
+  {
+   "identifier": "doi:10.1021/es101334s",
+   "label": "Bischel et al. 2010, noncovalent interactions of long-chain perfluoroalkyl acids with serum albumin",
+   "role": "reference",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:55:20Z",
+    "integrity": "none",
+    "version": "VoR"
+   }
+  }
+ ],
+ "studyId": "acs-laccase",
+ "successCriteria": "A statistically significant decrease in PFOA or PFOS mass, not only aqueous concentration, relative to untreated and enzyme-only controls, under conditions where the same enzyme and mediator transform a surrogate substrate.",
+ "title": "Laccase mediator systems do not detectably degrade PFOA or PFOS; the reported loss is sorption to the enzyme",
+ "untriedBranches": [
+  {
+   "description": "Use rigorous controls, in particular full mass balances including vessel and protein extraction, when evaluating bioinspired PFAS treatments.",
+   "source": "Environmental Implications",
+   "status": "proposed-by-authors"
+  },
+  {
+   "description": "Study PFAS-protein binding mechanisms as a route to bioinspired adsorptive materials, noting that the quantity of enzyme needed for adsorptive removal may be prohibitive.",
+   "source": "Environmental Implications",
+   "status": "proposed-by-authors"
+  },
+  {
+   "description": "Repeat the prior reports' conditions with a Pleurotus ostreatus laccase, with full mass balance, if a source of that enzyme can be found.",
+   "source": "Results paragraph 1",
+   "status": "inferred-by-ingest"
+  }
+ ],
+ "version": "1",
+ "visibility": "public"
+}

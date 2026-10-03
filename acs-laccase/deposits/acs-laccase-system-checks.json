@@ -1,0 +1,1472 @@
+{
+ "arguments": {
+  "attachments": [],
+  "crate": {
+   "@context": [
+    "https://w3id.org/ro/crate/1.2/context",
+    {
+     "nrr": "https://portolansoft.com/schema/nrr/0.2#",
+     "prov": "http://www.w3.org/ns/prov#"
+    }
+   ],
+   "@graph": [
+    {
+     "@id": "ro-crate-metadata.json",
+     "@type": "CreativeWork",
+     "about": {
+      "@id": "./"
+     },
+     "conformsTo": [
+      {
+       "@id": "https://w3id.org/ro/crate/1.2"
+      },
+      {
+       "@id": "https://portolansoft.com/profile/nrr/0.2"
+      }
+     ]
+    },
+    {
+     "@id": "./",
+     "@type": "Dataset",
+     "conformsTo": {
+      "@id": "https://portolansoft.com/profile/nrr/0.2"
+     },
+     "datePublished": "2026-09-25T00:00:00Z",
+     "description": "Are the enzyme, the mediator radical and the reaction matrix each functioning, so that a PFAA negative would be a property of the chemistry rather than of a dead system?",
+     "hasPart": [
+      {
+       "@id": "#attempt"
+      },
+      {
+       "@id": "#finding-cbz-transformed"
+      },
+      {
+       "@id": "#finding-activity-retained"
+      },
+      {
+       "@id": "#finding-btno-radical"
+      }
+     ],
+     "identifier": "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+     "isPartOf": {
+      "@id": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596"
+     },
+     "isSupplementTo": [
+      {
+       "@id": "https://doi.org/10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "keywords": [
+      "chemistry"
+     ],
+     "license": {
+      "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+     },
+     "mainEntity": {
+      "@id": "#attempt"
+     },
+     "mentions": [
+      {
+       "@id": "pubchem:CID9554"
+      },
+      {
+       "@id": "pubchem:CID74483"
+      },
+      {
+       "@id": "pubchem:CID2554"
+      },
+      {
+       "@id": "pubchem:CID75771"
+      },
+      {
+       "@id": "pubchem:CID10665"
+      },
+      {
+       "@id": "pubchem:CID66599"
+      },
+      {
+       "@id": "pubchem:CID2724126"
+      },
+      {
+       "@id": "pubchem:CID42643072"
+      },
+      {
+       "@id": "protein:trametes-versicolor-laccase"
+      },
+      {
+       "@id": "protein:agaricus-bisporus-laccase"
+      },
+      {
+       "@id": "protein:native-white-rot-laccase"
+      },
+      {
+       "@id": "pubchem:CID24462"
+      },
+      {
+       "@id": "pubchem:CID8865"
+      },
+      {
+       "@id": "pubchem:CID7041"
+      },
+      {
+       "@id": "pubchem:CID887"
+      },
+      {
+       "@id": "assay:lc-msms-pfas"
+      },
+      {
+       "@id": "assay:epr-btno"
+      },
+      {
+       "@id": "assay:dmp-activity"
+      },
+      {
+       "@id": "https://ror.org/01an7q238"
+      },
+      {
+       "@id": "NCBITaxon:5325"
+      },
+      {
+       "@id": "NCBITaxon:5341"
+      },
+      {
+       "@id": "NCBITaxon:5322"
+      }
+     ],
+     "name": "The TvL/HBT system is active: carbamazepine is transformed, the BTNO radical forms, and enzyme activity is retained in the PFAA matrix",
+     "nrr:aiUseDeclaration": {
+      "statement": "The article makes no statement about the use of AI tools."
+     },
+     "nrr:applicabilityConditions": {
+      "analysis": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+      "duration": "24 h to 28 days with repeated enzyme and mediator dosing",
+      "enzymes": "Trametes versicolor laccase (MilliporeSigma) for the TvL experiments; Agaricus bisporus and a native white-rot laccase in the screen; the Pleurotus ostreatus laccase of the prior reports was not available",
+      "matrices": "10 mM CuSO4 pH 5 or 50 mM sodium malonate pH 4.5",
+      "note": "the negative is about detectable degradation under these conditions; sorption to the enzyme is shown to mimic up to about 60 % apparent removal when only the aqueous phase is sampled",
+      "substrateConcentrations": "1 uM (screen and two-week experiment) and 0.1 uM (96 h and 24 h experiments)",
+      "system": "laccase mediator systems with nitroxyl (N-OH or N-oxyl) mediators in aerated batch reactors at 30 °C"
+     },
+     "nrr:confidence": {
+      "basis": "each check has its own comparator or chemical standard",
+      "level": "high"
+     },
+     "nrr:cost": {
+      "note": "batch reactors in triplicate; the longest experiment 28 days; no monetary cost reported",
+      "source": "Materials and Methods; SI",
+      "wetLabDays": 28
+     },
+     "nrr:isPartOf": [
+      {
+       "@id": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596"
+      }
+     ],
+     "nrr:kind": "attempt",
+     "nrr:outcomeClass": "positive",
+     "nrr:outcomeSummary": "About 35 % CBZ removal (p < 0.001); BTNO radical detected by EPR in the laccase system; TvL activity retained in CuSO4 and acetate.",
+     "nrr:pathType": "experiment",
+     "nrr:slug": "acs-laccase-system-checks",
+     "nrr:sourceLicense": "CC BY 4.0",
+     "nrr:studyId": "acs-laccase",
+     "nrr:successCriteria": "Significant CBZ removal, EPR detection of BTNO, and retained laccase activity in CuSO4.",
+     "nrr:visibility": "public",
+     "prov:used": [
+      {
+       "@id": "pmc:PMC10100556/ez3c00173_si_001.pdf"
+      }
+     ],
+     "prov:wasAttributedTo": [
+      {
+       "@id": "#operator"
+      },
+      {
+       "@id": "#performer-sophia-d-steffens-writing"
+      },
+      {
+       "@id": "#performer-edmund-h-antell-writing"
+      },
+      {
+       "@id": "#performer-emily-k-cook-writing"
+      },
+      {
+       "@id": "#performer-guodong-rao-writing"
+      },
+      {
+       "@id": "#performer-r-david-britt-writing"
+      },
+      {
+       "@id": "#performer-david-l-sedlak-writing"
+      },
+      {
+       "@id": "#performer-lisa-alvarez-cohen-writing"
+      }
+     ],
+     "version": "1"
+    },
+    {
+     "@id": "#operator",
+     "@type": "Organization",
+     "identifier": "https://ror.org/01an7q238",
+     "name": "University of California, Berkeley"
+    },
+    {
+     "@id": "#performer-sophia-d-steffens-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Sophia D. Steffens",
+     "nrr:affiliation": "University of California, Berkeley",
+     "nrr:identifier": "https://orcid.org/0000-0003-4663-8264",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-edmund-h-antell-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Edmund H. Antell",
+     "nrr:affiliation": "University of California, Berkeley",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-emily-k-cook-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Emily K. Cook",
+     "nrr:affiliation": "University of California, Berkeley",
+     "nrr:identifier": "https://orcid.org/0000-0002-4587-3097",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-guodong-rao-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Guodong Rao",
+     "nrr:affiliation": "University of California, Davis",
+     "nrr:identifier": "https://orcid.org/0000-0001-8043-3436",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-r-david-britt-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "R. David Britt",
+     "nrr:affiliation": "University of California, Davis",
+     "nrr:identifier": "https://orcid.org/0000-0003-0889-8436",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-david-l-sedlak-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "David L. Sedlak",
+     "nrr:affiliation": "University of California, Berkeley",
+     "nrr:identifier": "https://orcid.org/0000-0003-1686-8464",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#performer-lisa-alvarez-cohen-writing",
+     "@type": [
+      "Person",
+      "prov:Person"
+     ],
+     "name": "Lisa Alvarez-Cohen",
+     "nrr:affiliation": "University of California, Berkeley",
+     "nrr:note": "listed author; the article carries no author-contribution statement",
+     "nrr:role": "writing",
+     "nrr:type": "person"
+    },
+    {
+     "@id": "#finding-cbz-transformed",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TvL/HBT system transform the surrogate substrate carbamazepine under literature conditions?",
+     "nrr:conditions": {
+      "doses": 3,
+      "duration": "120 h",
+      "enzymeUnitsPerMl": 2,
+      "matrix": "50 mM sodium malonate pH 4.5",
+      "mediatorConcentration": "1 mM"
+     },
+     "nrr:controls": {
+      "negative": {
+       "expected": "no removal",
+       "kind": "no-treatment",
+       "label": "untreated, TvL only, HBT only",
+       "observed": "no comparable removal",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "nrr:effect": {
+      "comparedTo": "untreated, TvL-only and HBT-only reactors",
+      "direction": "decrease",
+      "metric": "CBZ removal after three doses over 120 h",
+      "n": 3,
+      "pValue": "< 0.001",
+      "significant": true,
+      "test": "two-tailed t test",
+      "unit": "%",
+      "value": 35
+     },
+     "nrr:evidence": [
+      {
+       "label": "Results paragraph 2; SI Figure S3",
+       "locator": "Results paragraph 2; SI Figure S3",
+       "quote": "three doses of 2 units/mL TvL and 1 mM HBT over the course of 120 h resulted in significant removal, ~35 %, of CBZ (p < 0.001; two-tailed t test)",
+       "source": "10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "This is the positive control for the TvL/HBT PFAA findings: the same enzyme and mediator in the same buffer are oxidatively active on a persistent, hydrophobic contaminant.",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does the TvL/HBT system transform the surrogate substrate carbamazepine under literature conditions?",
+     "nrr:target": {
+      "identifier": "pubchem:CID2554",
+      "label": "carbamazepine (CBZ)",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-activity-retained",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does TvL retain activity in the CuSO4 solution used for PFAA reactors, compared with acetate buffer?",
+     "nrr:conditions": {
+      "assay": "DMP oxidation at 468 nm, triplicate",
+      "matrices": [
+       "5 mM CuSO4",
+       "0.1 M sodium acetate",
+       "5 mM FeSO4"
+      ]
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "nrr:effect": {
+      "direction": "not-applicable",
+      "metric": "laccase activity profile by DMP assay",
+      "value": "similar in 5 mM CuSO4 and 0.1 M sodium acetate; none in 5 mM FeSO4"
+     },
+     "nrr:evidence": [
+      {
+       "label": "SI Text S5, Figure S5",
+       "locator": "Results paragraph 3; SI Text S5, Figure S5",
+       "source": "10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:note": "Activity declined over 6 to 8 h in the presence of HBT (SI Figure S8), which is why the 96 h experiment was dosed twice daily.",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does TvL retain activity in the CuSO4 solution used for PFAA reactors, compared with acetate buffer?",
+     "nrr:target": {
+      "identifier": "protein:trametes-versicolor-laccase",
+      "label": "Trametes versicolor laccase (TvL)",
+      "type": "protein"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#finding-btno-radical",
+     "@type": [
+      "nrr:Finding",
+      "prov:Entity"
+     ],
+     "name": "Does the TvL/HBT/CuSO4 system generate the benzotriazole-N-oxyl (BTNO) radical proposed to oxidise contaminants?",
+     "nrr:conditions": {
+      "aqueousSample": "1 mM HBT, 12 mg/mL TvL, 10 uM CuSO4 at 50 K",
+      "chemicalSample": "20 mM Ce(IV) and 20 mM HBT in CH3CN, room temperature",
+      "frequencyGHz": 9.4,
+      "g": 2.0069
+     },
+     "nrr:controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "expected": "literature hyperfine pattern",
+       "kind": "designated",
+       "label": "BTNO generated chemically by Ce(IV) ammonium nitrate in CH3CN",
+       "observed": "g = 2.0069, three 1H and three 14N couplings matching Galli et al. 2004",
+       "passed": true
+      }
+     },
+     "nrr:effect": {
+      "direction": "not-applicable",
+      "metric": "EPR detection of BTNO",
+      "note": "hyperfine structure resolved at room temperature in CH3CN (Ce(IV) oxidation) and not resolved in the frozen aqueous laccase sample at 50 K, attributed to anisotropic line broadening",
+      "value": "detected in both routes"
+     },
+     "nrr:evidence": [
+      {
+       "label": "SI Text S3, Figures S6 and S7",
+       "locator": "Results paragraph 3; SI Text S3, Figures S6 and S7",
+       "source": "10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "nrr:informativeness": "not-applicable",
+     "nrr:informativenessReason": "rule applies to negative and inconclusive findings only",
+     "nrr:outcomeClass": "positive",
+     "nrr:question": "Does the TvL/HBT/CuSO4 system generate the benzotriazole-N-oxyl (BTNO) radical proposed to oxidise contaminants?",
+     "nrr:target": {
+      "label": "benzotriazole-N-oxyl radical from HBT",
+      "type": "compound"
+     },
+     "prov:wasGeneratedBy": {
+      "@id": "#attempt"
+     }
+    },
+    {
+     "@id": "#stage-1-experiment",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "carbamazepine transformation with TvL and HBT",
+     "nrr:conditions": {
+      "dosing": "three doses at 0, 48 and 72 h",
+      "duration": "120 h",
+      "enzyme": "Trametes versicolor laccase (TvL)",
+      "enzymeUnitsPerMl": "2",
+      "matrix": "50 mM sodium malonate pH 4.5",
+      "mediator": "HBT",
+      "mediatorConcentration": "1 mM",
+      "substrate": "carbamazepine",
+      "substrateConcentrationUm": "0.1"
+     },
+     "nrr:instrument": [
+      "New Brunswick Excella E25 shaker incubator",
+      "Agilent Triple Quad 6460A LC-MS/MS"
+     ],
+     "nrr:method": "20 mL glass scintillation vials, 5 mL solution, 30 °C, 130 rpm; opened at least 10 minutes at each sampling to promote aeration; aliquots diluted immediately in basic methanol (0.5 % ammonium hydroxide); LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+     "nrr:performedBy": [
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-4663-8264",
+       "name": "Sophia D. Steffens",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Edmund H. Antell",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0002-4587-3097",
+       "name": "Emily K. Cook",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0001-8043-3436",
+       "name": "Guodong Rao",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0003-0889-8436",
+       "name": "R. David Britt",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-1686-8464",
+       "name": "David L. Sedlak",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Lisa Alvarez-Cohen",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "nrr:replicates": {
+      "reactors": 3
+     },
+     "nrr:stage": "experiment"
+    },
+    {
+     "@id": "#stage-2-experiment",
+     "@type": [
+      "Action",
+      "prov:Activity"
+     ],
+     "name": "EPR and activity checks",
+     "nrr:instrument": [
+      "Bruker Biospin EleXsys E500 X-band EPR spectrometer (CalEPR Center, UC Davis)",
+      "Shimadzu UV-vis plate reader"
+     ],
+     "nrr:method": "X-band (9.4 GHz) CW EPR, Bruker EleXsys E500; BTNO from Ce(IV) in CH3CN at room temperature and from TvL/HBT/CuSO4 in water at 50 K; simulations in EasySpin 5.2.35 (Text S3); 2,6-dimethoxyphenol (DMP) oxidation to the quinone at 468 nm, 96-well plate, triplicate (Text S5)",
+     "nrr:performedBy": [
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-4663-8264",
+       "name": "Sophia D. Steffens",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Edmund H. Antell",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0002-4587-3097",
+       "name": "Emily K. Cook",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0001-8043-3436",
+       "name": "Guodong Rao",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0003-0889-8436",
+       "name": "R. David Britt",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-1686-8464",
+       "name": "David L. Sedlak",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Lisa Alvarez-Cohen",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "nrr:stage": "experiment"
+    },
+    {
+     "@id": "#attempt",
+     "@type": [
+      "CreateAction",
+      "prov:Activity"
+     ],
+     "actionStatus": "CompletedActionStatus",
+     "agent": {
+      "@id": "#operator"
+     },
+     "description": "Are the enzyme, the mediator radical and the reaction matrix each functioning, so that a PFAA negative would be a property of the chemistry rather than of a dead system?",
+     "hasPart": [
+      {
+       "@id": "#stage-1-experiment"
+      },
+      {
+       "@id": "#stage-2-experiment"
+      }
+     ],
+     "instrument": [
+      {
+       "@id": "#performer-sophia-d-steffens-writing"
+      },
+      {
+       "@id": "#performer-edmund-h-antell-writing"
+      },
+      {
+       "@id": "#performer-emily-k-cook-writing"
+      },
+      {
+       "@id": "#performer-guodong-rao-writing"
+      },
+      {
+       "@id": "#performer-r-david-britt-writing"
+      },
+      {
+       "@id": "#performer-david-l-sedlak-writing"
+      },
+      {
+       "@id": "#performer-lisa-alvarez-cohen-writing"
+      }
+     ],
+     "name": "The TvL/HBT system is active: carbamazepine is transformed, the BTNO radical forms, and enzyme activity is retained in the PFAA matrix",
+     "nrr:attemptType": "wet-lab",
+     "nrr:outcomeClass": "positive",
+     "object": [],
+     "result": [
+      {
+       "@id": "#finding-cbz-transformed"
+      },
+      {
+       "@id": "#finding-activity-retained"
+      },
+      {
+       "@id": "#finding-btno-radical"
+      }
+     ]
+    },
+    {
+     "@id": "https://doi.org/10.1021/acs.estlett.3c00173",
+     "@type": "ScholarlyArticle",
+     "name": "An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System",
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+     "nrr:role": "source-publication",
+     "nrr:statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:55:18Z",
+      "integrity": "none",
+      "version": "VoR"
+     },
+     "nrr:url": "https://doi.org/10.1021/acs.estlett.3c00173"
+    },
+    {
+     "@id": "pmc:PMC10100556/ez3c00173_si_001.pdf",
+     "@type": "Dataset",
+     "name": "Supporting Information (PDF)",
+     "nrr:data": [
+      {
+       "accession": "PMC10100556",
+       "checksum": "sha256:94d0c1f8982a6015ad6667433f4cc653bfca2848a6f91b9fdb55dc985ced151b",
+       "format": "application/pdf",
+       "label": "ez3c00173_si_001.pdf",
+       "repository": "Europe PMC",
+       "role": "Supporting Information: protocols (Text S1 to S5), Tables S1 to S3, Figures S1 to S8",
+       "size": 594281,
+       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+      }
+     ],
+     "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+     "nrr:note": "No data availability statement and no deposit; data tables associated with the main-text figures are in the Supporting Information. Tables S2 and S3 are images in the PDF.",
+     "nrr:role": "supplementary",
+     "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+    },
+    {
+     "@id": "pubchem:CID9554",
+     "@type": "ChemicalSubstance",
+     "name": "perfluorooctanoic acid (PFOA)",
+     "nrr:entityType": "compound",
+     "nrr:role": "target substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID74483",
+     "@type": "ChemicalSubstance",
+     "name": "perfluorooctanesulfonic acid (PFOS)",
+     "nrr:entityType": "compound",
+     "nrr:role": "target substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID2554",
+     "@type": "ChemicalSubstance",
+     "name": "carbamazepine (CBZ)",
+     "nrr:entityType": "compound",
+     "nrr:role": "positive-control substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID75771",
+     "@type": "ChemicalSubstance",
+     "name": "1-hydroxybenzotriazole (HBT)",
+     "nrr:entityType": "compound",
+     "nrr:role": "nitroxyl mediator",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID10665",
+     "@type": "ChemicalSubstance",
+     "name": "N-hydroxyphthalimide (HPI)",
+     "nrr:entityType": "compound",
+     "nrr:role": "nitroxyl mediator",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID66599",
+     "@type": "ChemicalSubstance",
+     "name": "violuric acid",
+     "nrr:entityType": "compound",
+     "nrr:role": "nitroxyl mediator",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID2724126",
+     "@type": "ChemicalSubstance",
+     "name": "TEMPO",
+     "nrr:entityType": "compound",
+     "nrr:role": "nitroxyl mediator",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID42643072",
+     "@type": "ChemicalSubstance",
+     "name": "AZADO (2-azaadamantane N-oxyl)",
+     "nrr:entityType": "compound",
+     "nrr:role": "nitroxyl mediator",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "protein:trametes-versicolor-laccase",
+     "@type": "Protein",
+     "name": "Trametes versicolor laccase (TvL), MilliporeSigma",
+     "nrr:entityType": "protein",
+     "nrr:role": "enzyme under test"
+    },
+    {
+     "@id": "protein:agaricus-bisporus-laccase",
+     "@type": "Protein",
+     "name": "Agaricus bisporus laccase, MilliporeSigma",
+     "nrr:entityType": "protein",
+     "nrr:role": "enzyme in the mediator screen"
+    },
+    {
+     "@id": "protein:native-white-rot-laccase",
+     "@type": "Protein",
+     "name": "native white rot fungal laccase, Creative Enzymes",
+     "nrr:entityType": "protein",
+     "nrr:role": "enzyme in the mediator screen"
+    },
+    {
+     "@id": "pubchem:CID24462",
+     "@type": "ChemicalSubstance",
+     "name": "copper(II) sulfate, 10 mM, pH 5",
+     "nrr:entityType": "compound",
+     "nrr:role": "reaction matrix",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID8865",
+     "@type": "ChemicalSubstance",
+     "name": "sodium malonate buffer, 50 mM, pH 4.5",
+     "nrr:entityType": "compound",
+     "nrr:role": "reaction matrix",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID7041",
+     "@type": "ChemicalSubstance",
+     "name": "2,6-dimethoxyphenol (DMP)",
+     "nrr:entityType": "compound",
+     "nrr:role": "laccase activity assay substrate",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "pubchem:CID887",
+     "@type": "ChemicalSubstance",
+     "name": "basic methanol (0.5 % NH4OH)",
+     "nrr:entityType": "compound",
+     "nrr:role": "quench and extraction solvent",
+     "nrr:scheme": "PubChem"
+    },
+    {
+     "@id": "assay:lc-msms-pfas",
+     "@type": "DefinedTerm",
+     "name": "LC-MS/MS isotope-dilution quantification of PFAS",
+     "nrr:entityType": "assay",
+     "nrr:role": "analytical method"
+    },
+    {
+     "@id": "assay:epr-btno",
+     "@type": "DefinedTerm",
+     "name": "X-band CW EPR of the benzotriazole-N-oxyl (BTNO) radical",
+     "nrr:entityType": "assay",
+     "nrr:role": "mediator radical check"
+    },
+    {
+     "@id": "assay:dmp-activity",
+     "@type": "DefinedTerm",
+     "name": "DMP laccase activity assay",
+     "nrr:entityType": "assay",
+     "nrr:role": "enzyme activity check"
+    },
+    {
+     "@id": "https://ror.org/01an7q238",
+     "@type": "Organization",
+     "name": "University of California, Berkeley",
+     "nrr:entityType": "organization"
+    },
+    {
+     "@id": "NCBITaxon:5325",
+     "@type": "Taxon",
+     "name": "Trametes versicolor",
+     "nrr:entityType": "organism",
+     "nrr:role": "white-rot fungus; source of TvL, the laccase used in every TvL experiment",
+     "nrr:scheme": "NCBI Taxonomy"
+    },
+    {
+     "@id": "NCBITaxon:5341",
+     "@type": "Taxon",
+     "name": "Agaricus bisporus",
+     "nrr:entityType": "organism",
+     "nrr:role": "source of the second commercial laccase in the mediator screen",
+     "nrr:scheme": "NCBI Taxonomy"
+    },
+    {
+     "@id": "NCBITaxon:5322",
+     "@type": "Taxon",
+     "name": "Pleurotus ostreatus",
+     "nrr:entityType": "organism",
+     "nrr:role": "source of the laccase in the prior reports; no longer commercially available",
+     "nrr:scheme": "NCBI Taxonomy"
+    }
+   ]
+  },
+  "idempotencyKey": "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+  "profile": "https://portolansoft.com/profile/nrr/0.2",
+  "record": {
+   "@id": "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+   "aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "applicabilityConditions": {
+    "analysis": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+    "duration": "24 h to 28 days with repeated enzyme and mediator dosing",
+    "enzymes": "Trametes versicolor laccase (MilliporeSigma) for the TvL experiments; Agaricus bisporus and a native white-rot laccase in the screen; the Pleurotus ostreatus laccase of the prior reports was not available",
+    "matrices": "10 mM CuSO4 pH 5 or 50 mM sodium malonate pH 4.5",
+    "note": "the negative is about detectable degradation under these conditions; sorption to the enzyme is shown to mimic up to about 60 % apparent removal when only the aqueous phase is sampled",
+    "substrateConcentrations": "1 uM (screen and two-week experiment) and 0.1 uM (96 h and 24 h experiments)",
+    "system": "laccase mediator systems with nitroxyl (N-OH or N-oxyl) mediators in aerated batch reactors at 30 °C"
+   },
+   "attemptType": "wet-lab",
+   "confidence": {
+    "basis": "each check has its own comparator or chemical standard",
+    "level": "high"
+   },
+   "contentAddress": "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+   "cost": {
+    "note": "batch reactors in triplicate; the longest experiment 28 days; no monetary cost reported",
+    "source": "Materials and Methods; SI",
+    "wetLabDays": 28
+   },
+   "dateCreated": "2026-09-25T00:00:00Z",
+   "domainTags": [
+    "chemistry"
+   ],
+   "entities": [
+    {
+     "id": "pubchem:CID9554",
+     "label": "perfluorooctanoic acid (PFOA)",
+     "role": "target substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID74483",
+     "label": "perfluorooctanesulfonic acid (PFOS)",
+     "role": "target substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID2554",
+     "label": "carbamazepine (CBZ)",
+     "role": "positive-control substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID75771",
+     "label": "1-hydroxybenzotriazole (HBT)",
+     "role": "nitroxyl mediator",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID10665",
+     "label": "N-hydroxyphthalimide (HPI)",
+     "role": "nitroxyl mediator",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID66599",
+     "label": "violuric acid",
+     "role": "nitroxyl mediator",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID2724126",
+     "label": "TEMPO",
+     "role": "nitroxyl mediator",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID42643072",
+     "label": "AZADO (2-azaadamantane N-oxyl)",
+     "role": "nitroxyl mediator",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "protein:trametes-versicolor-laccase",
+     "label": "Trametes versicolor laccase (TvL), MilliporeSigma",
+     "note": "commercial preparation; no UniProt accession is given in the article",
+     "role": "enzyme under test",
+     "type": "protein"
+    },
+    {
+     "id": "protein:agaricus-bisporus-laccase",
+     "label": "Agaricus bisporus laccase, MilliporeSigma",
+     "role": "enzyme in the mediator screen",
+     "type": "protein"
+    },
+    {
+     "id": "protein:native-white-rot-laccase",
+     "label": "native white rot fungal laccase, Creative Enzymes",
+     "note": "species not stated",
+     "role": "enzyme in the mediator screen",
+     "type": "protein"
+    },
+    {
+     "id": "pubchem:CID24462",
+     "label": "copper(II) sulfate, 10 mM, pH 5",
+     "role": "reaction matrix",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID8865",
+     "label": "sodium malonate buffer, 50 mM, pH 4.5",
+     "role": "reaction matrix",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID7041",
+     "label": "2,6-dimethoxyphenol (DMP)",
+     "role": "laccase activity assay substrate",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "pubchem:CID887",
+     "label": "basic methanol (0.5 % NH4OH)",
+     "role": "quench and extraction solvent",
+     "scheme": "PubChem",
+     "type": "compound"
+    },
+    {
+     "id": "assay:lc-msms-pfas",
+     "label": "LC-MS/MS isotope-dilution quantification of PFAS",
+     "note": "LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+     "role": "analytical method",
+     "type": "assay"
+    },
+    {
+     "id": "assay:epr-btno",
+     "label": "X-band CW EPR of the benzotriazole-N-oxyl (BTNO) radical",
+     "note": "X-band (9.4 GHz) CW EPR, Bruker EleXsys E500; BTNO from Ce(IV) in CH3CN at room temperature and from TvL/HBT/CuSO4 in water at 50 K; simulations in EasySpin 5.2.35 (Text S3)",
+     "role": "mediator radical check",
+     "type": "assay"
+    },
+    {
+     "id": "assay:dmp-activity",
+     "label": "DMP laccase activity assay",
+     "note": "2,6-dimethoxyphenol (DMP) oxidation to the quinone at 468 nm, 96-well plate, triplicate (Text S5)",
+     "role": "enzyme activity check",
+     "type": "assay"
+    },
+    {
+     "id": "https://ror.org/01an7q238",
+     "label": "University of California, Berkeley",
+     "note": "Departments of Chemistry and of Civil and Environmental Engineering; EPR at the CalEPR Center, University of California, Davis",
+     "type": "organization"
+    },
+    {
+     "id": "NCBITaxon:5325",
+     "label": "Trametes versicolor",
+     "role": "white-rot fungus; source of TvL, the laccase used in every TvL experiment",
+     "scheme": "NCBI Taxonomy",
+     "type": "organism"
+    },
+    {
+     "id": "NCBITaxon:5341",
+     "label": "Agaricus bisporus",
+     "role": "source of the second commercial laccase in the mediator screen",
+     "scheme": "NCBI Taxonomy",
+     "type": "organism"
+    },
+    {
+     "id": "NCBITaxon:5322",
+     "label": "Pleurotus ostreatus",
+     "role": "source of the laccase in the prior reports; no longer commercially available",
+     "scheme": "NCBI Taxonomy",
+     "type": "organism"
+    }
+   ],
+   "findings": [
+    {
+     "conditions": {
+      "doses": 3,
+      "duration": "120 h",
+      "enzymeUnitsPerMl": 2,
+      "matrix": "50 mM sodium malonate pH 4.5",
+      "mediatorConcentration": "1 mM"
+     },
+     "controls": {
+      "negative": {
+       "expected": "no removal",
+       "kind": "no-treatment",
+       "label": "untreated, TvL only, HBT only",
+       "observed": "no comparable removal",
+       "passed": true
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "effect": {
+      "comparedTo": "untreated, TvL-only and HBT-only reactors",
+      "direction": "decrease",
+      "metric": "CBZ removal after three doses over 120 h",
+      "n": 3,
+      "pValue": "< 0.001",
+      "significant": true,
+      "test": "two-tailed t test",
+      "unit": "%",
+      "value": 35
+     },
+     "evidence": [
+      {
+       "label": "Results paragraph 2; SI Figure S3",
+       "locator": "Results paragraph 2; SI Figure S3",
+       "quote": "three doses of 2 units/mL TvL and 1 mM HBT over the course of 120 h resulted in significant removal, ~35 %, of CBZ (p < 0.001; two-tailed t test)",
+       "source": "10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "id": "cbz-transformed",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "This is the positive control for the TvL/HBT PFAA findings: the same enzyme and mediator in the same buffer are oxidatively active on a persistent, hydrophobic contaminant.",
+     "outcomeClass": "positive",
+     "question": "Does the TvL/HBT system transform the surrogate substrate carbamazepine under literature conditions?",
+     "target": {
+      "identifier": "pubchem:CID2554",
+      "label": "carbamazepine (CBZ)",
+      "type": "compound"
+     }
+    },
+    {
+     "conditions": {
+      "assay": "DMP oxidation at 468 nm, triplicate",
+      "matrices": [
+       "5 mM CuSO4",
+       "0.1 M sodium acetate",
+       "5 mM FeSO4"
+      ]
+     },
+     "controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "kind": "none"
+      }
+     },
+     "effect": {
+      "direction": "not-applicable",
+      "metric": "laccase activity profile by DMP assay",
+      "value": "similar in 5 mM CuSO4 and 0.1 M sodium acetate; none in 5 mM FeSO4"
+     },
+     "evidence": [
+      {
+       "label": "SI Text S5, Figure S5",
+       "locator": "Results paragraph 3; SI Text S5, Figure S5",
+       "source": "10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "id": "activity-retained",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "note": "Activity declined over 6 to 8 h in the presence of HBT (SI Figure S8), which is why the 96 h experiment was dosed twice daily.",
+     "outcomeClass": "positive",
+     "question": "Does TvL retain activity in the CuSO4 solution used for PFAA reactors, compared with acetate buffer?",
+     "target": {
+      "identifier": "protein:trametes-versicolor-laccase",
+      "label": "Trametes versicolor laccase (TvL)",
+      "type": "protein"
+     }
+    },
+    {
+     "conditions": {
+      "aqueousSample": "1 mM HBT, 12 mg/mL TvL, 10 uM CuSO4 at 50 K",
+      "chemicalSample": "20 mM Ce(IV) and 20 mM HBT in CH3CN, room temperature",
+      "frequencyGHz": 9.4,
+      "g": 2.0069
+     },
+     "controls": {
+      "negative": {
+       "kind": "none"
+      },
+      "positive": {
+       "expected": "literature hyperfine pattern",
+       "kind": "designated",
+       "label": "BTNO generated chemically by Ce(IV) ammonium nitrate in CH3CN",
+       "observed": "g = 2.0069, three 1H and three 14N couplings matching Galli et al. 2004",
+       "passed": true
+      }
+     },
+     "effect": {
+      "direction": "not-applicable",
+      "metric": "EPR detection of BTNO",
+      "note": "hyperfine structure resolved at room temperature in CH3CN (Ce(IV) oxidation) and not resolved in the frozen aqueous laccase sample at 50 K, attributed to anisotropic line broadening",
+      "value": "detected in both routes"
+     },
+     "evidence": [
+      {
+       "label": "SI Text S3, Figures S6 and S7",
+       "locator": "Results paragraph 3; SI Text S3, Figures S6 and S7",
+       "source": "10.1021/acs.estlett.3c00173"
+      }
+     ],
+     "id": "btno-radical",
+     "informativeness": "not-applicable",
+     "informativenessReason": "rule applies to negative and inconclusive findings only",
+     "outcomeClass": "positive",
+     "question": "Does the TvL/HBT/CuSO4 system generate the benzotriazole-N-oxyl (BTNO) radical proposed to oxidise contaminants?",
+     "target": {
+      "label": "benzotriazole-N-oxyl radical from HBT",
+      "type": "compound"
+     }
+    }
+   ],
+   "integrity": {
+    "contentAddress": "urn:portolan:nrr:sha256:b5b9ccb3ffcbd5207540cef61e524370a5e0ed1462727de7798b9170a757bd0a",
+    "duplicateOf": null,
+    "signature": null,
+    "signer": null,
+    "trustTier": "pilot-unsigned"
+   },
+   "isPartOf": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+   "kind": "attempt",
+   "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "operator": {
+    "identifier": "https://ror.org/01an7q238",
+    "name": "University of California, Berkeley",
+    "type": "Organization"
+   },
+   "outcomeClass": "positive",
+   "outcomeSummary": "About 35 % CBZ removal (p < 0.001); BTNO radical detected by EPR in the laccase system; TvL activity retained in CuSO4 and acetate.",
+   "pathType": "experiment",
+   "performers": [
+    {
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0003-4663-8264",
+     "name": "Sophia D. Steffens",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "name": "Edmund H. Antell",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0002-4587-3097",
+     "name": "Emily K. Cook",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Davis",
+     "identifier": "https://orcid.org/0000-0001-8043-3436",
+     "name": "Guodong Rao",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Davis",
+     "identifier": "https://orcid.org/0000-0003-0889-8436",
+     "name": "R. David Britt",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "identifier": "https://orcid.org/0000-0003-1686-8464",
+     "name": "David L. Sedlak",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of California, Berkeley",
+     "name": "Lisa Alvarez-Cohen",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    }
+   ],
+   "profile": "https://portolansoft.com/profile/nrr/0.2",
+   "question": "Are the enzyme, the mediator radical and the reaction matrix each functioning, so that a PFAA negative would be a property of the chemistry rather than of a dead system?",
+   "relations": [
+    {
+     "target": "urn:portolan:nrr:sha256:8f35290064af4addfa147bba9efc6b1689fb2e45a435d375bbdff259eab79596",
+     "type": "isPartOf"
+    }
+   ],
+   "slug": "acs-laccase-system-checks",
+   "sourceLicense": "CC BY 4.0",
+   "sources": [
+    {
+     "identifier": "doi:10.1021/acs.estlett.3c00173",
+     "label": "An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+     "role": "source-publication",
+     "statusAtCheck": {
+      "assertedBy": "crossref-relation",
+      "checkedAt": "2026-10-03T01:55:18Z",
+      "integrity": "none",
+      "version": "VoR"
+     },
+     "url": "https://doi.org/10.1021/acs.estlett.3c00173"
+    },
+    {
+     "data": [
+      {
+       "accession": "PMC10100556",
+       "checksum": "sha256:94d0c1f8982a6015ad6667433f4cc653bfca2848a6f91b9fdb55dc985ced151b",
+       "format": "application/pdf",
+       "label": "ez3c00173_si_001.pdf",
+       "repository": "Europe PMC",
+       "role": "Supporting Information: protocols (Text S1 to S5), Tables S1 to S3, Figures S1 to S8",
+       "size": 594281,
+       "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+      }
+     ],
+     "identifier": "pmc:PMC10100556/ez3c00173_si_001.pdf",
+     "label": "Supporting Information (PDF)",
+     "license": "https://creativecommons.org/licenses/by/4.0/",
+     "note": "No data availability statement and no deposit; data tables associated with the main-text figures are in the Supporting Information. Tables S2 and S3 are images in the PDF.",
+     "role": "supplementary",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10100556/supplementaryFiles"
+    }
+   ],
+   "stages": [
+    {
+     "conditions": {
+      "dosing": "three doses at 0, 48 and 72 h",
+      "duration": "120 h",
+      "enzyme": "Trametes versicolor laccase (TvL)",
+      "enzymeUnitsPerMl": "2",
+      "matrix": "50 mM sodium malonate pH 4.5",
+      "mediator": "HBT",
+      "mediatorConcentration": "1 mM",
+      "substrate": "carbamazepine",
+      "substrateConcentrationUm": "0.1"
+     },
+     "instrument": [
+      "New Brunswick Excella E25 shaker incubator",
+      "Agilent Triple Quad 6460A LC-MS/MS"
+     ],
+     "label": "carbamazepine transformation with TvL and HBT",
+     "method": "20 mL glass scintillation vials, 5 mL solution, 30 °C, 130 rpm; opened at least 10 minutes at each sampling to promote aeration; aliquots diluted immediately in basic methanol (0.5 % ammonium hydroxide); LC-MS/MS, Agilent Triple Quad 6460A, negative electrospray, multiple reaction monitoring; isotope dilution with mass-labelled 13C PFAAs at 2 to 5 ug/L; calibration range 0.2 to 10 ug/L; samples diluted to a target of 10 ug/L; delay column after the purge valve; mobile-phase blanks every 10 samples (Text S2)",
+     "performedBy": [
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-4663-8264",
+       "name": "Sophia D. Steffens",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Edmund H. Antell",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0002-4587-3097",
+       "name": "Emily K. Cook",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0001-8043-3436",
+       "name": "Guodong Rao",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0003-0889-8436",
+       "name": "R. David Britt",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-1686-8464",
+       "name": "David L. Sedlak",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Lisa Alvarez-Cohen",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "replicates": {
+      "reactors": 3
+     },
+     "stage": "experiment"
+    },
+    {
+     "instrument": [
+      "Bruker Biospin EleXsys E500 X-band EPR spectrometer (CalEPR Center, UC Davis)",
+      "Shimadzu UV-vis plate reader"
+     ],
+     "label": "EPR and activity checks",
+     "method": "X-band (9.4 GHz) CW EPR, Bruker EleXsys E500; BTNO from Ce(IV) in CH3CN at room temperature and from TvL/HBT/CuSO4 in water at 50 K; simulations in EasySpin 5.2.35 (Text S3); 2,6-dimethoxyphenol (DMP) oxidation to the quinone at 468 nm, 96-well plate, triplicate (Text S5)",
+     "performedBy": [
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-4663-8264",
+       "name": "Sophia D. Steffens",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Edmund H. Antell",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0002-4587-3097",
+       "name": "Emily K. Cook",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0001-8043-3436",
+       "name": "Guodong Rao",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Davis",
+       "identifier": "https://orcid.org/0000-0003-0889-8436",
+       "name": "R. David Britt",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "identifier": "https://orcid.org/0000-0003-1686-8464",
+       "name": "David L. Sedlak",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      },
+      {
+       "affiliation": "University of California, Berkeley",
+       "name": "Lisa Alvarez-Cohen",
+       "note": "listed author; the article carries no author-contribution statement",
+       "role": "writing",
+       "type": "person"
+      }
+     ],
+     "stage": "experiment"
+    }
+   ],
+   "studyId": "acs-laccase",
+   "successCriteria": "Significant CBZ removal, EPR detection of BTNO, and retained laccase activity in CuSO4.",
+   "title": "The TvL/HBT system is active: carbamazepine is transformed, the BTNO radical forms, and enzyme activity is retained in the PFAA matrix",
+   "version": "1",
+   "visibility": "public"
+  },
+  "visibility": "public"
+ },
+ "tool": "nrr_deposit"
+}
