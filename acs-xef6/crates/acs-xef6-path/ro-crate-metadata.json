@@ -1,0 +1,730 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048",
+   "name": "RuF6 does not oxidise XeF6 to xenon(VIII); F2 is evolved and only xenon(VI) salts form, one of them new",
+   "description": "Can RuF6, a strong one-electron oxidiser of low Lewis acidity, oxidise XeF6 to a xenon(VIII) fluoride species such as a [XeF7]+ salt or XeF8?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "path",
+   "nrr:studyId": "acs-xef6",
+   "nrr:slug": "acs-xef6-path",
+   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:visibility": "public",
+   "nrr:pathType": "mixed",
+   "nrr:successCriteria": "Isolation or spectroscopic identification of a xenon(VIII) fluoride species, for example [XeF7]+ by its predicted Raman bands or by single-crystal X-ray diffraction.",
+   "keywords": [
+    "chemistry"
+   ],
+   "hasPart": [
+    {
+     "@id": "urn:portolan:nrr:sha256:4e4eb350611d6cd0f4dda9a8cff4e3e8ee153c45caf2573c3f50447c98f34c0c"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:e5c63bcf6346ddf58e543e43db0266786f87a20333ac861ffa004d4567d927c1"
+    },
+    {
+     "@id": "urn:portolan:nrr:sha256:7947d3eb0fa82af824b9b3fab34530bdf78085a73acf088928a934d751099265"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-bj-rn-n-koch-writing"
+    },
+    {
+     "@id": "#performer-giuliana-ho-writing"
+    },
+    {
+     "@id": "#performer-gregor-schnakenburg-writing"
+    },
+    {
+     "@id": "#performer-antti-j-karttunen-writing"
+    },
+    {
+     "@id": "#performer-florian-kraus-writing"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "reaction": "RuF6 with XeF6, neat or in anhydrous HF, RuF6:XeF6 from excess XeF6 through 1:1 and 2:1 to excess RuF6",
+    "temperatures": "thawed from 77 K to room temperature, and -78 degrees C",
+    "vessels": "PFA or FEP reaction vessels on a fluorine-passivated Monel Schlenk line",
+    "productProbes": "single-crystal and powder X-ray diffraction, Raman and IR; [XeF7]+ sought by its predicted Raman bands at 588, 647 and 503 cm-1",
+    "runCount": "not reported for any condition",
+    "note": "the authors restrict their conclusion to 'the conditions investigated by us so far'"
+   },
+   "nrr:invalidators": [
+    "isolation of any [XeF7]+ salt or of XeF8 from RuF6 and XeF6 under conditions not tried here, for example lower temperature, a different solvent or a Lewis acid additive",
+    "a demonstration that [XeF7]+ forms transiently and decomposes, which would change the finding from 'not formed' to 'formed and lost'"
+   ],
+   "nrr:untriedBranches": [
+    {
+     "description": "Find conditions under which [XeF7]+ survives long enough to be trapped as an ionic solid, since the thermodynamic estimates do not rule out [XeF7][RuF6].",
+     "status": "proposed-by-authors",
+     "source": "Why does RuF6 fail to oxidize XeF6; Conclusions"
+    },
+    {
+     "description": "Establish redox potentials or a Galvanic series for anhydrous HF.",
+     "status": "proposed-by-authors",
+     "source": "Why does RuF6 fail to oxidize XeF6; Conclusions"
+    },
+    {
+     "description": "A solvent other than anhydrous HF, or a Lewis acid additive, given that aHF raises the oxidising power of F2 toward NF3 only with AsF5 or SbF5 present.",
+     "status": "inferred-by-ingest",
+     "source": "The choice of solvent aHF and comparison of the reactivity of oxidizers"
+    }
+   ],
+   "nrr:openQuestions": [
+    "Is [XeF7]+ formed transiently and lost by F2 elimination, or never formed at all under these conditions?",
+    "Would a solvent other than aHF, or a different counter-anion, change the outcome, given that the salt also forms neat?"
+   ],
+   "nrr:cost": {
+    "note": "number of reactions per condition is not reported; amounts of 30 to 120 mg per reaction; no monetary cost reported",
+    "source": "Experimental Section"
+   },
+   "nrr:provenanceNotes": [
+    "Reaction conditions are described in prose, not tabulated. Each condition is a finding with its Results and Discussion paragraph as locator; the two preparations in the Experimental Section give masses for the excess-XeF6 and equimolar reactions only. No run count is reported for any condition.",
+    "The positive finding, a new fully characterised compound, is an attempt of its own derived from the failed oxidation (relation wasDerivedFrom), so the path stays a negative for its stated target while the by-product is queryable as a positive with its CCDC deposit.",
+    "The explanation is thermodynamic reasoning (fluoride ion affinities, lattice energies, known instability of [XeF7]+ to F2 loss), recorded as a computational attempt of class partial, because the authors conclude it does not rule the target out and no redox potentials exist for anhydrous HF.",
+    "The article has no author-contribution statement; every author is recorded with the role 'writing' only."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "nrr:confidence": {
+    "level": "low",
+    "basis": "no positive control, no run counts, no detection limit for [XeF7]+, and the authors themselves say the conditions may not be right yet"
+   },
+   "nrr:outcomeSummary": "At every ratio and temperature tried, F2 evolved and only xenon(VI) salts formed: the new [Xe2F11][RuF6] with excess XeF6, the known [XeF5][RuF6] at 1:1, and [XeF5]+ oligofluoridoruthenates with excess RuF6. So, why does RuF6 fail to oxidize XeF6? Well, it may be that our reaction conditions are not right, yet. ... Under the conditions investigated by us so far, we only observe F2 elimination and no evidence of any Xe(VIII) compound.",
+   "nrr:hypothesis": "Oxidise XeF6 with RuF6 in anhydrous HF to a xenon(VIII) fluoride species, XeF8 or a [XeF7]+ salt, which no fluoride-only route has ever produced. RuF6 is, with [KrF]+ and [NiF3]+, one of only three oxidisers able to oxidise BrF5 to [BrF6]+, and it is far less Lewis acidic than the two cations, so it should not simply abstract fluoride from XeF6 as they do",
+   "nrr:nextSteps": [
+    "Find conditions under which [XeF7]+ survives long enough to be trapped as an ionic solid, since the thermodynamic estimates do not rule out [XeF7][RuF6].",
+    "Establish redox potentials or a Galvanic series for anhydrous HF."
+   ],
+   "nrr:screenedSummary": {
+    "oxidisersPreviouslyTriedForXeVIII": 3,
+    "oxidisersTriedHere": 1
+   },
+   "nrr:governance": {
+    "humanSubjectData": "none",
+    "biosecurityTier": "none"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "pmc:PMC13343514/ic6c02072_si_001.pdf"
+    },
+    {
+     "@id": "ccdc:2477117"
+    },
+    {
+     "@id": "https://doi.org/10.1016/0022-1902(70)80296-2"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic50046a026"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic901956g"
+    },
+    {
+     "@id": "https://doi.org/10.1016/S0010-8545(02)00202-3"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic00314a008"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ja00145a013"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic50126a002"
+    },
+    {
+     "@id": "https://doi.org/10.1016/0022-1902(80)80325-3"
+    },
+    {
+     "@id": "https://doi.org/10.1039/c39730000131"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic50134a003"
+    },
+    {
+     "@id": "https://doi.org/10.1021/jp1022949"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ic001024+"
+    },
+    {
+     "@id": "https://doi.org/10.1002/ejic.201700097"
+    },
+    {
+     "@id": "https://doi.org/10.3390/molecules28083370"
+    },
+    {
+     "@id": "https://doi.org/10.1021/ja00034a033"
+    },
+    {
+     "@id": "https://doi.org/10.1016/S1387-1609(99)80073-5"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "pubchem:CID139546"
+    },
+    {
+     "@id": "pubchem:CID21528530"
+    },
+    {
+     "@id": "pubchem:CID14917"
+    },
+    {
+     "@id": "pubchem:CID24524"
+    },
+    {
+     "@id": "pubchem:CID4875"
+    },
+    {
+     "@id": "pubchem:CID167109"
+    },
+    {
+     "@id": "compound:xef7-cation-or-xef8"
+    },
+    {
+     "@id": "ccdc:2477117"
+    },
+    {
+     "@id": "compound:xef5-ruf6"
+    },
+    {
+     "@id": "compound:xef5-oligofluoridoruthenate"
+    },
+    {
+     "@id": "assay:scxrd"
+    },
+    {
+     "@id": "assay:raman-ir"
+    },
+    {
+     "@id": "https://ror.org/041nas322"
+    },
+    {
+     "@id": "https://ror.org/020hwjq30"
+    },
+    {
+     "@id": "software:crystal23"
+    },
+    {
+     "@id": "software:orca"
+    },
+    {
+     "@id": "software:shelxt"
+    },
+    {
+     "@id": "software:apex5"
+    },
+    {
+     "@id": "software:diamond"
+    },
+    {
+     "@id": "software:findsym"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "University of Bonn",
+   "identifier": "https://ror.org/041nas322"
+  },
+  {
+   "@id": "#performer-bj-rn-n-koch-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Björn N. Koch",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-giuliana-ho-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Giuliana Hoß",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-gregor-schnakenburg-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Gregor Schnakenburg",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-antti-j-karttunen-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Antti J. Karttunen",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "Aalto University",
+   "nrr:identifier": "https://orcid.org/0000-0003-4187-5447",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-florian-kraus-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Florian Kraus",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:identifier": "https://orcid.org/0000-0003-4368-8418",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]",
+   "nrr:url": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:46Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "This article is licensed under CC-BY 4.0 (JATS permissions element; Europe PMC license field 'cc by')"
+  },
+  {
+   "@id": "pmc:PMC13343514/ic6c02072_si_001.pdf",
+   "@type": "Dataset",
+   "nrr:role": "supplementary",
+   "name": "Supporting Information (PDF)",
+   "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles",
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "Crystallographic data for [Xe2F11][RuF6] deposited as CCDC 2477117 (joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service); everything else in the Supporting Information.",
+   "nrr:data": [
+    {
+     "label": "ic6c02072_si_001.pdf",
+     "repository": "Europe PMC",
+     "accession": "PMC13343514",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles",
+     "checksum": "sha256:3b4b2283f080ee0c5199efcd9bb84e9cd64a6563f2718679b720d1cf7c8322f3",
+     "size": 589210,
+     "format": "application/pdf",
+     "role": "Supporting Information: crystallographic details, powder patterns and vibrational spectra of both salts, computational details, FIA coordinates"
+    }
+   ]
+  },
+  {
+   "@id": "ccdc:2477117",
+   "@type": "Dataset",
+   "nrr:role": "data-deposit",
+   "name": "CCDC 2477117: crystal structure of [Xe2F11][RuF6]",
+   "nrr:url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+   "nrr:note": "joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service; the only machine-readable deposit of the four ACS studies",
+   "nrr:data": [
+    {
+     "label": "CCDC 2477117",
+     "repository": "CCDC Access Structures",
+     "accession": "2477117",
+     "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+     "format": "CIF",
+     "role": "single-crystal structure at 100 K"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1016/0022-1902(70)80296-2",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "earlier Xe(VIII) attempt with F2",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:43Z"
+   },
+   "nrr:note": "XeF8 suggested by Slivnik and co-workers; attempts to make it from F2 and Xe failed; predicted thermodynamically unstable to F2 loss"
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic50046a026",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "earlier Xe(VIII) attempt with F2",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:48Z"
+   },
+   "nrr:note": "XeF8 suggested by Slivnik and co-workers; attempts to make it from F2 and Xe failed; predicted thermodynamically unstable to F2 loss"
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic901956g",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "earlier Xe(VIII) attempt with F2",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:50Z"
+   },
+   "nrr:note": "XeF8 suggested by Slivnik and co-workers; attempts to make it from F2 and Xe failed; predicted thermodynamically unstable to F2 loss"
+  },
+  {
+   "@id": "https://doi.org/10.1016/S0010-8545(02)00202-3",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "earlier Xe(VIII) attempt with [KrF]+",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:44Z"
+   },
+   "nrr:note": "XeF6 is a fluoride ion donor; the reaction gives KrF2 and [XeF5]+ (equation 1)"
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic00314a008",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "earlier Xe(VIII) attempt with [NiF3]+",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:47Z"
+   },
+   "nrr:note": "gives [NiF6]2- and [XeF5]+ (equation 2); in aHF at -65 degrees C [XeF5]2[NiF6], or with excess XeF6 [Xe2F11]2[NiF6], with no F2 evolution"
+  },
+  {
+   "@id": "https://doi.org/10.1021/ja00145a013",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "earlier Xe(VIII) attempt with [NiF3]+",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:52Z"
+   },
+   "nrr:note": "gives [NiF6]2- and [XeF5]+ (equation 2); in aHF at -65 degrees C [XeF5]2[NiF6], or with excess XeF6 [Xe2F11]2[NiF6], with no F2 evolution"
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic50126a002",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Bartlett et al. 1973: crystal structures of [XeF][RuF6] and [XeF5][RuF6]",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:49Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/0022-1902(80)80325-3",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "prior-art",
+   "name": "Burns and O'Donnell 1980: oxidation-reduction reactions of RuF6",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:44Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1039/c39730000131",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "comparator",
+   "name": "Leary, Zalkin, Bartlett 1973: [Xe2F11][AuF6] structure",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:53Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic50134a003",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "comparator",
+   "name": "Leary, Zalkin, Bartlett 1974: [Xe2F11][AuF6] and the Raman spectrum of [Xe2F11]+",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:50Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/jp1022949",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Craciun et al. 2010: electron and fluoride affinities of second-row MF6",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:52Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/ic001024+",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Schroer and Christe 2001: [ClF6]+ and [BrF6]+ salts",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:47Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1002/ejic.201700097",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Mazej and Goreshnik 2017: mixed-cation [XeF5]+ salts",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:42Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.3390/molecules28083370",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Mazej and Goreshnik 2023: xenon(VI) salts including XeF5RuF6",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:54Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1021/ja00034a033",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Christe and Dixon 1992: quantitative scale for oxidative fluorinators",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:51Z"
+   }
+  },
+  {
+   "@id": "https://doi.org/10.1016/S1387-1609(99)80073-5",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "reference",
+   "name": "Zemva 1998: anhydrous HF as a solvent for high oxidation states",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:45Z"
+   }
+  },
+  {
+   "@id": "pubchem:CID139546",
+   "@type": "ChemicalSubstance",
+   "name": "xenon hexafluoride (XeF6)",
+   "nrr:entityType": "compound",
+   "nrr:role": "substrate to be oxidised",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID21528530",
+   "@type": "ChemicalSubstance",
+   "name": "ruthenium hexafluoride (RuF6)",
+   "nrr:entityType": "compound",
+   "nrr:role": "oxidiser",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID14917",
+   "@type": "ChemicalSubstance",
+   "name": "anhydrous hydrogen fluoride (aHF)",
+   "nrr:entityType": "compound",
+   "nrr:role": "solvent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID24524",
+   "@type": "ChemicalSubstance",
+   "name": "fluorine (F2)",
+   "nrr:entityType": "compound",
+   "nrr:role": "evolved by-product, detected with KI",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID4875",
+   "@type": "ChemicalSubstance",
+   "name": "potassium iodide (KI)",
+   "nrr:entityType": "compound",
+   "nrr:role": "F2 detection reagent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID167109",
+   "@type": "ChemicalSubstance",
+   "name": "ruthenium pentafluoride (RuF5)",
+   "nrr:entityType": "compound",
+   "nrr:role": "reduction product with excess RuF6",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "compound:xef7-cation-or-xef8",
+   "@type": "ChemicalSubstance",
+   "name": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+   "nrr:entityType": "compound",
+   "nrr:role": "target, never observed"
+  },
+  {
+   "@id": "compound:xef5-ruf6",
+   "@type": "ChemicalSubstance",
+   "name": "[XeF5][RuF6], known xenon(VI) salt",
+   "nrr:entityType": "compound",
+   "nrr:role": "product of the equimolar reaction"
+  },
+  {
+   "@id": "compound:xef5-oligofluoridoruthenate",
+   "@type": "ChemicalSubstance",
+   "name": "[XeF5][RunF5n+1] (n = 1, 2, 3, ...)",
+   "nrr:entityType": "compound",
+   "nrr:role": "products with excess RuF6, not quantified"
+  },
+  {
+   "@id": "assay:scxrd",
+   "@type": "DefinedTerm",
+   "name": "single-crystal X-ray diffraction, Bruker D8 Quest, Mo Kalpha, 100 K",
+   "nrr:entityType": "assay",
+   "nrr:role": "structure determination"
+  },
+  {
+   "@id": "assay:raman-ir",
+   "@type": "DefinedTerm",
+   "name": "Raman (532 nm, sealed quartz capillary) and ATR IR spectroscopy in an argon glovebox",
+   "nrr:entityType": "assay",
+   "nrr:role": "product identification; the only probe for [XeF7]+"
+  },
+  {
+   "@id": "https://ror.org/041nas322",
+   "@type": "Organization",
+   "name": "University of Bonn",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "https://ror.org/020hwjq30",
+   "@type": "Organization",
+   "name": "Aalto University",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "software:crystal23",
+   "@type": "SoftwareApplication",
+   "name": "CRYSTAL23",
+   "nrr:entityType": "software",
+   "nrr:role": "periodic DFT"
+  },
+  {
+   "@id": "software:orca",
+   "@type": "SoftwareApplication",
+   "name": "ORCA",
+   "nrr:entityType": "software",
+   "nrr:role": "fluoride ion affinity calculations",
+   "nrr:extra": {
+    "version": "6.1.1"
+   }
+  },
+  {
+   "@id": "software:shelxt",
+   "@type": "SoftwareApplication",
+   "name": "SHELXT and SHELXL (Shelxle)",
+   "nrr:entityType": "software",
+   "nrr:role": "structure solution and refinement"
+  },
+  {
+   "@id": "software:apex5",
+   "@type": "SoftwareApplication",
+   "name": "APEX5",
+   "nrr:entityType": "software",
+   "nrr:role": "diffraction data evaluation and absorption correction (SADABS)"
+  },
+  {
+   "@id": "software:diamond",
+   "@type": "SoftwareApplication",
+   "name": "Diamond",
+   "nrr:entityType": "software",
+   "nrr:role": "crystal structure representation"
+  },
+  {
+   "@id": "software:findsym",
+   "@type": "SoftwareApplication",
+   "name": "FINDSYM",
+   "nrr:entityType": "software",
+   "nrr:role": "symmetry of the optimised structure"
+  }
+ ]
+}
