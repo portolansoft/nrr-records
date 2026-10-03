@@ -1,0 +1,98 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.2/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.2"
+   },
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "Portolan NRR records: Is TMEDA inhibition a reliable test for hidden BH3 catalysis, and is any amine a better trap?",
+   "description": "Determine the temperature range over which trapping by N,N,N',N'-tetramethylethylenediamine (TMEDA) inhibits BH3-catalysed hydroboration with pinacolborane (HBpin), and therefore over which a lack of inhibition can be read as evidence of true, non-boron catalysis; and find whether any other amine is a better trap.",
+   "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "datePublished": "2026-09-25",
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "isBasedOn": {
+    "@id": "https://doi.org/10.1021/acs.orglett.4c03591"
+   },
+   "hasPart": [
+    {
+     "@id": "crates/acs-tmeda-path/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-tmeda-adduct-kinetics/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-tmeda-amine-screen/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-tmeda-loading/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-tmeda-literature-survey/ro-crate-metadata.json"
+    }
+   ],
+   "publisher": {
+    "@id": "#portolan"
+   }
+  },
+  {
+   "@id": "#portolan",
+   "@type": "Organization",
+   "name": "Portolan Software",
+   "url": "https://portolansoft.com/"
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.orglett.4c03591",
+   "@type": "ScholarlyArticle",
+   "name": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "crates/acs-tmeda-path/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Is TMEDA inhibition a reliable test for hidden BH3 catalysis, and is any amine a better trap?",
+   "identifier": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+   "nrr:outcomeClass": "partial"
+  },
+  {
+   "@id": "crates/acs-tmeda-adduct-kinetics/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "TMEDA.(BH3)2 is inert at 60 °C but catalyses HBpin hydroboration at 80 and 100 °C, so the TMEDA inhibition test gives false negatives above 60 °C",
+   "identifier": "urn:portolan:nrr:sha256:5412f69f33c8f06f18f58baa21ca7912acb9790702193d543525f0a06b877191",
+   "nrr:outcomeClass": "refuted"
+  },
+  {
+   "@id": "crates/acs-tmeda-amine-screen/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "No amine tested is a better BH3 trap than TMEDA: two match its 60 °C limit, four release BH3 at room temperature",
+   "identifier": "urn:portolan:nrr:sha256:71ad120a3ec26bf63a8b128eaa0708e89b5bd06b4e0d5661c7caa0099a26916c",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/acs-tmeda-loading/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Higher TMEDA loading improves but does not complete inhibition of hidden BH3 catalysis above 60 °C",
+   "identifier": "urn:portolan:nrr:sha256:9c68fcca19e5ba1241d8e31cb10f5e941290723c6a6530f59b24b85ff9d8e6bd",
+   "nrr:outcomeClass": "partial"
+  },
+  {
+   "@id": "crates/acs-tmeda-literature-survey/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Of 633 catalysed HBpin hydroboration papers since 2010, 24 used TMEDA inhibition and 15 of those ran it above 60 °C",
+   "identifier": "urn:portolan:nrr:sha256:74135a91e7862bbbae44ffb25e25c5f675173786df6beda56101f068e5a41b79",
+   "nrr:outcomeClass": "positive"
+  }
+ ]
+}

@@ -1,0 +1,724 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:9c68fcca19e5ba1241d8e31cb10f5e941290723c6a6530f59b24b85ff9d8e6bd",
+   "name": "Higher TMEDA loading improves but does not complete inhibition of hidden BH3 catalysis above 60 °C",
+   "description": "Can a higher TMEDA to 'catalyst' ratio rescue the inhibition test at 80 and 100 °C?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "attempt",
+   "nrr:studyId": "acs-tmeda",
+   "nrr:slug": "acs-tmeda-loading",
+   "nrr:outcomeClass": "partial",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "Less than 5 % product at 80 and 100 °C with a loading that would be practical in a test reaction.",
+   "keywords": [
+    "chemistry"
+   ],
+   "hasPart": [
+    {
+     "@id": "#attempt"
+    },
+    {
+     "@id": "#finding-loading-alkyne"
+    },
+    {
+     "@id": "#finding-loading-alkene"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-julie-macleod-writing"
+    },
+    {
+     "@id": "#performer-andrew-d-bage-writing"
+    },
+    {
+     "@id": "#performer-leonie-m-meyer-writing"
+    },
+    {
+     "@id": "#performer-stephen-p-thomas-writing"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+    "tmedaInhibitionTestValidUpToC": 60,
+    "falseNegativesFromC": 80,
+    "hbpinThermalDecompositionFromC": 80,
+    "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely",
+    "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+    "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+    "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis"
+   },
+   "nrr:cost": {
+    "note": "bench-scale NMR kinetics; runs are the average of two; no monetary cost reported",
+    "source": "SI Section S3"
+   },
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "nrr:confidence": {
+    "level": "medium",
+    "basis": "two runs per entry; the authors note BH3 generated in situ is far below the nominal catalyst concentration, so the loading needed in a real test is uncertain"
+   },
+   "nrr:outcomeSummary": "Alkyne: 0.5 eq TMEDA gives less than 5 % product at 80 and 100 °C. Alkene: 70 % at 0.5 eq and 80 °C; 11, 9 and 7 % at 0.5, 0.75 and 1.0 eq at 100 °C. The authors conclude false negatives remain possible.",
+   "isPartOf": {
+    "@id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb"
+   },
+   "mainEntity": {
+    "@id": "#attempt"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.1021/acs.orglett.4c03591"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "assay:tmeda-inhibition-test"
+    },
+    {
+     "@id": "pubchem:CID8037"
+    },
+    {
+     "@id": "compound:tmeda-bis-borane"
+    },
+    {
+     "@id": "pubchem:CID6364989"
+    },
+    {
+     "@id": "pubchem:CID6331"
+    },
+    {
+     "@id": "pubchem:CID9833925"
+    },
+    {
+     "@id": "pubchem:CID10821"
+    },
+    {
+     "@id": "pubchem:CID15627"
+    },
+    {
+     "@id": "pubchem:CID9237"
+    },
+    {
+     "@id": "pubchem:CID18196"
+    },
+    {
+     "@id": "pubchem:CID7972"
+    },
+    {
+     "@id": "pubchem:CID81531"
+    },
+    {
+     "@id": "pubchem:CID8471"
+    },
+    {
+     "@id": "pubchem:CID1146"
+    },
+    {
+     "@id": "pubchem:CID23664764"
+    },
+    {
+     "@id": "pubchem:CID69301"
+    },
+    {
+     "@id": "pubchem:CID1140"
+    },
+    {
+     "@id": "pubchem:CID8150"
+    },
+    {
+     "@id": "https://ror.org/01nrxwf90"
+    }
+   ],
+   "nrr:isPartOf": [
+    {
+     "@id": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "University of Edinburgh",
+   "identifier": "https://ror.org/01nrxwf90"
+  },
+  {
+   "@id": "#performer-julie-macleod-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Julie Macleod",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-andrew-d-bage-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Andrew D. Bage",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-leonie-m-meyer-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Leonie M. Meyer",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-stephen-p-thomas-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Stephen P. Thomas",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Edinburgh",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#finding-loading-alkyne",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does a higher loading of TMEDA relative to the 'catalyst' restore complete inhibition of hidden BH3 catalysis in the hydroboration of phenylacetylene at 80 and 100 °C?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does a higher loading of TMEDA relative to the 'catalyst' restore complete inhibition of hidden BH3 catalysis in the hydroboration of phenylacetylene at 80 and 100 °C?",
+   "nrr:target": {
+    "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+    "type": "assay",
+    "identifier": "assay:tmeda-inhibition-test"
+   },
+   "nrr:outcomeClass": "partial",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "product at 100 °C with 0.5 eq TMEDA",
+    "value": "<5",
+    "unit": "%",
+    "direction": "decrease",
+    "comparedTo": ">95 % with no TMEDA at 80 °C",
+    "note": "increased inhibition with loading but, for the alkene, not complete; false negatives remain possible"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "internal-positive",
+     "label": "no TMEDA, LiOtBu 10 mol %",
+     "expected": "hidden BH3 catalysis proceeds",
+     "observed": ">95 % product at 80 °C",
+     "passed": true
+    },
+    "negative": {
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "expected": "no product",
+     "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+     "passed": true,
+     "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+     "source": "SI S3.6 and Table 1 control row"
+    }
+   },
+   "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "nrr:conditions": {
+    "tmedaEquiv": 0.5,
+    "nucleophile": "LiOtBu 10 mol %",
+    "temperaturesC": [
+     80,
+     100
+    ],
+    "completeInhibitionAt": "0.5 eq TMEDA at 80 and 100 °C"
+   },
+   "nrr:evidence": [
+    {
+     "label": "SI Table S1, entry 1",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S1, entry 1",
+     "values": {
+      "tmedaEquiv": 0.0,
+      "temperatureC": 80,
+      "yieldPct": ">95"
+     }
+    },
+    {
+     "label": "SI Table S1, entry 2",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S1, entry 2",
+     "values": {
+      "tmedaEquiv": 0.1,
+      "temperatureC": 80,
+      "yieldPct": "70"
+     }
+    },
+    {
+     "label": "SI Table S1, entry 3",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S1, entry 3",
+     "values": {
+      "tmedaEquiv": 0.5,
+      "temperatureC": 80,
+      "yieldPct": "<5"
+     }
+    },
+    {
+     "label": "SI Table S1, entry 4",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S1, entry 4",
+     "values": {
+      "tmedaEquiv": 0.5,
+      "temperatureC": 100,
+      "yieldPct": "<5"
+     }
+    }
+   ],
+   "nrr:note": "SI S3.3.1 also shows that an extra 0.4 eq TMEDA with the adduct achieves inhibition at 80 °C but not at 100 °C (Schemes S3 and S4, yields in images).",
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#finding-loading-alkene",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does a higher loading of TMEDA relative to the 'catalyst' restore complete inhibition of hidden BH3 catalysis in the hydroboration of 4-tert-butylstyrene at 80 and 100 °C?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does a higher loading of TMEDA relative to the 'catalyst' restore complete inhibition of hidden BH3 catalysis in the hydroboration of 4-tert-butylstyrene at 80 and 100 °C?",
+   "nrr:target": {
+    "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+    "type": "assay",
+    "identifier": "assay:tmeda-inhibition-test"
+   },
+   "nrr:outcomeClass": "partial",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "product at 100 °C with 1.0 eq TMEDA",
+    "value": 7,
+    "unit": "%",
+    "direction": "decrease",
+    "comparedTo": ">95 % with no TMEDA at 80 °C",
+    "note": "increased inhibition with loading but, for the alkene, not complete; false negatives remain possible"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "internal-positive",
+     "label": "no TMEDA, LiOtBu 10 mol %",
+     "expected": "hidden BH3 catalysis proceeds",
+     "observed": ">95 % product at 80 °C",
+     "passed": true
+    },
+    "negative": {
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "expected": "no product",
+     "observed": "no reaction at room temperature; HBpin alone gives product only at 80 °C and above",
+     "passed": true,
+     "note": "clean to 70 °C; at 80 °C and above HBpin decomposes to BH3 thermally, so the background is not clean there",
+     "source": "SI S3.6 and Table 1 control row"
+    }
+   },
+   "nrr:sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "nrr:conditions": {
+    "tmedaEquiv": 1.0,
+    "nucleophile": "LiOtBu 10 mol %",
+    "temperaturesC": [
+     80,
+     100
+    ],
+    "completeInhibitionAt": "none of 0.5, 0.75 or 1.0 eq at 100 °C"
+   },
+   "nrr:evidence": [
+    {
+     "label": "SI Table S2, entry 1",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S2, entry 1",
+     "values": {
+      "tmedaEquiv": 0.0,
+      "temperatureC": 80,
+      "yieldPct": ">95"
+     }
+    },
+    {
+     "label": "SI Table S2, entry 2",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S2, entry 2",
+     "values": {
+      "tmedaEquiv": 0.5,
+      "temperatureC": 80,
+      "yieldPct": "70"
+     }
+    },
+    {
+     "label": "SI Table S2, entry 3",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S2, entry 3",
+     "values": {
+      "tmedaEquiv": 0.5,
+      "temperatureC": 100,
+      "yieldPct": "11"
+     }
+    },
+    {
+     "label": "SI Table S2, entry 4",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S2, entry 4",
+     "values": {
+      "tmedaEquiv": 0.75,
+      "temperatureC": 100,
+      "yieldPct": "9"
+     }
+    },
+    {
+     "label": "SI Table S2, entry 5",
+     "source": "10.1021/acs.orglett.4c03591",
+     "locator": "SI Table S2, entry 5",
+     "values": {
+      "tmedaEquiv": 1.0,
+      "temperatureC": 100,
+      "yieldPct": "7"
+     }
+    }
+   ],
+   "nrr:note": "SI S3.3.1 also shows that an extra 0.4 eq TMEDA with the adduct achieves inhibition at 80 °C but not at 100 °C (Schemes S3 and S4, yields in images).",
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#stage-1-experiment",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "hidden BH3 catalysis generated with LiOtBu, inhibited with 0.1 to 1.0 eq TMEDA at 80 and 100 °C",
+   "nrr:stage": "experiment",
+   "nrr:performedBy": [
+    {
+     "name": "Julie Macleod",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Edinburgh",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Andrew D. Bage",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Edinburgh",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Leonie M. Meyer",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Edinburgh",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Stephen P. Thomas",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Edinburgh",
+     "note": "listed author; the article carries no author-contribution statement"
+    }
+   ],
+   "nrr:method": "HBpin 3.0 mmol, LiOtBu 10 mol %, TMEDA 0.1 to 1 eq, substrate 2.0 mmol, toluene; yields by 1H NMR, average of two runs (SI S3.3.2)",
+   "nrr:conditions": {
+    "temperaturesC": [
+     80,
+     100
+    ],
+    "tmedaEquiv": [
+     0.0,
+     0.1,
+     0.5,
+     0.75,
+     1.0
+    ]
+   }
+  },
+  {
+   "@id": "#attempt",
+   "@type": [
+    "CreateAction",
+    "prov:Activity"
+   ],
+   "name": "Higher TMEDA loading improves but does not complete inhibition of hidden BH3 catalysis above 60 °C",
+   "description": "Can a higher TMEDA to 'catalyst' ratio rescue the inhibition test at 80 and 100 °C?",
+   "actionStatus": "CompletedActionStatus",
+   "nrr:attemptType": "wet-lab",
+   "nrr:outcomeClass": "partial",
+   "agent": {
+    "@id": "#operator"
+   },
+   "instrument": [
+    {
+     "@id": "#performer-julie-macleod-writing"
+    },
+    {
+     "@id": "#performer-andrew-d-bage-writing"
+    },
+    {
+     "@id": "#performer-leonie-m-meyer-writing"
+    },
+    {
+     "@id": "#performer-stephen-p-thomas-writing"
+    }
+   ],
+   "object": [],
+   "result": [
+    {
+     "@id": "#finding-loading-alkyne"
+    },
+    {
+     "@id": "#finding-loading-alkene"
+    }
+   ],
+   "hasPart": [
+    {
+     "@id": "#stage-1-experiment"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.orglett.4c03591",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+   "nrr:url": "https://doi.org/10.1021/acs.orglett.4c03591",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:07Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')"
+  },
+  {
+   "@id": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+   "@type": "Dataset",
+   "nrr:role": "supplementary",
+   "name": "Supporting Information (PDF)",
+   "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles",
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "The data underlying this study are available in the published article and its Supporting Information.",
+   "nrr:data": [
+    {
+     "label": "ol4c03591_si_001.pdf",
+     "repository": "Europe PMC",
+     "accession": "PMC11555781",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles",
+     "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+     "size": 977253,
+     "format": "application/pdf",
+     "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4"
+    }
+   ]
+  },
+  {
+   "@id": "assay:tmeda-inhibition-test",
+   "@type": "DefinedTerm",
+   "name": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+   "nrr:entityType": "assay",
+   "nrr:role": "the control method under test"
+  },
+  {
+   "@id": "pubchem:CID8037",
+   "@type": "ChemicalSubstance",
+   "name": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+   "nrr:entityType": "compound",
+   "nrr:role": "BH3 trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "compound:tmeda-bis-borane",
+   "@type": "ChemicalSubstance",
+   "name": "TMEDA.(BH3)2 adduct",
+   "nrr:entityType": "compound",
+   "nrr:role": "the trapped species, tested as a catalyst"
+  },
+  {
+   "@id": "pubchem:CID6364989",
+   "@type": "ChemicalSubstance",
+   "name": "pinacolborane (HBpin)",
+   "nrr:entityType": "compound",
+   "nrr:role": "hydroboration reagent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID6331",
+   "@type": "ChemicalSubstance",
+   "name": "borane (BH3)",
+   "nrr:entityType": "compound",
+   "nrr:role": "the hidden catalyst",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID9833925",
+   "@type": "ChemicalSubstance",
+   "name": "borane dimethyl sulfide (Me2S.BH3)",
+   "nrr:entityType": "compound",
+   "nrr:role": "positive-control BH3 source",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID10821",
+   "@type": "ChemicalSubstance",
+   "name": "phenylacetylene (1)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alkyne substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID15627",
+   "@type": "ChemicalSubstance",
+   "name": "4-tert-butylstyrene (3)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alkene substrate",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID9237",
+   "@type": "ChemicalSubstance",
+   "name": "DABCO (amine of 5a)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID18196",
+   "@type": "ChemicalSubstance",
+   "name": "PMDTA (amine of 5b)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID7972",
+   "@type": "ChemicalSubstance",
+   "name": "N-methylmorpholine (amine of 5c)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID81531",
+   "@type": "ChemicalSubstance",
+   "name": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID8471",
+   "@type": "ChemicalSubstance",
+   "name": "triethylamine",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap; also the stabiliser in commercial HBpin",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID1146",
+   "@type": "ChemicalSubstance",
+   "name": "trimethylamine",
+   "nrr:entityType": "compound",
+   "nrr:role": "alternative trap",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID23664764",
+   "@type": "ChemicalSubstance",
+   "name": "lithium tert-butoxide (LiOtBu)",
+   "nrr:entityType": "compound",
+   "nrr:role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID69301",
+   "@type": "ChemicalSubstance",
+   "name": "1,3,5-trimethoxybenzene",
+   "nrr:entityType": "compound",
+   "nrr:role": "NMR internal standard",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID1140",
+   "@type": "ChemicalSubstance",
+   "name": "toluene",
+   "nrr:entityType": "compound",
+   "nrr:role": "solvent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID8150",
+   "@type": "ChemicalSubstance",
+   "name": "diglyme",
+   "nrr:entityType": "compound",
+   "nrr:role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "https://ror.org/01nrxwf90",
+   "@type": "Organization",
+   "name": "University of Edinburgh",
+   "nrr:entityType": "organization"
+  }
+ ]
+}

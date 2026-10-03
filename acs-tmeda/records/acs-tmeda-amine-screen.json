@@ -1,0 +1,909 @@
+{
+ "@id": "urn:portolan:nrr:sha256:71ad120a3ec26bf63a8b128eaa0708e89b5bd06b4e0d5661c7caa0099a26916c",
+ "aiUseDeclaration": {
+  "statement": "The article makes no statement about the use of AI tools."
+ },
+ "applicabilityConditions": {
+  "falseNegativesFromC": 80,
+  "hbpinThermalDecompositionFromC": 80,
+  "note": "the limit is about the TMEDA.(BH3)2 adduct's lability, so it applies to any catalysed HBpin hydroboration that uses TMEDA inhibition as its evidence of true catalysis",
+  "reaction": "hydroboration of terminal alkynes and alkenes with pinacolborane in toluene (and diglyme), BH3 at 20 mol %",
+  "substratesNotCovered": "carbonyl compounds, for which the TMEDA test is not compatible (SI Section S4)",
+  "temperatures": "external heating-block temperatures; room temperature about 18 °C",
+  "tmedaInhibitionTestValidUpToC": 60,
+  "tmedaLoading": "one-to-one TMEDA to 'catalyst' for the headline; 0.5 to 1.0 eq extends inhibition but not completely"
+ },
+ "attemptType": "wet-lab",
+ "confidence": {
+  "basis": "internal positives (5a, 5b) and a clean background to 70 °C in the same grid; threshold defined",
+  "level": "high"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:71ad120a3ec26bf63a8b128eaa0708e89b5bd06b4e0d5661c7caa0099a26916c",
+ "cost": {
+  "note": "bench-scale NMR kinetics; runs are the average of two; no monetary cost reported",
+  "source": "SI Section S3"
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "chemistry"
+ ],
+ "entities": [
+  {
+   "id": "assay:tmeda-inhibition-test",
+   "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+   "note": "a lack of inhibition on adding TMEDA has been read as evidence of true, non-boron catalysis",
+   "role": "the control method under test",
+   "type": "assay"
+  },
+  {
+   "id": "pubchem:CID8037",
+   "label": "N,N,N',N'-tetramethylethylenediamine (TMEDA)",
+   "role": "BH3 trap",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "compound:tmeda-bis-borane",
+   "label": "TMEDA.(BH3)2 adduct",
+   "note": "11B NMR -10.6 ppm (q, J = 98 Hz); no registry identifier given",
+   "role": "the trapped species, tested as a catalyst",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID6364989",
+   "label": "pinacolborane (HBpin)",
+   "role": "hydroboration reagent",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID6331",
+   "label": "borane (BH3)",
+   "role": "the hidden catalyst",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID9833925",
+   "label": "borane dimethyl sulfide (Me2S.BH3)",
+   "role": "positive-control BH3 source",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID10821",
+   "label": "phenylacetylene (1)",
+   "role": "alkyne substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID15627",
+   "label": "4-tert-butylstyrene (3)",
+   "role": "alkene substrate",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID9237",
+   "label": "DABCO (amine of 5a)",
+   "role": "alternative trap",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID18196",
+   "label": "PMDTA (amine of 5b)",
+   "role": "alternative trap",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID7972",
+   "label": "N-methylmorpholine (amine of 5c)",
+   "role": "alternative trap",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID81531",
+   "label": "N,N-diisopropylethylamine, DIPEA (amine of 5d)",
+   "role": "alternative trap",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID8471",
+   "label": "triethylamine",
+   "role": "alternative trap; also the stabiliser in commercial HBpin",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID1146",
+   "label": "trimethylamine",
+   "role": "alternative trap",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID23664764",
+   "label": "lithium tert-butoxide (LiOtBu)",
+   "role": "nucleophile used to generate hidden BH3 catalysis on purpose",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID69301",
+   "label": "1,3,5-trimethoxybenzene",
+   "role": "NMR internal standard",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID1140",
+   "label": "toluene",
+   "role": "solvent",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID8150",
+   "label": "diglyme",
+   "role": "coordinating co-solvent in the repeat kinetics (SI Figure S2)",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "https://ror.org/01nrxwf90",
+   "label": "University of Edinburgh",
+   "note": "EaStCHEM School of Chemistry; all four authors",
+   "type": "organization"
+  }
+ ],
+ "findings": [
+  {
+   "conditions": {
+    "amineBoraneMmol": 0.1,
+    "hbpinMmol": 1.5,
+    "inhibitsUpToC": 60,
+    "solvent": "toluene 0.20 mL",
+    "substrate": "phenylacetylene 1.0 mmol",
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition at low temperature",
+     "kind": "internal-positive",
+     "label": "DABCO.(BH3)2 (5a) and PMDTA.(BH3)3 (5b) inhibit to 60 °C in the same grid",
+     "observed": "less than 5 % product at 18 and 60 °C",
+     "passed": true
+    }
+   },
+   "effect": {
+    "comparedTo": "TMEDA: inhibition demonstrated to 60 °C",
+    "direction": "not-applicable",
+    "metric": "highest temperature with less than 5 % product",
+    "unit": "°C",
+    "value": 60
+   },
+   "evidence": [
+    {
+     "label": "Table 1 row 5a",
+     "locator": "Table 1 (image), row 5a, column r.t. (18 °C)",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "inhibition (<5% product)",
+      "temperatureC": 18
+     }
+    },
+    {
+     "label": "Table 1 row 5a",
+     "locator": "Table 1 (image), row 5a, column 60 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "inhibition (<5% product)",
+      "temperatureC": 60
+     }
+    },
+    {
+     "label": "Table 1 row 5a",
+     "locator": "Table 1 (image), row 5a, column 70 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 70
+     }
+    },
+    {
+     "label": "Table 1 row 5a",
+     "locator": "Table 1 (image), row 5a, column 80 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 80
+     }
+    }
+   ],
+   "id": "amine-5a",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "inhibits to 60 °C, the same limit as TMEDA; not an improvement",
+   "outcomeClass": "partial",
+   "question": "Does DABCO.(BH3)2 inhibit BH3-catalysed hydroboration of phenylacetylene with HBpin, and to what temperature?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "label": "DABCO.(BH3)2 (5a)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "amineBoraneMmol": 0.1,
+    "hbpinMmol": 1.5,
+    "inhibitsUpToC": 60,
+    "solvent": "toluene 0.20 mL",
+    "substrate": "phenylacetylene 1.0 mmol",
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition at low temperature",
+     "kind": "internal-positive",
+     "label": "DABCO.(BH3)2 (5a) and PMDTA.(BH3)3 (5b) inhibit to 60 °C in the same grid",
+     "observed": "less than 5 % product at 18 and 60 °C",
+     "passed": true
+    }
+   },
+   "effect": {
+    "comparedTo": "TMEDA: inhibition demonstrated to 60 °C",
+    "direction": "not-applicable",
+    "metric": "highest temperature with less than 5 % product",
+    "unit": "°C",
+    "value": 60
+   },
+   "evidence": [
+    {
+     "label": "Table 1 row 5b",
+     "locator": "Table 1 (image), row 5b, column r.t. (18 °C)",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "inhibition (<5% product)",
+      "temperatureC": 18
+     }
+    },
+    {
+     "label": "Table 1 row 5b",
+     "locator": "Table 1 (image), row 5b, column 60 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "inhibition (<5% product)",
+      "temperatureC": 60
+     }
+    },
+    {
+     "label": "Table 1 row 5b",
+     "locator": "Table 1 (image), row 5b, column 70 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 70
+     }
+    },
+    {
+     "label": "Table 1 row 5b",
+     "locator": "Table 1 (image), row 5b, column 80 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 80
+     }
+    }
+   ],
+   "id": "amine-5b",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "inhibits to 60 °C, the same limit as TMEDA; not an improvement",
+   "outcomeClass": "partial",
+   "question": "Does PMDTA.(BH3)3 inhibit BH3-catalysed hydroboration of phenylacetylene with HBpin, and to what temperature?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "label": "PMDTA.(BH3)3 (5b)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "amineBoraneMmol": 0.1,
+    "hbpinMmol": 1.5,
+    "solvent": "toluene 0.20 mL",
+    "substrate": "phenylacetylene 1.0 mmol",
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition at low temperature",
+     "kind": "internal-positive",
+     "label": "DABCO.(BH3)2 (5a) and PMDTA.(BH3)3 (5b) inhibit to 60 °C in the same grid",
+     "observed": "less than 5 % product at 18 and 60 °C",
+     "passed": true
+    }
+   },
+   "effect": {
+    "comparedTo": "TMEDA: inhibition demonstrated to 60 °C",
+    "direction": "not-applicable",
+    "metric": "highest temperature with less than 5 % product",
+    "unit": "°C",
+    "value": "none, product at 18 °C"
+   },
+   "evidence": [
+    {
+     "label": "Table 1 row 5c",
+     "locator": "Table 1 (image), row 5c, column r.t. (18 °C)",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 18
+     }
+    },
+    {
+     "label": "Table 1 row 5c",
+     "locator": "Table 1 (image), row 5c, column 60 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 60
+     }
+    },
+    {
+     "label": "Table 1 row 5c",
+     "locator": "Table 1 (image), row 5c, column 70 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 70
+     }
+    },
+    {
+     "label": "Table 1 row 5c",
+     "locator": "Table 1 (image), row 5c, column 80 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 80
+     }
+    }
+   ],
+   "id": "amine-5c",
+   "informativeness": "informative",
+   "informativenessReason": "internal positive arm passed; negative control clean; sensitivity or power stated",
+   "note": "product formed even at room temperature: this amine-borane releases catalytically active BH3 and does not act as a trap",
+   "outcomeClass": "negative-no-effect",
+   "question": "Does N-methylmorpholine.BH3 inhibit BH3-catalysed hydroboration of phenylacetylene with HBpin, and to what temperature?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "label": "N-methylmorpholine.BH3 (5c)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "amineBoraneMmol": 0.1,
+    "hbpinMmol": 1.5,
+    "solvent": "toluene 0.20 mL",
+    "substrate": "phenylacetylene 1.0 mmol",
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition at low temperature",
+     "kind": "internal-positive",
+     "label": "DABCO.(BH3)2 (5a) and PMDTA.(BH3)3 (5b) inhibit to 60 °C in the same grid",
+     "observed": "less than 5 % product at 18 and 60 °C",
+     "passed": true
+    }
+   },
+   "effect": {
+    "comparedTo": "TMEDA: inhibition demonstrated to 60 °C",
+    "direction": "not-applicable",
+    "metric": "highest temperature with less than 5 % product",
+    "unit": "°C",
+    "value": "none, product at 18 °C"
+   },
+   "evidence": [
+    {
+     "label": "Table 1 row 5d",
+     "locator": "Table 1 (image), row 5d, column r.t. (18 °C)",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 18
+     }
+    },
+    {
+     "label": "Table 1 row 5d",
+     "locator": "Table 1 (image), row 5d, column 60 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 60
+     }
+    },
+    {
+     "label": "Table 1 row 5d",
+     "locator": "Table 1 (image), row 5d, column 70 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 70
+     }
+    },
+    {
+     "label": "Table 1 row 5d",
+     "locator": "Table 1 (image), row 5d, column 80 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 80
+     }
+    }
+   ],
+   "id": "amine-5d",
+   "informativeness": "informative",
+   "informativenessReason": "internal positive arm passed; negative control clean; sensitivity or power stated",
+   "note": "product formed even at room temperature: this amine-borane releases catalytically active BH3 and does not act as a trap",
+   "outcomeClass": "negative-no-effect",
+   "question": "Does DIPEA.BH3 inhibit BH3-catalysed hydroboration of phenylacetylene with HBpin, and to what temperature?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "label": "DIPEA.BH3 (5d)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "amineBoraneMmol": 0.1,
+    "hbpinMmol": 1.5,
+    "solvent": "toluene 0.20 mL",
+    "substrate": "phenylacetylene 1.0 mmol",
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition at low temperature",
+     "kind": "internal-positive",
+     "label": "DABCO.(BH3)2 (5a) and PMDTA.(BH3)3 (5b) inhibit to 60 °C in the same grid",
+     "observed": "less than 5 % product at 18 and 60 °C",
+     "passed": true
+    }
+   },
+   "effect": {
+    "comparedTo": "TMEDA: inhibition demonstrated to 60 °C",
+    "direction": "not-applicable",
+    "metric": "highest temperature with less than 5 % product",
+    "unit": "°C",
+    "value": "none, product at 18 °C"
+   },
+   "evidence": [
+    {
+     "label": "Table 1 row Et3N",
+     "locator": "Table 1 (image), row Et3N.BH3, column r.t. (18 °C)",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 18
+     }
+    },
+    {
+     "label": "Table 1 row Et3N",
+     "locator": "Table 1 (image), row Et3N.BH3, column 60 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 60
+     }
+    },
+    {
+     "label": "Table 1 row Et3N",
+     "locator": "Table 1 (image), row Et3N.BH3, column 70 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 70
+     }
+    },
+    {
+     "label": "Table 1 row Et3N",
+     "locator": "Table 1 (image), row Et3N.BH3, column 80 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 80
+     }
+    }
+   ],
+   "id": "amine-Et3N",
+   "informativeness": "informative",
+   "informativenessReason": "internal positive arm passed; negative control clean; sensitivity or power stated",
+   "note": "product formed even at room temperature: this amine-borane releases catalytically active BH3 and does not act as a trap",
+   "outcomeClass": "negative-no-effect",
+   "question": "Does Et3N.BH3 inhibit BH3-catalysed hydroboration of phenylacetylene with HBpin, and to what temperature?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "label": "Et3N.BH3 (Et3N)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "amineBoraneMmol": 0.1,
+    "hbpinMmol": 1.5,
+    "solvent": "toluene 0.20 mL",
+    "substrate": "phenylacetylene 1.0 mmol",
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition at low temperature",
+     "kind": "internal-positive",
+     "label": "DABCO.(BH3)2 (5a) and PMDTA.(BH3)3 (5b) inhibit to 60 °C in the same grid",
+     "observed": "less than 5 % product at 18 and 60 °C",
+     "passed": true
+    }
+   },
+   "effect": {
+    "comparedTo": "TMEDA: inhibition demonstrated to 60 °C",
+    "direction": "not-applicable",
+    "metric": "highest temperature with less than 5 % product",
+    "unit": "°C",
+    "value": "none, product at 18 °C"
+   },
+   "evidence": [
+    {
+     "label": "Table 1 row Me3N",
+     "locator": "Table 1 (image), row Me3N.BH3, column r.t. (18 °C)",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 18
+     }
+    },
+    {
+     "label": "Table 1 row Me3N",
+     "locator": "Table 1 (image), row Me3N.BH3, column 60 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 60
+     }
+    },
+    {
+     "label": "Table 1 row Me3N",
+     "locator": "Table 1 (image), row Me3N.BH3, column 70 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 70
+     }
+    },
+    {
+     "label": "Table 1 row Me3N",
+     "locator": "Table 1 (image), row Me3N.BH3, column 80 °C",
+     "source": "10.1021/acs.orglett.4c03591",
+     "values": {
+      "result": "product formation observed",
+      "temperatureC": 80
+     }
+    }
+   ],
+   "id": "amine-Me3N",
+   "informativeness": "informative",
+   "informativenessReason": "internal positive arm passed; negative control clean; sensitivity or power stated",
+   "note": "product formed even at room temperature: this amine-borane releases catalytically active BH3 and does not act as a trap",
+   "outcomeClass": "negative-no-effect",
+   "question": "Does Me3N.BH3 inhibit BH3-catalysed hydroboration of phenylacetylene with HBpin, and to what temperature?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "label": "Me3N.BH3 (Me3N)",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "aminesTested": [
+     "DABCO.(BH3)2",
+     "PMDTA.(BH3)3",
+     "N-methylmorpholine.BH3",
+     "DIPEA.BH3",
+     "Et3N.BH3",
+     "Me3N.BH3"
+    ],
+    "temperaturesTestedC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "controls": {
+    "negative": {
+     "expected": "no product",
+     "kind": "background",
+     "label": "HBpin and substrate with no BH3 source",
+     "note": "the no-amine-borane control row is clean to 70 °C and not clean at 80 °C, because HBpin decomposes to BH3 thermally from 80 °C; the 80 °C column therefore cannot distinguish a failed trap from background catalysis",
+     "observed": "no product at 18, 60 and 70 °C; product at 80 °C",
+     "passed": true,
+     "source": "Table 1 control row"
+    },
+    "positive": {
+     "expected": "inhibition detectable",
+     "kind": "internal-positive",
+     "label": "5a and 5b inhibit to 60 °C",
+     "observed": "detected",
+     "passed": true
+    }
+   },
+   "effect": {
+    "direction": "none",
+    "metric": "amines inhibiting above 60 °C",
+    "n": 6,
+    "note": "5a and 5b match TMEDA (inhibition to 60 °C); 5c, 5d, Et3N.BH3 and Me3N.BH3 give product at room temperature",
+    "value": 0
+   },
+   "evidence": [
+    {
+     "label": "Table 1 and text",
+     "locator": "Table 1; paragraph 'In an attempt to find a better inhibitor'",
+     "quote": "Amine-borane adducts 5a and 5b resulted in reaction inhibition (product formation <5%) up to 60 °C ... All other amine-borane adducts resulted in product formation at room temperature and above. All of the amines tested did not offer an improvement over TMEDA.",
+     "source": "10.1021/acs.orglett.4c03591"
+    }
+   ],
+   "id": "better-trap",
+   "informativeness": "informative",
+   "informativenessReason": "internal positive arm passed; negative control clean; sensitivity or power stated",
+   "outcomeClass": "negative-not-achievable",
+   "question": "Is any of the six amines tested a better in situ BH3 trap than TMEDA for the inhibition test?",
+   "sensitivity": "inhibition is defined as less than 5 % product by 1H and 11B NMR against a 1,3,5-trimethoxybenzene internal standard; yields are the average of two runs",
+   "target": {
+    "identifier": "assay:tmeda-inhibition-test",
+    "label": "TMEDA inhibition test for hidden BH3 catalysis in HBpin hydroboration",
+    "type": "assay"
+   }
+  }
+ ],
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:71ad120a3ec26bf63a8b128eaa0708e89b5bd06b4e0d5661c7caa0099a26916c",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "isPartOf": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/01nrxwf90",
+  "name": "University of Edinburgh",
+  "type": "Organization"
+ },
+ "outcomeClass": "negative-not-achievable",
+ "outcomeSummary": "Amine-borane adducts 5a and 5b resulted in reaction inhibition (product formation <5%) up to 60 °C ... All other amine-borane adducts resulted in product formation at room temperature and above. All of the amines tested did not offer an improvement over TMEDA.",
+ "pathType": "experiment",
+ "performers": [
+  {
+   "affiliation": "University of Edinburgh",
+   "name": "Julie Macleod",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of Edinburgh",
+   "name": "Andrew D. Bage",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of Edinburgh",
+   "name": "Leonie M. Meyer",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of Edinburgh",
+   "name": "Stephen P. Thomas",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "provenanceNotes": [
+  "Table 1 is a colour grid read from the figure image; each cell is one evidence item with its row and column as locator. No per-cell yields are given in the article."
+ ],
+ "question": "Is any of six alternative amine-borane adducts inert to a higher temperature than TMEDA.(BH3)2 in HBpin hydroboration?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:121f3e2322e669ffa64b10e932ece1b0a24a32d07c6be091436c2b6d501c58bb",
+   "type": "isPartOf"
+  }
+ ],
+ "slug": "acs-tmeda-amine-screen",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.1021/acs.orglett.4c03591",
+   "label": "Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "Permits the broadest form of re-use including for commercial purposes, provided that author attribution and integrity are maintained (https://creativecommons.org/licenses/by/4.0/) (JATS permissions element; Europe PMC license field 'cc by')",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T01:47:07Z",
+    "integrity": "none",
+    "version": "VoR"
+   },
+   "url": "https://doi.org/10.1021/acs.orglett.4c03591"
+  },
+  {
+   "data": [
+    {
+     "accession": "PMC11555781",
+     "checksum": "sha256:335349bfbcd077bf6a18396dd752bea48cec58840d29f132213f7906ffd493ec",
+     "format": "application/pdf",
+     "label": "ol4c03591_si_001.pdf",
+     "repository": "Europe PMC",
+     "role": "Supporting Information: procedures, reaction monitoring, loading tables S1 and S2, amine table S3, literature analysis S4",
+     "size": 977253,
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+    }
+   ],
+   "identifier": "pmc:PMC11555781/ol4c03591_si_001.pdf",
+   "label": "Supporting Information (PDF)",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "The data underlying this study are available in the published article and its Supporting Information.",
+   "role": "supplementary",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11555781/supplementaryFiles"
+  }
+ ],
+ "stages": [
+  {
+   "conditions": {
+    "readout": "less than 5 % product (green) or product observed (pink)",
+    "temperaturesC": [
+     18,
+     60,
+     70,
+     80
+    ]
+   },
+   "instrument": [
+    "NMR spectrometer (1H and 11B)"
+   ],
+   "label": "amine-borane adducts as BH3 sources in HBpin hydroboration of phenylacetylene, 1 h each at 18, 60, 70 and 80 °C",
+   "method": "phenylacetylene 1.0 mmol, HBpin 1.5 mmol, amine-borane 0.10 mmol, toluene 0.20 mL; 1H and 11B NMR after 1 h at room temperature, then 1 h each at 60, 70 and 80 °C (Table 1 footnote a and SI S3.6)",
+   "performedBy": [
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Julie Macleod",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Andrew D. Bage",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Leonie M. Meyer",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Edinburgh",
+     "name": "Stephen P. Thomas",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    }
+   ],
+   "stage": "experiment"
+  }
+ ],
+ "studyId": "acs-tmeda",
+ "successCriteria": "An amine-borane with less than 5 % product at 70 °C or above where the no-amine background is still clean.",
+ "title": "No amine tested is a better BH3 trap than TMEDA: two match its 60 °C limit, four release BH3 at room temperature",
+ "version": "1",
+ "visibility": "public"
+}
