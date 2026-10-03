@@ -1,0 +1,57 @@
+{
+ "study": "acs-zeolite",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "417a678d1718714d013cb9ed5b587bf9c4253167",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.1021/acs.chemmater.5c01751",
+  "label": "Lessons from Failed Attempts of Computationally Guided Synthesis of Aluminosilicate STF and IFR Zeolites in Hydroxide Media",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "acs-zeolite-path",
+   "id": "urn:portolan:nrr:sha256:35aa966ec69d77a2d2553736628601730472dcdca44084df724eb9385d2d611d",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "negative-not-achievable",
+   "findings": 0
+  },
+  {
+   "slug": "acs-zeolite-stf-synthesis",
+   "id": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 2
+  },
+  {
+   "slug": "acs-zeolite-ifr-synthesis-qg001780m",
+   "id": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 2
+  },
+  {
+   "slug": "acs-zeolite-ifr-synthesis-qg001780m2",
+   "id": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "negative-not-achievable",
+   "findings": 2
+  },
+  {
+   "slug": "acs-zeolite-osda-screen",
+   "id": "urn:portolan:nrr:sha256:98f4a9863efd82b6766d628d51f859bb9c3f59fccc2c98282defb4052d7574d9",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "refuted",
+   "findings": 10
+  }
+ ]
+}
