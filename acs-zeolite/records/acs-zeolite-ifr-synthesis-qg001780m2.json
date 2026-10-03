@@ -1,5 +1,5 @@
 {
- "@id": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+ "@id": "urn:portolan:nrr:sha256:d40bf90cada8887b6a97b908f1ef90c84f1797ee8190dc783f1e29cdbe11f5fa",
  "aiUseDeclaration": {
   "statement": "The article makes no statement about the use of generative AI in writing; machine-learning classifiers are part of the method and are recorded as software, not as authors."
  },
@@ -29,7 +29,7 @@
   "basis": "no positive-control synthesis; the OSDA survived, so the absence of IFR is not explained by degradation",
   "level": "low"
  },
- "contentAddress": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+ "contentAddress": "urn:portolan:nrr:sha256:d40bf90cada8887b6a97b908f1ef90c84f1797ee8190dc783f1e29cdbe11f5fa",
  "cost": {
   "note": "14 phase determinations over 14 gel compositions; done at POSTECH",
   "source": "SI Tables S21, S22",
@@ -619,7 +619,7 @@
   }
  ],
  "integrity": {
-  "contentAddress": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+  "contentAddress": "urn:portolan:nrr:sha256:d40bf90cada8887b6a97b908f1ef90c84f1797ee8190dc783f1e29cdbe11f5fa",
   "duplicateOf": null,
   "signature": null,
   "signer": null,
@@ -633,7 +633,7 @@
   "name": "Instituto de Tecnología Química",
   "type": "Organization"
  },
- "outcomeClass": "negative-not-achievable",
+ "outcomeClass": "inconclusive-no-positive-control",
  "outcomeSummary": "Fourteen gel compositions with Si/Al 10 to 100, with or without Na+ or K+, at 150 to 175 °C for 7 to 21 days gave amorphous solids, mordenite, ZSM-12 (MTW, ranked 13th in the prediction) or dense phases; never IFR.",
  "pathType": "experiment",
  "performers": [
