@@ -44,7 +44,7 @@
        "@id": "#finding-osda-degraded"
       }
      ],
-     "identifier": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+     "identifier": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a",
      "isPartOf": {
       "@id": "urn:portolan:nrr:sha256:35aa966ec69d77a2d2553736628601730472dcdca44084df724eb9385d2d611d"
      },
@@ -154,7 +154,7 @@
       }
      ],
      "nrr:kind": "attempt",
-     "nrr:outcomeClass": "negative-not-achievable",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
      "nrr:outcomeSummary": "Six gel compositions from pure silica to Si/Al 10, at 175 to 200 °C for 14 to 42 days, all gave amorphous solids. The OSDA degraded during synthesis.",
      "nrr:pathType": "experiment",
      "nrr:provenanceNotes": [
@@ -976,7 +976,7 @@
      ],
      "name": "Hydrothermal synthesis targeting aluminosilicate IFR with QG001780m gives only amorphous solids",
      "nrr:attemptType": "wet-lab",
-     "nrr:outcomeClass": "negative-not-achievable",
+     "nrr:outcomeClass": "inconclusive-no-positive-control",
      "object": [],
      "result": [
       {
@@ -1182,10 +1182,10 @@
     }
    ]
   },
-  "idempotencyKey": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+  "idempotencyKey": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a",
   "profile": "https://portolansoft.com/profile/nrr/0.2",
   "record": {
-   "@id": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+   "@id": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a",
    "aiUseDeclaration": {
     "statement": "The article makes no statement about the use of generative AI in writing; machine-learning classifiers are part of the method and are recorded as software, not as authors."
    },
@@ -1215,7 +1215,7 @@
     "basis": "no positive-control synthesis; OSDA degraded",
     "level": "low"
    },
-   "contentAddress": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+   "contentAddress": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a",
    "cost": {
     "note": "12 phase determinations over 6 gel compositions",
     "source": "SI Table S20",
@@ -1743,7 +1743,7 @@
     }
    ],
    "integrity": {
-    "contentAddress": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+    "contentAddress": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a",
     "duplicateOf": null,
     "signature": null,
     "signer": null,
@@ -1757,7 +1757,7 @@
     "name": "Instituto de Tecnología Química",
     "type": "Organization"
    },
-   "outcomeClass": "negative-not-achievable",
+   "outcomeClass": "inconclusive-no-positive-control",
    "outcomeSummary": "Six gel compositions from pure silica to Si/Al 10, at 175 to 200 °C for 14 to 42 days, all gave amorphous solids. The OSDA degraded during synthesis.",
    "pathType": "experiment",
    "performers": [

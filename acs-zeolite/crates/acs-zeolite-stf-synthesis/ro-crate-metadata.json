@@ -25,7 +25,7 @@
   {
    "@id": "./",
    "@type": "Dataset",
-   "identifier": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+   "identifier": "urn:portolan:nrr:sha256:d9a5cc98b284b25166032e38dc3348f731b6afb8b05164b1b741e02240c581f3",
    "name": "Hydrothermal synthesis targeting aluminosilicate STF with the shortlisted spirocyclic OSDA gives only amorphous solids",
    "description": "Does the computationally shortlisted OSDA QHGWEBIGEQBZPY crystallise aluminosilicate STF in hydroxide media across Si/Al, temperature and time?",
    "datePublished": "2026-09-25T00:00:00Z",
@@ -39,7 +39,7 @@
    "nrr:kind": "attempt",
    "nrr:studyId": "acs-zeolite",
    "nrr:slug": "acs-zeolite-stf-synthesis",
-   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
    "nrr:visibility": "public",
    "nrr:pathType": "experiment",
    "nrr:successCriteria": "A powder X-ray diffraction pattern matching STF.",
@@ -1019,7 +1019,7 @@
    "description": "Does the computationally shortlisted OSDA QHGWEBIGEQBZPY crystallise aluminosilicate STF in hydroxide media across Si/Al, temperature and time?",
    "actionStatus": "FailedActionStatus",
    "nrr:attemptType": "wet-lab",
-   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
    "agent": {
     "@id": "#operator"
    },

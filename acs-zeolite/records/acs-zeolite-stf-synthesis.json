@@ -1,5 +1,5 @@
 {
- "@id": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+ "@id": "urn:portolan:nrr:sha256:d9a5cc98b284b25166032e38dc3348f731b6afb8b05164b1b741e02240c581f3",
  "aiUseDeclaration": {
   "statement": "The article makes no statement about the use of generative AI in writing; machine-learning classifiers are part of the method and are recorded as software, not as authors."
  },
@@ -29,7 +29,7 @@
   "basis": "no positive-control synthesis; OSDA purity and stability compromised",
   "level": "low"
  },
- "contentAddress": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+ "contentAddress": "urn:portolan:nrr:sha256:d9a5cc98b284b25166032e38dc3348f731b6afb8b05164b1b741e02240c581f3",
  "cost": {
   "note": "16 phase determinations over 8 gel compositions",
   "source": "SI Table S18",
@@ -643,7 +643,7 @@
   }
  ],
  "integrity": {
-  "contentAddress": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+  "contentAddress": "urn:portolan:nrr:sha256:d9a5cc98b284b25166032e38dc3348f731b6afb8b05164b1b741e02240c581f3",
   "duplicateOf": null,
   "signature": null,
   "signer": null,
@@ -657,7 +657,7 @@
   "name": "Instituto de Tecnología Química",
   "type": "Organization"
  },
- "outcomeClass": "negative-not-achievable",
+ "outcomeClass": "inconclusive-no-positive-control",
  "outcomeSummary": "Eight gel compositions from pure silica to Si/Al 10, at 150 to 200 °C for 14 to 50 days, all gave amorphous solids. The OSDA was a mixture of stereoisomers and degraded during synthesis.",
  "pathType": "experiment",
  "performers": [

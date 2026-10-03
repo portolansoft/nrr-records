@@ -25,7 +25,7 @@
   {
    "@id": "./",
    "@type": "Dataset",
-   "identifier": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+   "identifier": "urn:portolan:nrr:sha256:d40bf90cada8887b6a97b908f1ef90c84f1797ee8190dc783f1e29cdbe11f5fa",
    "name": "Hydrothermal synthesis targeting aluminosilicate IFR with QG001780m2 gives amorphous solids, MOR, ZSM-12 or dense phases",
    "description": "Does the designed OSDA QG001780m2 crystallise aluminosilicate IFR under SSZ-42-type or MCM-58-type hydroxide conditions, with or without Na+ or K+?",
    "datePublished": "2026-09-25T00:00:00Z",
@@ -39,7 +39,7 @@
    "nrr:kind": "attempt",
    "nrr:studyId": "acs-zeolite",
    "nrr:slug": "acs-zeolite-ifr-synthesis-qg001780m2",
-   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
    "nrr:visibility": "public",
    "nrr:pathType": "experiment",
    "nrr:successCriteria": "A powder X-ray diffraction pattern matching IFR.",
@@ -986,7 +986,7 @@
    "description": "Does the designed OSDA QG001780m2 crystallise aluminosilicate IFR under SSZ-42-type or MCM-58-type hydroxide conditions, with or without Na+ or K+?",
    "actionStatus": "FailedActionStatus",
    "nrr:attemptType": "wet-lab",
-   "nrr:outcomeClass": "negative-not-achievable",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
    "agent": {
     "@id": "#operator"
    },

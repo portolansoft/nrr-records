@@ -4,7 +4,7 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "generatedBy": {
   "repository": "https://github.com/portolansoft/nrr",
-  "commit": "417a678d1718714d013cb9ed5b587bf9c4253167",
+  "commit": "8608183cfbab0328fa30e09b7cb6951c2386647a",
   "script": "scripts/export_records.py"
  },
  "sourcePublication": {
@@ -23,31 +23,31 @@
   },
   {
    "slug": "acs-zeolite-stf-synthesis",
-   "id": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331",
+   "id": "urn:portolan:nrr:sha256:d9a5cc98b284b25166032e38dc3348f731b6afb8b05164b1b741e02240c581f3",
    "kind": "attempt",
    "attemptType": "wet-lab",
-   "outcomeClass": "negative-not-achievable",
+   "outcomeClass": "inconclusive-no-positive-control",
    "findings": 2
   },
   {
    "slug": "acs-zeolite-ifr-synthesis-qg001780m",
-   "id": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204",
+   "id": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a",
    "kind": "attempt",
    "attemptType": "wet-lab",
-   "outcomeClass": "negative-not-achievable",
+   "outcomeClass": "inconclusive-no-positive-control",
    "findings": 2
   },
   {
    "slug": "acs-zeolite-ifr-synthesis-qg001780m2",
-   "id": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11",
+   "id": "urn:portolan:nrr:sha256:d40bf90cada8887b6a97b908f1ef90c84f1797ee8190dc783f1e29cdbe11f5fa",
    "kind": "attempt",
    "attemptType": "wet-lab",
-   "outcomeClass": "negative-not-achievable",
+   "outcomeClass": "inconclusive-no-positive-control",
    "findings": 2
   },
   {
    "slug": "acs-zeolite-osda-screen",
-   "id": "urn:portolan:nrr:sha256:98f4a9863efd82b6766d628d51f859bb9c3f59fccc2c98282defb4052d7574d9",
+   "id": "urn:portolan:nrr:sha256:2dc90486a50cb7c9a6f06aefe35439d1b34faf0885cb07bf277180d73751d541",
    "kind": "attempt",
    "attemptType": "computational",
    "outcomeClass": "refuted",

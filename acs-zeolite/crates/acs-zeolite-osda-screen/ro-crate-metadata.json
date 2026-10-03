@@ -25,7 +25,7 @@
   {
    "@id": "./",
    "@type": "Dataset",
-   "identifier": "urn:portolan:nrr:sha256:98f4a9863efd82b6766d628d51f859bb9c3f59fccc2c98282defb4052d7574d9",
+   "identifier": "urn:portolan:nrr:sha256:2dc90486a50cb7c9a6f06aefe35439d1b34faf0885cb07bf277180d73751d541",
    "name": "Synthesis-energy, machine-learning and de novo screen of more than 10,000 OSDAs predicts CHA and AEI everywhere and shortlists three OSDAs whose predictions the syntheses refute",
    "description": "Which OSDAs are predicted to crystallise aluminosilicate STF or IFR in hydroxide media, and did the predictions for the three synthesised OSDAs hold?",
    "datePublished": "2026-09-25T00:00:00Z",
@@ -295,13 +295,13 @@
    ],
    "nrr:informs": [
     {
-     "@id": "urn:portolan:nrr:sha256:1f1d1f858867d4184b0afecb61376f298b7b49a637f26d3451452a464a4e0331"
+     "@id": "urn:portolan:nrr:sha256:d9a5cc98b284b25166032e38dc3348f731b6afb8b05164b1b741e02240c581f3"
     },
     {
-     "@id": "urn:portolan:nrr:sha256:1feb600572a3d6c5ad15d54806c4d03c44e85dc700e42bff65b8f40e0ceca204"
+     "@id": "urn:portolan:nrr:sha256:7b66f3045f0ab912bf5a6d54bccffb4e5bce312d79983d426d30bc6c52935e0a"
     },
     {
-     "@id": "urn:portolan:nrr:sha256:b2af5fc83c8a0290ae00c19d9d6c5f2073152f8d89fd17c309fa23fdf5220d11"
+     "@id": "urn:portolan:nrr:sha256:d40bf90cada8887b6a97b908f1ef90c84f1797ee8190dc783f1e29cdbe11f5fa"
     }
    ]
   },
