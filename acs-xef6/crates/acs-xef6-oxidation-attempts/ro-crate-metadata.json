@@ -1,0 +1,1011 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:4e4eb350611d6cd0f4dda9a8cff4e3e8ee153c45caf2573c3f50447c98f34c0c",
+   "name": "RuF6 and XeF6 at five ratio and temperature conditions evolve F2 and give only xenon(VI) salts",
+   "description": "Under which of the ratios and temperatures tried does RuF6 oxidise XeF6 beyond xenon(VI)?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "attempt",
+   "nrr:studyId": "acs-xef6",
+   "nrr:slug": "acs-xef6-oxidation-attempts",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "A product containing xenon(VIII), seen by its predicted Raman bands or by X-ray diffraction.",
+   "keywords": [
+    "chemistry"
+   ],
+   "hasPart": [
+    {
+     "@id": "#attempt"
+    },
+    {
+     "@id": "#finding-condition-excess-xef6-ahf"
+    },
+    {
+     "@id": "#finding-condition-excess-xef6-neat"
+    },
+    {
+     "@id": "#finding-condition-equimolar-ahf"
+    },
+    {
+     "@id": "#finding-condition-excess-ruf6-ahf"
+    },
+    {
+     "@id": "#finding-condition-low-temperature-ahf"
+    },
+    {
+     "@id": "#finding-f2-evolved"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-bj-rn-n-koch-writing"
+    },
+    {
+     "@id": "#performer-giuliana-ho-writing"
+    },
+    {
+     "@id": "#performer-gregor-schnakenburg-writing"
+    },
+    {
+     "@id": "#performer-antti-j-karttunen-writing"
+    },
+    {
+     "@id": "#performer-florian-kraus-writing"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "reaction": "RuF6 with XeF6, neat or in anhydrous HF, RuF6:XeF6 from excess XeF6 through 1:1 and 2:1 to excess RuF6",
+    "temperatures": "thawed from 77 K to room temperature, and -78 degrees C",
+    "vessels": "PFA or FEP reaction vessels on a fluorine-passivated Monel Schlenk line",
+    "productProbes": "single-crystal and powder X-ray diffraction, Raman and IR; [XeF7]+ sought by its predicted Raman bands at 588, 647 and 503 cm-1",
+    "runCount": "not reported for any condition",
+    "note": "the authors restrict their conclusion to 'the conditions investigated by us so far'"
+   },
+   "nrr:cost": {
+    "note": "number of reactions per condition is not reported; amounts of 30 to 120 mg per reaction; no monetary cost reported",
+    "source": "Experimental Section"
+   },
+   "nrr:provenanceNotes": [
+    "The rule remaps every condition to inconclusive-no-positive-control, and the authors agree in substance: 'it may be that our reaction conditions are not right, yet'. This is the first study in the corpus where the rule's verdict and the authors' own hedge coincide word for word."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "nrr:confidence": {
+    "level": "low",
+    "basis": "no positive control, no run counts, no detection limit; the authors say the conditions may not be right yet"
+   },
+   "nrr:outcomeSummary": "Excess XeF6 (neat or in aHF): [Xe2F11][RuF6] and F2. Equimolar: [XeF5][RuF6] and F2. Excess RuF6: F2, RuF5 and [XeF5]+ oligofluoridoruthenates, not quantified. At -78 degrees C the same products, more slowly. the most intense Raman bands of [XeF7]+ were quantum-chemically predicted at 588, 647 and 503 cm-1 and were not present.",
+   "isPartOf": {
+    "@id": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048"
+   },
+   "mainEntity": {
+    "@id": "#attempt"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "pmc:PMC13343514/ic6c02072_si_001.pdf"
+    },
+    {
+     "@id": "ccdc:2477117"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "pubchem:CID139546"
+    },
+    {
+     "@id": "pubchem:CID21528530"
+    },
+    {
+     "@id": "pubchem:CID14917"
+    },
+    {
+     "@id": "pubchem:CID24524"
+    },
+    {
+     "@id": "pubchem:CID4875"
+    },
+    {
+     "@id": "pubchem:CID167109"
+    },
+    {
+     "@id": "compound:xef7-cation-or-xef8"
+    },
+    {
+     "@id": "ccdc:2477117"
+    },
+    {
+     "@id": "compound:xef5-ruf6"
+    },
+    {
+     "@id": "compound:xef5-oligofluoridoruthenate"
+    },
+    {
+     "@id": "assay:scxrd"
+    },
+    {
+     "@id": "assay:raman-ir"
+    },
+    {
+     "@id": "https://ror.org/041nas322"
+    },
+    {
+     "@id": "https://ror.org/020hwjq30"
+    },
+    {
+     "@id": "software:crystal23"
+    },
+    {
+     "@id": "software:orca"
+    },
+    {
+     "@id": "software:shelxt"
+    },
+    {
+     "@id": "software:apex5"
+    },
+    {
+     "@id": "software:diamond"
+    },
+    {
+     "@id": "software:findsym"
+    }
+   ],
+   "nrr:isPartOf": [
+    {
+     "@id": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "University of Bonn",
+   "identifier": "https://ror.org/041nas322"
+  },
+  {
+   "@id": "#performer-bj-rn-n-koch-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Björn N. Koch",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-giuliana-ho-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Giuliana Hoß",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-gregor-schnakenburg-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Gregor Schnakenburg",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-antti-j-karttunen-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Antti J. Karttunen",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "Aalto University",
+   "nrr:identifier": "https://orcid.org/0000-0003-4187-5447",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-florian-kraus-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Florian Kraus",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:identifier": "https://orcid.org/0000-0003-4368-8418",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#finding-condition-excess-xef6-ahf",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 1:2 (excess XeF6), anhydrous HF (0.3 mL), thawed from 77 K to room temperature?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 1:2 (excess XeF6), anhydrous HF (0.3 mL), thawed from 77 K to room temperature?",
+   "nrr:target": {
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound",
+    "identifier": "compound:xef7-cation-or-xef8"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:failureModes": [
+    "decomposition"
+   ],
+   "nrr:effect": {
+    "metric": "xenon oxidation state of the isolated product",
+    "value": "VI",
+    "direction": "none",
+    "comparedTo": "VIII sought",
+    "note": "F2 evolved: yes (gas phase pumped through KI powder turned brown from I2); product: [Xe2F11][RuF6]"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no reaction known to give a Xe(VIII) product was run alongside, and the oxidising power of RuF6 toward BrF5 is cited from earlier work rather than re-demonstrated; the immediate decolorisation of RuF6 shows the oxidiser was consumed, not that the target could have been seen. The only detection criterion for [XeF7]+ is its predicted Raman bands at 588, 647 and 503 cm-1 (the most intense Raman bands of [XeF7]+ were quantum-chemically predicted at 588, 647 and 503 cm-1 and were not present); no detection limit is stated"
+    },
+    "negative": {
+     "kind": "none",
+     "note": "no XeF6-only or RuF6-only control under the same conditions is described; RuF6 alone is known to lose F2 slowly, which the authors argue is too slow to matter"
+    }
+   },
+   "nrr:replicates": {
+    "note": "no run count is reported for this or any condition"
+   },
+   "nrr:conditions": {
+    "ratioRuF6toXeF6": "1:2 (excess XeF6)",
+    "solvent": "anhydrous HF (0.3 mL)",
+    "temperature": "thawed from 77 K to room temperature",
+    "ruf6Mmol": 0.14,
+    "xef6Mmol": 0.41,
+    "ahfMl": 0.3,
+    "product": "[Xe2F11][RuF6]",
+    "rutheniumProduct": "[RuF6]- in the salt",
+    "evidenceForProduct": "single-crystal and powder X-ray diffraction, Raman and IR spectroscopy"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results and Discussion, paragraph 2",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Results and Discussion, paragraph 2; Experimental Section, 'Preparation of [Xe2F11][RuF6]'",
+     "values": {
+      "ratio_ruf6_xef6": "1:2 (excess XeF6)",
+      "solvent": "anhydrous HF (0.3 mL)",
+      "temperature": "thawed from 77 K to room temperature",
+      "ruf6_mg": 30.0,
+      "ruf6_mmol": 0.14,
+      "xef6_mg": 100.0,
+      "xef6_mmol": 0.41,
+      "ahf_ml": 0.3,
+      "f2_evolved": "yes (gas phase pumped through KI powder turned brown from I2)",
+      "xe_product": "[Xe2F11][RuF6]",
+      "xe_oxidation_state": "VI",
+      "ru_product": "[RuF6]- in the salt",
+      "evidence": "single-crystal and powder X-ray diffraction, Raman and IR spectroscopy",
+      "runs_reported": "not stated"
+     }
+    }
+   ],
+   "nrr:note": "'decomposition' records the authors' hypothesis that any [XeF7]+ formed decomposes by F2 loss too fast to be observed; whether it forms at all is an open question of the record.",
+   "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement"
+  },
+  {
+   "@id": "#finding-condition-excess-xef6-neat",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 1:2 (excess XeF6), none (neat), room temperature?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 1:2 (excess XeF6), none (neat), room temperature?",
+   "nrr:target": {
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound",
+    "identifier": "compound:xef7-cation-or-xef8"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:failureModes": [
+    "decomposition"
+   ],
+   "nrr:effect": {
+    "metric": "xenon oxidation state of the isolated product",
+    "value": "VI",
+    "direction": "none",
+    "comparedTo": "VIII sought",
+    "note": "F2 evolved: not stated for the neat reaction; product: [Xe2F11][RuF6]"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no reaction known to give a Xe(VIII) product was run alongside, and the oxidising power of RuF6 toward BrF5 is cited from earlier work rather than re-demonstrated; the immediate decolorisation of RuF6 shows the oxidiser was consumed, not that the target could have been seen. The only detection criterion for [XeF7]+ is its predicted Raman bands at 588, 647 and 503 cm-1 (the most intense Raman bands of [XeF7]+ were quantum-chemically predicted at 588, 647 and 503 cm-1 and were not present); no detection limit is stated"
+    },
+    "negative": {
+     "kind": "none",
+     "note": "no XeF6-only or RuF6-only control under the same conditions is described; RuF6 alone is known to lose F2 slowly, which the authors argue is too slow to matter"
+    }
+   },
+   "nrr:replicates": {
+    "note": "no run count is reported for this or any condition"
+   },
+   "nrr:conditions": {
+    "ratioRuF6toXeF6": "1:2 (excess XeF6)",
+    "solvent": "none (neat)",
+    "temperature": "room temperature",
+    "product": "[Xe2F11][RuF6]",
+    "rutheniumProduct": "[RuF6]- in the salt",
+    "evidenceForProduct": "stated: 'The compound also forms without aHF as a solvent'"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results and Discussion, paragraph 2",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Results and Discussion, paragraph 2",
+     "values": {
+      "ratio_ruf6_xef6": "1:2 (excess XeF6)",
+      "solvent": "none (neat)",
+      "temperature": "room temperature",
+      "f2_evolved": "not stated for the neat reaction",
+      "xe_product": "[Xe2F11][RuF6]",
+      "xe_oxidation_state": "VI",
+      "ru_product": "[RuF6]- in the salt",
+      "evidence": "stated: 'The compound also forms without aHF as a solvent'",
+      "runs_reported": "not stated"
+     }
+    }
+   ],
+   "nrr:note": "'decomposition' records the authors' hypothesis that any [XeF7]+ formed decomposes by F2 loss too fast to be observed; whether it forms at all is an open question of the record.",
+   "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement"
+  },
+  {
+   "@id": "#finding-condition-equimolar-ahf",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 1:1, anhydrous HF (0.3 mL), thawed from 77 K to room temperature?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 1:1, anhydrous HF (0.3 mL), thawed from 77 K to room temperature?",
+   "nrr:target": {
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound",
+    "identifier": "compound:xef7-cation-or-xef8"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:failureModes": [
+    "decomposition"
+   ],
+   "nrr:effect": {
+    "metric": "xenon oxidation state of the isolated product",
+    "value": "VI",
+    "direction": "none",
+    "comparedTo": "VIII sought",
+    "note": "F2 evolved: yes; product: [XeF5][RuF6] (known compound)"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no reaction known to give a Xe(VIII) product was run alongside, and the oxidising power of RuF6 toward BrF5 is cited from earlier work rather than re-demonstrated; the immediate decolorisation of RuF6 shows the oxidiser was consumed, not that the target could have been seen. The only detection criterion for [XeF7]+ is its predicted Raman bands at 588, 647 and 503 cm-1 (the most intense Raman bands of [XeF7]+ were quantum-chemically predicted at 588, 647 and 503 cm-1 and were not present); no detection limit is stated"
+    },
+    "negative": {
+     "kind": "none",
+     "note": "no XeF6-only or RuF6-only control under the same conditions is described; RuF6 alone is known to lose F2 slowly, which the authors argue is too slow to matter"
+    }
+   },
+   "nrr:replicates": {
+    "note": "no run count is reported for this or any condition"
+   },
+   "nrr:conditions": {
+    "ratioRuF6toXeF6": "1:1",
+    "solvent": "anhydrous HF (0.3 mL)",
+    "temperature": "thawed from 77 K to room temperature",
+    "ruf6Mmol": 0.46,
+    "xef6Mmol": 0.49,
+    "ahfMl": 0.3,
+    "product": "[XeF5][RuF6] (known compound)",
+    "rutheniumProduct": "[RuF6]- in the salt",
+    "evidenceForProduct": "powder X-ray diffraction and Raman spectrum (SI Figures S4, S5, Table S2); colourless solid precipitated immediately"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results and Discussion, paragraph 3",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Results and Discussion, paragraph 3; Experimental Section, 'Preparation of [XeF5][RuF6]'",
+     "values": {
+      "ratio_ruf6_xef6": "1:1",
+      "solvent": "anhydrous HF (0.3 mL)",
+      "temperature": "thawed from 77 K to room temperature",
+      "ruf6_mg": 100.0,
+      "ruf6_mmol": 0.46,
+      "xef6_mg": 120.0,
+      "xef6_mmol": 0.49,
+      "ahf_ml": 0.3,
+      "f2_evolved": "yes",
+      "xe_product": "[XeF5][RuF6] (known compound)",
+      "xe_oxidation_state": "VI",
+      "ru_product": "[RuF6]- in the salt",
+      "evidence": "powder X-ray diffraction and Raman spectrum (SI Figures S4, S5, Table S2); colourless solid precipitated immediately",
+      "runs_reported": "not stated"
+     }
+    }
+   ],
+   "nrr:note": "'decomposition' records the authors' hypothesis that any [XeF7]+ formed decomposes by F2 loss too fast to be observed; whether it forms at all is an open question of the record.",
+   "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement"
+  },
+  {
+   "@id": "#finding-condition-excess-ruf6-ahf",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 2:1 or larger excess of RuF6, anhydrous HF, thawed from 77 K to room temperature?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 2:1 or larger excess of RuF6, anhydrous HF, thawed from 77 K to room temperature?",
+   "nrr:target": {
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound",
+    "identifier": "compound:xef7-cation-or-xef8"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:failureModes": [
+    "decomposition"
+   ],
+   "nrr:effect": {
+    "metric": "xenon oxidation state of the isolated product",
+    "value": "VI",
+    "direction": "none",
+    "comparedTo": "VIII sought",
+    "note": "F2 evolved: yes (after thawing); product: [XeF5]+ salts of [RunF5n+1]- (n = 1 2 3 ...)"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no reaction known to give a Xe(VIII) product was run alongside, and the oxidising power of RuF6 toward BrF5 is cited from earlier work rather than re-demonstrated; the immediate decolorisation of RuF6 shows the oxidiser was consumed, not that the target could have been seen. The only detection criterion for [XeF7]+ is its predicted Raman bands at 588, 647 and 503 cm-1 (the most intense Raman bands of [XeF7]+ were quantum-chemically predicted at 588, 647 and 503 cm-1 and were not present); no detection limit is stated"
+    },
+    "negative": {
+     "kind": "none",
+     "note": "no XeF6-only or RuF6-only control under the same conditions is described; RuF6 alone is known to lose F2 slowly, which the authors argue is too slow to matter"
+    }
+   },
+   "nrr:replicates": {
+    "note": "no run count is reported for this or any condition"
+   },
+   "nrr:conditions": {
+    "ratioRuF6toXeF6": "2:1 or larger excess of RuF6",
+    "solvent": "anhydrous HF",
+    "temperature": "thawed from 77 K to room temperature",
+    "product": "[XeF5]+ salts of [RunF5n+1]- (n = 1 2 3 ...)",
+    "rutheniumProduct": "RuF5 as a dark-green oily liquid (X-ray amorphous at dry-ice temperature) and oligofluoridoruthenate(V) anions",
+    "evidenceForProduct": "Raman bands of [XeF5]+, RuF5 and [RunF5n+1]-; no bands at the positions predicted for [XeF7]+ (588, 647, 503 cm-1); products could not be quantified"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results and Discussion, paragraph 4",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Results and Discussion, paragraph 4",
+     "values": {
+      "ratio_ruf6_xef6": "2:1 or larger excess of RuF6",
+      "solvent": "anhydrous HF",
+      "temperature": "thawed from 77 K to room temperature",
+      "f2_evolved": "yes (after thawing)",
+      "xe_product": "[XeF5]+ salts of [RunF5n+1]- (n = 1 2 3 ...)",
+      "xe_oxidation_state": "VI",
+      "ru_product": "RuF5 as a dark-green oily liquid (X-ray amorphous at dry-ice temperature) and oligofluoridoruthenate(V) anions",
+      "evidence": "Raman bands of [XeF5]+, RuF5 and [RunF5n+1]-; no bands at the positions predicted for [XeF7]+ (588, 647, 503 cm-1); products could not be quantified",
+      "runs_reported": "not stated"
+     }
+    }
+   ],
+   "nrr:note": "'decomposition' records the authors' hypothesis that any [XeF7]+ formed decomposes by F2 loss too fast to be observed; whether it forms at all is an open question of the record.",
+   "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement"
+  },
+  {
+   "@id": "#finding-condition-low-temperature-ahf",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 as above, anhydrous HF, -78 degrees C?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Does RuF6 oxidise XeF6 to a xenon(VIII) species at RuF6:XeF6 as above, anhydrous HF, -78 degrees C?",
+   "nrr:target": {
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound",
+    "identifier": "compound:xef7-cation-or-xef8"
+   },
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "nrr:informativeness": "uninformative",
+   "nrr:failureModes": [
+    "decomposition"
+   ],
+   "nrr:effect": {
+    "metric": "xenon oxidation state of the isolated product",
+    "value": "VI",
+    "direction": "none",
+    "comparedTo": "VIII sought",
+    "note": "F2 evolved: yes (stopped when the brown RuF6 colour had gone); product: only [XeF5]+ salts observed by Raman; products equivalent to room temperature"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none",
+     "note": "no reaction known to give a Xe(VIII) product was run alongside, and the oxidising power of RuF6 toward BrF5 is cited from earlier work rather than re-demonstrated; the immediate decolorisation of RuF6 shows the oxidiser was consumed, not that the target could have been seen. The only detection criterion for [XeF7]+ is its predicted Raman bands at 588, 647 and 503 cm-1 (the most intense Raman bands of [XeF7]+ were quantum-chemically predicted at 588, 647 and 503 cm-1 and were not present); no detection limit is stated"
+    },
+    "negative": {
+     "kind": "none",
+     "note": "no XeF6-only or RuF6-only control under the same conditions is described; RuF6 alone is known to lose F2 slowly, which the authors argue is too slow to matter"
+    }
+   },
+   "nrr:replicates": {
+    "note": "no run count is reported for this or any condition"
+   },
+   "nrr:conditions": {
+    "ratioRuF6toXeF6": "as above",
+    "solvent": "anhydrous HF",
+    "temperature": "-78 degrees C",
+    "product": "only [XeF5]+ salts observed by Raman; products equivalent to room temperature",
+    "rutheniumProduct": "as at room temperature",
+    "evidenceForProduct": "Raman spectra; decolorisation of RuF6 much slower"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results and Discussion, paragraph 5",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Results and Discussion, paragraph 5",
+     "values": {
+      "ratio_ruf6_xef6": "as above",
+      "solvent": "anhydrous HF",
+      "temperature": "-78 degrees C",
+      "f2_evolved": "yes (stopped when the brown RuF6 colour had gone)",
+      "xe_product": "only [XeF5]+ salts observed by Raman; products equivalent to room temperature",
+      "xe_oxidation_state": "VI",
+      "ru_product": "as at room temperature",
+      "evidence": "Raman spectra; decolorisation of RuF6 much slower",
+      "runs_reported": "not stated"
+     }
+    }
+   ],
+   "nrr:note": "'decomposition' records the authors' hypothesis that any [XeF7]+ formed decomposes by F2 loss too fast to be observed; whether it forms at all is an open question of the record.",
+   "nrr:informativenessReason": "no positive control; no negative control; no sensitivity or power statement"
+  },
+  {
+   "@id": "#finding-f2-evolved",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Is the gas evolved on mixing RuF6 and XeF6 fluorine?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Is the gas evolved on mixing RuF6 and XeF6 fluorine?",
+   "nrr:target": {
+    "label": "fluorine (F2)",
+    "type": "compound",
+    "identifier": "pubchem:CID24524"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "F2 detection by KI",
+    "value": "detected in every reaction",
+    "direction": "not-applicable"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none"
+    },
+    "negative": {
+     "kind": "background",
+     "label": "other fluorinating agents present are not volatile at -196 degrees C",
+     "expected": "no I2 from anything but F2",
+     "observed": "KI turned brown",
+     "passed": true
+    }
+   },
+   "nrr:conditions": {
+    "method": "gas phase pumped through KI powder at -196 degrees C",
+    "f2VapourPressureMbar": 370
+   },
+   "nrr:evidence": [
+    {
+     "label": "Results and Discussion, paragraph 2",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Results and Discussion, paragraph 2",
+     "quote": "the solution was cooled to -196 degrees C and the remaining gas phase pumped through KI powder, which turned brown from I2; since the other fluorinating agents are not volatile at -196 degrees C this was an unambiguous indication of F2 (vapour pressure about 370 mbar at that temperature)"
+    }
+   ],
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#stage-1-experiment",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "RuF6 with XeF6, neat or in anhydrous HF, condensed at 77 K and thawed; room temperature and -78 degrees C",
+   "nrr:stage": "experiment",
+   "nrr:performedBy": [
+    {
+     "name": "Björn N. Koch",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Giuliana Hoß",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Gregor Schnakenburg",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Antti J. Karttunen",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "Aalto University",
+     "identifier": "https://orcid.org/0000-0003-4187-5447",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Florian Kraus",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "identifier": "https://orcid.org/0000-0003-4368-8418",
+     "note": "listed author; the article carries no author-contribution statement"
+    }
+   ],
+   "nrr:method": "fluorine-passivated Monel Schlenk line; RuF6 and XeF6 made by literature procedures; PFA or FEP vessels; volatiles removed in vacuum; products by powder XRD, Raman and IR",
+   "nrr:conditions": {
+    "ratios": [
+     "1:2 (excess XeF6)",
+     "1:2 (excess XeF6)",
+     "1:1",
+     "2:1 or larger excess of RuF6",
+     "as above"
+    ],
+    "temperatures": [
+     "-78 degrees C",
+     "room temperature",
+     "thawed from 77 K to room temperature"
+    ],
+    "solvents": [
+     "anhydrous HF",
+     "anhydrous HF (0.3 mL)",
+     "none (neat)"
+    ]
+   },
+   "nrr:replicates": {
+    "note": "not reported"
+   },
+   "nrr:note": "RuF6 89 mbar at 17.6 degrees C and XeF6 38.5 mbar at 25 degrees C, so the exact stoichiometric ratio is hard to meet"
+  },
+  {
+   "@id": "#attempt",
+   "@type": [
+    "CreateAction",
+    "prov:Activity"
+   ],
+   "name": "RuF6 and XeF6 at five ratio and temperature conditions evolve F2 and give only xenon(VI) salts",
+   "description": "Under which of the ratios and temperatures tried does RuF6 oxidise XeF6 beyond xenon(VI)?",
+   "actionStatus": "FailedActionStatus",
+   "nrr:attemptType": "wet-lab",
+   "nrr:outcomeClass": "inconclusive-no-positive-control",
+   "agent": {
+    "@id": "#operator"
+   },
+   "instrument": [
+    {
+     "@id": "#performer-bj-rn-n-koch-writing"
+    },
+    {
+     "@id": "#performer-giuliana-ho-writing"
+    },
+    {
+     "@id": "#performer-gregor-schnakenburg-writing"
+    },
+    {
+     "@id": "#performer-antti-j-karttunen-writing"
+    },
+    {
+     "@id": "#performer-florian-kraus-writing"
+    }
+   ],
+   "object": [],
+   "result": [
+    {
+     "@id": "#finding-condition-excess-xef6-ahf"
+    },
+    {
+     "@id": "#finding-condition-excess-xef6-neat"
+    },
+    {
+     "@id": "#finding-condition-equimolar-ahf"
+    },
+    {
+     "@id": "#finding-condition-excess-ruf6-ahf"
+    },
+    {
+     "@id": "#finding-condition-low-temperature-ahf"
+    },
+    {
+     "@id": "#finding-f2-evolved"
+    }
+   ],
+   "hasPart": [
+    {
+     "@id": "#stage-1-experiment"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]",
+   "nrr:url": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:46Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "This article is licensed under CC-BY 4.0 (JATS permissions element; Europe PMC license field 'cc by')"
+  },
+  {
+   "@id": "pmc:PMC13343514/ic6c02072_si_001.pdf",
+   "@type": "Dataset",
+   "nrr:role": "supplementary",
+   "name": "Supporting Information (PDF)",
+   "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles",
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "Crystallographic data for [Xe2F11][RuF6] deposited as CCDC 2477117 (joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service); everything else in the Supporting Information.",
+   "nrr:data": [
+    {
+     "label": "ic6c02072_si_001.pdf",
+     "repository": "Europe PMC",
+     "accession": "PMC13343514",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles",
+     "checksum": "sha256:3b4b2283f080ee0c5199efcd9bb84e9cd64a6563f2718679b720d1cf7c8322f3",
+     "size": 589210,
+     "format": "application/pdf",
+     "role": "Supporting Information: crystallographic details, powder patterns and vibrational spectra of both salts, computational details, FIA coordinates"
+    }
+   ]
+  },
+  {
+   "@id": "ccdc:2477117",
+   "@type": "Dataset",
+   "nrr:role": "data-deposit",
+   "name": "CCDC 2477117: crystal structure of [Xe2F11][RuF6]",
+   "nrr:url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+   "nrr:note": "joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service; the only machine-readable deposit of the four ACS studies",
+   "nrr:data": [
+    {
+     "label": "CCDC 2477117",
+     "repository": "CCDC Access Structures",
+     "accession": "2477117",
+     "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+     "format": "CIF",
+     "role": "single-crystal structure at 100 K"
+    }
+   ]
+  },
+  {
+   "@id": "pubchem:CID139546",
+   "@type": "ChemicalSubstance",
+   "name": "xenon hexafluoride (XeF6)",
+   "nrr:entityType": "compound",
+   "nrr:role": "substrate to be oxidised",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID21528530",
+   "@type": "ChemicalSubstance",
+   "name": "ruthenium hexafluoride (RuF6)",
+   "nrr:entityType": "compound",
+   "nrr:role": "oxidiser",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID14917",
+   "@type": "ChemicalSubstance",
+   "name": "anhydrous hydrogen fluoride (aHF)",
+   "nrr:entityType": "compound",
+   "nrr:role": "solvent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID24524",
+   "@type": "ChemicalSubstance",
+   "name": "fluorine (F2)",
+   "nrr:entityType": "compound",
+   "nrr:role": "evolved by-product, detected with KI",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID4875",
+   "@type": "ChemicalSubstance",
+   "name": "potassium iodide (KI)",
+   "nrr:entityType": "compound",
+   "nrr:role": "F2 detection reagent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID167109",
+   "@type": "ChemicalSubstance",
+   "name": "ruthenium pentafluoride (RuF5)",
+   "nrr:entityType": "compound",
+   "nrr:role": "reduction product with excess RuF6",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "compound:xef7-cation-or-xef8",
+   "@type": "ChemicalSubstance",
+   "name": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+   "nrr:entityType": "compound",
+   "nrr:role": "target, never observed"
+  },
+  {
+   "@id": "compound:xef5-ruf6",
+   "@type": "ChemicalSubstance",
+   "name": "[XeF5][RuF6], known xenon(VI) salt",
+   "nrr:entityType": "compound",
+   "nrr:role": "product of the equimolar reaction"
+  },
+  {
+   "@id": "compound:xef5-oligofluoridoruthenate",
+   "@type": "ChemicalSubstance",
+   "name": "[XeF5][RunF5n+1] (n = 1, 2, 3, ...)",
+   "nrr:entityType": "compound",
+   "nrr:role": "products with excess RuF6, not quantified"
+  },
+  {
+   "@id": "assay:scxrd",
+   "@type": "DefinedTerm",
+   "name": "single-crystal X-ray diffraction, Bruker D8 Quest, Mo Kalpha, 100 K",
+   "nrr:entityType": "assay",
+   "nrr:role": "structure determination"
+  },
+  {
+   "@id": "assay:raman-ir",
+   "@type": "DefinedTerm",
+   "name": "Raman (532 nm, sealed quartz capillary) and ATR IR spectroscopy in an argon glovebox",
+   "nrr:entityType": "assay",
+   "nrr:role": "product identification; the only probe for [XeF7]+"
+  },
+  {
+   "@id": "https://ror.org/041nas322",
+   "@type": "Organization",
+   "name": "University of Bonn",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "https://ror.org/020hwjq30",
+   "@type": "Organization",
+   "name": "Aalto University",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "software:crystal23",
+   "@type": "SoftwareApplication",
+   "name": "CRYSTAL23",
+   "nrr:entityType": "software",
+   "nrr:role": "periodic DFT"
+  },
+  {
+   "@id": "software:orca",
+   "@type": "SoftwareApplication",
+   "name": "ORCA",
+   "nrr:entityType": "software",
+   "nrr:role": "fluoride ion affinity calculations",
+   "nrr:extra": {
+    "version": "6.1.1"
+   }
+  },
+  {
+   "@id": "software:shelxt",
+   "@type": "SoftwareApplication",
+   "name": "SHELXT and SHELXL (Shelxle)",
+   "nrr:entityType": "software",
+   "nrr:role": "structure solution and refinement"
+  },
+  {
+   "@id": "software:apex5",
+   "@type": "SoftwareApplication",
+   "name": "APEX5",
+   "nrr:entityType": "software",
+   "nrr:role": "diffraction data evaluation and absorption correction (SADABS)"
+  },
+  {
+   "@id": "software:diamond",
+   "@type": "SoftwareApplication",
+   "name": "Diamond",
+   "nrr:entityType": "software",
+   "nrr:role": "crystal structure representation"
+  },
+  {
+   "@id": "software:findsym",
+   "@type": "SoftwareApplication",
+   "name": "FINDSYM",
+   "nrr:entityType": "software",
+   "nrr:role": "symmetry of the optimised structure"
+  }
+ ]
+}

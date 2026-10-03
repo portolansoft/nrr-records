@@ -1,0 +1,505 @@
+{
+ "@id": "urn:portolan:nrr:sha256:7947d3eb0fa82af824b9b3fab34530bdf78085a73acf088928a934d751099265",
+ "aiUseDeclaration": {
+  "statement": "The article makes no statement about the use of AI tools."
+ },
+ "applicabilityConditions": {
+  "note": "the authors restrict their conclusion to 'the conditions investigated by us so far'",
+  "productProbes": "single-crystal and powder X-ray diffraction, Raman and IR; [XeF7]+ sought by its predicted Raman bands at 588, 647 and 503 cm-1",
+  "reaction": "RuF6 with XeF6, neat or in anhydrous HF, RuF6:XeF6 from excess XeF6 through 1:1 and 2:1 to excess RuF6",
+  "runCount": "not reported for any condition",
+  "temperatures": "thawed from 77 K to room temperature, and -78 degrees C",
+  "vessels": "PFA or FEP reaction vessels on a fluorine-passivated Monel Schlenk line"
+ },
+ "attemptType": "computational",
+ "confidence": {
+  "basis": "the lattice energy of the putative salt rests on an estimated cation volume; solvent-corrected and uncorrected values differ in sign for the reaction enthalpies",
+  "level": "medium"
+ },
+ "contentAddress": "urn:portolan:nrr:sha256:7947d3eb0fa82af824b9b3fab34530bdf78085a73acf088928a934d751099265",
+ "cost": {
+  "note": "CSC Finland compute; amount not reported",
+  "source": "Acknowledgments"
+ },
+ "dateCreated": "2026-09-25T00:00:00Z",
+ "domainTags": [
+  "chemistry"
+ ],
+ "entities": [
+  {
+   "id": "pubchem:CID139546",
+   "label": "xenon hexafluoride (XeF6)",
+   "role": "substrate to be oxidised",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID21528530",
+   "label": "ruthenium hexafluoride (RuF6)",
+   "role": "oxidiser",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID14917",
+   "label": "anhydrous hydrogen fluoride (aHF)",
+   "role": "solvent",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID24524",
+   "label": "fluorine (F2)",
+   "role": "evolved by-product, detected with KI",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID4875",
+   "label": "potassium iodide (KI)",
+   "role": "F2 detection reagent",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "pubchem:CID167109",
+   "label": "ruthenium pentafluoride (RuF5)",
+   "role": "reduction product with excess RuF6",
+   "scheme": "PubChem",
+   "type": "compound"
+  },
+  {
+   "id": "compound:xef7-cation-or-xef8",
+   "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+   "note": "hypothetical; no registry identifier",
+   "role": "target, never observed",
+   "type": "compound"
+  },
+  {
+   "extra": {
+    "spaceGroup": "P2_1/n (no. 14)",
+    "structureType": "[Xe2F11][VF6] type, like [Xe2F11][SbF6]; [Xe2F11][AuF6] is orthorhombic Pnma"
+   },
+   "id": "ccdc:2477117",
+   "label": "[Xe2F11][RuF6], mu-fluorido(bis(pentafluoridoxenonium(VI)) hexafluoridoruthenate(V)",
+   "role": "new compound obtained instead of the target",
+   "scheme": "CCDC",
+   "type": "compound",
+   "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117"
+  },
+  {
+   "id": "compound:xef5-ruf6",
+   "label": "[XeF5][RuF6], known xenon(VI) salt",
+   "note": "structure reported by Bartlett et al. 1973",
+   "role": "product of the equimolar reaction",
+   "type": "compound"
+  },
+  {
+   "id": "compound:xef5-oligofluoridoruthenate",
+   "label": "[XeF5][RunF5n+1] (n = 1, 2, 3, ...)",
+   "role": "products with excess RuF6, not quantified",
+   "type": "compound"
+  },
+  {
+   "id": "assay:scxrd",
+   "label": "single-crystal X-ray diffraction, Bruker D8 Quest, Mo Kalpha, 100 K",
+   "role": "structure determination",
+   "type": "assay"
+  },
+  {
+   "id": "assay:raman-ir",
+   "label": "Raman (532 nm, sealed quartz capillary) and ATR IR spectroscopy in an argon glovebox",
+   "role": "product identification; the only probe for [XeF7]+",
+   "type": "assay"
+  },
+  {
+   "id": "https://ror.org/041nas322",
+   "label": "University of Bonn",
+   "note": "Fluorchemie, Institut für Anorganische Chemie; quantum-chemical calculations at Aalto University",
+   "type": "organization"
+  },
+  {
+   "id": "https://ror.org/020hwjq30",
+   "label": "Aalto University",
+   "note": "quantum-chemical calculations",
+   "type": "organization"
+  },
+  {
+   "id": "software:crystal23",
+   "label": "CRYSTAL23",
+   "role": "periodic DFT",
+   "type": "software"
+  },
+  {
+   "extra": {
+    "version": "6.1.1"
+   },
+   "id": "software:orca",
+   "label": "ORCA",
+   "role": "fluoride ion affinity calculations",
+   "type": "software"
+  },
+  {
+   "id": "software:shelxt",
+   "label": "SHELXT and SHELXL (Shelxle)",
+   "role": "structure solution and refinement",
+   "type": "software"
+  },
+  {
+   "id": "software:apex5",
+   "label": "APEX5",
+   "role": "diffraction data evaluation and absorption correction (SADABS)",
+   "type": "software"
+  },
+  {
+   "id": "software:diamond",
+   "label": "Diamond",
+   "role": "crystal structure representation",
+   "type": "software"
+  },
+  {
+   "id": "software:findsym",
+   "label": "FINDSYM",
+   "role": "symmetry of the optimised structure",
+   "type": "software"
+  }
+ ],
+ "findings": [
+  {
+   "conditions": {
+    "method": "fluoride ion affinities recalculated at RIJK-PW6B95(D3BJ)-ATM/def2-QZVPP geometries with CCSD(T)/def2-QZVPP energies, with and without a CPCM solvent model for HF (epsilon 84)",
+    "solventModel": "CPCM, epsilon(HF) = 84, where marked CP"
+   },
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "-611 (CP) / -368 kJ/mol for the observed [XeF5][RuF6]",
+    "direction": "not-applicable",
+    "metric": "estimated formation energy of solid [XeF7][RuF6], solvent-corrected",
+    "note": "-138 kJ/mol without the solvent model; lattice energy -489 kJ/mol from Bartlett's volume formula with the IF7 volume for the cation; the authors: 'this indicates that [XeF7][RuF6] would be a feasible compound'",
+    "unit": "kJ/mol",
+    "value": -572
+   },
+   "evidence": [
+    {
+     "label": "Estimations of the Lattice Energies; equations 11, 12, 14, 15",
+     "locator": "Estimations of the Lattice Energies; equations 11, 12, 14, 15",
+     "source": "10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "id": "xef7-ruf6-feasible",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "question": "Would a [XeF7][RuF6] salt be thermodynamically feasible from XeF8 and RuF5?",
+   "target": {
+    "identifier": "compound:xef7-cation-or-xef8",
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "method": "fluoride ion affinities recalculated at RIJK-PW6B95(D3BJ)-ATM/def2-QZVPP geometries with CCSD(T)/def2-QZVPP energies, with and without a CPCM solvent model for HF (epsilon 84)",
+    "solventModel": "CPCM, epsilon(HF) = 84, where marked CP"
+   },
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "XeF8: 93 kJ/mol",
+    "direction": "not-applicable",
+    "metric": "instability of [XeF7]+ with respect to F2 loss at 0 K (Grant et al. 2010)",
+    "note": "XeF8 likewise unstable by about 93 kJ/mol; packing into a solid with a suitable anion may stabilise the cation",
+    "unit": "kJ/mol",
+    "value": 191
+   },
+   "evidence": [
+    {
+     "label": "Further Thermodynamic Considerations",
+     "locator": "Further Thermodynamic Considerations",
+     "source": "10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "id": "xef7-unstable-to-f2",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "question": "Is the free [XeF7]+ cation stable to loss of F2?",
+   "target": {
+    "identifier": "compound:xef7-cation-or-xef8",
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound"
+   }
+  },
+  {
+   "conditions": {
+    "method": "fluoride ion affinities recalculated at RIJK-PW6B95(D3BJ)-ATM/def2-QZVPP geometries with CCSD(T)/def2-QZVPP energies, with and without a CPCM solvent model for HF (epsilon 84)",
+    "solventModel": "CPCM, epsilon(HF) = 84, where marked CP"
+   },
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "comparedTo": "[XeF5]+ -367 (CP); RuF5 -462 (CP)",
+    "direction": "not-applicable",
+    "metric": "FIA of [XeF7]+, solvent-corrected",
+    "note": "fluoride ion affinities recalculated at RIJK-PW6B95(D3BJ)-ATM/def2-QZVPP geometries with CCSD(T)/def2-QZVPP energies, with and without a CPCM solvent model for HF (epsilon 84): [XeF5]+ -367 (CP) / -662 kJ/mol; [XeF7]+ -379 / -865; RuF5 -462 / -514 (equations 10 to 12)",
+    "unit": "kJ/mol",
+    "value": -379
+   },
+   "evidence": [
+    {
+     "label": "Consideration of Fluoride Ion Affinities (FIAs); equations 10 to 12",
+     "locator": "Consideration of Fluoride Ion Affinities (FIAs); equations 10 to 12",
+     "source": "10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "id": "fluoride-ion-affinities",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "outcomeClass": "positive",
+   "question": "What are the fluoride ion affinities of the species involved, with and without an HF solvent model?",
+   "target": {
+    "label": "RuF6 + XeF6 reaction energetics in aHF",
+    "type": "process"
+   }
+  },
+  {
+   "controls": {
+    "negative": {
+     "kind": "none"
+    },
+    "positive": {
+     "kind": "none"
+    }
+   },
+   "effect": {
+    "direction": "not-applicable",
+    "metric": "explanation reached",
+    "note": "no redox potentials or Galvanic series exist for anhydrous HF; the authors leave their calculation to others; pure RuF6 decomposes slowly to RuF5 and F2 at room temperature (weeks in nickel); salt formation from RuF6 and XeF6 is essentially instantaneous, so RuF6 decomposition is not thought to be the decisive step; quantum-chemical calculations and considerations of reaction and lattice energies suggest that an ionic solid containing [XeF7]+ cations may be stable; the decomposition of [XeF7]+ cations may be too fast in our case",
+    "value": "none decisive"
+   },
+   "evidence": [
+    {
+     "label": "Why does RuF6 fail to oxidize XeF6",
+     "locator": "section 'Why does RuF6 fail to oxidize XeF6 (at least not under these conditions)?', final paragraphs",
+     "quote": "So, why does RuF6 fail to oxidize XeF6? Well, it may be that our reaction conditions are not right, yet. ... Under the conditions investigated by us so far, we only observe F2 elimination and no evidence of any Xe(VIII) compound.",
+     "source": "10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "id": "why-it-fails",
+   "informativeness": "not-applicable",
+   "informativenessReason": "rule applies to negative and inconclusive findings only",
+   "note": "The thermodynamics do not rule the target out; the authors' working hypothesis is kinetic, that [XeF7]+ decomposes too fast.",
+   "outcomeClass": "partial",
+   "question": "Why does RuF6 fail to oxidise XeF6, at least under these conditions?",
+   "target": {
+    "identifier": "compound:xef7-cation-or-xef8",
+    "label": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+    "type": "compound"
+   }
+  }
+ ],
+ "integrity": {
+  "contentAddress": "urn:portolan:nrr:sha256:7947d3eb0fa82af824b9b3fab34530bdf78085a73acf088928a934d751099265",
+  "duplicateOf": null,
+  "signature": null,
+  "signer": null,
+  "trustTier": "pilot-unsigned"
+ },
+ "isPartOf": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048",
+ "kind": "attempt",
+ "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "operator": {
+  "identifier": "https://ror.org/041nas322",
+  "name": "University of Bonn",
+  "type": "Organization"
+ },
+ "outcomeClass": "partial",
+ "outcomeSummary": "[XeF5][RuF6] overall -611 (CP) / -368 kJ/mol; [XeF7][RuF6] overall -572 (CP) / -138 kJ/mol, 'which indicates that [XeF7][RuF6] would be a feasible compound' XeF8 formation enthalpy about -172 kJ/mol but unstable to F2 loss by about 93 kJ/mol at 0 K; [XeF7]+ unstable to F2 loss by about 191 kJ/mol at 0 K (Grant et al. 2010); packing into a solid may stabilise it no redox potentials or Galvanic series exist for anhydrous HF; the authors leave their calculation to others",
+ "pathType": "computation",
+ "performers": [
+  {
+   "affiliation": "University of Bonn",
+   "name": "Björn N. Koch",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of Bonn",
+   "name": "Giuliana Hoß",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of Bonn",
+   "name": "Gregor Schnakenburg",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "Aalto University",
+   "identifier": "https://orcid.org/0000-0003-4187-5447",
+   "name": "Antti J. Karttunen",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  },
+  {
+   "affiliation": "University of Bonn",
+   "identifier": "https://orcid.org/0000-0003-4368-8418",
+   "name": "Florian Kraus",
+   "note": "listed author; the article carries no author-contribution statement",
+   "role": "writing",
+   "type": "person"
+  }
+ ],
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "question": "Do fluoride ion affinities, reaction enthalpies and lattice energies explain why no xenon(VIII) product forms?",
+ "relations": [
+  {
+   "target": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048",
+   "type": "isPartOf"
+  },
+  {
+   "target": "urn:portolan:nrr:sha256:4e4eb350611d6cd0f4dda9a8cff4e3e8ee153c45caf2573c3f50447c98f34c0c",
+   "type": "informs"
+  }
+ ],
+ "slug": "acs-xef6-thermodynamics",
+ "sourceLicense": "CC BY 4.0",
+ "sources": [
+  {
+   "identifier": "doi:10.1021/acs.inorgchem.6c02072",
+   "label": "Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "This article is licensed under CC-BY 4.0 (JATS permissions element; Europe PMC license field 'cc by')",
+   "role": "source-publication",
+   "statusAtCheck": {
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:46Z",
+    "integrity": "none",
+    "version": "VoR"
+   },
+   "url": "https://doi.org/10.1021/acs.inorgchem.6c02072"
+  },
+  {
+   "data": [
+    {
+     "accession": "PMC13343514",
+     "checksum": "sha256:3b4b2283f080ee0c5199efcd9bb84e9cd64a6563f2718679b720d1cf7c8322f3",
+     "format": "application/pdf",
+     "label": "ic6c02072_si_001.pdf",
+     "repository": "Europe PMC",
+     "role": "Supporting Information: crystallographic details, powder patterns and vibrational spectra of both salts, computational details, FIA coordinates",
+     "size": 589210,
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles"
+    }
+   ],
+   "identifier": "pmc:PMC13343514/ic6c02072_si_001.pdf",
+   "label": "Supporting Information (PDF)",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "note": "Crystallographic data for [Xe2F11][RuF6] deposited as CCDC 2477117 (joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service); everything else in the Supporting Information.",
+   "role": "supplementary",
+   "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles"
+  },
+  {
+   "data": [
+    {
+     "accession": "2477117",
+     "format": "CIF",
+     "label": "CCDC 2477117",
+     "repository": "CCDC Access Structures",
+     "role": "single-crystal structure at 100 K",
+     "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117"
+    }
+   ],
+   "identifier": "ccdc:2477117",
+   "label": "CCDC 2477117: crystal structure of [Xe2F11][RuF6]",
+   "note": "joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service; the only machine-readable deposit of the four ACS studies",
+   "role": "data-deposit",
+   "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117"
+  }
+ ],
+ "stages": [
+  {
+   "label": "FIAs at CCSD(T)/def2-QZVPP on PW6B95 geometries with and without CPCM(HF); lattice energies by Bartlett's volume formula",
+   "method": "fluoride ion affinities recalculated at RIJK-PW6B95(D3BJ)-ATM/def2-QZVPP geometries with CCSD(T)/def2-QZVPP energies, with and without a CPCM solvent model for HF (epsilon 84): [XeF5]+ -367 (CP) / -662 kJ/mol; [XeF7]+ -379 / -865; RuF5 -462 / -514 (equations 10 to 12)",
+   "note": "CRYSTAL23 (DFT-PBE0, TZVP, 4x4x2 k-grid, spin-polarised, ferromagnetic Ru ordering, band gap 5.31 eV, local moment 2.30 muB); ORCA 6.1.1 for FIAs; CRYSPLOT for mode assignment",
+   "performedBy": [
+    {
+     "affiliation": "University of Bonn",
+     "name": "Björn N. Koch",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Bonn",
+     "name": "Giuliana Hoß",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Bonn",
+     "name": "Gregor Schnakenburg",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "Aalto University",
+     "identifier": "https://orcid.org/0000-0003-4187-5447",
+     "name": "Antti J. Karttunen",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    },
+    {
+     "affiliation": "University of Bonn",
+     "identifier": "https://orcid.org/0000-0003-4368-8418",
+     "name": "Florian Kraus",
+     "note": "listed author; the article carries no author-contribution statement",
+     "role": "writing",
+     "type": "person"
+    }
+   ],
+   "software": [
+    {
+     "name": "ORCA",
+     "version": "6.1.1"
+    },
+    {
+     "name": "CRYSTAL23"
+    }
+   ],
+   "stage": "computation"
+  }
+ ],
+ "studyId": "acs-xef6",
+ "successCriteria": "An energetic argument that rules the target out or identifies the barrier.",
+ "title": "Thermodynamic estimates say a [XeF7][RuF6] salt may be stable, so the failure is not explained",
+ "version": "1",
+ "visibility": "public"
+}

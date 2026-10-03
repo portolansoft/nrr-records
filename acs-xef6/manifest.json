@@ -1,0 +1,49 @@
+{
+ "study": "acs-xef6",
+ "profile": "https://portolansoft.com/profile/nrr/0.2",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "generatedBy": {
+  "repository": "https://github.com/portolansoft/nrr",
+  "commit": "c8ed8ab7abec7ebdd64462bd409cc996ffa2ae29",
+  "script": "scripts/export_records.py"
+ },
+ "sourcePublication": {
+  "identifier": "doi:10.1021/acs.inorgchem.6c02072",
+  "label": "Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]",
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+ },
+ "records": [
+  {
+   "slug": "acs-xef6-path",
+   "id": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048",
+   "kind": "path",
+   "attemptType": null,
+   "outcomeClass": "negative-not-achievable",
+   "findings": 0
+  },
+  {
+   "slug": "acs-xef6-oxidation-attempts",
+   "id": "urn:portolan:nrr:sha256:4e4eb350611d6cd0f4dda9a8cff4e3e8ee153c45caf2573c3f50447c98f34c0c",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "inconclusive-no-positive-control",
+   "findings": 6
+  },
+  {
+   "slug": "acs-xef6-xe2f11-ruf6",
+   "id": "urn:portolan:nrr:sha256:e5c63bcf6346ddf58e543e43db0266786f87a20333ac861ffa004d4567d927c1",
+   "kind": "attempt",
+   "attemptType": "wet-lab",
+   "outcomeClass": "positive",
+   "findings": 3
+  },
+  {
+   "slug": "acs-xef6-thermodynamics",
+   "id": "urn:portolan:nrr:sha256:7947d3eb0fa82af824b9b3fab34530bdf78085a73acf088928a934d751099265",
+   "kind": "attempt",
+   "attemptType": "computational",
+   "outcomeClass": "partial",
+   "findings": 4
+  }
+ ]
+}

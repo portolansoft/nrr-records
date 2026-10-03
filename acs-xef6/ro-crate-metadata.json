@@ -1,0 +1,88 @@
+{
+ "@context": "https://w3id.org/ro/crate/1.2/context",
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": {
+    "@id": "https://w3id.org/ro/crate/1.2"
+   },
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "name": "Portolan NRR records: RuF6 does not oxidise XeF6 to xenon(VIII); F2 is evolved and only xenon(VI) salts form, one of them new",
+   "description": "Can RuF6, a strong one-electron oxidiser of low Lewis acidity, oxidise XeF6 to a xenon(VIII) fluoride species such as a [XeF7]+ salt or XeF8?",
+   "license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "datePublished": "2026-09-25",
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "isBasedOn": {
+    "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072"
+   },
+   "hasPart": [
+    {
+     "@id": "crates/acs-xef6-path/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-xef6-oxidation-attempts/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-xef6-xe2f11-ruf6/ro-crate-metadata.json"
+    },
+    {
+     "@id": "crates/acs-xef6-thermodynamics/ro-crate-metadata.json"
+    }
+   ],
+   "publisher": {
+    "@id": "#portolan"
+   }
+  },
+  {
+   "@id": "#portolan",
+   "@type": "Organization",
+   "name": "Portolan Software",
+   "url": "https://portolansoft.com/"
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "@type": "ScholarlyArticle",
+   "name": "Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]",
+   "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+   "@id": "crates/acs-xef6-path/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "RuF6 does not oxidise XeF6 to xenon(VIII); F2 is evolved and only xenon(VI) salts form, one of them new",
+   "identifier": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048",
+   "nrr:outcomeClass": "negative-not-achievable"
+  },
+  {
+   "@id": "crates/acs-xef6-oxidation-attempts/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "RuF6 and XeF6 at five ratio and temperature conditions evolve F2 and give only xenon(VI) salts",
+   "identifier": "urn:portolan:nrr:sha256:4e4eb350611d6cd0f4dda9a8cff4e3e8ee153c45caf2573c3f50447c98f34c0c",
+   "nrr:outcomeClass": "inconclusive-no-positive-control"
+  },
+  {
+   "@id": "crates/acs-xef6-xe2f11-ruf6/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "[Xe2F11][RuF6], a new xenon(VI) salt, characterised by single-crystal X-ray diffraction (CCDC 2477117), Raman, IR and periodic DFT",
+   "identifier": "urn:portolan:nrr:sha256:e5c63bcf6346ddf58e543e43db0266786f87a20333ac861ffa004d4567d927c1",
+   "nrr:outcomeClass": "positive"
+  },
+  {
+   "@id": "crates/acs-xef6-thermodynamics/ro-crate-metadata.json",
+   "@type": "Dataset",
+   "name": "Thermodynamic estimates say a [XeF7][RuF6] salt may be stable, so the failure is not explained",
+   "identifier": "urn:portolan:nrr:sha256:7947d3eb0fa82af824b9b3fab34530bdf78085a73acf088928a934d751099265",
+   "nrr:outcomeClass": "partial"
+  }
+ ]
+}

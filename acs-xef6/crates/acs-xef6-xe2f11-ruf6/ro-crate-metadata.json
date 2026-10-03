@@ -1,0 +1,758 @@
+{
+ "@context": [
+  "https://w3id.org/ro/crate/1.2/context",
+  {
+   "prov": "http://www.w3.org/ns/prov#",
+   "nrr": "https://portolansoft.com/schema/nrr/0.2#"
+  }
+ ],
+ "@graph": [
+  {
+   "@id": "ro-crate-metadata.json",
+   "@type": "CreativeWork",
+   "conformsTo": [
+    {
+     "@id": "https://w3id.org/ro/crate/1.2"
+    },
+    {
+     "@id": "https://portolansoft.com/profile/nrr/0.2"
+    }
+   ],
+   "about": {
+    "@id": "./"
+   }
+  },
+  {
+   "@id": "./",
+   "@type": "Dataset",
+   "identifier": "urn:portolan:nrr:sha256:e5c63bcf6346ddf58e543e43db0266786f87a20333ac861ffa004d4567d927c1",
+   "name": "[Xe2F11][RuF6], a new xenon(VI) salt, characterised by single-crystal X-ray diffraction (CCDC 2477117), Raman, IR and periodic DFT",
+   "description": "What is the colourless product of RuF6 with excess XeF6, and how does it relate to the known [Xe2F11][MF6] salts?",
+   "datePublished": "2026-09-25T00:00:00Z",
+   "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+   },
+   "conformsTo": {
+    "@id": "https://portolansoft.com/profile/nrr/0.2"
+   },
+   "version": "1",
+   "nrr:kind": "attempt",
+   "nrr:studyId": "acs-xef6",
+   "nrr:slug": "acs-xef6-xe2f11-ruf6",
+   "nrr:outcomeClass": "positive",
+   "nrr:visibility": "public",
+   "nrr:pathType": "experiment",
+   "nrr:successCriteria": "A refined crystal structure and vibrational spectra assigned against calculation.",
+   "keywords": [
+    "chemistry"
+   ],
+   "hasPart": [
+    {
+     "@id": "#attempt"
+    },
+    {
+     "@id": "#finding-crystal-structure"
+    },
+    {
+     "@id": "#finding-cation-geometry"
+    },
+    {
+     "@id": "#finding-vibrational-spectra"
+    }
+   ],
+   "prov:wasAttributedTo": [
+    {
+     "@id": "#operator"
+    },
+    {
+     "@id": "#performer-bj-rn-n-koch-writing"
+    },
+    {
+     "@id": "#performer-giuliana-ho-writing"
+    },
+    {
+     "@id": "#performer-gregor-schnakenburg-writing"
+    },
+    {
+     "@id": "#performer-antti-j-karttunen-writing"
+    },
+    {
+     "@id": "#performer-florian-kraus-writing"
+    }
+   ],
+   "nrr:applicabilityConditions": {
+    "reaction": "RuF6 with XeF6, neat or in anhydrous HF, RuF6:XeF6 from excess XeF6 through 1:1 and 2:1 to excess RuF6",
+    "temperatures": "thawed from 77 K to room temperature, and -78 degrees C",
+    "vessels": "PFA or FEP reaction vessels on a fluorine-passivated Monel Schlenk line",
+    "productProbes": "single-crystal and powder X-ray diffraction, Raman and IR; [XeF7]+ sought by its predicted Raman bands at 588, 647 and 503 cm-1",
+    "runCount": "not reported for any condition",
+    "note": "the authors restrict their conclusion to 'the conditions investigated by us so far'"
+   },
+   "nrr:cost": {
+    "note": "30 mg RuF6 and 100 mg XeF6 for the preparation; run count not reported",
+    "source": "Experimental Section"
+   },
+   "nrr:provenanceNotes": [
+    "A positive record hanging off a negative path. The by-product is queryable by its CCDC id and by the framework of related salts it is compared with; the path's headline stays negative for its stated target."
+   ],
+   "nrr:sourceLicense": "CC BY 4.0",
+   "nrr:aiUseDeclaration": {
+    "statement": "The article makes no statement about the use of AI tools."
+   },
+   "nrr:confidence": {
+    "level": "high",
+    "basis": "R(F) 0.0176 with no restraints; powder pattern matches; spectra match calculation"
+   },
+   "nrr:outcomeSummary": "[Xe2F11][RuF6], mu-fluorido(bis(pentafluoridoxenonium(VI)) hexafluoridoruthenate(V) crystallises in P2_1/n (no. 14), a = 8.4517, b = 8.9602, c = 15.4691 A, beta = 95.392 degrees, V = 1166.27 A3, Z = 4 at 100 K, isotypic with the V and Sb salts; one-dimensional strands along a.",
+   "isPartOf": {
+    "@id": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048"
+   },
+   "mainEntity": {
+    "@id": "#attempt"
+   },
+   "isSupplementTo": [
+    {
+     "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072"
+    }
+   ],
+   "prov:used": [
+    {
+     "@id": "pmc:PMC13343514/ic6c02072_si_001.pdf"
+    },
+    {
+     "@id": "ccdc:2477117"
+    }
+   ],
+   "mentions": [
+    {
+     "@id": "pubchem:CID139546"
+    },
+    {
+     "@id": "pubchem:CID21528530"
+    },
+    {
+     "@id": "pubchem:CID14917"
+    },
+    {
+     "@id": "pubchem:CID24524"
+    },
+    {
+     "@id": "pubchem:CID4875"
+    },
+    {
+     "@id": "pubchem:CID167109"
+    },
+    {
+     "@id": "compound:xef7-cation-or-xef8"
+    },
+    {
+     "@id": "ccdc:2477117"
+    },
+    {
+     "@id": "compound:xef5-ruf6"
+    },
+    {
+     "@id": "compound:xef5-oligofluoridoruthenate"
+    },
+    {
+     "@id": "assay:scxrd"
+    },
+    {
+     "@id": "assay:raman-ir"
+    },
+    {
+     "@id": "https://ror.org/041nas322"
+    },
+    {
+     "@id": "https://ror.org/020hwjq30"
+    },
+    {
+     "@id": "software:crystal23"
+    },
+    {
+     "@id": "software:orca"
+    },
+    {
+     "@id": "software:shelxt"
+    },
+    {
+     "@id": "software:apex5"
+    },
+    {
+     "@id": "software:diamond"
+    },
+    {
+     "@id": "software:findsym"
+    }
+   ],
+   "nrr:isPartOf": [
+    {
+     "@id": "urn:portolan:nrr:sha256:21a19778f6793566dd94be9dcf992e0986d97c9f757bd83f22711629e9a43048"
+    }
+   ],
+   "prov:wasDerivedFrom": [
+    {
+     "@id": "urn:portolan:nrr:sha256:4e4eb350611d6cd0f4dda9a8cff4e3e8ee153c45caf2573c3f50447c98f34c0c"
+    }
+   ]
+  },
+  {
+   "@id": "#operator",
+   "@type": "Organization",
+   "name": "University of Bonn",
+   "identifier": "https://ror.org/041nas322"
+  },
+  {
+   "@id": "#performer-bj-rn-n-koch-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Björn N. Koch",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-giuliana-ho-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Giuliana Hoß",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-gregor-schnakenburg-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Gregor Schnakenburg",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-antti-j-karttunen-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Antti J. Karttunen",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "Aalto University",
+   "nrr:identifier": "https://orcid.org/0000-0003-4187-5447",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#performer-florian-kraus-writing",
+   "@type": [
+    "Person",
+    "prov:Person"
+   ],
+   "name": "Florian Kraus",
+   "nrr:type": "person",
+   "nrr:role": "writing",
+   "nrr:affiliation": "University of Bonn",
+   "nrr:identifier": "https://orcid.org/0000-0003-4368-8418",
+   "nrr:note": "listed author; the article carries no author-contribution statement"
+  },
+  {
+   "@id": "#finding-crystal-structure",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "What is the crystal structure of the colourless product from RuF6 with excess XeF6?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "What is the crystal structure of the colourless product from RuF6 with excess XeF6?",
+   "nrr:target": {
+    "label": "[Xe2F11][RuF6], mu-fluorido(bis(pentafluoridoxenonium(VI)) hexafluoridoruthenate(V)",
+    "type": "compound",
+    "identifier": "ccdc:2477117"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "R(F) for I >= 2 sigma(I)",
+    "value": 0.0176,
+    "direction": "not-applicable",
+    "note": "wR(F2) 0.0345; 48303 reflections, 3570 unique, 182 parameters, no restraints"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none"
+    },
+    "negative": {
+     "kind": "none"
+    }
+   },
+   "nrr:conditions": {
+    "spaceGroup": "P2_1/n (no. 14)",
+    "a": 8.4517,
+    "b": 8.9602,
+    "c": 15.4691,
+    "beta": 95.392,
+    "volume": 1166.27,
+    "z": 4,
+    "temperatureK": 100,
+    "radiation": "Mo Kalpha 0.71073 A",
+    "crystals": "colourless single crystals from the remaining solid dissolved in HF and cooled slowly to 243 K",
+    "structureType": "[Xe2F11][VF6] type, like [Xe2F11][SbF6]; [Xe2F11][AuF6] is orthorhombic Pnma"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Table 1",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Table 1; Experimental Section, Single-Crystal X-Ray Diffraction",
+     "values": {
+      "spaceGroup": "P2_1/n (no. 14)",
+      "a": 8.4517,
+      "b": 8.9602,
+      "c": 15.4691,
+      "beta": 95.392,
+      "volume": 1166.27,
+      "z": 4,
+      "temperatureK": 100,
+      "rF": 0.0176,
+      "wR2": 0.0345
+     },
+     "data": [
+      {
+       "label": "CCDC 2477117",
+       "repository": "CCDC Access Structures",
+       "accession": "2477117",
+       "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+       "format": "CIF",
+       "role": "single-crystal structure at 100 K"
+      }
+     ]
+    }
+   ],
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#finding-cation-geometry",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "How does the [Xe2F11]+ cation in the ruthenium salt compare with the Au, Sb and V salts?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "How does the [Xe2F11]+ cation in the ruthenium salt compare with the Au, Sb and V salts?",
+   "nrr:target": {
+    "label": "[Xe2F11][RuF6], mu-fluorido(bis(pentafluoridoxenonium(VI)) hexafluoridoruthenate(V)",
+    "type": "compound",
+    "identifier": "ccdc:2477117"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "Xe-F-Xe angle",
+    "value": 163.15,
+    "unit": "degrees",
+    "direction": "not-applicable",
+    "comparedTo": "169.2(2) (Au), 166.2(2) (Sb), 166.5(4) (V); 140.3(6) in [Xe2F11]2[NiF6]",
+    "note": "averaged Xe-mu-F 2.2542 A; Ru-F 1.823(2) to 1.879(2) A; Xe...F anion contacts 2.605(2) A within the virtual [Xe2F11][RuF6] unit; 2.893(2) and 2.967(2) A linking units into strands along a"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "none"
+    },
+    "negative": {
+     "kind": "none"
+    }
+   },
+   "nrr:evidence": [
+    {
+     "label": "Figures 1 to 3 and text",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Characterization of [Xe2F11][RuF6], paragraphs 2 and 3; Figures 1 to 3"
+    }
+   ],
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#finding-vibrational-spectra",
+   "@type": [
+    "nrr:Finding",
+    "prov:Entity"
+   ],
+   "name": "Do the Raman and IR spectra of the product match the calculated spectrum of [Xe2F11][RuF6]?",
+   "prov:wasGeneratedBy": {
+    "@id": "#attempt"
+   },
+   "nrr:question": "Do the Raman and IR spectra of the product match the calculated spectrum of [Xe2F11][RuF6]?",
+   "nrr:target": {
+    "label": "[Xe2F11][RuF6], mu-fluorido(bis(pentafluoridoxenonium(VI)) hexafluoridoruthenate(V)",
+    "type": "compound",
+    "identifier": "ccdc:2477117"
+   },
+   "nrr:outcomeClass": "positive",
+   "nrr:informativeness": "not-applicable",
+   "nrr:effect": {
+    "metric": "agreement of observed and DFT-PBE0/TZVP band positions",
+    "value": "good overall agreement",
+    "direction": "not-applicable",
+    "note": "Raman (532 nm) and IR (ATR, in an argon glovebox) bands in good overall agreement with DFT-PBE0/TZVP calculated positions (Table 2); no bands above 800 cm-1"
+   },
+   "nrr:controls": {
+    "positive": {
+     "kind": "known-positive-task",
+     "label": "periodic DFT of the refined structure, lattice parameters within 2.7 percent of experiment, confirmed minimum by harmonic frequencies",
+     "expected": "band positions near observed",
+     "observed": "good overall agreement",
+     "passed": true
+    },
+    "negative": {
+     "kind": "none"
+    }
+   },
+   "nrr:conditions": {
+    "raman": "532 nm, room temperature, flame-sealed quartz capillary",
+    "ir": "ATR diamond, 4 cm-1, argon glovebox",
+    "calculation": "CRYSTAL23 (DFT-PBE0, TZVP, 4x4x2 k-grid, spin-polarised, ferromagnetic Ru ordering, band gap 5.31 eV, local moment 2.30 muB); ORCA 6.1.1 for FIAs; CRYSPLOT for mode assignment"
+   },
+   "nrr:evidence": [
+    {
+     "label": "Figure 4 and Table 2",
+     "source": "10.1021/acs.inorgchem.6c02072",
+     "locator": "Figure 4; Table 2; SI Figures S2 and S3"
+    }
+   ],
+   "nrr:informativenessReason": "rule applies to negative and inconclusive findings only"
+  },
+  {
+   "@id": "#stage-1-instrument-capture",
+   "@type": [
+    "Action",
+    "prov:Activity"
+   ],
+   "name": "single-crystal and powder X-ray diffraction, Raman and IR of [Xe2F11][RuF6]",
+   "nrr:stage": "instrument-capture",
+   "nrr:performedBy": [
+    {
+     "name": "Björn N. Koch",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Giuliana Hoß",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Gregor Schnakenburg",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Antti J. Karttunen",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "Aalto University",
+     "identifier": "https://orcid.org/0000-0003-4187-5447",
+     "note": "listed author; the article carries no author-contribution statement"
+    },
+    {
+     "name": "Florian Kraus",
+     "type": "person",
+     "role": "writing",
+     "affiliation": "University of Bonn",
+     "identifier": "https://orcid.org/0000-0003-4368-8418",
+     "note": "listed author; the article carries no author-contribution statement"
+    }
+   ],
+   "nrr:instrument": [
+    "Bruker D8 Quest with PHOTON III C14 detector",
+    "Stoe StadiMP powder diffractometer, Cu Kalpha1",
+    "Monovista CRS+ confocal Raman microscope",
+    "Bruker alpha FT-IR, ATR diamond"
+   ],
+   "nrr:software": [
+    {
+     "name": "APEX5"
+    },
+    {
+     "name": "SHELXT"
+    },
+    {
+     "name": "SHELXL"
+    },
+    {
+     "name": "Diamond"
+    }
+   ],
+   "nrr:outputs": [
+    {
+     "label": "CCDC 2477117",
+     "repository": "CCDC Access Structures",
+     "accession": "2477117",
+     "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+     "format": "CIF",
+     "role": "single-crystal structure at 100 K"
+    }
+   ]
+  },
+  {
+   "@id": "#attempt",
+   "@type": [
+    "CreateAction",
+    "prov:Activity"
+   ],
+   "name": "[Xe2F11][RuF6], a new xenon(VI) salt, characterised by single-crystal X-ray diffraction (CCDC 2477117), Raman, IR and periodic DFT",
+   "description": "What is the colourless product of RuF6 with excess XeF6, and how does it relate to the known [Xe2F11][MF6] salts?",
+   "actionStatus": "CompletedActionStatus",
+   "nrr:attemptType": "wet-lab",
+   "nrr:outcomeClass": "positive",
+   "agent": {
+    "@id": "#operator"
+   },
+   "instrument": [
+    {
+     "@id": "#performer-bj-rn-n-koch-writing"
+    },
+    {
+     "@id": "#performer-giuliana-ho-writing"
+    },
+    {
+     "@id": "#performer-gregor-schnakenburg-writing"
+    },
+    {
+     "@id": "#performer-antti-j-karttunen-writing"
+    },
+    {
+     "@id": "#performer-florian-kraus-writing"
+    }
+   ],
+   "object": [],
+   "result": [
+    {
+     "@id": "#finding-crystal-structure"
+    },
+    {
+     "@id": "#finding-cation-geometry"
+    },
+    {
+     "@id": "#finding-vibrational-spectra"
+    }
+   ],
+   "hasPart": [
+    {
+     "@id": "#stage-1-instrument-capture"
+    }
+   ]
+  },
+  {
+   "@id": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "@type": "ScholarlyArticle",
+   "nrr:role": "source-publication",
+   "name": "Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]",
+   "nrr:url": "https://doi.org/10.1021/acs.inorgchem.6c02072",
+   "nrr:statusAtCheck": {
+    "version": "VoR",
+    "integrity": "none",
+    "assertedBy": "crossref-relation",
+    "checkedAt": "2026-10-03T02:02:46Z"
+   },
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "This article is licensed under CC-BY 4.0 (JATS permissions element; Europe PMC license field 'cc by')"
+  },
+  {
+   "@id": "pmc:PMC13343514/ic6c02072_si_001.pdf",
+   "@type": "Dataset",
+   "nrr:role": "supplementary",
+   "name": "Supporting Information (PDF)",
+   "nrr:url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles",
+   "nrr:license": "https://creativecommons.org/licenses/by/4.0/",
+   "nrr:note": "Crystallographic data for [Xe2F11][RuF6] deposited as CCDC 2477117 (joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service); everything else in the Supporting Information.",
+   "nrr:data": [
+    {
+     "label": "ic6c02072_si_001.pdf",
+     "repository": "Europe PMC",
+     "accession": "PMC13343514",
+     "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13343514/supplementaryFiles",
+     "checksum": "sha256:3b4b2283f080ee0c5199efcd9bb84e9cd64a6563f2718679b720d1cf7c8322f3",
+     "size": 589210,
+     "format": "application/pdf",
+     "role": "Supporting Information: crystallographic details, powder patterns and vibrational spectra of both salts, computational details, FIA coordinates"
+    }
+   ]
+  },
+  {
+   "@id": "ccdc:2477117",
+   "@type": "Dataset",
+   "nrr:role": "data-deposit",
+   "name": "CCDC 2477117: crystal structure of [Xe2F11][RuF6]",
+   "nrr:url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+   "nrr:note": "joint Cambridge Crystallographic Data Centre and FIZ Karlsruhe Access Structures service; the only machine-readable deposit of the four ACS studies",
+   "nrr:data": [
+    {
+     "label": "CCDC 2477117",
+     "repository": "CCDC Access Structures",
+     "accession": "2477117",
+     "url": "https://www.ccdc.cam.ac.uk/structures/Search?Ccdcid=2477117",
+     "format": "CIF",
+     "role": "single-crystal structure at 100 K"
+    }
+   ]
+  },
+  {
+   "@id": "pubchem:CID139546",
+   "@type": "ChemicalSubstance",
+   "name": "xenon hexafluoride (XeF6)",
+   "nrr:entityType": "compound",
+   "nrr:role": "substrate to be oxidised",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID21528530",
+   "@type": "ChemicalSubstance",
+   "name": "ruthenium hexafluoride (RuF6)",
+   "nrr:entityType": "compound",
+   "nrr:role": "oxidiser",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID14917",
+   "@type": "ChemicalSubstance",
+   "name": "anhydrous hydrogen fluoride (aHF)",
+   "nrr:entityType": "compound",
+   "nrr:role": "solvent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID24524",
+   "@type": "ChemicalSubstance",
+   "name": "fluorine (F2)",
+   "nrr:entityType": "compound",
+   "nrr:role": "evolved by-product, detected with KI",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID4875",
+   "@type": "ChemicalSubstance",
+   "name": "potassium iodide (KI)",
+   "nrr:entityType": "compound",
+   "nrr:role": "F2 detection reagent",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "pubchem:CID167109",
+   "@type": "ChemicalSubstance",
+   "name": "ruthenium pentafluoride (RuF5)",
+   "nrr:entityType": "compound",
+   "nrr:role": "reduction product with excess RuF6",
+   "nrr:scheme": "PubChem"
+  },
+  {
+   "@id": "compound:xef7-cation-or-xef8",
+   "@type": "ChemicalSubstance",
+   "name": "xenon(VIII) fluoride species: [XeF7]+ salt or XeF8",
+   "nrr:entityType": "compound",
+   "nrr:role": "target, never observed"
+  },
+  {
+   "@id": "compound:xef5-ruf6",
+   "@type": "ChemicalSubstance",
+   "name": "[XeF5][RuF6], known xenon(VI) salt",
+   "nrr:entityType": "compound",
+   "nrr:role": "product of the equimolar reaction"
+  },
+  {
+   "@id": "compound:xef5-oligofluoridoruthenate",
+   "@type": "ChemicalSubstance",
+   "name": "[XeF5][RunF5n+1] (n = 1, 2, 3, ...)",
+   "nrr:entityType": "compound",
+   "nrr:role": "products with excess RuF6, not quantified"
+  },
+  {
+   "@id": "assay:scxrd",
+   "@type": "DefinedTerm",
+   "name": "single-crystal X-ray diffraction, Bruker D8 Quest, Mo Kalpha, 100 K",
+   "nrr:entityType": "assay",
+   "nrr:role": "structure determination"
+  },
+  {
+   "@id": "assay:raman-ir",
+   "@type": "DefinedTerm",
+   "name": "Raman (532 nm, sealed quartz capillary) and ATR IR spectroscopy in an argon glovebox",
+   "nrr:entityType": "assay",
+   "nrr:role": "product identification; the only probe for [XeF7]+"
+  },
+  {
+   "@id": "https://ror.org/041nas322",
+   "@type": "Organization",
+   "name": "University of Bonn",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "https://ror.org/020hwjq30",
+   "@type": "Organization",
+   "name": "Aalto University",
+   "nrr:entityType": "organization"
+  },
+  {
+   "@id": "software:crystal23",
+   "@type": "SoftwareApplication",
+   "name": "CRYSTAL23",
+   "nrr:entityType": "software",
+   "nrr:role": "periodic DFT"
+  },
+  {
+   "@id": "software:orca",
+   "@type": "SoftwareApplication",
+   "name": "ORCA",
+   "nrr:entityType": "software",
+   "nrr:role": "fluoride ion affinity calculations",
+   "nrr:extra": {
+    "version": "6.1.1"
+   }
+  },
+  {
+   "@id": "software:shelxt",
+   "@type": "SoftwareApplication",
+   "name": "SHELXT and SHELXL (Shelxle)",
+   "nrr:entityType": "software",
+   "nrr:role": "structure solution and refinement"
+  },
+  {
+   "@id": "software:apex5",
+   "@type": "SoftwareApplication",
+   "name": "APEX5",
+   "nrr:entityType": "software",
+   "nrr:role": "diffraction data evaluation and absorption correction (SADABS)"
+  },
+  {
+   "@id": "software:diamond",
+   "@type": "SoftwareApplication",
+   "name": "Diamond",
+   "nrr:entityType": "software",
+   "nrr:role": "crystal structure representation"
+  },
+  {
+   "@id": "software:findsym",
+   "@type": "SoftwareApplication",
+   "name": "FINDSYM",
+   "nrr:entityType": "software",
+   "nrr:role": "symmetry of the optimised structure"
+  }
+ ]
+}

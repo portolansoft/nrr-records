@@ -6,6 +6,7 @@ record, a manifest, and a collection-level `ro-crate-metadata.json`.
 
 | study | source | records | licence of the records |
 |---|---|---|---|
+| `acs-xef6/` | Koch, B. N., Hoß, G., Schnakenburg, G., Karttunen, A. J., Kraus, F. (2026). *Failed Attempts at Oxidation of XeF6: Synthesis and Characterization of [Xe2F11][RuF6]*. Inorganic Chemistry 65(26), 15126-15135. https://doi.org/10.1021/acs.inorgchem.6c02072 (CC BY 4.0; full text via Europe PMC PMC13343514). Structure: CCDC 2477117. | 1 path + 3 attempts, 13 findings | CC BY 4.0 |
 | `acs-zeolite/` | Altundal, O. F., Galvez-Llompart, M., Cantin, A. et al. (2025). *Lessons from Failed Attempts of Computationally Guided Synthesis of Aluminosilicate STF and IFR Zeolites in Hydroxide Media*. Chemistry of Materials 37(24), 9689-9702. https://doi.org/10.1021/acs.chemmater.5c01751 (CC BY 4.0; full text via Europe PMC PMC12747119). | 1 path + 4 attempts, 16 findings | CC BY 4.0 |
 | `acs-laccase/` | Steffens, S. D., Antell, E. H., Cook, E. K., Rao, G., Britt, R. D., Sedlak, D. L., Alvarez-Cohen, L. (2023). *An Artifact of Perfluoroalkyl Acid (PFAA) Removal Attributed to Sorption Processes in a Laccase Mediator System*. Environmental Science & Technology Letters 10(4), 337-342. https://doi.org/10.1021/acs.estlett.3c00173 (CC BY 4.0; full text via Europe PMC PMC10100556). | 1 path + 4 attempts, 11 findings | CC BY 4.0 |
 | `acs-tmeda/` | Macleod, J., Bage, A. D., Meyer, L. M., Thomas, S. P. (2024). *Hidden Boron Catalysis: A Cautionary Tale on TMEDA Inhibition*. Organic Letters 26(44), 9564-9567. https://doi.org/10.1021/acs.orglett.4c03591 (CC BY 4.0; full text via Europe PMC PMC11555781). | 1 path + 4 attempts, 20 findings | CC BY 4.0 |
@@ -41,11 +42,15 @@ Each was chosen to test a different part of the profile.
 - **Laccase and PFAS** is a replication failure with the artefact explained: a surrogate substrate (carbamazepine) as the
   positive control makes the two-week PFOA result the corpus's first informative `negative-not-replicated`, and the
   apparent 64 to 67 % losses are `refuted` by mass balance. It required one vocabulary term (`measurement-artifact`).
+- **XeF6 oxidation** is a synthetic dead end whose by-product is a new compound. The five prose conditions are findings
+  with paragraph locators and no run count; the new salt is a `positive` attempt derived from the failure, with its
+  CCDC deposit; the rule and the authors agree the negative is inconclusive. It required no schema change.
 
-Together with the fourth study in the pipeline repository, every clause of the informativeness rule has now fired on real
-published data, each traceable to a different study. That is what shows the rule working as a diagnosis rather than as a
-blanket refusal. See `docs/case-study-neuroimaging.md` and `docs/case-study-raman.md` in
-[portolansoft/nrr](https://github.com/portolansoft/nrr).
+Together with the Nature study in the pipeline repository, every clause of the informativeness rule has fired on real
+published data, each traceable to a different study, and across the four chemistry studies the rule both passes negatives
+(TMEDA, laccase) and refuses them (zeolite, XeF6). That is what shows it working as a diagnosis rather than as a blanket
+refusal. See `docs/case-study-neuroimaging.md`, `docs/case-study-raman.md`, `docs/convergence-test.md` and
+`docs/case-study-acs.md` in [portolansoft/nrr](https://github.com/portolansoft/nrr).
 
 ## Attribution
 
